@@ -5832,11 +5832,13 @@ body.custom-background {
 	}
 	.container .company-details:first-child {
 		padding-top: 40px;
+		height: 10px;
 	}
 	.copyright {
 		width: 100%;
 		padding-top: 33px;
 		padding-bottom: 33px;
+
 	}
 	.container .company-details {
 		width: 100%;

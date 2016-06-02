@@ -1,0 +1,232 @@
+h2#yoast_ga_title {
+	padding: 9px 15px 4px 0;
+	font-size: 23px;
+	font-weight: 400;
+	line-height: 29px;
+}
+
+.nav-tab-wrapper {
+	margin-bottom: 20px;
+}
+
+.gatab {
+	display: none;
+}
+
+.gatab.active {
+	display: block;
+	padding: 0.5em 0.9em;
+	border: 1px solid #ddd;
+	border-radius: 0 3px 3px 3px;
+	background-color: #fff;
+}
+
+.tabwrapper .gatab {
+	padding: 0;
+	border: none;
+	background: none;
+}
+
+.tabwrapper .gatab h2 {
+	padding: 9px 15px 4px 0;
+	font-size: 23px;
+	font-weight: 400;
+}
+
+.ga-form-submit {
+	margin-top: 20px;
+}
+
+.ga-form-label-left {
+	float: left;
+	width: 250px;
+	margin: 0 0 0 5px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#yoast-ga-displayfeatures-warning {
+	float: right;
+	width: 63%;
+	color: red;
+}
+
+.ga-form-input {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#yoast-ga-wrapper {
+	display: table;
+	width: auto;
+	max-width: 1150px;
+}
+
+.yoast-ga-content {
+	display: table-cell;
+	min-width: 850px;
+	height: 500px;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+.yoast-ga-banners {
+	display: table-cell;
+	width: 261px;
+	height: 500px;
+	margin: 0;
+	padding: 0;
+	padding: 20px;
+	vertical-align: top;
+}
+
+.ga-form-input {
+	display: table;
+	margin-bottom: 20px;
+}
+
+.ga-form-table {
+	display: table-cell;
+}
+
+.ga-form-description {
+	display: block;
+	float: right;
+	max-width: 325px;
+	color: #999;
+}
+
+p.ga-topdescription {
+	max-width: 600px;
+}
+
+#ga-promote,
+.ga-promote {
+	max-width: 600px;
+	padding-left: 10px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+
+.ga-promote {
+	margin-bottom: 10px;
+}
+
+#ga-promote p,
+.ga-promote p {
+	margin: 0;
+	padding: 1em 1em 1em 0;
+}
+
+#yoast-ga-form-settings input[type="text"] {
+	width: 325px;
+}
+
+#yoast-ga-form-settings #oauth_code {
+	padding: 20px;
+}
+
+#yoast-ga-form-settings #oauth_code div {
+	margin: 0 0 0 5px;
+}
+
+#yoast-ga-form-settings #oauth_code input[type="text"] {
+	width: 275px;
+}
+
+.ga-form .chosen-search input[type="text"] {
+	width: 100% !important;
+}
+
+.yoast-ga-content .chosen-container {
+	width: 325px !important;
+}
+
+#enter_ua {
+	display: none;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+#yoast-ga-form-text-settings-ga_general-manual_ua_code_field {
+	margin-top: -30px;
+}
+
+select.ga-multiple {
+	width: 300px;
+	height: 150px !important;
+}
+
+.wpseotab .extension {
+	float: left;
+	box-sizing: border-box;
+	width: 350px;
+	height: 230px;
+	margin: 10px 20px 10px 0;
+	border: 1px solid #ccc;
+}
+
+.wpseotab .extension p {
+	margin: 0;
+	padding: 10px;
+}
+
+.wpseotab .extension h3 {
+	box-sizing: border-box;
+	height: 110px;
+	margin: 0;
+	padding: 20px 10px 0 120px;
+	border-bottom: 1px solid #ccc;
+	background: #fff no-repeat left 10px;
+	background-repeat: no-repeat;
+	background-size: 84px 84px;
+	background-position-x: 5%;
+}
+
+.wpseotab .extension button.installed {
+	border-color: #00a000;
+	background-color: #00a000;
+	cursor: default;
+}
+
+.wpseotab .extension .button-primary.activate-link {
+	border-color: #f06000;
+	background-color: #f18500;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+.extension a {
+	text-decoration: none;
+}
+
+.ecommerce h3 {
+	background-image: url(../img/eComm_130x100.png) !important;
+	background-repeat: no-repeat;
+	background-size: 84px 84px;
+	background-position-x: 5%;
+}
+
+.ga_premium h3 {
+	background-image: url(../img/ga-premium-banner.png) !important;
+	background-repeat: no-repeat;
+	background-size: 84px 84px;
+	background-position-x: 5%;
+}
+
+#ga-debug-info h3 {
+	height: 30px;
+	margin-top: 10px;
+	padding-left: 16px;
+	font-size: 14px;
+}
+
+.yoast_help {
+	margin: 2px 5px 0 5px;
+}
+
+#enter_ua div {
+	display: inline-block;
+	margin: 0;
+}

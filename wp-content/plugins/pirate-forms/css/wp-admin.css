@@ -1,0 +1,192 @@
+.pirate-forms-nav-tabs a {
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+.pirate-forms-postbox {
+	margin-top: 20px;
+	padding: 10px 20px;
+	background: #fff;
+}
+.pirate-forms-nav-tabs {
+	margin-bottom: 0;
+}
+.pirate-forms-nav-tabs:after {
+	clear: both;
+	display: table;
+	content: " ";
+}
+.pirate-forms-nav-tabs > li {
+	float: left;
+	margin-bottom: -1px;
+	display: block;
+}
+.pirate-forms-nav-tabs > li > a {
+	border: 1px solid transparent;
+	border-radius: 4px 4px 0 0;
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+}
+.pirate-forms-nav-tabs > li.active > a, .pirate-forms-nav-tabs > li.active > a:focus, .pirate-forms-nav-tabs > li.active > a:hover {
+	color: #555;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-bottom-color: transparent;
+	font-weight: bold;
+}
+.pirate-forms-nav-tabs > li.zerif-lite-w-red-tab > a {
+	color: red;
+	font-weight: bold;
+}
+.pirate-forms-tab-content {
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	width: 860px;
+	float: left;
+}
+.pirate-forms-tab-content > .tab-pane {
+	display: none;
+}
+.pirate-forms-tab-content > .active {
+	display: block;
+}
+
+.pirate-forms-tab-pane {
+	padding: 30px;
+	display: none;
+}
+
+.pirate-forms-tab-pane.active {
+	display: block;
+}
+.pirate-forms-grouped {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.pirate-forms-grouped label {
+	display: inline-block;
+	width: 260px;
+	margin: 0 1em 0 0;
+	font-size: 15px;
+	color: #333;
+	font-weight: bold;
+}
+.pirate-forms-grouped label .pirate_forms_option_description {
+	font-size: 11px;
+	font-weight: normal;
+}
+.pirate-forms-grouped select,.pirate-forms-grouped input[type="text"]  {
+	display: inline-block;
+}
+.pirate-forms-grouped input[type="text"] {
+	width: 30%;
+}
+
+.pirate-options{
+	display: inline-block;
+}
+.pirate-subscribe.postbox{
+	display: inline-block;
+ 	vertical-align: top;
+ 	margin: 20px;
+	margin-right: 0px;
+	margin-bottom: 0;
+ 	margin-top: 51px;
+ 	padding: 10px;
+	width: 250px;
+}
+
+.wrap{
+	margin-right: 0;
+}
+
+#\31 > form > div > label > span.dashicons {
+    color: #888;
+    margin-left: 10px;
+}
+
+#\31 > form > div > label > span.dashicons:after {
+    display: none;
+    content: "";
+    position: absolute;
+    margin-left: 5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+}
+
+#\31 > form > div > label > .pirate_forms_option_description {
+	display: none;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px;
+    position: absolute;
+    font-size: 11px;
+    line-height: 16px;
+	margin-left: 190px;
+    margin-top: 4px;
+    z-index: 999;
+    width: 200px;
+    text-align: left;
+}
+
+#\31 > form > div > label > span.dashicons:hover + .pirate_forms_option_description, #\31 > form > div > label > span.dashicons:hover::after  {
+    display:block;
+
+}
+
+#\31 > form > div > label {
+	width: 400px;
+  font-weight: normal;
+}
+
+.pirate_forms_contact_settings h3.title, .pirate_forms_welcome_text {
+	text-align: center;
+    font-size: 23px;
+    color: #555;
+    margin: 10px 0 30px;
+}
+
+.pirate-forms-tab-pane hr {
+	margin-bottom: 30px; 
+}
+
+.pirate-forms-tab-pane ol {
+	margin: 20px 0 20px 50px;
+  list-style: inherit;
+}
+
+.pirate_forms_subheading {
+	text-align: center;
+	color: #333;
+	font-size: 14px;
+}
+
+.rate_plugin_invite {
+	text-align: center;
+}
+
+.rate_plugin_invite .dashicons {
+	color: #0073aa;
+	font-size: 12px;
+	width: auto;
+}
+
+.pirate_forms_preview {
+	margin: 0 auto 10px;
+	display: inherit;
+}
+
+@media( max-width: 1360px){
+	.pirate-subscribe.postbox{
+		margin-left: 0;
+		margin-top: 40px;
+		display: block;
+	}
+}
+
+.ajaxAnimation { background: url("../img/loader.gif") no-repeat center center, rgba(255,255,255,0.8); position: absolute;top: 0; left: 0; right: 0; bottom: 0; display: none;}

@@ -86,39 +86,8 @@ wp_head(); ?>
 				<span class="icon-bar"></span>
 
 				</button>
-
-				<?php
-
-					$zerif_logo = get_theme_mod('zerif_logo');
-
-					if(isset($zerif_logo) && $zerif_logo != ""):
-
-						echo '<a href="'.esc_url( home_url( '/' ) ).'" class="navbar-brand">';
-
-							echo '<img src="'.esc_url( $zerif_logo ).'" alt="'.esc_attr( get_bloginfo('title') ).'">';
-
-						echo '</a>';
-
-					else:
-
-						echo '<a href="'.esc_url( home_url( '/' ) ).'" class="navbar-brand">';
-						
-							if( file_exists(get_stylesheet_directory()."/images/logo.png")):
-							
-								echo '<img src="'.get_stylesheet_directory_uri().'/images/logo.png" alt="'.esc_attr( get_bloginfo('title') ).'">';
-							
-							else:
-								
-								echo '<img src="'.get_template_directory_uri().'/images/logo.png" alt="'.esc_attr( get_bloginfo('title') ).'">';
-								
-							endif;
-
-						echo '</a>';
-
-					endif;
-
-				?>
-
+				
+				<a href="<?php echo esc_url( home_url( '/' ) ) ?>" class="navbar-brand">CommonsNet</a>
 			</div>
 
 			<nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation"   id="site-navigation">

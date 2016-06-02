@@ -1,0 +1,30 @@
+.pirate_forms_wrap .form_field_wrap {
+	margin-bottom: 20px;
+}
+.pirate-forms-g-recaptcha {
+	display: none;
+}
+.pirate_forms_wrap {
+	float:left;
+	width: 100%;
+}
+.sidebar .pirate_forms_wrap, .sidebar-wrap .pirate_forms_wrap, #sidebar-secondary .pirate_forms_wrap {
+	margin-bottom: 20px;
+}
+.sidebar .form_field_wrap, .sidebar-wrap .form_field_wrap, #sidebar-secondary .form_field_wrap {
+	width: 100%;
+}
+.sidebar .pirate-forms-submit-button, .sidebar-wrap .pirate-forms-submit-button, #sidebar-secondary .pirate-forms-submit-button {
+	float:left !important;
+	margin-left: 0px;
+    width: 100%;
+}
+.sidebar .pirate_forms_wrap label, .sidebar-wrap .pirate_forms_wrap label, #sidebar-secondary .pirate_forms_wrap label {
+	display: none;
+}
+.pirate_forms_clearfix {
+	clear: both;
+}
+.contact_submit_wrap {
+	text-align: right;
+}

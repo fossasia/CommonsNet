@@ -9,11 +9,11 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 	if(isset($_POST['submitted']) && !defined('PIRATE_FORMS_VERSION') && !shortcode_exists( 'pirate_forms' ) ) :
 
 			/* recaptcha */
-			
+
 			$zerif_contactus_sitekey = get_theme_mod('zerif_contactus_sitekey');
 
 			$zerif_contactus_secretkey = get_theme_mod('zerif_contactus_secretkey');
-			
+
 			$zerif_contactus_recaptcha_show = get_theme_mod('zerif_contactus_recaptcha_show');
 
 			if( isset($zerif_contactus_recaptcha_show) && $zerif_contactus_recaptcha_show != 1 && !empty($zerif_contactus_sitekey) && !empty($zerif_contactus_secretkey) ) :
@@ -28,8 +28,8 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
 		        if( !$captcha ){
 
-		          $hasError = true;    
-		          
+		          $hasError = true;
+
 		        }
 
 		        $response = wp_remote_get( "https://www.google.com/recaptcha/api/siteverify?secret=".esc_html($zerif_contactus_secretkey)."&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR'] );
@@ -109,7 +109,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 			if(!isset($hasError)):
 
 				$zerif_contactus_email = get_theme_mod('zerif_contactus_email');
-				
+
 				if( empty($zerif_contactus_email) && !is_email($zerif_contactus_email) ):
 
 					$zerif_email = get_theme_mod('zerif_email');
@@ -117,9 +117,9 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 					$emailTo = is_email($zerif_email);
 
 				else:
-					
+
 					$emailTo = $zerif_contactus_email;
-				
+
 				endif;
 
 				if(isset($emailTo) && $emailTo != ""):
@@ -138,19 +138,19 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 						$zerif_server_name = strtolower( $_SERVER['SERVER_NAME'] );
 						return in_array( $zerif_server_name, array( 'localhost', '127.0.0.1' ) );
 					}
-					
+
 					if ( zerif_is_localhost() ) {
-					
+
 						$headers = 'From: '.$name.' <'.$zerif_admin_email.'>' . "\r\n" . 'Reply-To: ' . $email;
-						
+
 					} else {
-					
+
 						if ( substr( $zerif_sitename, 0, 4 ) == 'www.' ) {
 							$zerif_sitename = substr( $zerif_sitename, 4 );
 						}
-						
+
 						$headers = 'From: '.$name.' <wordpress@'.$zerif_sitename.'>' . "\r\n" . 'Reply-To: ' . $email;
-						
+
 					}
 
 					wp_mail($emailTo, $subject, $body, $headers);
@@ -188,11 +188,11 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 	$zerif_ourfocus_show = get_theme_mod('zerif_ourfocus_show');
 
 	if( isset($zerif_ourfocus_show) && $zerif_ourfocus_show != 1 ):
-	
+
 	zerif_before_our_focus_trigger();
 
 		get_template_part( 'sections/our_focus' );
-		
+
 	zerif_after_our_focus_trigger();
 
 	endif;
@@ -206,11 +206,11 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 	$zerif_aboutus_show = get_theme_mod('zerif_aboutus_show');
 
 	if( isset($zerif_aboutus_show) && $zerif_aboutus_show != 1 ):
-	
+
 	zerif_before_about_us_trigger();
 
 		get_template_part( 'sections/about_us' );
-	
+
 	zerif_after_about_us_trigger();
 
 	endif;
@@ -220,11 +220,11 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 	$zerif_ourteam_show = get_theme_mod('zerif_ourteam_show');
 
 	if( isset($zerif_ourteam_show) && $zerif_ourteam_show != 1 ):
-	
+
 	zerif_before_our_team_trigger();
 
 		get_template_part( 'sections/our_team' );
-	
+
 	zerif_after_our_team_trigger();
 
 	endif;
@@ -234,11 +234,11 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 	$zerif_testimonials_show = get_theme_mod('zerif_testimonials_show');
 
 	if( isset($zerif_testimonials_show) && $zerif_testimonials_show != 1 ):
-	
+
 	zerif_before_testimonials_trigger();
 
 		get_template_part( 'sections/testimonials' );
-	
+
 	zerif_after_testimonials_trigger();
 
 	endif;
@@ -251,11 +251,11 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 	$zerif_latestnews_show = get_theme_mod('zerif_latestnews_show');
 
 	if( isset($zerif_latestnews_show) && $zerif_latestnews_show != 1 ):
-	
+
 	zerif_before_latest_news_trigger();
 
 		get_template_part( 'sections/latest_news' );
-	
+
 	zerif_after_latest_news_trigger();
 
 	endif;
@@ -271,7 +271,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 					<div class="section-header">
 
 						<?php
-						
+
 							global $wp_customize;
 
 							$zerif_contactus_title = get_theme_mod('zerif_contactus_title',__('Get in touch','zerif-lite'));

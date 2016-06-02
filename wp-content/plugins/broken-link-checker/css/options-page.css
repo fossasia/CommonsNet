@@ -1,0 +1,243 @@
+/*
+Sidebar
+*/
+
+#blc-sidebar {
+	clear: right; 
+	float: right; 
+	position: relative; 
+	width: 255px;
+}
+
+#blc-admin-content {
+	clear: left; 
+	float: left; 
+	margin-right: -275px; 
+	width: 100%;
+}
+
+#blc-admin-content > * {
+	margin-right: 267px; 
+}
+
+#advertising {
+	border-color: green !important;
+	border-width: 2px;
+}
+
+#advertising h3 {
+	color: green;
+}
+
+#advertising .inside {
+	text-align: left;
+}
+
+.ws-ame-ad-copy {
+	font-size: 1.2em;
+	font-style: italic;
+}
+.ws-ame-ad-link {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+#themefuse-ad .inside,
+#managewp-ad .inside,
+#embedplus-ad .inside
+{
+	padding: 2px 0 0 0;
+	margin: 0;
+	text-align: center;
+}
+
+#embedplus-ad .inside {
+	padding-top: 0;
+}
+
+#embedplus-ad {
+	border-style: none;
+	background-color: transparent;
+	box-shadow: none;
+}
+
+
+#link_checker_options .form-table th {
+	width: 25%;
+	min-width: 110px;
+	max-width: 200px;
+}
+
+#blc-debug-info-toggle {
+	font-size: smaller;
+}
+
+.blc-debug-item-ok {
+	background-color: #d7ffa2;
+}
+.blc-debug-item-warning {
+	background-color: #fcffa2;
+}
+.blc-debug-item-error {
+	background-color: #ffc4c4;
+}
+
+#blc-debug-info {
+	display: none;
+	
+	text-align: left;
+	
+	border-width: 1px;
+	border-color: gray;
+	border-style: solid;
+	
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+#blc-debug-info th, #blc-debug-info td {
+	padding: 6px;
+	font-weight: normal;
+	text-shadow: none;
+					
+	border-width: 1px ;
+	border-color: silver;
+	border-style: solid;
+	
+	border-collapse: collapse;
+}
+
+.blc-toggle-link {
+	/*padding-left: 20px; */
+}
+
+.module-container {
+	margin: 1em 0;
+	font-size: 12px;
+	line-height: 140%; 
+}
+
+.module-extra-settings {
+	margin-top: 0.5em;
+}
+
+.form-table td p:first-child, .form-table td .module-container:first-child {
+	margin-top: 0.2em; 
+}
+
+.module-requires-pro {
+	color: gray;
+}
+
+#blc-tabs {
+	margin-top: 0.5em;
+}
+
+/* Tab navigation */
+ul.ui-tabs-nav {
+	margin-bottom: -1px;
+	height: 31px;
+	padding-left: 1.5em;
+	
+	overflow: hidden;
+	white-space: nowrap;
+	padding-right: 3.5em;
+}
+
+ul.ui-tabs-nav li {
+	display: inline-block;
+	height: 29px;
+	margin: 0 0.5em 0 0;
+	
+	border: 1px solid #DFDFDF;
+	
+	background: none repeat scroll 0 0 #F4F4F4;
+	
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	
+	-moz-border-radius-topright: 6px;
+	-moz-border-radius-topleft: 6px;
+	
+	-webkit-border-top-right-radius: 6px;
+	-webkit-border-top-left-radius: 6px;
+	
+	font-weight: bold;
+	text-shadow: 0 1px 0 #FFFFFF;
+	
+	max-width: 20%;
+	overflow: hidden;
+	text-align: center;
+}
+
+#tab-button-which {
+	max-width: 25%;
+}
+
+ul.ui-tabs-nav li.ui-tabs-selected,
+ul.ui-tabs-nav li.ui-tabs-active
+{
+	background: white;
+	color: black;
+	border-bottom-color: white;
+}
+
+ul.ui-tabs-nav li a {
+	display: inline-block;
+	height: 17px;
+	text-decoration: none;
+	color: #C1C1C1;
+	padding: 0.5em 1em 0.6em 1em;
+}
+
+ul.ui-tabs-nav li a:focus {
+	outline: none;
+}
+
+ul.ui-tabs-nav li.ui-tabs-selected a,
+ul.ui-tabs-nav li.ui-tabs-active a {
+	color: black;
+	outline: none;
+}
+
+/* Tab panels */
+
+.ui-tabs .blc-section {
+	border: 1px solid #DFDFDF;
+	border-top-width: 1px;
+	
+	padding-bottom: 1em;
+	
+	background: white;
+	
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	
+	-moz-border-radius-topright: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	
+	-webkit-border-top-right-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+}
+
+.blc-section table.form-table th {
+    padding-left: 10px;
+}
+
+/* Right sidebar */
+
+#blc-settings-wrap .hndle {
+	cursor: default;
+}
+
+/* Miscellaneous */
+td:target, label:target {
+	background: #ffffaa;
+}

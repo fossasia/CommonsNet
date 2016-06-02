@@ -1,0 +1,872 @@
+# Czech translation for Broken Link Checker plugin.
+# Copyright (C) 2010 Janis Elsts
+# This file is distributed under the same license as the Broken Link Checker package.
+# Janis Elsts <whiteshadow@w-shadow.com>, 2010.
+# Lelkoun <vydrus@klikni.cz>, http://lelkoun.cz/, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: Broken Link Checker 0.8\n"
+"Report-Msgid-Bugs-To: whiteshadow@w-shadow.com\n"
+"POT-Creation-Date: 2010-01-24 15:25+0000\n"
+"PO-Revision-Date: 2010-03-11 00:54+0100\n"
+"Last-Translator: Lelkoun <vydrus@klikni.cz>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Language-Team: Czech <vydrus@klikni.cz>\n"
+
+#: core.php:143
+#: core.php:1835
+msgid "Loading..."
+msgstr "Načítání..."
+
+#: core.php:166
+#: core.php:604
+msgid "[ Network error ]"
+msgstr "[ Chyba sítě ]"
+
+#: core.php:191
+msgid "Automatically expand the widget if broken links have been detected"
+msgstr "Automaticky rozvinout widget v případě detekování nefunkčních odkazů"
+
+#: core.php:375
+#: core.php:384
+#: core.php:414
+#: core.php:426
+#: core.php:1014
+#: core.php:1038
+#: core.php:1316
+#, php-format
+msgid "Database error : %s"
+msgstr "Chyba databáze: %s"
+
+#: core.php:452
+msgid "Link Checker Settings"
+msgstr "Link Checker - Nastavení"
+
+#: core.php:453
+msgid "Link Checker"
+msgstr "Link Checker"
+
+#: core.php:459
+msgid "View Broken Links"
+msgstr "Zobrazit nefunkční odkazy"
+
+#: core.php:460
+#: core.php:892
+msgid "Broken Links"
+msgstr "Nefunkční odkazy"
+
+#: core.php:484
+msgid "Settings"
+msgstr "Nastavení"
+
+#: core.php:568
+msgid "Broken Link Checker Options"
+msgstr "Broken Link Checker - Nastavení"
+
+#: core.php:581
+msgid "Status"
+msgstr "Status"
+
+#: core.php:583
+#: core.php:823
+msgid "Show debug info"
+msgstr "Zobrazit ladící informace"
+
+#: core.php:617
+msgid "Re-check all pages"
+msgstr "Překontrolovat všechny stránky"
+
+#: core.php:641
+msgid "Check each link"
+msgstr "Zkontrolovat každý odkaz"
+
+#: core.php:646
+#, php-format
+msgid "Every %s hours"
+msgstr "Každých %s hodin"
+
+#: core.php:655
+msgid "Existing links will be checked this often. New links will usually be checked ASAP."
+msgstr "Existující odkazy budou kontrolovány v určeném intervalu. Nové odkazy budou zkontrolovány hned, jak to bude možné."
+
+#: core.php:662
+msgid "Broken link CSS"
+msgstr "CSS nefunkčního odkazu"
+
+#: core.php:667
+msgid "Apply <em>class=\"broken_link\"</em> to broken links"
+msgstr "Přidat <em>class=\"broken_link\"</em> k nefunkčním odkazům"
+
+#: core.php:679
+msgid "Removed link CSS"
+msgstr "CSS odstraněného odkazu"
+
+#: core.php:684
+msgid "Apply <em>class=\"removed_link\"</em> to unlinked links"
+msgstr "Přidat <em>class=\"removed_link\"</em> k odstraněným odkazům"
+
+#: core.php:696
+msgid "Exclusion list"
+msgstr "Seznam výjimek"
+
+#: core.php:697
+msgid "Don't check links where the URL contains any of these words (one per line) :"
+msgstr "Nekontrolovat odkazy, kde URL adresa obsahuje nějaký z těchto výrazů (jeden na řádek):"
+
+#: core.php:707
+msgid "Custom fields"
+msgstr "Uživatelské pole"
+
+#: core.php:708
+msgid "Check URLs entered in these custom fields (one per line) :"
+msgstr "Kontrolovat URL adresy v tomto poli (jednu na řádek):"
+
+#: core.php:719
+msgid "Advanced"
+msgstr "Pokročilé"
+
+#: core.php:725
+msgid "Timeout"
+msgstr "Čas vypršení"
+
+#: core.php:731
+#: core.php:787
+#, php-format
+msgid "%s seconds"
+msgstr "%s sekund"
+
+#: core.php:740
+msgid "Links that take longer than this to load will be marked as broken."
+msgstr "Odkazy, jejichž načtení bude trvat delší dobu než tuto, budou označeny jako nefunkční."
+
+#: core.php:749
+msgid "Custom temporary directory"
+msgstr "Uživatelský dočasný adresář"
+
+#: core.php:758
+#: core.php:2792
+msgid "OK"
+msgstr "OK"
+
+#: core.php:761
+msgid "Error : This directory isn't writable by PHP."
+msgstr "Chyba: Tento adresář není zapisovatelný jazykem PHP."
+
+#: core.php:766
+msgid "Error : This directory doesn't exist."
+msgstr "Chyba: Tento adresář neexistuje."
+
+#: core.php:774
+msgid "Set this field if you want the plugin to use a custom directory for its lockfiles. Otherwise, leave it blank."
+msgstr "Nastavte toto pole, pokud chcete použít uživatelský adresář pro ukládání zamykacích souborů. Jinak jej nechte prázdné."
+
+#: core.php:781
+msgid "Max. execution time"
+msgstr "Max. čas provádění"
+
+#: core.php:798
+msgid "The plugin works by periodically creating a background worker instance that parses your posts looking for links, checks the discovered URLs, and performs other time-consuming tasks. Here you can set for how long, at most, the background instance may run each time before stopping."
+msgstr "Plugin pracuje na principu periodického vytváření pracovní instance na pozadí, která hledá odkazy ve vašich příspěvcích, kontroluje objevené URL adresy a vykonává další časově náročné úkoly. Zde můžete nastavit, jakou maximální dobu bude instance na pozadí pracovat každou periodu, než bude zastavena."
+
+#: core.php:808
+msgid "Save Changes"
+msgstr "Uložit změny"
+
+#: core.php:821
+msgid "Hide debug info"
+msgstr "Skrýt ladící informace"
+
+#: core.php:891
+msgid "Broken"
+msgstr "Nefunkční"
+
+#: core.php:893
+msgid "No broken links found"
+msgstr "Nebyly nalezeny žádné nefunkční odkazy."
+
+#: core.php:897
+msgid "Redirects"
+msgstr "Přesměrování"
+
+#: core.php:898
+msgid "Redirected Links"
+msgstr "Přesměrované odkazy"
+
+#: core.php:899
+msgid "No redirects found"
+msgstr "Nebyla nalezena žádná přesměrování"
+
+#: core.php:904
+msgid "All"
+msgstr "Všechno"
+
+#: core.php:905
+msgid "Detected Links"
+msgstr "Odstraněné odkazy"
+
+#: core.php:906
+msgid "No links found (yet)"
+msgstr "Ještě nebyly nalezeny žádné odkazy"
+
+#: core.php:933
+#: core.php:1281
+msgid "No links found for your query"
+msgstr "Nebyly nalezeny žádné odkazy na váš dotaz"
+
+#: core.php:994
+msgid "You must enter a filter name!"
+msgstr "Musíte zadat jméno filtru!"
+
+#: core.php:998
+msgid "Invalid search query."
+msgstr "Nevalidní hledací dotaz."
+
+#: core.php:1009
+#, php-format
+msgid "Filter \"%s\" created"
+msgstr "Filtr \"%s\" byl vytvořen."
+
+#: core.php:1026
+msgid "Filter ID not specified."
+msgstr "ID filtru nebylo specifikováno."
+
+#: core.php:1035
+msgid "Filter deleted"
+msgstr "Filtr byl smazán"
+
+#: core.php:1084
+#, php-format
+msgid "Failed to delete post \"%s\" (%d)"
+msgstr "Selhalo smazání příspěvku \"%s\" (%d)"
+
+#: core.php:1097
+#, php-format
+msgid "%d post moved to the trash"
+msgid_plural "%d posts moved to the trash"
+msgstr[0] "%d příspěvek byl přesunut do koše"
+msgstr[1] "%d příspěvků bylo přesunuto do koše"
+
+#: core.php:1099
+#, php-format
+msgid "%d post deleted"
+msgid_plural "%d posts deleted"
+msgstr[0] "%d příspěvek byl smazán"
+msgstr[1] "%d příspěvků bylo smazán"
+
+#: core.php:1134
+#, php-format
+msgid "Failed to delete blogroll link \"%s\" (%d)"
+msgstr "Selhalo smazání odkazu \"%s\" (%d)"
+
+#: core.php:1144
+#, php-format
+msgid "%d blogroll link deleted"
+msgid_plural "%d blogroll links deleted"
+msgstr[0] "%d odkaz byl smazán"
+msgstr[1] "%d odkazů bylo smazáno"
+
+#: core.php:1153
+msgid "Didn't find anything to delete!"
+msgstr "Nebylo nalezeno nic, co by se mohlo smazat!"
+
+#: core.php:1191
+#, php-format
+msgid "%d link removed"
+msgid_plural "%d links removed"
+msgstr[0] "%d odkaz byl odstraněn."
+msgstr[1] "%d odkazů bylo odstraněno"
+
+#: core.php:1202
+#, php-format
+msgid "Failed to remove %d link"
+msgid_plural "Failed to remove %d links"
+msgstr[0] "Selhalo odstranění %d odkazu"
+msgstr[1] "Selhalo odstranění %d odkazů"
+
+#: core.php:1243
+#, php-format
+msgid "Replaced %d redirect with a direct link"
+msgid_plural "Replaced %d redirects with direct links"
+msgstr[0] "Nahrazeno %d přesměrování přímým odkazem"
+msgstr[1] "Nahrazeno %d přesměrování přímými odkazy"
+
+#: core.php:1254
+#, php-format
+msgid "Failed to fix %d redirect"
+msgid_plural "Failed to fix %d redirects"
+msgstr[0] "Selhalo opravení %d přesměrování"
+msgstr[1] "Selhalo opravení %d přesměrování"
+
+#: core.php:1264
+msgid "None of the selected links are redirects!"
+msgstr "Žádný z vybraných odkazů není přesměrován!"
+
+#: core.php:1279
+#: core.php:1400
+msgid "Search"
+msgstr "Hledat"
+
+#: core.php:1280
+msgid "Search Results"
+msgstr "Výsledky hledání"
+
+#: core.php:1384
+msgid "Save This Search As a Filter"
+msgstr "Uložit toto hledání jako filtr"
+
+#: core.php:1394
+msgid "Delete This Filter"
+msgstr "Smazat tento filtr"
+
+#: core.php:1410
+msgid "Link text"
+msgstr "Text odkazu"
+
+#: core.php:1413
+#: core.php:1526
+msgid "URL"
+msgstr "URL"
+
+#: core.php:1416
+#: core.php:2141
+msgid "HTTP code"
+msgstr "HTTP kód"
+
+#: core.php:1419
+msgid "Link status"
+msgstr "Status odkazu"
+
+#: core.php:1435
+msgid "Link type"
+msgstr "Typ odkazu"
+
+#: core.php:1439
+msgid "Any"
+msgstr "Žádný"
+
+#: core.php:1440
+msgid "Normal link"
+msgstr "Normální odkaz"
+
+#: core.php:1441
+#: core.php:1602
+msgid "Image"
+msgstr "Obrázek"
+
+#: core.php:1442
+#: core.php:1613
+msgid "Custom field"
+msgstr "Uživatelské pole"
+
+#: core.php:1443
+#: core.php:1621
+msgid "Bookmark"
+msgstr "Záložka"
+
+#: core.php:1456
+msgid "Search Links"
+msgstr "Hledat odkazy"
+
+#: core.php:1457
+#: core.php:1654
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: core.php:1473
+msgid "Bulk Actions"
+msgstr "Hromadné akce"
+
+#: core.php:1474
+#: core.php:1639
+#: core.php:1922
+msgid "Unlink"
+msgstr "Odstranit odkaz"
+
+#: core.php:1475
+msgid "Fix redirects"
+msgstr "Opravit přesměrování"
+
+#: core.php:1476
+msgid "Delete sources"
+msgstr "Smazat zdroje"
+
+#: core.php:1490
+#: core.php:1686
+msgid "Apply"
+msgstr "Aplikovat"
+
+#: core.php:1497
+msgid "&laquo;"
+msgstr "&laquo;"
+
+#: core.php:1498
+msgid "&raquo;"
+msgstr "&raquo;"
+
+#: core.php:1505
+#: core.php:1692
+#, php-format
+msgid "Displaying %s&#8211;%s of <span class=\"current-link-count\">%s</span>"
+msgstr "Zobrazeno %s&#8211;%s z <span class=\"current-link-count\">%s</span>"
+
+#: core.php:1524
+msgid "Source"
+msgstr "Zdroj"
+
+#: core.php:1525
+msgid "Link Text"
+msgstr "Text odkazu"
+
+#: core.php:1557
+#: core.php:1563
+msgid "Edit this post"
+msgstr "Upravit tento příspěvek"
+
+#: core.php:1563
+#: core.php:1578
+msgid "Edit"
+msgstr "Upravit"
+
+#: core.php:1564
+msgid "Delete this post"
+msgstr "Smazat tento příspěvek"
+
+#: core.php:1564
+#, php-format
+msgid ""
+"You are about to delete this post '%s'\n"
+" 'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"Chystáte se smazat tento příspěvek '%s'\n"
+" Klikněte na 'Cancel' pro zrušení, 'OK' pro smazání."
+
+#: core.php:1564
+#: core.php:1579
+msgid "Delete"
+msgstr "Smazat"
+
+#: core.php:1566
+#, php-format
+msgid "View \"%s\""
+msgstr "Zobrazit \"%s\""
+
+#: core.php:1566
+msgid "View"
+msgstr "Zobrazit"
+
+#: core.php:1573
+#: core.php:1578
+msgid "Edit this bookmark"
+msgstr "Upravit tuto záložku"
+
+#: core.php:1579
+#, php-format
+msgid ""
+"You are about to delete this link '%s'\n"
+"  'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"Chystáte se smazat tento odkaz '%s'\n"
+" Klikněte na 'Cancel' pro zrušení, 'OK' pro smazání."
+
+#: core.php:1588
+msgid "[An orphaned link! This is a bug.]"
+msgstr "[Osiřelý odkaz! Toto je chyba programu.]"
+
+#: core.php:1636
+msgid "Show more info about this link"
+msgstr "Ukázat více informací o tomto odkazu"
+
+#: core.php:1636
+#: core.php:3085
+msgid "Details"
+msgstr "Detaily"
+
+#: core.php:1638
+msgid "Remove this link from all posts"
+msgstr "Odstranit tento odkaz ze všech příspěvků"
+
+#: core.php:1642
+#: core.php:1952
+#: core.php:1963
+msgid "Excluded"
+msgstr "Vynechán"
+
+#: core.php:1644
+msgid "Add this URL to the exclusion list"
+msgstr "Přidat tuto URL adresu do seznamu výjimek"
+
+#: core.php:1645
+#: core.php:1966
+msgid "Exclude"
+msgstr "Vynechat"
+
+#: core.php:1648
+msgid "Edit link URL"
+msgstr "Upravit URL adresu odkazu"
+
+#: core.php:1648
+#: core.php:1863
+#: core.php:1891
+msgid "Edit URL"
+msgstr "Upravit URL"
+
+#: core.php:1654
+msgid "Cancel URL editing"
+msgstr "Zrušit upravování URL adresy"
+
+#: core.php:1668
+msgid "Remove this link from the list of broken links and mark it as valid"
+msgstr "Odstranit tento odkaz ze seznamu nefunkčních odkazů a označit jako validní"
+
+#: core.php:1670
+#: core.php:1755
+msgid "Discard"
+msgstr "Zrušit"
+
+#: core.php:1731
+#: core.php:1898
+#: core.php:1935
+msgid "Wait..."
+msgstr "Čekejte..."
+
+#: core.php:1789
+msgid "Save URL"
+msgstr "Uložit URL"
+
+#: core.php:1799
+msgid "Saving changes..."
+msgstr "Ukládání změn..."
+
+#: core.php:2011
+msgid "Enter a name for the new custom filter"
+msgstr "Zadejte jméno pro nový uživatelský filtr"
+
+#: core.php:2022
+msgid ""
+"You are about to delete the current filter.\n"
+"'Cancel' to stop, 'OK' to delete"
+msgstr ""
+"Chystáte se smazat současný filtr '%s'\n"
+" Klikněte na 'Cancel' pro zrušení, 'OK' pro smazání."
+
+#: core.php:2118
+msgid "Log"
+msgstr "Záznam"
+
+#: core.php:2126
+msgid "Post published on"
+msgstr "Příspěvek publikován"
+
+#: core.php:2131
+msgid "Link last checked"
+msgstr "Poslední kontrola odkazu"
+
+#: core.php:2135
+msgid "Never"
+msgstr "Nikdy"
+
+#: core.php:2146
+msgid "Response time"
+msgstr "Čas odpovědi"
+
+#: core.php:2148
+#, php-format
+msgid "%2.3f seconds"
+msgstr "%2.3f sekund"
+
+#: core.php:2151
+msgid "Final URL"
+msgstr "Konečné URL"
+
+#: core.php:2156
+msgid "Redirect count"
+msgstr "Počet přesměrování"
+
+#: core.php:2161
+msgid "Instance count"
+msgstr "Počet instancí"
+
+#: core.php:2170
+#, php-format
+msgid "This link has failed %d time."
+msgid_plural "This link has failed %d times."
+msgstr[0] "Tento link selhal %d x."
+msgstr[1] "Tento link selhal %d x."
+
+#: core.php:2580
+#: core.php:2910
+msgid "This link wasn't checked because a matching keyword was found on your exclusion list."
+msgstr "Tento odkaz nebyl zkontrolován kvůli klíčovému slovu nalezenému ve vašem seznam výjimek."
+
+#: core.php:2622
+msgid "View broken links"
+msgstr "Zobrazit nefunkční odkazy"
+
+#: core.php:2623
+#, php-format
+msgid "Found %d broken link"
+msgid_plural "Found %d broken links"
+msgstr[0] "Nalezen %d nefunkční odkaz"
+msgstr[1] "Nalezeno %d nefunkčních odkazů"
+
+#: core.php:2629
+msgid "No broken links found."
+msgstr "Nebyly nalezeny žádné nefunkční odkazy."
+
+#: core.php:2636
+#, php-format
+msgid "%d URL in the work queue"
+msgid_plural "%d URLs in the work queue"
+msgstr[0] "%d URL adresa ve frontě"
+msgstr[1] "%d URL adres ve frontě"
+
+#: core.php:2639
+msgid "No URLs in the work queue."
+msgstr "Žádná URL adresa není ve frontě."
+
+#: core.php:2645
+#, php-format
+msgid "Detected %d unique URL"
+msgid_plural "Detected %d unique URLs"
+msgstr[0] "Nalezena %d unikátní URL adresa"
+msgstr[1] "Nalezeno %d unikátních URL adres"
+
+#: core.php:2646
+#, php-format
+msgid "in %d link"
+msgid_plural "in %d links"
+msgstr[0] "v %d odkazu"
+msgstr[1] "v %d odkazech"
+
+#: core.php:2651
+msgid "and still searching..."
+msgstr "a pořád se hledá...."
+
+#: core.php:2657
+msgid "Searching your blog for links..."
+msgstr "Hledání odkazů ve vašem blogu..."
+
+#: core.php:2659
+msgid "No links detected."
+msgstr "Žádné odkazy nebyly zjištěny"
+
+#: core.php:2731
+#: core.php:2763
+#: core.php:2806
+#: core.php:2887
+msgid "You're not allowed to do that!"
+msgstr "Nejste oprávněni toto dělat!"
+
+#: core.php:2739
+#: core.php:2773
+#: core.php:2816
+#: core.php:2897
+#, php-format
+msgid "Oops, I can't find the link %d"
+msgstr "Jejda, nemůžu najít odkaz %d"
+
+#: core.php:2747
+msgid "This link was manually marked as working by the user."
+msgstr "Tento odkaz byl uživatelem manuálně označen jako funkční"
+
+#: core.php:2753
+msgid "Oops, couldn't modify the link!"
+msgstr "Jejda, nemohl jsem upravit odkaz!"
+
+#: core.php:2756
+#: core.php:2833
+msgid "Error : link_id not specified"
+msgstr "Chyba: link_id nebyl specifikován"
+
+#: core.php:2780
+msgid "Oops, the new URL is invalid!"
+msgstr "Jejda, nová URL adresa je nevalidní!"
+
+#: core.php:2789
+msgid "An unexpected error occured!"
+msgstr "Nastala neočekávaná chyba!"
+
+#: core.php:2798
+msgid "Error : link_id or new_url not specified"
+msgstr "Chyba: link_id nebo new_url nebylo specifikováno"
+
+#: core.php:2823
+#, php-format
+msgid "URL %s was removed."
+msgstr "URL adresa %s byla odstraněna"
+
+#: core.php:2827
+msgid "The plugin failed to remove the link."
+msgstr "Plugin selhal při odstraňování odkazu."
+
+#: core.php:2842
+msgid "You don't have sufficient privileges to access this information!"
+msgstr "Nemáte dostatečná práva k zpřístupnění těchto informací!"
+
+#: core.php:2855
+msgid "Error : link ID not specified"
+msgstr "Chyba: ID odkazu nebylo specifikováno"
+
+#: core.php:2879
+#, php-format
+msgid "Failed to load link details (%s)"
+msgstr "Selhalo načtení detailů odkazu (%s)"
+
+#: core.php:2917
+#, php-format
+msgid "URL %s added to the exclusion list"
+msgstr "URL adresa %s byla přidána na seznam výjimek"
+
+#: core.php:2921
+msgid "Link ID not specified"
+msgstr "ID odkazu nebylo specifikováno"
+
+#: core.php:3071
+#, php-format
+msgid "The current temporary directory is not accessible; please <a href=\"%s\">set a different one</a>."
+msgstr "Stávající dočasný adresář je nepřístupný; <a href=\"%s\">zvolte jiný</a>, prosím."
+
+#: core.php:3076
+#, php-format
+msgid "Please make the directory <code>%1$s</code> writable by plugins or <a href=\"%2$s\">set a custom temporary directory</a>."
+msgstr "Učiňte adresář <code>%1$s</code> zapisovatelným pro pluginy nebo <a href=\"%2$s\">nastavte uživatelský dočasný adresář</a>."
+
+#: core.php:3083
+msgid "Broken Link Checker can't create a lockfile."
+msgstr "Broken Link Checker nemůže vytvořit zamykací soubor."
+
+#: core.php:3088
+msgid "The plugin uses a file-based locking mechanism to ensure that only one instance of the resource-heavy link checking algorithm is running at any given time. Unfortunately, BLC can't find a writable directory where it could store the lockfile - it failed to detect the location of your server's temporary directory, and the plugin's own directory isn't writable by PHP. To fix this problem, please make the plugin's directory writable or enter a specify a custom temporary directory in the plugin's settings."
+msgstr "Plugin používá souborově založený zamykací mechanismus k zaručení vykonávání činnosti pouze jedné instance zdrojově náročného odkazy kontrolujícího algoritmu v dané době. Bohužel, BLC nemůže najít zapisovatelný adresář, kde by mohl skladovat zamykací soubory - selhalo zjištění pozice dočasného adresáře vašeho serveru a vlastní adresář pluginu není zapisovatelný jazykem PHP. K opravení tohoto problému učiňte adresář pluginu zapisovatelným nebo zadejte specifický uživatelský dočasný adresář v nastavení pluginu."
+
+#: core.php:3108
+msgid "PHP version"
+msgstr "Verze PHP"
+
+#: core.php:3114
+msgid "MySQL version"
+msgstr "Verze MySQL"
+
+#: core.php:3127
+msgid "You have an old version of CURL. Redirect detection may not work properly."
+msgstr "Máte starou verzi CURL. Detekce přesměrování nemusí fungovat správně."
+
+#: core.php:3139
+#: core.php:3155
+#: core.php:3160
+msgid "Not installed"
+msgstr "Nenainstalováno"
+
+#: core.php:3142
+msgid "CURL version"
+msgstr "Verze CURL"
+
+#: core.php:3148
+msgid "Installed"
+msgstr "Nainstalováno"
+
+#: core.php:3161
+msgid "You must have either CURL or Snoopy installed for the plugin to work!"
+msgstr "Musíte mít nainstalovaný buď CURL anebo Snoopy, aby plugin pracoval!"
+
+#: core.php:3172
+msgid "On"
+msgstr "Zapnuto"
+
+#: core.php:3173
+msgid "Redirects may be detected as broken links when safe_mode is on."
+msgstr "Když je safe_mode zapnutý, může být přesměrování detekováno jako nefunkční odkaz."
+
+#: core.php:3178
+#: core.php:3192
+msgid "Off"
+msgstr "Vypnuto"
+
+#: core.php:3186
+#, php-format
+msgid "On ( %s )"
+msgstr "Zapnuto ( %s )"
+
+#: core.php:3187
+msgid "Redirects may be detected as broken links when open_basedir is on."
+msgstr "Když je open_basedir zapnutý, může být přesměrování detekováno jako nefunkční odkaz."
+
+#: core.php:3206
+msgid "Can't create a lockfile. Please specify a custom temporary directory."
+msgstr "Nemůže být vytvořen zamykací soubor. Specifikujte uživatelský dočasný adresář, prosím."
+
+#: link-classes.php:212
+#, php-format
+msgid "First try : %d"
+msgstr "První pokus: %d"
+
+#: link-classes.php:214
+msgid "First try : 0 (No response)"
+msgstr "První pokus: 0 (žádná reakce)"
+
+#: link-classes.php:222
+msgid "Trying a second time with different settings..."
+msgstr "Zkouším podruhé s odlišným nastavením..."
+
+#: link-classes.php:237
+#, php-format
+msgid "Second try : %d"
+msgstr "Druhý pokus: %d"
+
+#: link-classes.php:239
+msgid "Second try : 0 (No response)"
+msgstr "Druhý pokus: 0 (žádná reakce)"
+
+#: link-classes.php:265
+msgid "Using Snoopy"
+msgstr "Používám Snoopy"
+
+#: link-classes.php:285
+msgid "Request timed out."
+msgstr "Žádost vypršela."
+
+#: link-classes.php:304
+msgid "Link is valid."
+msgstr "Odkaz je v pořádku."
+
+#: link-classes.php:309
+msgid "Link is broken."
+msgstr "Odkaz je nefunkční."
+
+#: link-classes.php:313
+msgid "Most likely the connection timed out or the domain doesn't exist."
+msgstr "S největší pravděpodobností vypršel časový limit nebo doména neexistuje."
+
+#: link-classes.php:354
+#, php-format
+msgid "Error adding link %s : %s"
+msgstr "Chyba přidávání odkazu: %s : %s"
+
+#: link-classes.php:374
+#, php-format
+msgid "Error updating link %d : %s"
+msgstr "Chyba aktualizace odkazu: %d : %s"
+
+#. Plugin Name of an extension
+msgid "Broken Link Checker"
+msgstr "Broken Link Checker"
+
+#. Plugin URI of an extension
+msgid "http://w-shadow.com/blog/2007/08/05/broken-link-checker-for-wordpress/"
+msgstr "http://w-shadow.com/blog/2007/08/05/broken-link-checker-for-wordpress/"
+
+#. Description of an extension
+msgid "Checks your posts for broken links and missing images and notifies you on the dashboard if any are found."
+msgstr "Kontroluje vaše příspěvky a hledá nefunkční odkazy a obrázky a upozorňuje vás na nástěnce, pokud jsou nějaké nalezeny."
+
+#. Author of an extension
+msgid "Janis Elsts"
+msgstr "Janis Elsts"
+
+#. Author URI of an extension
+msgid "http://w-shadow.com/blog/"
+msgstr "http://w-shadow.com/blog/"
+

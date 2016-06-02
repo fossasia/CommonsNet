@@ -1,0 +1,785 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: broken-link-checker\n"
+"Report-Msgid-Bugs-To: whiteshadow@w-shadow.com\n"
+"POT-Creation-Date: 2009-11-23 19:32+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Ashish <ashish@outshinesolutions.com>\n"
+"Language-Team: Outshine Solutions <pratyush.krishna@outshinesolutions.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: hindi\n"
+"X-Poedit-Country: india\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: core.php:133
+#: core.php:1564
+msgid "Loading..."
+msgstr "लोड हो रहा है ..."
+
+#: core.php:156
+#: core.php:593
+msgid "[ Network error ]"
+msgstr "[नेटवर्क त्रुटि]"
+
+#: core.php:181
+msgid "Automatically expand the widget if broken links have been detected"
+msgstr "स्वतः ही विजेट विस्तार अगर संपर्क टूटा पता लग गया है"
+
+#: core.php:365
+#: core.php:374
+#: core.php:404
+#: core.php:416
+#: core.php:990
+#: core.php:1019
+#: core.php:1068
+#, php-format
+msgid "Database error : %s"
+msgstr "डेटाबेस त्रुटि: %s"
+
+#: core.php:442
+msgid "Link Checker Settings"
+msgstr "लिंक परीक्षक सेटिंग्स"
+
+#: core.php:443
+msgid "Link Checker"
+msgstr "लिंक परीक्षक"
+
+#: core.php:449
+msgid "View Broken Links"
+msgstr "देखें टूटी कड़ियाँ"
+
+#: core.php:450
+#: core.php:881
+msgid "Broken Links"
+msgstr "टूटी कड़ियाँ"
+
+#: core.php:473
+msgid "Settings"
+msgstr "सेटिंग्स"
+
+#: core.php:557
+msgid "Broken Link Checker Options"
+msgstr "टूटी हुई लिंक परीक्षक विकल्प"
+
+#: core.php:570
+msgid "Status"
+msgstr "स्थिति"
+
+#: core.php:572
+#: core.php:812
+msgid "Show debug info"
+msgstr "दिखाएँ डिबग जानकारी"
+
+#: core.php:606
+msgid "Re-check all pages"
+msgstr "फिर से सभी पृष्ठों की जाँच"
+
+#: core.php:630
+msgid "Check each link"
+msgstr "एक लिंक की जाँच करें"
+
+#: core.php:635
+#, php-format
+msgid "Every %s hours"
+msgstr "हर %s घंटे "
+
+#: core.php:644
+msgid "Existing links will be checked this often. New links will usually be checked ASAP."
+msgstr "मौजूदा लिंक की इस बार जाँच की जाएगी. नई लिंक आमतौर ASAP की जाँच की जाएगी."
+
+#: core.php:651
+msgid "Broken link CSS"
+msgstr "टूटी हुई कड़ी सीएसएस"
+
+#: core.php:656
+msgid "Apply <em>class=\"broken_link\"</em> to broken links"
+msgstr " टूटी कड़ियों <em>class=\"broken_link\"</em>को  लागू करना  "
+
+#: core.php:668
+msgid "Removed link CSS"
+msgstr "हटाया लिंक  सीएसएस"
+
+#: core.php:673
+msgid "Apply <em>class=\"removed_link\"</em> to unlinked links"
+msgstr "लागू करना  <em>class=\"removed_link\"</em> लिंक को हटाया"
+
+#: core.php:685
+msgid "Exclusion list"
+msgstr "बहिष्करण सूची"
+
+#: core.php:686
+msgid "Don't check links where the URL contains any of these words (one per line) :"
+msgstr "लिंक की जाँच मत करो जहां यूआरएल इन शब्दों के किसी भी होता है"
+
+#: core.php:696
+msgid "Custom fields"
+msgstr "कस्टम क्षेत्र"
+
+#: core.php:697
+msgid "Check URLs entered in these custom fields (one per line) :"
+msgstr "जांच यूआरएल इन कस्टम क्षेत्रों में प्रवेश किया (प्रति पंक्ति एक):"
+
+#: core.php:708
+msgid "Advanced"
+msgstr "उन्नत"
+
+#: core.php:714
+msgid "Timeout"
+msgstr "मध्यांतर"
+
+#: core.php:720
+#: core.php:776
+#, php-format
+msgid "%s seconds"
+msgstr "%s सेकंड"
+
+#: core.php:729
+msgid "Links that take longer than this to load will be marked as broken."
+msgstr "लिंक है कि इस तरह से टूट के रूप में चिह्नित किया जाएगा लोड करने के लिए"
+
+#: core.php:738
+msgid "Custom temporary directory"
+msgstr "कस्टम अस्थायी निर्देशिका"
+
+#: core.php:747
+#: core.php:2511
+msgid "OK"
+msgstr "ठीक है"
+
+#: core.php:750
+msgid "Error : This directory isn't writable by PHP."
+msgstr "त्रुटि: इस निर्देशिका PHP द्वारा writable नहीं है."
+
+#: core.php:755
+msgid "Error : This directory doesn't exist."
+msgstr " त्रुटि: इस निर्देशिका में मौजूद नहीं है."
+
+#: core.php:763
+msgid "Set this field if you want the plugin to use a custom directory for its lockfiles. Otherwise, leave it blank."
+msgstr "क्षेत्र सेट करें यदि आप प्लगइन को अपनी lockfiles के लिए एक कस्टम निर्देशिका का उपयोग करना चाहता हूँ. अन्यथा, इसे खाली छोड़ दें."
+
+#: core.php:770
+msgid "Max. execution time"
+msgstr "मैक्स. निष्पादन समय"
+
+#: core.php:787
+msgid "The plugin works by periodically creating a background worker instance that parses your posts looking for links, checks the discovered URLs, and performs other time-consuming tasks. Here you can set for how long, at most, the background instance may run each time before stopping."
+msgstr "प्लगइन समय समय पर एक पृष्ठभूमि कार्यकर्ता मसलन बनाने कि parses अपने पोस्ट के लिए लिंक देख कर काम करता है, चेक की खोज यूआरएल, और समय लेने वाली अन्य कार्य करता है. यहाँ आप के लिए सेट कर सकते हैं कब तक, अधिक से अधिक , पृष्ठभूमि उदाहरण रोक से पहले हर बार चला सकते हैं."
+
+#: core.php:797
+msgid "Save Changes"
+msgstr "परिवर्तन सहेजें"
+
+#: core.php:810
+msgid "Hide debug info"
+msgstr "छिपाएँ डिबग जानकारी"
+
+#: core.php:880
+msgid "Broken"
+msgstr "टूटा हुआ"
+
+#: core.php:882
+msgid "No broken links found"
+msgstr "टूटी कड़ियाँ नहीं मिली "
+
+#: core.php:886
+msgid "Redirects"
+msgstr "पुनर्निर्देश"
+
+#: core.php:887
+msgid "Redirected Links"
+msgstr "लिंक भेजा गया "
+
+#: core.php:888
+msgid "No redirects found"
+msgstr " redirects नहीं मिला"
+
+#: core.php:893
+msgid "All"
+msgstr "सब"
+
+#: core.php:894
+msgid "Detected Links"
+msgstr "पता कड़ियाँ"
+
+#: core.php:895
+msgid "No links found (yet)"
+msgstr "कोई संबंध नहीं (अभी तक) मिला"
+
+#: core.php:922
+#: core.php:1033
+msgid "No links found for your query"
+msgstr "कोई लिंक आपकी क्वेरी के लिए नहीं मिला"
+
+#: core.php:970
+msgid "You must enter a filter name!"
+msgstr "एक फिल्टर का नाम दर्ज करना होगा!"
+
+#: core.php:974
+msgid "Invalid search query."
+msgstr "अमान्य खोज क्वेरी."
+
+#: core.php:985
+#, php-format
+msgid "Filter \"%s\" created"
+msgstr "फ़िल्टर  \"%s\"  निर्मित"
+
+#: core.php:1007
+msgid "Filter ID not specified."
+msgstr "फ़िल्टर निर्दिष्ट आईडी नहीं है."
+
+#: core.php:1016
+msgid "Filter deleted"
+msgstr "फ़िल्टर हटा दिया"
+
+#: core.php:1031
+#: core.php:1147
+msgid "Search"
+msgstr "खोज"
+
+#: core.php:1032
+msgid "Search Results"
+msgstr "खोज परिणाम"
+
+#: core.php:1131
+msgid "Save This Search As a Filter"
+msgstr "एक फ़िल्टर के रूप में यह खोज सहेजें"
+
+#: core.php:1141
+msgid "Delete This Filter"
+msgstr "हटाएँ यह फ़िल्टर"
+
+#: core.php:1157
+msgid "Link text"
+msgstr "कड़ी पाठ"
+
+#: core.php:1160
+#: core.php:1276
+msgid "URL"
+msgstr "यूआरएल"
+
+#: core.php:1163
+#: core.php:1865
+msgid "HTTP code"
+msgstr "HTTP कोड"
+
+#: core.php:1166
+msgid "Link status"
+msgstr "लिंक स्थिति"
+
+#: core.php:1182
+msgid "Link type"
+msgstr "लिंक प्रकार"
+
+#: core.php:1186
+msgid "Any"
+msgstr "कोई"
+
+#: core.php:1187
+msgid "Normal link"
+msgstr "सामान्य लिंक"
+
+#: core.php:1188
+#: core.php:1347
+msgid "Image"
+msgstr "छवि"
+
+#: core.php:1189
+#: core.php:1358
+msgid "Custom field"
+msgstr "कस्टम क्षेत्र"
+
+#: core.php:1190
+#: core.php:1366
+msgid "Bookmark"
+msgstr "बुकमार्क"
+
+#: core.php:1203
+msgid "Search Links"
+msgstr "खोज कड़ियाँ"
+
+#: core.php:1204
+#: core.php:1399
+msgid "Cancel"
+msgstr "रद्द करें"
+
+#: core.php:1245
+msgid "&laquo;"
+msgstr "&laquo;"
+
+#: core.php:1246
+msgid "&raquo;"
+msgstr "&raquo;"
+
+#: core.php:1253
+#: core.php:1429
+#, php-format
+msgid "Displaying %s&#8211;%s of <span class=\"current-link-count\">%s</span>"
+msgstr "प्रदर्शित %s&#8211;%s of <span class=\"current-link-count\">%s</span>"
+
+#: core.php:1273
+msgid "Source"
+msgstr "स्रोत"
+
+#: core.php:1275
+msgid "Link Text"
+msgstr "कड़ी पाठ"
+
+#: core.php:1302
+#: core.php:1308
+msgid "Edit this post"
+msgstr "इस पोस्ट को संपादित करें"
+
+#: core.php:1308
+#: core.php:1323
+msgid "Edit"
+msgstr "संपादित करें"
+
+#: core.php:1309
+msgid "Delete this post"
+msgstr "इस पोस्ट को हटाना"
+
+#: core.php:1309
+#, php-format
+msgid ""
+"You are about to delete this post '%s'\n"
+" 'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"तुम्हारे बारे में इस पद को नष्ट कर रहे हैं '%s'\n"
+"  'Cancel' बंद के लिए  'OK' नष्ट करने के लिए'."
+
+#: core.php:1309
+#: core.php:1324
+msgid "Delete"
+msgstr "मिटाना"
+
+#: core.php:1311
+#, php-format
+msgid "View \"%s\""
+msgstr "दृश्य \"%s\""
+
+#: core.php:1311
+msgid "View"
+msgstr "दृश्य"
+
+#: core.php:1318
+#: core.php:1323
+msgid "Edit this bookmark"
+msgstr "इस बुकमार्क को संपादित करें"
+
+#: core.php:1324
+#, php-format
+msgid ""
+"You are about to delete this link '%s'\n"
+"  'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"तुम्हारे बारे में इस लिंक को नष्ट कर रहे हैं '%s'\n"
+" 'Cancel' बंद के लिए  'OK' नष्ट करने के लिए'."
+
+#: core.php:1333
+msgid "[An orphaned link! This is a bug.]"
+msgstr "[एक अनाथ लिंक! यह एक बग है.]"
+
+#: core.php:1381
+msgid "Show more info about this link"
+msgstr "दिखाएँ इस लिंक के बारे में अधिक जानकारी"
+
+#: core.php:1381
+#: core.php:2804
+msgid "Details"
+msgstr "विवरण"
+
+#: core.php:1383
+msgid "Remove this link from all posts"
+msgstr "सभी पदों से इस लिंक निकालें"
+
+#: core.php:1384
+#: core.php:1651
+msgid "Unlink"
+msgstr "उतारना"
+
+#: core.php:1387
+#: core.php:1681
+#: core.php:1692
+msgid "Excluded"
+msgstr "अपवर्जित"
+
+#: core.php:1389
+msgid "Add this URL to the exclusion list"
+msgstr "अपवर्जन सूची में इस URL जोड़ें"
+
+#: core.php:1390
+#: core.php:1695
+msgid "Exclude"
+msgstr "बाहर निकालें"
+
+#: core.php:1393
+msgid "Edit link URL"
+msgstr "संपादित करें कड़ी यूआरएल"
+
+#: core.php:1393
+#: core.php:1592
+#: core.php:1620
+msgid "Edit URL"
+msgstr "संपादित करें URL"
+
+#: core.php:1399
+msgid "Cancel URL editing"
+msgstr "रद्द यूआरएल संपादन"
+
+#: core.php:1413
+msgid "Remove this link from the list of broken links and mark it as valid"
+msgstr "टूटी कड़ियों की सूची से  लिंक निकालें और उसे मान्य के रूप में चिह्नित करो"
+
+#: core.php:1415
+#: core.php:1484
+msgid "Discard"
+msgstr "रद्द करें"
+
+#: core.php:1460
+#: core.php:1627
+#: core.php:1664
+msgid "Wait..."
+msgstr "प्रतीक्षा करें ..."
+
+#: core.php:1518
+msgid "Save URL"
+msgstr "सहेजें यूआरएल"
+
+#: core.php:1528
+msgid "Saving changes..."
+msgstr "बचत परिवर्तन ..."
+
+#: core.php:1740
+msgid "Enter a name for the new custom filter"
+msgstr "नए कस्टम फ़िल्टर के लिए एक नाम दर्ज करें"
+
+#: core.php:1751
+msgid ""
+"You are about to delete the current filter.\n"
+"'Cancel' to stop, 'OK' to delete"
+msgstr ""
+"आप वर्तमान फ़िल्टर को नष्ट कर रहे हैं.\n"
+" 'Cancel' बंद के लिए  'OK' नष्ट करने के लिए'."
+
+#: core.php:1842
+msgid "Log"
+msgstr "प्रवेश करें"
+
+#: core.php:1850
+msgid "Post published on"
+msgstr "पर प्रकाशित पोस्ट"
+
+#: core.php:1855
+msgid "Link last checked"
+msgstr "पिछले जाँच लिंक"
+
+#: core.php:1859
+msgid "Never"
+msgstr "कभी नहीं"
+
+#: core.php:1870
+msgid "Response time"
+msgstr "प्रतिक्रिया समय"
+
+#: core.php:1872
+#, php-format
+msgid "%2.3f seconds"
+msgstr "%2.3f सेकंड"
+
+#: core.php:1875
+msgid "Final URL"
+msgstr "अंतिम यूआरएल"
+
+#: core.php:1880
+msgid "Redirect count"
+msgstr "पुनर्निर्देशन गिनती"
+
+#: core.php:1885
+msgid "Instance count"
+msgstr "उदाहरण के गिनती"
+
+#: core.php:1894
+#, php-format
+msgid "This link has failed %d time."
+msgid_plural "This link has failed %d times."
+msgstr[0] "इस कड़ी %d समय में नाकाम रही है."
+msgstr[1] "इस कड़ी %d समय में नाकाम रही है."
+
+#: core.php:2299
+#: core.php:2629
+msgid "This link wasn't checked because a matching keyword was found on your exclusion list."
+msgstr "इस लिंक की जाँच नहीं हुयी थी क्योंकि एक खोजशब्द मिलान आपके अपवर्जन सूची पर पाया गया था."
+
+#: core.php:2341
+msgid "View broken links"
+msgstr "देखें टूटी कड़ियाँ"
+
+#: core.php:2342
+#, php-format
+msgid "Found %d broken link"
+msgid_plural "Found %d broken links"
+msgstr[0] "पाया %d टूटे लिंक"
+msgstr[1] "पाया %d टूटे लिंक"
+
+#: core.php:2348
+msgid "No broken links found."
+msgstr "टूटी कड़ियाँ  नहीं मिली  "
+
+#: core.php:2355
+#, php-format
+msgid "%d URL in the work queue"
+msgid_plural "%d URLs in the work queue"
+msgstr[0] "काम कतार में यूआरएल %d "
+msgstr[1] "काम कतार में यूआरएल %d "
+
+#: core.php:2358
+msgid "No URLs in the work queue."
+msgstr "काम कतार में यूआरएल नहीं"
+
+#: core.php:2364
+#, php-format
+msgid "Detected %d unique URL"
+msgid_plural "Detected %d unique URLs"
+msgstr[0] "पता %d अद्वितीय यूआरएल"
+msgstr[1] "पता %d अद्वितीय यूआरएल"
+
+#: core.php:2365
+#, php-format
+msgid "in %d link"
+msgid_plural "in %d links"
+msgstr[0] "%d  में कड़ी "
+msgstr[1] "%d  में कड़ी "
+
+#: core.php:2370
+msgid "and still searching..."
+msgstr "और अभी भी खोज रहा है ..."
+
+#: core.php:2376
+msgid "Searching your blog for links..."
+msgstr "संपर्क के लिए अपने ब्लॉग को खोज रहा है ..."
+
+#: core.php:2378
+msgid "No links detected."
+msgstr "कोई संबंध नहीं पाया."
+
+#: core.php:2450
+#: core.php:2482
+#: core.php:2525
+#: core.php:2606
+msgid "You're not allowed to do that!"
+msgstr "तुम करने की अनुमति नहीं हैं कि!"
+
+#: core.php:2458
+#: core.php:2492
+#: core.php:2535
+#: core.php:2616
+#, php-format
+msgid "Oops, I can't find the link %d"
+msgstr "उफ़, मैं कड़ी %d  नहीं मिल रहा "
+
+#: core.php:2466
+msgid "This link was manually marked as working by the user."
+msgstr "यह लिंक मैन्युअल रूप से उपयोगकर्ता द्वारा कार्य के रूप में चिह्नित किया गया."
+
+#: core.php:2472
+msgid "Oops, couldn't modify the link!"
+msgstr "उप्स, कड़ी को संशोधित नहीं कर सकता!"
+
+#: core.php:2475
+#: core.php:2552
+msgid "Error : link_id not specified"
+msgstr "त्रुटि: निर्दिष्ट नहीं link_id"
+
+#: core.php:2499
+msgid "Oops, the new URL is invalid!"
+msgstr "उफ़, नया URL अवैध है!"
+
+#: core.php:2508
+msgid "An unexpected error occured!"
+msgstr "एक अनपेक्षित त्रुटि हो गई!"
+
+#: core.php:2517
+msgid "Error : link_id or new_url not specified"
+msgstr "त्रुटि: निर्दिष्ट नहीं link_id या new_url"
+
+#: core.php:2542
+#, php-format
+msgid "URL %s was removed."
+msgstr "यूआरएल% s हटा दिया गया."
+
+#: core.php:2546
+msgid "The plugin failed to remove the link."
+msgstr "प्लगइन का लिंक हटा विफल रहे."
+
+#: core.php:2561
+msgid "You don't have sufficient privileges to access this information!"
+msgstr "तुम पर्याप्त विशेषाधिकार के लिए इस जानकारी का उपयोग नहीं है!"
+
+#: core.php:2574
+msgid "Error : link ID not specified"
+msgstr "त्रुटि: लिंक आईडी निर्दिष्ट नहीं है "
+
+#: core.php:2598
+#, php-format
+msgid "Failed to load link details (%s)"
+msgstr "लिंक जानकारी लोड करने में विफल (%s)"
+
+#: core.php:2636
+#, php-format
+msgid "URL %s added to the exclusion list"
+msgstr "यूआरएल %s अपवर्जन सूची में शामिल "
+
+#: core.php:2640
+msgid "Link ID not specified"
+msgstr "लिंक आईडी निर्दिष्ट नहीं"
+
+#: core.php:2790
+#, php-format
+msgid "The current temporary directory is not accessible; please <a href=\"%s\">set a different one</a>."
+msgstr "वर्तमान अस्थायी निर्देशिका उपलब्ध नहीं है;, कृपया <a href=\"%s\">दूसरी तरह की डालो </a>."
+
+#: core.php:2795
+#, php-format
+msgid "Please make the directory <code>%1$s</code> writable by plugins or <a href=\"%2$s\">set a custom temporary directory</a>."
+msgstr "कृपया निर्देशिका बनाना <code>%1$s</code>  plugins द्वारा writable या  <a href=\"%2$s\">एक कस्टम अस्थायी निर्देशिका सेट करे </a>. "
+
+#: core.php:2802
+msgid "Broken Link Checker can't create a lockfile."
+msgstr "टूटी हुई लिंक परीक्षक एक lockfile नहीं बना सकते."
+
+#: core.php:2807
+msgid "The plugin uses a file-based locking mechanism to ensure that only one instance of the resource-heavy link checking algorithm is running at any given time. Unfortunately, BLC can't find a writable directory where it could store the lockfile - it failed to detect the location of your server's temporary directory, and the plugin's own directory isn't writable by PHP. To fix this problem, please make the plugin's directory writable or enter a specify a custom temporary directory in the plugin's settings."
+msgstr "प्लगइन एक फ़ाइल पर आधारित व्यवस्था का उपयोग करता है, यह सुनिश्चित करने के लिए की केवल संसाधनों में से एक उदाहरण भारी कड़ी जाँच एल्गोरिथ्म पर एक निश्चित समय में चल रहा है. दुर्भाग्य से, BLC को एक writable निर्देशिका नहीं मिल रही है जहां यह lockfile  स्टोर सकता है--यह आपके सर्वर अस्थायी निर्देशिका के स्थान का पता लगाने में विफल रहे, और है ही प्लगइन निर्देशिका PHP द्वारा writable नहीं है. इस समस्या को ठीक करने के लिए,कृपया प्लगइन निर्देशिका writable बनाये.  या एक प्लगइन  सेटिंग्स में एक कस्टम निर्दिष्ट अस्थायी निर्देशिका दर्ज करें.      "
+
+#: core.php:2827
+msgid "PHP version"
+msgstr "PHP संस्करण"
+
+#: core.php:2833
+msgid "MySQL version"
+msgstr "MySQL संस्करण"
+
+#: core.php:2846
+msgid "You have an old version of CURL. Redirect detection may not work properly."
+msgstr "तुम पास कर्ल के एक पुराने संस्करण है. पुनर्निर्देशन detection  ठीक से काम नहीं कर सकते हैं."
+
+#: core.php:2858
+#: core.php:2874
+#: core.php:2879
+msgid "Not installed"
+msgstr "नहीं स्थापित"
+
+#: core.php:2861
+msgid "CURL version"
+msgstr "कर्ल संस्करण"
+
+#: core.php:2867
+msgid "Installed"
+msgstr "स्थापित"
+
+#: core.php:2880
+msgid "You must have either CURL or Snoopy installed for the plugin to work!"
+msgstr "तुम  या तो कर्ल या Snoopy प्लगइन काम करने के लिए स्थापित होगा!"
+
+#: core.php:2891
+msgid "On"
+msgstr "पर"
+
+#: core.php:2892
+msgid "Redirects may be detected as broken links when safe_mode is on."
+msgstr "पुनर्निर्देश टूटी कड़ियों के रूप में पाया जा सकता है जब safe_mode पर है."
+
+#: core.php:2897
+#: core.php:2911
+msgid "Off"
+msgstr "बंद"
+
+#: core.php:2905
+#, php-format
+msgid "On ( %s )"
+msgstr "पर ( %s )"
+
+#: core.php:2906
+msgid "Redirects may be detected as broken links when open_basedir is on."
+msgstr "पुनर्निर्देश टूटी कड़ियों के रूप में पाया जा सकता है जब open_basedir पर है."
+
+#: core.php:2925
+msgid "Can't create a lockfile. Please specify a custom temporary directory."
+msgstr " lockfile नहीं बना सकते. कृपया कोई कस्टम अस्थायी निर्देशिका निर्दिष्ट करें."
+
+#: link-classes.php:212
+#, php-format
+msgid "First try : %d"
+msgstr "पहला प्रयास करें:  %d"
+
+#: link-classes.php:214
+msgid "First try : 0 (No response)"
+msgstr "पहला प्रयास करें: : 0 (कोई जवाब नहीं)"
+
+#: link-classes.php:222
+msgid "Trying a second time with different settings..."
+msgstr "विभिन्न सेटिंग्स के साथ एक दूसरी बार कोशिश करे ..."
+
+#: link-classes.php:237
+#, php-format
+msgid "Second try : %d"
+msgstr "दूसरा प्रयास करें:  %d"
+
+#: link-classes.php:239
+msgid "Second try : 0 (No response)"
+msgstr "दूसरा प्रयास करें:0 (कोई जवाब नहीं)"
+
+#: link-classes.php:265
+msgid "Using Snoopy"
+msgstr "Snoopy का उपयोग कर "
+
+#: link-classes.php:285
+msgid "Request timed out."
+msgstr "अनुरोध का समय समाप्त हो."
+
+#: link-classes.php:304
+msgid "Link is valid."
+msgstr "लिंक मान्य है."
+
+#: link-classes.php:309
+msgid "Link is broken."
+msgstr "लिंक टूटी हुई है."
+
+#: link-classes.php:313
+msgid "Most likely the connection timed out or the domain doesn't exist."
+msgstr "सबसे कनेक्शन का समय समाप्त हो जाने की संभावना या डोमेन मौजूद नहीं है."
+
+#: link-classes.php:354
+#, php-format
+msgid "Error adding link %s : %s"
+msgstr "त्रुटि जोड़ने लिंक  %s : %s"
+
+#: link-classes.php:374
+#, php-format
+msgid "Error updating link %d : %s"
+msgstr "त्रुटि अद्यतन कड़ी %d : %s"
+
+#. Plugin Name of an extension
+msgid "Broken Link Checker"
+msgstr "टूटी हुई लिंक परीक्षक"
+
+#. Plugin URI of an extension
+msgid "http://w-shadow.com/blog/2007/08/05/broken-link-checker-for-wordpress/"
+msgstr "http://w-shadow.com/blog/2007/08/05/broken-link-checker-for-wordpress/"
+
+#. Description of an extension
+msgid "Checks your posts for broken links and missing images and notifies you on the dashboard if any are found."
+msgstr "टूटी कड़ियों के लिए अपने पदों चेक करे और खोयी हुयी छवियाँ और तुम्हे  डैशबोर्ड पर सूचित करता है अगर कोई भी पाए जाते हैं."
+
+#. Author of an extension
+msgid "Janis Elsts"
+msgstr "प्रत्युष कृष्ण "
+
+#. Author URI of an extension
+msgid "http://w-shadow.com/blog/"
+msgstr "http://w-shadow.com/blog/"
+

@@ -1,0 +1,1754 @@
+# This file is distributed under the same license as the Broken Link Checker package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Broken Link Checker 1.8\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/broken-link-checker\n"
+"POT-Creation-Date: 2013-06-23 07:51:56+00:00\n"
+"PO-Revision-Date: 2013-08-10 10:02+0200\n"
+"Last-Translator: Janis Elsts <whiteshadow@w-shadow.com>\n"
+"Language-Team: LANGUAGE Connect <rjalali@languageconnect.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"Language: Hungarian\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: core/core.php:151 includes/admin/links-page-js.php:37
+msgid "Loading..."
+msgstr "Betöltés folyamatban..."
+
+#: core/core.php:175 includes/admin/options-page-js.php:18
+msgid "[ Network error ]"
+msgstr "[ Hálózati hiba ]"
+
+#: core/core.php:202
+msgid "Automatically expand the widget if broken links have been detected"
+msgstr "Vezérlő automatikus kibontása nem működő hivatkozás észlelése esetén"
+
+#: core/core.php:292
+msgid "Link Checker Settings"
+msgstr "Link Checker beállítása"
+
+#: core/core.php:293
+msgid "Link Checker"
+msgstr "Link Checker"
+
+#: core/core.php:298 includes/link-query.php:27
+msgid "Broken Links"
+msgstr "Nem működő hivatkozások"
+
+#: core/core.php:314
+msgid "View Broken Links"
+msgstr "Nem működő hivatkozások megtekintése"
+
+#: core/core.php:329
+msgid "Feedback"
+msgstr "Visszajelzés"
+
+#: core/core.php:337
+msgid "Go to Broken Links"
+msgstr "Ugrás a nem működő hivatkozásokhoz"
+
+#: core/core.php:366
+msgid "Settings"
+msgstr "Beállítások"
+
+#: core/core.php:533
+msgid "Settings saved."
+msgstr "Beállítások elmentve."
+
+#: core/core.php:539
+msgid "Thank you for your donation!"
+msgstr "Köszönjük adományát!"
+
+#: core/core.php:547
+msgid "Complete site recheck started."
+msgstr "Teljes oldal-újraellenőrzés elindítva."
+
+#: core/core.php:556
+msgid "Details"
+msgstr "Részletek"
+
+#: core/core.php:570
+msgid "General"
+msgstr "Általános"
+
+#: core/core.php:571
+msgid "Look For Links In"
+msgstr "Hivatkozások keresési helye"
+
+#: core/core.php:572
+msgid "Which Links To Check"
+msgstr "Ellenőrzendő hivatkozások"
+
+#: core/core.php:573
+msgid "Protocols & APIs"
+msgstr "Protokollok és API-k"
+
+#: core/core.php:574
+msgid "Advanced"
+msgstr "Haladó"
+
+#: core/core.php:589
+msgid "Broken Link Checker Options"
+msgstr "Nem működő hivatkozások ellenőrzési beállításai"
+
+#: core/core.php:631 includes/admin/table-printer.php:197
+msgid "Status"
+msgstr "Állapot"
+
+#: core/core.php:633 includes/admin/options-page-js.php:56
+msgid "Show debug info"
+msgstr "Hibakeresési adatok megjelenítése"
+
+#: core/core.php:661
+msgid "Check each link"
+msgstr "Minden egyes hivatkozás ellenőrzése"
+
+#: core/core.php:666
+msgid "Every %s hours"
+msgstr "%s óránként"
+
+#: core/core.php:675
+msgid ""
+"Existing links will be checked this often. New links will usually be checked "
+"ASAP."
+msgstr ""
+"A meglévő hivatkozások ilyen gyakran lesznek ellenőrizve. Az új "
+"hivatkozásokat általában azonnal ellenőrzi a rendszer."
+
+#: core/core.php:682
+msgid "E-mail notifications"
+msgstr "E-mail értesítések"
+
+#: core/core.php:688
+msgid "Send me e-mail notifications about newly detected broken links"
+msgstr ""
+"E-mail értesítéseket kérek magamnak az újonnan észlelt nem működő "
+"hivatkozásokról"
+
+#: core/core.php:696
+msgid "Send authors e-mail notifications about broken links in their posts"
+msgstr ""
+"E-mail értesítéseket kérek a szerzőknek a bejegyzéseikben újonnan észlelt "
+"nem működő hivatkozásokról"
+
+#: core/core.php:703
+msgid "Notification e-mail address"
+msgstr "Értesítési e-mail cím"
+
+#: core/core.php:715
+msgid ""
+"Leave empty to use the e-mail address specified in Settings &rarr; General."
+msgstr ""
+"Hagyja üresen, ha a Beállítások &rarr; Általános menüben megadott e-mail "
+"címet szeretné használni."
+
+#: core/core.php:722
+msgid "Link tweaks"
+msgstr "Hivatkozás-finomhangolás"
+
+#: core/core.php:728
+msgid "Apply custom formatting to broken links"
+msgstr "Egyedi formázás alkalmazása a nem működő hivatkozásokra"
+
+#: core/core.php:732 core/core.php:763
+msgid "Edit CSS"
+msgstr "CSS szerkesztése"
+
+#: core/core.php:748
+msgid "Example : Lorem ipsum <a %s>broken link</a>, dolor sit amet."
+msgstr "Például: Lorem ipsum <a %s>nem működő hivatkozás</a>, dolor sit amet."
+
+#: core/core.php:751 core/core.php:782
+msgid "Click \"Save Changes\" to update example output."
+msgstr ""
+"A példakimenet frissítéséhez kattintson a \"Módosítások mentése\" "
+"lehetőségre."
+
+#: core/core.php:759
+msgid "Apply custom formatting to removed links"
+msgstr "Egyedi formázás alkalmazása az eltávolított hivatkozásokra"
+
+#: core/core.php:779
+msgid "Example : Lorem ipsum <span %s>removed link</span>, dolor sit amet."
+msgstr ""
+"Például: Lorem ipsum <span %s>eltávolított hivatkozás</span>, dolor sit amet."
+
+#: core/core.php:792
+msgid "Stop search engines from following broken links"
+msgstr "Keresőmotorok általi követés leállítása nem működő hivatkozások esetén"
+
+#: core/core.php:809
+msgid "Look for links in"
+msgstr "Hivatkozások keresési helye"
+
+#: core/core.php:820
+msgid "Post statuses"
+msgstr "Bejegyzésállapotok"
+
+#: core/core.php:853
+msgid "Link types"
+msgstr "Hivatkozástípusok"
+
+#: core/core.php:859
+msgid "Error : All link parsers missing!"
+msgstr "Hiba: Minden hivatkozáselemző hiányzik!"
+
+#: core/core.php:866
+msgid "Exclusion list"
+msgstr "Kivétellista"
+
+#: core/core.php:867
+msgid ""
+"Don't check links where the URL contains any of these words (one per line) :"
+msgstr ""
+"Hivatkozások ellenőrzésének mellőzése, ahol az URL a következő szavak "
+"(soronként egyet írjon) bármelyikét tartalmazza:"
+
+#: core/core.php:885
+msgid "Check links using"
+msgstr "Hivatkozások ellenőrzése a következő használatával:"
+
+#: core/core.php:904 includes/links.php:856
+msgid "Timeout"
+msgstr "Időtúllépés"
+
+#: core/core.php:910 core/core.php:979 core/core.php:2823
+msgid "%s seconds"
+msgstr "%s másodperc"
+
+#: core/core.php:919
+msgid "Links that take longer than this to load will be marked as broken."
+msgstr ""
+"Az ennél hosszabb idő alatt betöltő hivatkozások nem működőként lesznek "
+"jelölve."
+
+#: core/core.php:926
+msgid "Link monitor"
+msgstr "Hivatkozásfelügyelő"
+
+#: core/core.php:934
+msgid "Run continuously while the Dashboard is open"
+msgstr "Fut, ha a kezelőpanel meg van nyitva"
+
+#: core/core.php:942
+msgid "Run hourly in the background"
+msgstr "Óránként fut a háttérben"
+
+#: core/core.php:950
+msgid "Show the dashboard widget for"
+msgstr "A kezelőpaneli vezérlő megjelenítése a következőre:"
+
+#: core/core.php:955
+msgid "Administrator"
+msgstr "Rendszergazda"
+
+#: core/core.php:956
+msgid "Editor and above"
+msgstr "Szerkesztő és afeletti"
+
+#: core/core.php:957
+msgid "Nobody (disables the widget)"
+msgstr "Senki (a vezérlő letiltása)"
+
+#: core/core.php:973
+msgid "Max. execution time"
+msgstr "Max. végrehajtási idő"
+
+#: core/core.php:990
+msgid ""
+"The plugin works by periodically launching a background job that parses your "
+"posts for links, checks the discovered URLs, and performs other time-"
+"consuming tasks. Here you can set for how long, at most, the link monitor "
+"may run each time before stopping."
+msgstr ""
+"A bővítmény rendszeres időközönként háttérben futó feladatot indít az Ön "
+"bejegyzéseiben található hivatkozások elemzésére, ellenőrzi a talált URL "
+"címeket, és további időigényes feladatokat hajt végre. Itt beállíthatja, "
+"hogy hivatkozásonként legfeljebb mennyi ideig fusson a hivatkozásfelügyelő, "
+"mielőtt le lenne állítva."
+
+#: core/core.php:999
+msgid "Server load limit"
+msgstr "Kiszolgálóterhelési korlát"
+
+#: core/core.php:1014
+msgid "Current load : %s"
+msgstr "Jelenlegi terhelés: %s"
+
+#: core/core.php:1019
+msgid ""
+"Link checking will be suspended if the average <a href=\"%s\">server load</"
+"a> rises above this number. Leave this field blank to disable load limiting."
+msgstr ""
+"A hivatkozásellenőrzés fel lesz függesztve, ha az átlagos <a href=\"%s"
+"\">kiszolgálóterhelés</a> efölé az érték fölé nő. A terheléskorlátozás "
+"funkció letiltásához hagyja üresen ezt a mezőt."
+
+#: core/core.php:1028
+msgid "Not available"
+msgstr "Nem áll rendelkezésre"
+
+#: core/core.php:1030
+msgid ""
+"Load limiting only works on Linux-like systems where <code>/proc/loadavg</"
+"code> is present and accessible."
+msgstr ""
+"A terheléskorlátozás csak olyan Linuxhoz hasonló rendszereknél működik, ahol "
+"a <code>proc/loadavg</code> megtalálható és hozzáférhető."
+
+#: core/core.php:1038
+msgid "Forced recheck"
+msgstr "Kényszerített újraellenőrzés"
+
+#: core/core.php:1041
+msgid "Re-check all pages"
+msgstr "Minden oldal újraellenőrzése"
+
+#: core/core.php:1045
+msgid ""
+"The \"Nuclear Option\". Click this button to make the plugin empty its link "
+"database and recheck the entire site from scratch."
+msgstr ""
+"Az \"atombomba megoldás\". Erre a gombra kattintva a bővítmény kiüríti "
+"hivatkozás-adatbázisát, és a teljes oldalt nulláról újraellenőrzi."
+
+#: core/core.php:1056
+msgid "Save Changes"
+msgstr "Módosítások mentése"
+
+#: core/core.php:1107
+msgid "Configure"
+msgstr "Beállítás"
+
+#: core/core.php:1189
+msgid "Check URLs entered in these custom fields (one per line) :"
+msgstr ""
+"Az ezekbe az egyedi mezőkbe beírt URL címek (soronként egyet adjon meg) "
+"ellenőrzése:"
+
+#: core/core.php:1317 core/core.php:1399 core/core.php:1431
+msgid "Database error : %s"
+msgstr "Adatbázishiba : %s"
+
+#: core/core.php:1381
+msgid "You must enter a filter name!"
+msgstr "Be kell írnia egy szűrőnevet!"
+
+#: core/core.php:1385
+msgid "Invalid search query."
+msgstr "Érvénytelen keresési lekérdezés."
+
+#: core/core.php:1394
+msgid "Filter \"%s\" created"
+msgstr "\"%s\" szűrő létrehozva"
+
+#: core/core.php:1421
+msgid "Filter ID not specified."
+msgstr "Szűrőazonosító nincs meghatározva."
+
+#: core/core.php:1428
+msgid "Filter deleted"
+msgstr "Szűrő törölve"
+
+#: core/core.php:1475
+msgid "Replaced %d redirect with a direct link"
+msgid_plural "Replaced %d redirects with direct links"
+msgstr[0] "%d átirányítás közvetlen hivatkozásra lett cserélve"
+msgstr[1] "%d átirányítás közvetlen hivatkozásra lett cserélve"
+
+#: core/core.php:1486
+msgid "Failed to fix %d redirect"
+msgid_plural "Failed to fix %d redirects"
+msgstr[0] "%d átirányítás javítása nem sikerült"
+msgstr[1] "%d átirányítás javítása nem sikerült"
+
+#: core/core.php:1497
+msgid "None of the selected links are redirects!"
+msgstr "A kiválasztott hivatkozások egyike sem átirányítás!"
+
+#: core/core.php:1575
+msgid "%d link updated."
+msgid_plural "%d links updated."
+msgstr[0] "%d hivatkozás frissítve lett."
+msgstr[1] "%d hivatkozás frissítve lett."
+
+#: core/core.php:1586
+msgid "Failed to update %d link."
+msgid_plural "Failed to update %d links."
+msgstr[0] "%d hivatkozás frissítése nem sikerült."
+msgstr[1] "%d hivatkozás frissítése nem sikerült."
+
+#: core/core.php:1640
+msgid "%d link removed"
+msgid_plural "%d links removed"
+msgstr[0] "%d hivatkozás el lett távolítva"
+msgstr[1] "%d hivatkozás el lett távolítva"
+
+#: core/core.php:1651
+msgid "Failed to remove %d link"
+msgid_plural "Failed to remove %d links"
+msgstr[0] "%d hivatkozás eltávolítása nem sikerült"
+msgstr[1] "%d hivatkozás eltávolítása nem sikerült"
+
+#: core/core.php:1760
+msgid ""
+"%d item was skipped because it can't be moved to the Trash. You need to "
+"delete it manually."
+msgid_plural ""
+"%d items were skipped because they can't be moved to the Trash. You need to "
+"delete them manually."
+msgstr[0] ""
+"%d elem ki lett hagyva, mert nem helyezhető át a Lomtárba. A törlést kézileg "
+"kell elvégezni."
+msgstr[1] ""
+"%d elem ki lett hagyva, mert nem helyezhetők át a Lomtárba. A törlést "
+"kézileg kell elvégezni."
+
+#: core/core.php:1782
+msgid "Didn't find anything to delete!"
+msgstr "Nem található törlendő elem."
+
+#: core/core.php:1810
+msgid "%d link scheduled for rechecking"
+msgid_plural "%d links scheduled for rechecking"
+msgstr[0] "%d hivatkozás újraellenőrzése van beütemezve"
+msgstr[1] "%d hivatkozás újraellenőrzése van beütemezve"
+
+#: core/core.php:1856 core/core.php:2465
+msgid "This link was manually marked as working by the user."
+msgstr "Ezt a hivatkozást a felhasználó kézileg működőnek jelölte."
+
+#: core/core.php:1863
+msgid "Couldn't modify link %d"
+msgstr "%d hivatkozás nem módosítható"
+
+#: core/core.php:1873
+msgid "%d link marked as not broken"
+msgid_plural "%d links marked as not broken"
+msgstr[0] "%d hivatkozás működőnek lett jelölve"
+msgstr[1] "%d hivatkozás működőnek lett jelölve"
+
+#: core/core.php:1913
+msgid "Table columns"
+msgstr "Táblázatoszlopok"
+
+#: core/core.php:1932
+msgid "Show on screen"
+msgstr "Képernyőn való megjelenítés"
+
+#: core/core.php:1939
+msgid "links"
+msgstr "hivatkozások"
+
+#: core/core.php:1940 includes/admin/table-printer.php:165
+msgid "Apply"
+msgstr "Alkalmazás"
+
+#: core/core.php:1944
+msgid "Misc"
+msgstr "Egyéb"
+
+#: core/core.php:1959
+msgid "Highlight links broken for at least %s days"
+msgstr "Hivatkozások nem működőnek jelölése legalább %s napig"
+
+#: core/core.php:1968
+msgid "Color-code status codes"
+msgstr "Színkódos állapotkódok"
+
+#: core/core.php:1985 core/core.php:2450 core/core.php:2490 core/core.php:2523
+#: core/core.php:2586
+msgid "You're not allowed to do that!"
+msgstr "Erre nem rendelkezik jogosultsággal!"
+
+#: core/core.php:2320
+msgid "View broken links"
+msgstr "Nem működő hivatkozások megjelenítése"
+
+#: core/core.php:2321
+msgid "Found %d broken link"
+msgid_plural "Found %d broken links"
+msgstr[0] "A rendszer %d nem működő hivatkozást talált"
+msgstr[1] "A rendszer %d nem működő hivatkozást talált"
+
+#: core/core.php:2327
+msgid "No broken links found."
+msgstr "A rendszer nem talált nem működő hivatkozást."
+
+#: core/core.php:2334
+msgid "%d URL in the work queue"
+msgid_plural "%d URLs in the work queue"
+msgstr[0] "%d URL cím a munkasorban"
+msgstr[1] "%d URL cím a munkasorban"
+
+#: core/core.php:2337
+msgid "No URLs in the work queue."
+msgstr "Nincs URL cím a munkasorban."
+
+#: core/core.php:2343
+msgid "%d unique URL"
+msgid_plural "%d unique URLs"
+msgstr[0] "%d egyedi URL-cím"
+msgstr[1] "%d egyedi URL-cím"
+
+#: core/core.php:2347
+msgid "%d link"
+msgid_plural "%d links"
+msgstr[0] "%d hivatkozás"
+msgstr[1] "%d hivatkozás"
+
+#: core/core.php:2353
+msgid "Detected %1$s in %2$s and still searching..."
+msgstr "%1$s/%2$s észlelve, és a keresésnek még nincs vége..."
+
+#: core/core.php:2359
+msgid "Detected %1$s in %2$s."
+msgstr "%1$s/%2$s észlelve."
+
+#: core/core.php:2366
+msgid "Searching your blog for links..."
+msgstr "Hivatkozáskeresés az Ön blogjában folyamatban..."
+
+#: core/core.php:2368
+msgid "No links detected."
+msgstr "A rendszer nem talált hivatkozást."
+
+#: core/core.php:2394
+msgctxt "current load"
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#: core/core.php:2458 core/core.php:2498 core/core.php:2533 core/core.php:2596
+msgid "Oops, I can't find the link %d"
+msgstr "Ajaj, a rendszer nem találja a következő hivatkozást: %d."
+
+#: core/core.php:2471 core/core.php:2508
+msgid "Oops, couldn't modify the link!"
+msgstr "Ajaj, a hivatkozás nem módosítható!"
+
+#: core/core.php:2474 core/core.php:2511 core/core.php:2622
+msgid "Error : link_id not specified"
+msgstr "Hiba: link_id nincs meghatározva"
+
+#: core/core.php:2543
+msgid "Oops, the new URL is invalid!"
+msgstr "Ajaj, az új URL-cím érvénytelen!"
+
+#: core/core.php:2554 core/core.php:2605
+msgid "An unexpected error occured!"
+msgstr "Váratlan hiba történt!"
+
+#: core/core.php:2572
+msgid "Error : link_id or new_url not specified"
+msgstr "Hiba: link_id vagy new_url nincs meghatározva"
+
+#: core/core.php:2631
+msgid "You don't have sufficient privileges to access this information!"
+msgstr "Nincs elegendő jogosultsága, hogy ehhez az információhoz hozzáférjen!"
+
+#: core/core.php:2644
+msgid "Error : link ID not specified"
+msgstr "Hiba: hivatkozásazonosító nincs megadva"
+
+#: core/core.php:2658
+msgid "Failed to load link details (%s)"
+msgstr "Hivatkozásrészletek (%s) betöltése nem sikerült"
+
+#. #-#-#-#-#  plugin.pot (Broken Link Checker 1.8)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: core/core.php:2712
+msgid "Broken Link Checker"
+msgstr "Broken Link Checker"
+
+#: core/core.php:2732
+msgid "PHP version"
+msgstr "PHP verzió"
+
+#: core/core.php:2738
+msgid "MySQL version"
+msgstr "MySQL verzió"
+
+#: core/core.php:2751
+msgid ""
+"You have an old version of CURL. Redirect detection may not work properly."
+msgstr ""
+"Ön a CURL régi verziójával rendelkezik. Előfordulhat, hogy az "
+"átirányításészlelés nem működik megfelelően."
+
+#: core/core.php:2763 core/core.php:2779 core/core.php:2784
+msgid "Not installed"
+msgstr "Nincs telepítve"
+
+#: core/core.php:2766
+msgid "CURL version"
+msgstr "CURL verzió"
+
+#: core/core.php:2772
+msgid "Installed"
+msgstr "Telepítve"
+
+#: core/core.php:2785
+msgid "You must have either CURL or Snoopy installed for the plugin to work!"
+msgstr ""
+"A bővítmény működéséhez a CURL vagy Snoopy programnak telepítve kell lennie."
+
+#: core/core.php:2796
+msgid "On"
+msgstr "Be"
+
+#: core/core.php:2797
+msgid "Redirects may be detected as broken links when safe_mode is on."
+msgstr ""
+"Ha a safe_mode be van kapcsolva, a rendszer az átirányításokat nem működő "
+"hivatkozásként értelmezi."
+
+#: core/core.php:2802 core/core.php:2816
+msgid "Off"
+msgstr "Ki"
+
+#: core/core.php:2810
+msgid "On ( %s )"
+msgstr "Be ( %s )"
+
+#: core/core.php:2811
+msgid "Redirects may be detected as broken links when open_basedir is on."
+msgstr ""
+"Ha az open_basedir be van kapcsolva, a rendszer az átirányításokat nem "
+"működő hivatkozásként értelmezi."
+
+#: core/core.php:2840
+msgid ""
+"If this value is zero even after several page reloads you have probably "
+"encountered a bug."
+msgstr ""
+"Ha ez az érték több újratöltés után is nulla, valószínűleg hiba történt."
+
+#: core/core.php:2935 core/core.php:3033
+msgid "[%s] Broken links detected"
+msgstr "[%s] A rendszer nem működő hivatkozást talált"
+
+#: core/core.php:2940
+msgid "Broken Link Checker has detected %d new broken link on your site."
+msgid_plural ""
+"Broken Link Checker has detected %d new broken links on your site."
+msgstr[0] ""
+"A Broken Link Checker %d új nem működő hivatkozást észlelt az Ön oldalán."
+msgstr[1] ""
+"A Broken Link Checker %d új nem működő hivatkozást észlelt az Ön oldalán."
+
+#: core/core.php:2963
+msgid "Here's a list of the first %d broken links:"
+msgid_plural "Here's a list of the first %d broken links:"
+msgstr[0] "Íme az első %d nem működő hivatkozást tartalmazó lista:"
+msgstr[1] "Íme az első %d nem működő hivatkozást tartalmazó lista:"
+
+#: core/core.php:2972
+msgid "Here's a list of the new broken links: "
+msgstr "Íme az új nem működő hivatkozások listája: "
+
+#: core/core.php:2981
+msgid "Link text : %s"
+msgstr "Hivatkozásszöveg: %s"
+
+#: core/core.php:2982
+msgid "Link URL : <a href=\"%s\">%s</a>"
+msgstr "Hivatkozás URL-címe: <a href=\"%s\">%s</a>"
+
+#: core/core.php:2983
+msgid "Source : %s"
+msgstr "Forrás: %s"
+
+#: core/core.php:2996
+msgid "You can see all broken links here:"
+msgstr "Az összes nem működő hivatkozást itt tekintheti meg:"
+
+#: core/core.php:3038
+msgid "Broken Link Checker has detected %d new broken link in your posts."
+msgid_plural ""
+"Broken Link Checker has detected %d new broken links in your posts."
+msgstr[0] ""
+"A Broken Link Checker %d új nem működő hivatkozást észlelt az Ön "
+"bejegyzésében."
+msgstr[1] ""
+"A Broken Link Checker %d új nem működő hivatkozást észlelt az Ön "
+"bejegyzésében."
+
+#: core/init.php:240
+msgid "Once Weekly"
+msgstr "Heti egyszer"
+
+#: core/init.php:246
+msgid "Twice a Month"
+msgstr "Havonta kétszer"
+
+#: core/init.php:322
+msgid ""
+"Broken Link Checker installation failed. Try deactivating and then "
+"reactivating the plugin."
+msgstr ""
+"A Broken Link Checker telepítése nem sikerült. Próbálja meg inaktiválni, "
+"majd újraaktiválni a bővítményt."
+
+#: includes/admin/db-upgrade.php:95
+msgid "Failed to delete old DB tables. Database error : %s"
+msgstr "A régi adatbázis-táblázatok törlése nem sikerült. Adatbázishiba: %s"
+
+#: includes/admin/links-page-js.php:55 includes/admin/links-page-js.php:403
+msgid "Wait..."
+msgstr "Várjon..."
+
+#: includes/admin/links-page-js.php:100 includes/admin/table-printer.php:630
+msgid "Not broken"
+msgstr "Működik"
+
+#: includes/admin/links-page-js.php:315
+msgid "%d instances of the link were successfully modified."
+msgstr "A hivatkozás %d példánya sikeresen módosítva lett."
+
+#: includes/admin/links-page-js.php:321
+msgid ""
+"However, %d instances couldn't be edited and still point to the old URL."
+msgstr ""
+"%d példány azonban nem volt szerkeszthető, és továbbra is a régi URL-címre "
+"mutat."
+
+#: includes/admin/links-page-js.php:327
+msgid "The link could not be modified."
+msgstr "A hivatkozás nem módosítható."
+
+#: includes/admin/links-page-js.php:330 includes/admin/links-page-js.php:455
+msgid "The following error(s) occured :"
+msgstr "A következő hiba történt:"
+
+#: includes/admin/links-page-js.php:441
+msgid "%d instances of the link were successfully unlinked."
+msgstr "A hivatkozás %d példánya sikeresen hivatkozásmentesítve lett."
+
+#: includes/admin/links-page-js.php:447
+msgid "However, %d instances couldn't be removed."
+msgstr "%d példány azonban nem volt eltávolítható."
+
+#: includes/admin/links-page-js.php:452
+msgid "The plugin failed to remove the link."
+msgstr "A bővítménynek nem sikerült eltávolítania a hivatkozást."
+
+#: includes/admin/links-page-js.php:463 includes/admin/table-printer.php:273
+#: includes/admin/table-printer.php:624
+msgid "Unlink"
+msgstr "Hivatkozásmentesítés"
+
+#: includes/admin/links-page-js.php:507
+msgid "Enter a name for the new custom filter"
+msgstr "Írjon be nevet az új egyedi szűrőnek"
+
+#: includes/admin/links-page-js.php:518
+msgid ""
+"You are about to delete the current filter.\n"
+"'Cancel' to stop, 'OK' to delete"
+msgstr ""
+"Ön az aktuális szűrő törlésére készül.\n"
+"A megszakításhoz kattintson a \"Mégse\", a törléshez az \"OK\" lehetőségre."
+
+#: includes/admin/links-page-js.php:538
+msgid ""
+"Are you sure you want to delete all posts, bookmarks or other items that "
+"contain any of the selected links? This action can't be undone.\n"
+"'Cancel' to stop, 'OK' to delete"
+msgstr ""
+"Biztos, hogy törölni szeretne minden bejegyzést, könyvjelzőt vagy egyéb "
+"olyan elemet, mely a kiválasztott hivatkozások bármelyikét tartalmazza? Ez a "
+"művelet nem visszavonható.\n"
+"A megszakításhoz kattintson a \"Mégse\", a törléshez az \"OK\" lehetőségre."
+
+#: includes/admin/links-page-js.php:548
+msgid ""
+"Are you sure you want to remove the selected links? This action can't be "
+"undone.\n"
+"'Cancel' to stop, 'OK' to remove"
+msgstr ""
+"Biztos, hogy törölni szeretné a kiválasztott hivatkozásokat? Ez a művelet "
+"nem visszavonható.\n"
+"A megszakításhoz kattintson a \"Mégse\", az eltávolításhoz az \"OK\" "
+"lehetőségre."
+
+#: includes/admin/links-page-js.php:657
+msgid "Enter a search string first."
+msgstr "Először írja be a keresett karakterláncot."
+
+#: includes/admin/links-page-js.php:664
+msgid "Select one or more links to edit."
+msgstr "Válasszon ki egy vagy több szerkesztendő hivatkozást."
+
+#: includes/admin/options-page-js.php:54
+msgid "Hide debug info"
+msgstr "Hibakeresési adatok elrejtése"
+
+#: includes/admin/search-form.php:16
+msgid "Save This Search As a Filter"
+msgstr "Aktuális keresés elmentése szűrőként"
+
+#: includes/admin/search-form.php:26
+msgid "Delete This Filter"
+msgstr "Aktuális szűrő törlése"
+
+#: includes/admin/search-form.php:32 includes/link-query.php:65
+msgid "Search"
+msgstr "Keresés"
+
+#: includes/admin/search-form.php:42
+msgid "Link text"
+msgstr "Hivatkozásszöveg"
+
+#: includes/admin/search-form.php:45 includes/admin/table-printer.php:202
+msgid "URL"
+msgstr "URL-cím"
+
+#: includes/admin/search-form.php:48 includes/admin/table-printer.php:491
+msgid "HTTP code"
+msgstr "HTTP-kód"
+
+#: includes/admin/search-form.php:51
+msgid "Link status"
+msgstr "Hivatkozásállapot"
+
+#: includes/admin/search-form.php:68 includes/admin/search-form.php:85
+msgid "Link type"
+msgstr "Hivatkozástípus"
+
+#: includes/admin/search-form.php:70
+msgid "Any"
+msgstr "Bármilyen"
+
+#: includes/admin/search-form.php:74
+msgid "Links used in"
+msgstr "Hivatkozások használati helye"
+
+#: includes/admin/search-form.php:112
+msgid "Search Links"
+msgstr "Hivatkozások keresése"
+
+#: includes/admin/search-form.php:113 includes/admin/table-printer.php:349
+#: includes/admin/table-printer.php:652 includes/admin/table-printer.php:658
+msgid "Cancel"
+msgstr "Mégse"
+
+#: includes/admin/sidebar.php:24
+msgid "More plugins by Janis Elsts"
+msgstr "További bővítmények Janis Elsts-től"
+
+#: includes/admin/sidebar.php:47
+msgid "Donate $10, $20 or $50!"
+msgstr "Adományozzon 10, 20 vagy 50 dollárt!"
+
+#: includes/admin/sidebar.php:50
+msgid ""
+"If you like this plugin, please donate to support development and "
+"maintenance!"
+msgstr ""
+"Ha tetszett ez a bővítmény, kérjük, adományozzon a fejlesztésére és "
+"karbantartására!"
+
+#: includes/admin/sidebar.php:68
+msgid "Return to WordPress Dashboard"
+msgstr "Vissza a WordPress kezelőpultjára"
+
+#: includes/admin/table-printer.php:179
+msgid "Compact View"
+msgstr "Kis méretű nézet"
+
+#: includes/admin/table-printer.php:180
+msgid "Detailed View"
+msgstr "Részletes nézet"
+
+#: includes/admin/table-printer.php:209
+msgid "Source"
+msgstr "Forrás"
+
+#: includes/admin/table-printer.php:215
+msgid "Link Text"
+msgstr "Hivatkozásszöveg"
+
+#: includes/admin/table-printer.php:220
+msgid "Redirect URL"
+msgstr "Átirányítás URL-címe"
+
+#: includes/admin/table-printer.php:268
+msgid "Bulk Actions"
+msgstr "Tömeges végrehajtások"
+
+#: includes/admin/table-printer.php:269 includes/admin/table-printer.php:621
+msgid "Edit URL"
+msgstr "URL-cím szerkesztése"
+
+#: includes/admin/table-printer.php:270
+msgid "Recheck"
+msgstr "Újraellenőrzés"
+
+#: includes/admin/table-printer.php:271
+msgid "Fix redirects"
+msgstr "Átirányítások javítása"
+
+#: includes/admin/table-printer.php:272
+msgid "Mark as not broken"
+msgstr "Működőnek jelölés"
+
+#: includes/admin/table-printer.php:276
+msgid "Move sources to Trash"
+msgstr "Források Lomtárba helyezése"
+
+#: includes/admin/table-printer.php:278
+msgid "Delete sources"
+msgstr "Források törlése"
+
+#: includes/admin/table-printer.php:293
+msgid "&laquo;"
+msgstr "&laquo;"
+
+#: includes/admin/table-printer.php:294
+msgid "&raquo;"
+msgstr "&raquo;"
+
+#: includes/admin/table-printer.php:302
+msgid "Displaying %s&#8211;%s of <span class=\"current-link-count\">%s</span>"
+msgstr ""
+"%s&#8211;%s / <span class=\"current-link-count\">%s</span> megjelenítése"
+
+#: includes/admin/table-printer.php:325
+msgid "Bulk Edit URLs"
+msgstr "Tömeges szerkesztés URL-címei"
+
+#: includes/admin/table-printer.php:327
+msgid "Find"
+msgstr "Keresés"
+
+#: includes/admin/table-printer.php:331
+msgid "Replace with"
+msgstr "Csere erre"
+
+#: includes/admin/table-printer.php:339
+msgid "Case sensitive"
+msgstr "Kis- és nagybetűk megkülönböztetése"
+
+#: includes/admin/table-printer.php:343
+msgid "Regular expression"
+msgstr "Reguláris kifejezés"
+
+#: includes/admin/table-printer.php:351
+msgid "Update"
+msgstr "Frissítés"
+
+#: includes/admin/table-printer.php:476
+msgid "Post published on"
+msgstr "Bejegyzés közzétételének dátuma:"
+
+#: includes/admin/table-printer.php:481
+msgid "Link last checked"
+msgstr "Hivatkozás utolsó ellenőrzésének ideje"
+
+#: includes/admin/table-printer.php:485
+msgid "Never"
+msgstr "Soha"
+
+#: includes/admin/table-printer.php:496
+msgid "Response time"
+msgstr "Válaszidő"
+
+#: includes/admin/table-printer.php:498
+msgid "%2.3f seconds"
+msgstr "%2.3f másodperc"
+
+#: includes/admin/table-printer.php:501
+msgid "Final URL"
+msgstr "Végső URL-cím"
+
+#: includes/admin/table-printer.php:506
+msgid "Redirect count"
+msgstr "Átirányítás száma"
+
+#: includes/admin/table-printer.php:511
+msgid "Instance count"
+msgstr "Példány száma"
+
+#: includes/admin/table-printer.php:520
+msgid "This link has failed %d time."
+msgid_plural "This link has failed %d times."
+msgstr[0] "Ez a hivatkozás %d alkalommal volt hibás."
+msgstr[1] "Ez a hivatkozás %d alkalommal volt hibás."
+
+#: includes/admin/table-printer.php:528
+msgid "This link has been broken for %s."
+msgstr "Ez a hivatkozás %s ideje nem működik."
+
+#: includes/admin/table-printer.php:539
+msgid "Log"
+msgstr "Napló"
+
+#: includes/admin/table-printer.php:564
+msgid "Show more info about this link"
+msgstr "További részletek mutatása az aktuális hivatkozásról"
+
+#: includes/admin/table-printer.php:582
+msgid "Checked"
+msgstr "Ellenőrizve"
+
+#: includes/admin/table-printer.php:598
+msgid "Broken for"
+msgstr "Nem működik ennyi ideje:"
+
+#: includes/admin/table-printer.php:621
+msgid "Edit link URL"
+msgstr "Hivatkozás URL-címének szerkesztése"
+
+#: includes/admin/table-printer.php:623
+msgid "Remove this link from all posts"
+msgstr "Aktuális hivatkozás eltávolítása az összes bejegyzésből"
+
+#: includes/admin/table-printer.php:629
+msgid "Remove this link from the list of broken links and mark it as valid"
+msgstr ""
+"Aktuális hivatkozás eltávolítása a nem működő hivatkozások listájáról, és "
+"megjelölése érvényesként"
+
+#: includes/admin/table-printer.php:637
+msgid "Hide this link and do not report it again unless its status changes"
+msgstr ""
+"Aktuális hivatkozás elrejtése és újbóli jelentésének szüneteltetése annak "
+"állapotváltozásáig"
+
+#: includes/admin/table-printer.php:638
+msgid "Dismiss"
+msgstr "Elvetés"
+
+#: includes/admin/table-printer.php:643
+msgid "Undismiss this link"
+msgstr "Aktuális hivatkozás elvetésének megszüntetése"
+
+#: includes/admin/table-printer.php:644
+msgid "Undismiss"
+msgstr "Elvetés megszüntetése"
+
+#: includes/admin/table-printer.php:652
+msgid "Cancel URL editing"
+msgstr "URL-szerkesztés megszakítása"
+
+#: includes/admin/table-printer.php:659
+msgid "Update URL"
+msgstr "URL-cím frissítése"
+
+#: includes/admin/table-printer.php:686
+msgid "[An orphaned link! This is a bug.]"
+msgstr "[Árva hivatkozás! Ez egy hiba.]"
+
+#: includes/any-post.php:397 modules/containers/blogroll.php:46
+#: modules/containers/comment.php:153 modules/containers/custom_field.php:197
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: includes/any-post.php:405 modules/containers/custom_field.php:203
+msgid "Move this item to the Trash"
+msgstr "Aktuális elem Lomtárba helyezése"
+
+#: includes/any-post.php:407 modules/containers/custom_field.php:205
+msgid "Trash"
+msgstr "Lomtár"
+
+#: includes/any-post.php:412 modules/containers/custom_field.php:210
+msgid "Delete this item permanently"
+msgstr "Aktuális elem végleges törlése"
+
+#: includes/any-post.php:414 modules/containers/blogroll.php:47
+#: modules/containers/custom_field.php:212
+msgid "Delete"
+msgstr "Törlés"
+
+#: includes/any-post.php:427
+msgid "Preview &#8220;%s&#8221;"
+msgstr "&#8220;%s&#8221; megjelenítése"
+
+#: includes/any-post.php:428
+msgid "Preview"
+msgstr "Megjelenítés"
+
+#: includes/any-post.php:435
+msgid "View &#8220;%s&#8221;"
+msgstr "&#8220;%s&#8221; megtekintése"
+
+#: includes/any-post.php:436 modules/containers/comment.php:166
+#: modules/containers/custom_field.php:217
+msgid "View"
+msgstr "Megtekintés"
+
+#: includes/any-post.php:455 modules/containers/custom_field.php:197
+msgid "Edit this item"
+msgstr "Aktuális elem szerkesztése"
+
+#: includes/any-post.php:519 modules/containers/blogroll.php:83
+#: modules/containers/comment.php:43
+msgid "Nothing to update"
+msgstr "Nincs mit frissíteni"
+
+#: includes/any-post.php:529
+msgid "Updating post %d failed"
+msgstr "A(z) %d bejegyzés frissítése nem sikerült"
+
+#: includes/any-post.php:566 modules/containers/custom_field.php:284
+msgid "Failed to delete post \"%s\" (%d)"
+msgstr "A(z) \"%s\" bejegyzés törlése (%d) nem sikerült"
+
+#: includes/any-post.php:585 modules/containers/custom_field.php:303
+msgid ""
+"Can't move post \"%s\" (%d) to the trash because the trash feature is "
+"disabled"
+msgstr ""
+"A(z) \"%s\" bejegyzés Lomtárba való áthelyezése (%d) nem sikerült, mert a "
+"Lomtár funkció le van tiltva"
+
+#: includes/any-post.php:605 modules/containers/custom_field.php:322
+msgid "Failed to move post \"%s\" (%d) to the trash"
+msgstr "A(z) \"%s\" bejegyzés Lomtárba való áthelyezése (%d) nem sikerült"
+
+#: includes/any-post.php:713
+msgid "%d post deleted."
+msgid_plural "%d posts deleted."
+msgstr[0] "A rendszer %d bejegyzést törölt."
+msgstr[1] "A rendszer %d bejegyzést törölt."
+
+#: includes/any-post.php:715
+msgid "%d page deleted."
+msgid_plural "%d pages deleted."
+msgstr[0] "A rendszer %d oldalt törölt."
+msgstr[1] "A rendszer %d oldalt törölt."
+
+#: includes/any-post.php:717
+msgid "%d \"%s\" deleted."
+msgid_plural "%d \"%s\" deleted."
+msgstr[0] "A rendszer %d \"%s\" elemet törölt."
+msgstr[1] "A rendszer %d \"%s\" elemet törölt."
+
+#: includes/any-post.php:736
+msgid "%d post moved to the Trash."
+msgid_plural "%d posts moved to the Trash."
+msgstr[0] "A rendszer %d bejegyzést helyezett át a Lomtárba."
+msgstr[1] "A rendszer %d bejegyzést helyezett át a Lomtárba."
+
+#: includes/any-post.php:738
+msgid "%d page moved to the Trash."
+msgid_plural "%d pages moved to the Trash."
+msgstr[0] "A rendszer %d oldalt helyezett át a Lomtárba."
+msgstr[1] "A rendszer %d oldalt helyezett át a Lomtárba."
+
+#: includes/any-post.php:740
+msgid "%d \"%s\" moved to the Trash."
+msgid_plural "%d \"%s\" moved to the Trash."
+msgstr[0] "A rendszer %d \"%s\" elemet helyezett át a Lomtárba."
+msgstr[1] "A rendszer %d \"%s\" elemet helyezett át a Lomtárba."
+
+#: includes/containers.php:122
+msgid "%d '%s' has been deleted"
+msgid_plural "%d '%s' have been deleted"
+msgstr[0] "A rendszer %d \"%s\" elemet törölt"
+msgstr[1] "A rendszer %d \"%s\" elemet törölt"
+
+#: includes/containers.php:873 includes/containers.php:891
+msgid "Container type '%s' not recognized"
+msgstr "A(z) \"%s\" tárolótípust a rendszer nem ismeri fel"
+
+#: includes/extra-strings.php:2
+msgid "Basic HTTP"
+msgstr "Alap HTTP"
+
+#: includes/extra-strings.php:3
+msgid "Blogroll items"
+msgstr "Blogroll elemek"
+
+#: includes/extra-strings.php:4
+msgid "Comments"
+msgstr "Megjegyzések"
+
+#: includes/extra-strings.php:5
+msgid "Custom fields"
+msgstr "Egyedi mezők"
+
+#: includes/extra-strings.php:6
+msgid "Embedded DailyMotion videos"
+msgstr "Beágyazott DailyMotion videók"
+
+#: includes/extra-strings.php:7
+msgid "Embedded GoogleVideo videos"
+msgstr "Beágyazott GoogleVideo videók"
+
+#: includes/extra-strings.php:8
+msgid "Embedded Megavideo videos"
+msgstr "Beágyazott Megavideo videók"
+
+#: includes/extra-strings.php:9
+msgid "Embedded Vimeo videos"
+msgstr "Beágyazott Vimeo videók"
+
+#: includes/extra-strings.php:10
+msgid "Embedded YouTube playlists (old embed code)"
+msgstr "Beágyazott YouTube lejátszási listák (régi beágyazási kód)"
+
+#: includes/extra-strings.php:11
+msgid "Embedded YouTube videos"
+msgstr "Beágyazott YouTube videók"
+
+#: includes/extra-strings.php:12
+msgid "Embedded YouTube videos (old embed code)"
+msgstr "Beágyazott YouTube videók (régi beágyazási kód)"
+
+#: includes/extra-strings.php:13
+msgid "FileServe API"
+msgstr "FileServe API"
+
+#: includes/extra-strings.php:14
+msgid "HTML images"
+msgstr "HTML-képek"
+
+#: includes/extra-strings.php:15
+msgid "HTML links"
+msgstr "HTML-hivatkozások"
+
+#: includes/extra-strings.php:16
+msgid "MediaFire API"
+msgstr "MediaFire API"
+
+#: includes/extra-strings.php:17
+msgid "MegaUpload API"
+msgstr "MegaUpload API"
+
+#: includes/extra-strings.php:18
+msgid "Plaintext URLs"
+msgstr "Egyszerű szöveg URL-címek"
+
+#: includes/extra-strings.php:19
+msgid "RapidShare API"
+msgstr "RapidShare API"
+
+#: includes/extra-strings.php:20
+msgid "Smart YouTube httpv:// URLs"
+msgstr "Intelligens YouTube httpv:// URL-címek"
+
+#: includes/extra-strings.php:21
+msgid "YouTube API"
+msgstr "YouTube API"
+
+#: includes/extra-strings.php:22
+msgid "Posts"
+msgstr "Bejegyzések"
+
+#: includes/extra-strings.php:23
+msgid "Pages"
+msgstr "Oldalak"
+
+#: includes/instances.php:104 includes/instances.php:160
+msgid "Container %s[%d] not found"
+msgstr "A rendszer nem találta a(z) %s[%d] tárolót"
+
+#: includes/instances.php:113 includes/instances.php:169
+msgid "Parser '%s' not found."
+msgstr "A rendszer nem találta a(z) \"%s\" elemzőt."
+
+#: includes/link-query.php:26
+msgid "Broken"
+msgstr "Nem működik"
+
+#: includes/link-query.php:28
+msgid "No broken links found"
+msgstr "A rendszer nem talált nem működő hivatkozást"
+
+#: includes/link-query.php:36
+msgid "Redirects"
+msgstr "Átirányítások"
+
+#: includes/link-query.php:37
+msgid "Redirected Links"
+msgstr "Átirányított hivatkozások"
+
+#: includes/link-query.php:38
+msgid "No redirects found"
+msgstr "A rendszer nem talált átirányítást"
+
+#: includes/link-query.php:46
+msgid "Dismissed"
+msgstr "Elvetve"
+
+#: includes/link-query.php:47
+msgid "Dismissed Links"
+msgstr "Elvetett hivatkozások"
+
+#: includes/link-query.php:48
+msgid "No dismissed links found"
+msgstr "A rendszer nem talált elvetett hivatkozásokat"
+
+#: includes/link-query.php:56
+msgid "All"
+msgstr "Összes"
+
+#: includes/link-query.php:57
+msgid "Detected Links"
+msgstr "Észlelt hivatkozások"
+
+#: includes/link-query.php:58
+msgid "No links found (yet)"
+msgstr "A rendszer (még) nem talált hivatkozásokat"
+
+#: includes/link-query.php:66
+msgid "Search Results"
+msgstr "Keresési eredmények"
+
+#: includes/link-query.php:67 includes/link-query.php:114
+msgid "No links found for your query"
+msgstr "A rendszer nem talált hivatkozást az Ön lekérdezésére"
+
+#: includes/links.php:218
+msgid "The plugin script was terminated while trying to check the link."
+msgstr ""
+"A bővítmény parancsfájlja a hivatkozás ellenőrzése közben le lett állítva."
+
+#: includes/links.php:264
+msgid "The plugin doesn't know how to check this type of link."
+msgstr "A bővítmény nem tudja, hogy hogyan ellenőrizze ezt a hivatkozástípust."
+
+#: includes/links.php:357
+msgid "Link is valid."
+msgstr "A hivatkozás érvényes."
+
+#: includes/links.php:359
+msgid "Link is broken."
+msgstr "A hivatkozás nem működik."
+
+#: includes/links.php:571 includes/links.php:673 includes/links.php:700
+msgid "Link is not valid"
+msgstr "A hivatkozás nem érvényes"
+
+#: includes/links.php:588
+msgid ""
+"This link can not be edited because it is not used anywhere on this site."
+msgstr ""
+"Az aktuális hivatkozás nem szerkeszthető, mert ezen az oldalon sehol sincs "
+"felhasználva."
+
+#: includes/links.php:614
+msgid "Failed to create a DB entry for the new URL."
+msgstr "Adatbázis-bejegyzés létrehozása nem sikerült az új URL-címre."
+
+#: includes/links.php:680
+msgid "This link is not a redirect"
+msgstr "Ez a hivatkozás nem átirányítás"
+
+#: includes/links.php:727 includes/links.php:764
+msgid "Couldn't delete the link's database record"
+msgstr "A hivatkozás adatbázis-bejegyzése nem törölhető"
+
+#: includes/links.php:838
+msgctxt "link status"
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#: includes/links.php:852 modules/checkers/http.php:263
+#: modules/extras/mediafire.php:101
+msgid "Unknown Error"
+msgstr "Ismeretlen hiba"
+
+#: includes/links.php:876
+msgid "Not checked"
+msgstr "Nincs ellenőrizve"
+
+#: includes/links.php:879
+msgid "False positive"
+msgstr "Vakriasztás"
+
+#: includes/links.php:882 modules/extras/fileserve.php:121
+#: modules/extras/megaupload.php:115 modules/extras/rapidshare.php:145
+#: modules/extras/rapidshare.php:151 modules/extras/rapidshare.php:178
+msgctxt "link status"
+msgid "OK"
+msgstr "OK"
+
+#: includes/parsers.php:109
+msgid "Editing is not implemented in the '%s' parser"
+msgstr "Szerkesztés nem lett végrehajtva a(z) \"%s\" elemzőben"
+
+#: includes/parsers.php:124
+msgid "Unlinking is not implemented in the '%s' parser"
+msgstr "A hivatkozásmentesítés nem lett végrehajtva a(z) \"%s\" elemzőben."
+
+#: includes/utility-class.php:245
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d másodperc"
+msgstr[1] "%d másodperc"
+
+#: includes/utility-class.php:246
+msgid "%d second ago"
+msgid_plural "%d seconds ago"
+msgstr[0] "%d másodperce"
+msgstr[1] "%d másodperce"
+
+#: includes/utility-class.php:249
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d perc"
+msgstr[1] "%d perc"
+
+#: includes/utility-class.php:250
+msgid "%d minute ago"
+msgid_plural "%d minutes ago"
+msgstr[0] "%d perce"
+msgstr[1] "%d perce"
+
+#: includes/utility-class.php:253
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d óra"
+msgstr[1] "%d óra"
+
+#: includes/utility-class.php:254
+msgid "%d hour ago"
+msgid_plural "%d hours ago"
+msgstr[0] "%d órája"
+msgstr[1] "%d órája"
+
+#: includes/utility-class.php:257
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d nap"
+msgstr[1] "%d nap"
+
+#: includes/utility-class.php:258
+msgid "%d day ago"
+msgid_plural "%d days ago"
+msgstr[0] "%d napja"
+msgstr[1] "%d napja"
+
+#: includes/utility-class.php:261
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d hónap"
+msgstr[1] "%d hónap"
+
+#: includes/utility-class.php:262
+msgid "%d month ago"
+msgid_plural "%d months ago"
+msgstr[0] "%d hónapja"
+msgstr[1] "%d hónapja"
+
+#: modules/checkers/http.php:242
+msgid "Server Not Found"
+msgstr "Kiszolgáló nem található"
+
+#: modules/checkers/http.php:257
+msgid "Connection Failed"
+msgstr "Kapcsolódási hiba"
+
+#: modules/checkers/http.php:292 modules/checkers/http.php:362
+msgid "HTTP code : %d"
+msgstr "HTTP-kód: %d"
+
+#: modules/checkers/http.php:294 modules/checkers/http.php:364
+msgid "(No response)"
+msgstr "(Nincs válasz)"
+
+#: modules/checkers/http.php:300
+msgid "Most likely the connection timed out or the domain doesn't exist."
+msgstr "Valószínűleg a kapcsolat ideje lejárt vagy a tartomány nem létezik."
+
+#: modules/checkers/http.php:371
+msgid "Request timed out."
+msgstr "A kérelem ideje lejárt."
+
+#: modules/checkers/http.php:389
+msgid "Using Snoopy"
+msgstr "Snoopy használata"
+
+#: modules/containers/blogroll.php:21
+msgid "Bookmark"
+msgstr "Könyvjelző"
+
+#: modules/containers/blogroll.php:27 modules/containers/blogroll.php:46
+msgid "Edit this bookmark"
+msgstr "Aktuális könyvjelző szerkesztése"
+
+#: modules/containers/blogroll.php:47
+msgid ""
+"You are about to delete this link '%s'\n"
+"  'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"Ön az aktuális \"%s\" hivatkozás törlésére készül.\n"
+"A megszakításhoz kattintson a \"Mégse\", a törléshez az \"OK\" lehetőségre."
+
+#: modules/containers/blogroll.php:97
+msgid "Updating bookmark %d failed"
+msgstr "A(z) %d könyvjelző frissítése nem sikerült"
+
+#: modules/containers/blogroll.php:128
+msgid "Failed to delete blogroll link \"%s\" (%d)"
+msgstr "A(z) \"%s\" blogroll hivatkozás törlése (%d) nem sikerült"
+
+#: modules/containers/blogroll.php:298
+msgid "%d blogroll link deleted."
+msgid_plural "%d blogroll links deleted."
+msgstr[0] "A rendszer %d blogroll hivatkozást törölt."
+msgstr[1] "A rendszer %d blogroll hivatkozást törölt."
+
+#: modules/containers/comment.php:53
+msgid "Updating comment %d failed"
+msgstr "A(z) %d megjegyzés frissítése nem sikerült"
+
+#: modules/containers/comment.php:74
+msgid "Failed to delete comment %d"
+msgstr "A(z) %d megjegyzés törlése nem sikerült"
+
+#: modules/containers/comment.php:95
+msgid "Can't move comment %d to the trash"
+msgstr "A(z) %d megjegyzés Lomtárba helyezése nem lehetséges"
+
+#: modules/containers/comment.php:153 modules/containers/comment.php:195
+msgid "Edit comment"
+msgstr "Megjegyzés szerkesztése"
+
+#: modules/containers/comment.php:160
+msgid "Delete Permanently"
+msgstr "Végleges törlés"
+
+#: modules/containers/comment.php:162
+msgid "Move this comment to the trash"
+msgstr "Aktuális megjegyzés Lomtárba helyezése"
+
+#: modules/containers/comment.php:162
+msgctxt "verb"
+msgid "Trash"
+msgstr "Lomtár"
+
+#: modules/containers/comment.php:166
+msgid "View comment"
+msgstr "Megjegyzés megtekintése"
+
+#: modules/containers/comment.php:183
+msgid "Comment"
+msgstr "Megjegyzés"
+
+#: modules/containers/comment.php:355
+msgid "%d comment has been deleted."
+msgid_plural "%d comments have been deleted."
+msgstr[0] "A rendszer %d megjegyzést törölt."
+msgstr[1] "A rendszer %d megjegyzést törölt."
+
+#: modules/containers/comment.php:374
+msgid "%d comment moved to the Trash."
+msgid_plural "%d comments moved to the Trash."
+msgstr[0] "A rendszer %d megjegyzést helyezett át a Lomtárba."
+msgstr[1] "A rendszer %d megjegyzést helyezett át a Lomtárba."
+
+#: modules/containers/custom_field.php:84
+msgid "Failed to update the meta field '%s' on %s [%d]"
+msgstr "A(z) \"%s\" metamező frissítése nem sikerült a következőnél: %s [%d]."
+
+#: modules/containers/custom_field.php:110
+msgid "Failed to delete the meta field '%s' on %s [%d]"
+msgstr "A(z) \"%s\" metamező frissítése nem sikerült a következőnél: %s [%d]."
+
+#: modules/containers/custom_field.php:187
+msgid "Edit this post"
+msgstr "Aktuális bejegyzés szerkesztése"
+
+#: modules/containers/custom_field.php:217
+msgid "View \"%s\""
+msgstr "\"%s\" megtekintése"
+
+#: modules/containers/dummy.php:34 modules/containers/dummy.php:45
+msgid "I don't know how to edit a '%s' [%d]."
+msgstr "Nem tudom, hogyan kell szerkeszteni a következőket: \"%s\" [%d]."
+
+#: modules/extras/dailymotion-embed.php:23
+msgid "DailyMotion Video"
+msgstr "DailyMotion videó"
+
+#: modules/extras/dailymotion-embed.php:24
+msgid "Embedded DailyMotion video"
+msgstr "Beágyazott DailyMotion videó"
+
+#: modules/extras/embed-parser-base.php:197
+msgid ""
+"Embedded videos can't be edited using Broken Link Checker. Please edit or "
+"replace the video in question manually."
+msgstr ""
+"A beágyazott videók nem szerkeszthetők a Broken Link Checker alkalmazással. "
+"Kérjük, szerkessze meg vagy cserélje le a kérdéses videót kézileg."
+
+#: modules/extras/fileserve.php:55
+msgid "Using FileServe API"
+msgstr "FileServe API használata"
+
+#: modules/extras/fileserve.php:112 modules/extras/mediafire.php:91
+#: modules/extras/mediafire.php:96 modules/extras/megaupload.php:81
+#: modules/extras/megaupload.php:123 modules/extras/rapidshare.php:139
+msgid "Not Found"
+msgstr "Nem található"
+
+#: modules/extras/fileserve.php:115
+msgid "FileServe : %d %s"
+msgstr "FileServe: %d %s"
+
+#: modules/extras/googlevideo-embed.php:24
+msgid "GoogleVideo Video"
+msgstr "GoogleVideo videó"
+
+#: modules/extras/googlevideo-embed.php:25
+msgid "Embedded GoogleVideo video"
+msgstr "Beágyazott GoogleVideo videó"
+
+#: modules/extras/megaupload.php:130
+msgid "File Temporarily Unavailable"
+msgstr "A fájl pillanatnyilag nem elérhető"
+
+#: modules/extras/megaupload.php:136
+msgid "API Error"
+msgstr "API hiba"
+
+#: modules/extras/megavideo-embed.php:24
+msgid "Megavideo Video"
+msgstr "Megavideo videó"
+
+#: modules/extras/megavideo-embed.php:25
+msgid "Embedded Megavideo video"
+msgstr "Beágyazott Megavideo videó"
+
+#: modules/extras/rapidshare.php:51
+msgid "Using RapidShare API"
+msgstr "RapidShare API használata"
+
+#: modules/extras/rapidshare.php:158
+msgid "RS Server Down"
+msgstr "Az RS kiszolgálót nem lehet elérni"
+
+#: modules/extras/rapidshare.php:165
+msgid "File Blocked"
+msgstr "Letiltott fájl"
+
+#: modules/extras/rapidshare.php:172
+msgid "File Locked"
+msgstr "Zárolt fájl"
+
+#: modules/extras/rapidshare.php:183
+msgid "RapidShare : %s"
+msgstr "RapidShare: %s"
+
+#: modules/extras/rapidshare.php:189
+msgid "RapidShare API error: %s"
+msgstr "RapidShare API hiba: %s"
+
+#: modules/extras/vimeo-embed.php:24
+msgid "Vimeo Video"
+msgstr "Vimeo videó"
+
+#: modules/extras/vimeo-embed.php:25
+msgid "Embedded Vimeo video"
+msgstr "Beágyazott Vimeo videó"
+
+#: modules/extras/youtube-embed.php:24 modules/extras/youtube-iframe.php:25
+msgid "YouTube Video"
+msgstr "YouTube videó"
+
+#: modules/extras/youtube-embed.php:25 modules/extras/youtube-iframe.php:26
+msgid "Embedded YouTube video"
+msgstr "Beágyazott YouTube videó"
+
+#: modules/extras/youtube-playlist-embed.php:24
+msgid "YouTube Playlist"
+msgstr "YouTube lejátszási lista"
+
+#: modules/extras/youtube-playlist-embed.php:25
+msgid "Embedded YouTube playlist"
+msgstr "Beágyazott YouTube lejátszási lista"
+
+#: modules/extras/youtube.php:124 modules/extras/youtube.php:127
+msgid "Video Not Found"
+msgstr "Videó nem található"
+
+#: modules/extras/youtube.php:135
+msgid "Video Removed"
+msgstr "Videó eltávolítva"
+
+#: modules/extras/youtube.php:143
+msgid "Invalid Video ID"
+msgstr "Érvénytelen videóazonosító"
+
+#: modules/extras/youtube.php:155
+msgid "Video OK"
+msgstr "Videó OK"
+
+#: modules/extras/youtube.php:156 modules/extras/youtube.php:177
+#: modules/extras/youtube.php:249 modules/extras/youtube.php:289
+msgid "OK"
+msgstr "OK"
+
+#: modules/extras/youtube.php:170 modules/extras/youtube.php:271
+msgid "Video status : %s%s"
+msgstr "Videóállapot: %s%s"
+
+#: modules/extras/youtube.php:182 modules/extras/youtube.php:280
+msgid "Video Restricted"
+msgstr "Videó korlátozva"
+
+#: modules/extras/youtube.php:199 modules/extras/youtube.php:305
+msgid "Unknown YouTube API response received."
+msgstr "Ismeretlen YouTube API válasz érkezett."
+
+#: modules/extras/youtube.php:217 modules/extras/youtube.php:220
+msgid "Playlist Not Found"
+msgstr "A lejátszási lista nem található"
+
+#: modules/extras/youtube.php:227
+msgid "Playlist Restricted"
+msgstr "Lejátszási lista korlátozva"
+
+#: modules/extras/youtube.php:234
+msgid "Invalid Playlist"
+msgstr "Érvénytelen lejátszási lista"
+
+#: modules/extras/youtube.php:248
+msgid "Playlist OK"
+msgstr "Lejátszási lista OK"
+
+#: modules/extras/youtube.php:255
+msgid "This playlist has no entries or all entries have been deleted."
+msgstr ""
+"Az aktuális lejátszási lista nem tartalmaz bejegyzést, vagy minden "
+"bejegyzése törölve lett."
+
+#: modules/extras/youtube.php:256
+msgid "Empty Playlist"
+msgstr "Lejátszási lista tartalmának törlése"
+
+#: modules/parsers/image.php:164
+msgid "Image"
+msgstr "Kép"
+
+#: modules/parsers/metadata.php:118
+msgid "Custom field"
+msgstr "Egyedi mező"
+
+#. Plugin URI of the plugin/theme
+msgid "http://w-shadow.com/blog/2007/08/05/broken-link-checker-for-wordpress/"
+msgstr "http://w-shadow.com/blog/2007/08/05/broken-link-checker-for-wordpress/"
+
+#. Description of the plugin/theme
+msgid ""
+"Checks your blog for broken links and missing images and notifies you on the "
+"dashboard if any are found."
+msgstr ""
+"Ellenőrzi az Ön blogját, hogy van-e benne nem működő hivatkozás és hiányzó "
+"kép, és ha van, arról értesítést küld a kezelőpulton."
+
+#. Author of the plugin/theme
+msgid "Janis Elsts"
+msgstr "Janis Elsts"
+
+#. Author URI of the plugin/theme
+msgid "http://w-shadow.com/"
+msgstr "http://w-shadow.com/"

@@ -1,0 +1,11 @@
+<wpml-config>
+    <admin-texts>
+		<key name='pirate_forms_settings_array'>
+			<key name='pirateformsopt_label_name' />
+			<key name='pirateformsopt_label_email' />
+			<key name='pirateformsopt_label_subject' />
+			<key name='pirateformsopt_label_message' />
+			<key name='pirateformsopt_label_submit_btn' />
+		</key>
+    </admin-texts>
+</wpml-config>

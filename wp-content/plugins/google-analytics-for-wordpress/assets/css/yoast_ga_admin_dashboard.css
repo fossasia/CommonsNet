@@ -1,0 +1,76 @@
+.yoast-graphs {
+	display: inline-block;
+	clear: both;
+	position: relative;
+}
+
+.yoast-graph {
+	display: inline;
+	float: left;
+	width: 840px;
+	height: 315px;
+	margin: 5px;
+}
+
+.yoast-graph-holder,
+.yoast-graph-yaxis {
+	height: 240px;
+}
+
+.yoast-graph-holder,
+.yoast-graph-xaxis {
+	width: 780px;
+}
+
+.yoast-graph-holder,
+.yoast-graph-yaxis,
+.yoast-graph-xaxis {
+	float: left;
+}
+
+.yoast-graph-holder {
+	margin: 0 5px 0 0;
+	background: #fff;
+}
+
+.yoast-graph-xaxis {
+	height: 20px;
+	margin-left: 50px;
+}
+
+.yoast-graph-yaxis {
+	overflow: hidden;
+	width: 50px;
+}
+
+.x_label {
+	display: none;
+}
+
+.yoast-data-table {
+	margin: 25px 0 10px;
+}
+
+.yoast-dashboard h3 {
+	float: left;
+	clear: both;
+	width: 100%;
+	margin: 0 0 10px;
+}
+
+.yoast-dashboard .period {
+	color: #555;
+	font-size: 0.8em;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.yoast-data-table table.dataTable thead .sorting,
+.yoast-data-table table.dataTable thead .sorting_asc,
+.yoast-data-table table.dataTable thead .sorting_desc {
+	border-color: #d3d3d3;
+}
+
+.yoast-data-table table.dataTable.no-footer {
+	border-bottom: none;
+}

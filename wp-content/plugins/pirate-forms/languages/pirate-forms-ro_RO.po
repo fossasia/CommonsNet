@@ -1,0 +1,474 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pirate Forms\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-09 18:51+0200\n"
+"PO-Revision-Date: 2016-03-09 18:52+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;esc_html__;esc_html_e\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: inc\n"
+
+#: pirate-forms.php:295
+msgid "Contact Referrer"
+msgstr "Contact Referrer"
+
+#: pirate-forms.php:306
+msgid "Referring page"
+msgstr "Pagina de referință"
+
+#: pirate-forms.php:346
+msgid "Nonce failed!"
+msgstr "Eroare la nounce!"
+
+#: pirate-forms.php:352
+msgid "Form submission failed!"
+msgstr "Trimiterea formularului nu a reușit !"
+
+#: pirate-forms.php:357
+msgid "Contact form submission on"
+msgstr "Trimiterea formularului de contact pe"
+
+#: pirate-forms.php:438
+#: pirate-forms.php:451
+msgid "Wrong reCAPTCHA"
+msgstr "reCAPTCHA greșită"
+
+#: pirate-forms.php:462
+#, fuzzy
+msgid "Please enter one or more Contact submission recipients"
+msgstr "Destinatarii formularelor de contact"
+
+#: pirate-forms.php:473
+#, fuzzy
+msgid "IP address: "
+msgstr "Adresă de email"
+
+#: pirate-forms.php:473
+msgid "IP search:"
+msgstr ""
+
+#: pirate-forms.php:478
+msgid "Came from: "
+msgstr ""
+
+#: pirate-forms.php:482
+msgid "Sent from page: "
+msgstr ""
+
+#: pirate-forms.php:491
+msgid "Form submission blocked!"
+msgstr "Trimiterea formularului a fost blocată!"
+
+#: pirate-forms.php:705
+msgid "Add New Contact"
+msgstr "Adauga contact nou"
+
+#: pirate-forms.php:706
+msgid "New Contact"
+msgstr "Contact nou"
+
+#: pirate-forms.php:707
+msgid "Edit Contact"
+msgstr "Editeaza contact"
+
+#: pirate-forms.php:708
+msgid "View Contact"
+msgstr "Vezi Contact"
+
+#: pirate-forms.php:709
+msgid "All Contacts"
+msgstr "Toate Contactele"
+
+#: pirate-forms.php:710
+msgid "Search Contacts"
+msgstr "Caută contacte"
+
+#: pirate-forms.php:711
+msgid "Parent Contacts:"
+msgstr "Părinte Contacte:"
+
+#: pirate-forms.php:712
+msgid "No contacts found."
+msgstr "Nu au fost găsite contacte"
+
+#: pirate-forms.php:713
+msgid "No contacts found in Trash."
+msgstr " Nu au fost găsite contacte în coșul de gunoi"
+
+#: pirate-forms.php:717
+msgid "Contacts from Pirate Forms"
+msgstr "Contacte din Formularul Pirate"
+
+#: pirate-forms.php:739
+msgid "Settings"
+msgstr "Setari"
+
+#: inc/helpers.php:16
+msgid "Sorry, an error occured."
+msgstr "Ne pare rău, a apărut o eroare."
+
+#: inc/settings.php:62
+#: inc/settings.php:66
+msgid "Send Message"
+msgstr "Trimite mesajul"
+
+#: inc/settings.php:84
+msgid "Form processing options"
+msgstr "Opțiuni de procesare a formularului"
+
+#: inc/settings.php:90
+msgid "Contact notification sender email"
+msgstr "Email-ul expeditorului pentru notificari"
+
+#: inc/settings.php:91
+msgid "Insert [email] to use the contact form submitter's email."
+msgstr ""
+
+#: inc/settings.php:91
+#, fuzzy
+msgid "Email to use for the sender of the contact form emails both to the recipients below and the contact form submitter (if this is activated below). The domain for this email address should match your site's domain."
+msgstr "E-mail utilizat pentru expeditorul e-mailurilor, atât la destinatarii de mai jos și cel care a trimis formularul de contact ( dacă acest lucru este activat de mai jos ) . Domeniul pentru această adresă de e-mail ar trebui să corespundă domeniului site-ului."
+
+#: inc/settings.php:96
+msgid "Contact submission recipients"
+msgstr "Destinatarii formularelor de contact"
+
+#: inc/settings.php:97
+msgid "Email address(es) to receive contact submission notifications. You can separate multiple emails with a comma."
+msgstr "Adresa/e de email, la care se primesc notificări. Puteți separa mai multe e-mailuri cu virgulă."
+
+#: inc/settings.php:102
+msgid "Store submissions in the database"
+msgstr "Doriți să salvați email-urile în baza de date"
+
+#: inc/settings.php:103
+msgid "Should the submissions be stored in the admin area? If chosen, contact form submissions will be saved in Contacts on the left (appears after this option is activated)."
+msgstr "Doriți ca observațiile să fie stocate în zona de admin? Dacă da , email-urile vor fi salvate în Contacte în meniul din stanga ( apare după ce această opțiune este activată)."
+
+#: inc/settings.php:108
+msgid "Use the comments blacklist to restrict submissions"
+msgstr "Utilizați lista neagră a comentariilor pentru a restricționa email-urile"
+
+#: inc/settings.php:109
+msgid "Should form submission IP and email addresses be compared against the Comment Blacklist, found in"
+msgstr "Ar trebui ca IP-ul și adresa de email să fie comparate cu lista neagră, găsită în"
+
+#: inc/settings.php:109
+msgid "wp-admin > Settings > Discussion > Comment Blacklist?"
+msgstr "wp-admin > Settings > Discutii > Lista neagra?"
+
+#: inc/settings.php:114
+msgid "Send email confirmation to form submitter"
+msgstr "Trimite confirmare prin e-mail celui care a emis formularul"
+
+#: inc/settings.php:115
+msgid "Adding text here will send an email to the form submitter. The email uses the \"Text to show when form is submitted...\" field below as the subject line. Plain text only here, no HTML."
+msgstr "Adăugarea de text aici va trimite un e-mail la emitentul formularului. E-mail utilizează \" Text afisat atunci când formularul este trimis ... \" câmpul de mai jos ca linia de subiect. Doar text simplu aici, nu HTML."
+
+#: inc/settings.php:122
+#: inc/settings.php:424
+msgid "Fields"
+msgstr "Câmpuri"
+
+#: inc/settings.php:129
+#: inc/settings.php:206
+msgid "Name"
+msgstr "Nume"
+
+#: inc/settings.php:130
+msgid "Do you want the name field to be displayed?"
+msgstr "Vrei să fie afișat câmpul nume?"
+
+#: inc/settings.php:134
+#: inc/settings.php:146
+#: inc/settings.php:158
+#: inc/settings.php:170
+msgid "None"
+msgstr "Nu"
+
+#: inc/settings.php:135
+#: inc/settings.php:147
+#: inc/settings.php:159
+#: inc/settings.php:171
+msgid "Yes but not required"
+msgstr "Da, dar nu obligatoriu"
+
+#: inc/settings.php:136
+#: inc/settings.php:148
+#: inc/settings.php:160
+#: inc/settings.php:172
+msgid "Required"
+msgstr "Obligatoriu"
+
+#: inc/settings.php:141
+msgid "Email address"
+msgstr "Adresă de email"
+
+#: inc/settings.php:142
+msgid "Do you want the email address field be displayed?"
+msgstr "Vreți sa fie afișat câmpul adresa de email?"
+
+#: inc/settings.php:153
+#: inc/settings.php:218
+#: inc/settings.php:221
+msgid "Subject"
+msgstr "Subiect"
+
+#: inc/settings.php:154
+msgid "Do you want the subject field be displayed?"
+msgstr "Vrei să fie afișat câmpul subiect?"
+
+#: inc/settings.php:165
+#: inc/settings.php:224
+msgid "Message"
+msgstr "Mesaj"
+
+#: inc/settings.php:177
+msgid "Add a reCAPTCHA"
+msgstr "Adaugă reCAPTCHA"
+
+#: inc/settings.php:184
+msgid "Site key"
+msgstr "Cheia site-ului"
+
+#: inc/settings.php:185
+msgid "Create an account here "
+msgstr "Creează-ți un cont aici"
+
+#: inc/settings.php:185
+msgid "to get the Site key and the Secret key for the reCaptcha."
+msgstr "pentru a obține cheia site-ului și cheia secretă pentru reCAPTCHA."
+
+#: inc/settings.php:191
+msgid "Secret key"
+msgstr "Cheia secretă"
+
+#: inc/settings.php:200
+#: inc/settings.php:425
+msgid "Labels"
+msgstr "Etichete"
+
+#: inc/settings.php:209
+msgid "Your Name"
+msgstr "Numele tău"
+
+#: inc/settings.php:212
+msgid "Email"
+msgstr "Email"
+
+#: inc/settings.php:215
+msgid "Your Email"
+msgstr "Emailul tău"
+
+#: inc/settings.php:227
+msgid "Your message"
+msgstr "Mesajul tău"
+
+#: inc/settings.php:230
+msgid "Submit button"
+msgstr "Buton de trimis formularul"
+
+#: inc/settings.php:238
+#: inc/settings.php:426
+msgid "Messages"
+msgstr "Mesaje"
+
+#: inc/settings.php:244
+msgid "Name required and missing"
+msgstr "Numele este necesar și lipsește"
+
+#: inc/settings.php:247
+msgid "Enter your name"
+msgstr "Introdu numele tău"
+
+#: inc/settings.php:250
+msgid "E-mail required and missing"
+msgstr "Adresa de e-mail este necesară și lipsește"
+
+#: inc/settings.php:253
+msgid "Enter a valid email"
+msgstr "Introduceți o adresă de e-mail validă"
+
+#: inc/settings.php:256
+msgid "Subject required and missing"
+msgstr "Subiectul este necesar și lipseşte"
+
+#: inc/settings.php:259
+msgid "Please enter a subject"
+msgstr "Vă rugăm să introduceți un subiect"
+
+#: inc/settings.php:262
+msgid "Question/comment is missing"
+msgstr "Intrebarea / comentariul lipsește"
+
+#: inc/settings.php:265
+msgid "Enter your question or comment"
+msgstr "Introduceți întrebarea dvs. sau comentariul"
+
+#: inc/settings.php:268
+msgid "Successful form submission text"
+msgstr "Mesajul de succes pentru formular"
+
+#: inc/settings.php:269
+msgid "This text is used on the page if no \"Thank You\" URL is set above. This is also used as the confirmation email title, if one is set to send out."
+msgstr "Acest text este folosit în pagină dacă nu este setat mai sus \" Thank You \" URL. Acest text este, de asemenea, utilizat ca titlul email-ului de confirmare, în cazul în care unul este setat."
+
+#: inc/settings.php:271
+msgid "Thanks, your email was sent successfully!"
+msgstr "Mulțumim , e-mailul a fost trimis cu succes !"
+
+#: inc/settings.php:276
+msgid "Use SMTP to send emails?"
+msgstr "Doriți să utilizați SMTP pentru a trimite emailuri?"
+
+#: inc/settings.php:277
+msgid "Instead of PHP mail function"
+msgstr "în loc de funcția PHP mail"
+
+#: inc/settings.php:282
+msgid "SMTP Host"
+msgstr "Gazda SMTP"
+
+#: inc/settings.php:288
+msgid "SMTP Port"
+msgstr "Portul SMTP"
+
+#: inc/settings.php:294
+msgid "Use SMTP Authentication?"
+msgstr "Doriți autentificarea SMTP?"
+
+#: inc/settings.php:295
+msgid "If you check this box, make sure the SMTP Username and SMTP Password are completed."
+msgstr "După selectarea acestei căsuțe, te rugăm să completezi utilizatorul SMTP și parola SMTP. "
+
+#: inc/settings.php:300
+msgid "SMTP Username"
+msgstr "Utilizator SMTP"
+
+#: inc/settings.php:306
+msgid "SMTP Password"
+msgstr "Parola SMTP"
+
+#: inc/settings.php:324
+msgid "Pirate Forms settings"
+msgstr "Formularul Piraților -  setări"
+
+#: inc/settings.php:325
+#: inc/settings.php:417
+#: inc/widget.php:15
+#: inc/widget.php:16
+msgid "Pirate Forms"
+msgstr "Formularul Piraților"
+
+#: inc/settings.php:422
+msgid "How to use"
+msgstr ""
+
+#: inc/settings.php:423
+msgid "Options"
+msgstr ""
+
+#: inc/settings.php:427
+#, fuzzy
+msgid "SMTP"
+msgstr "Gazda SMTP"
+
+#: inc/settings.php:434
+#, fuzzy
+msgid "Welcome to Pirate Forms!"
+msgstr "Formularul Piraților"
+
+#: inc/settings.php:435
+msgid "To get started, just "
+msgstr ""
+
+#: inc/settings.php:435
+msgid "configure all the options "
+msgstr ""
+
+#: inc/settings.php:435
+msgid "you need, hit save and start using the created form."
+msgstr ""
+
+#: inc/settings.php:439
+msgid "There are 3 ways of using the newly created form:"
+msgstr ""
+
+#: inc/settings.php:440
+msgid "1. Use the shortcode "
+msgstr ""
+
+#: inc/settings.php:440
+msgid "in any page or post."
+msgstr ""
+
+#: inc/settings.php:441
+msgid "2. Add a "
+msgstr ""
+
+#: inc/settings.php:441
+msgid "widget"
+msgstr ""
+
+#: inc/settings.php:442
+msgid "3. Use the shortcode "
+msgstr ""
+
+#: inc/settings.php:442
+msgid "in the theme's files."
+msgstr ""
+
+#: inc/settings.php:561
+msgid "Save changes"
+msgstr "Salvează"
+
+#: inc/settings.php:575
+msgid "Get Our Free Email Course"
+msgstr ""
+
+#: inc/settings.php:595
+msgid "Ready to learn how to reduce your website loading times by half? Come and join the 1st lesson here!"
+msgstr ""
+
+#: inc/settings.php:597
+msgid "Thank you for subscribing! You have been added to the mailing list and will receive the next email information in the coming weeks. If you ever wish to unsubscribe, simply use the \"Unsubscribe\" link included in each newsletter."
+msgstr ""
+
+#: inc/widget.php:75
+msgid "Title"
+msgstr "Titlu"
+
+#: inc/widget.php:76
+msgid "Text above form"
+msgstr "Text deasupra formularului:"
+
+#: inc/widget.php:79
+msgid "Title:"
+msgstr "Titlu:"
+
+#: inc/widget.php:83
+msgid "Subtext:"
+msgstr "Subtext:"
+
+#~ msgid "Use the email address above as notification sender"
+#~ msgstr "Utilizați adresa de email de mai sus ca expeditorul notificarilor"
+
+#~ msgid ""
+#~ "When this is on, the notification emails sent from your site will come "
+#~ "from the email address above. When this is off, the emails will come from "
+#~ "the form submitter, making it easy to reply. If you are not receiving "
+#~ "notifications from the site, then turn this option off as your email "
+#~ "server might be marking them as spam."
+#~ msgstr ""
+#~ "Când acestă căsuță este selectată, e-mailurile de notificare trimise de "
+#~ "site-ul dvs. vor veni de la adresa de email de mai sus . Atunci când "
+#~ "acestă căsuță nu este selectată , e-mailurile vor veni de la autorul "
+#~ "formularului, făcând ușoară modalitatea de a răspunde. Dacă nu primiți "
+#~ "notificări de pe site-ul dvs., dezactivați această opțiune deoarece "
+#~ "server-ul dvs. de e-mail le-ar putea marca ca spam."
