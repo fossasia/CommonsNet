@@ -1,0 +1,58 @@
+/* Back-end styles */
+/* styles for theme options page */
+#chosen-dashboard-wrap h2 {
+  margin-bottom: 24px;
+}
+#chosen-dashboard-wrap .content {
+  margin-top: 12px;
+  padding: 12px 24px 24px;
+  border: solid 1px #e5e5e5;
+  background: white;
+}
+#chosen-dashboard-wrap .content .button-primary {
+  margin: 12px 0;
+}
+#chosen-dashboard-wrap .content ul {
+  list-style: disc;
+  margin-left: 36px;
+}
+
+/* 600px */
+@media all and (min-width: 37.5em) {
+  #chosen-dashboard-wrap .content {
+    width: 39%;
+    float: left;
+  }
+  #chosen-dashboard-wrap .content p {
+    min-height: 57px;
+  }
+  #chosen-dashboard-wrap .content-premium-upgrade p {
+    min-height: 0;
+  }
+  #chosen-dashboard-wrap .content-review p {
+    min-height: 75px;
+  }
+  #chosen-dashboard-wrap .content-customization,
+  #chosen-dashboard-wrap .content-premium-upgrade,
+  #chosen-dashboard-wrap .content-review {
+    margin-right: 2%;
+  }
+}
+/* 1100px */
+@media all and (min-width: 68.75em) {
+  #chosen-dashboard-wrap .content {
+    width: 27%;
+  }
+  #chosen-dashboard-wrap .content-resources {
+    clear: left;
+  }
+  #chosen-dashboard-wrap .content-customization,
+  #chosen-dashboard-wrap .content-support,
+  #chosen-dashboard-wrap .content-resources,
+  #chosen-dashboard-wrap .content-review {
+    margin-right: 1%;
+  }
+  #chosen-dashboard-wrap .content-premium-upgrade {
+    margin-right: 0;
+  }
+}

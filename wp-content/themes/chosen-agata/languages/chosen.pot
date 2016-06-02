@@ -1,0 +1,428 @@
+# Copyright (C) 2016 Compete Themes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Chosen 1.15\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2016-04-08 13:42:55+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.4.9\n"
+
+#: 404.php:6
+msgid "404: Page Not Found"
+msgstr ""
+
+#: 404.php:9
+msgid ""
+"Looks like nothing was found on this url.  Double-check that the url is "
+"correct or try the search form below to find what you were looking for."
+msgstr ""
+
+#: comments.php:12 comments.php:32 comments.php:54
+msgid "Be First to Comment"
+msgstr ""
+
+#: comments.php:12 comments.php:32 comments.php:54
+msgid "One Comment"
+msgstr ""
+
+#: comments.php:12 comments.php:32 comments.php:54 content/comments-link.php:5
+#: content/comments-link.php:8
+msgid "% Comments"
+msgstr ""
+
+#: comments.php:46
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this "
+"post\">trackbacks</a> and pingbacks are open."
+msgstr ""
+
+#: comments.php:68 comments.php:75
+msgid "Comments are closed."
+msgstr ""
+
+#: content/archive-header.php:4
+msgid "Posts"
+msgstr ""
+
+#: content/comments-link.php:2
+msgid "comment icon"
+msgstr ""
+
+#: content/comments-link.php:5
+msgid "Comments closed"
+msgstr ""
+
+#: content/comments-link.php:5 content/comments-link.php:8
+msgid "1 Comment"
+msgstr ""
+
+#: content/comments-link.php:8
+msgid "Leave a Comment"
+msgstr ""
+
+#: content/post-byline.php:5
+msgid "Published %s"
+msgstr ""
+
+#: content/post-byline.php:12
+msgid "By"
+msgstr ""
+
+#: content/post-categories.php:9
+msgid "Categories:"
+msgstr ""
+
+#: content/post-categories.php:11
+msgid "View all posts in %s"
+msgstr ""
+
+#: content/post-nav-attachment.php:3
+msgid "Previous Image"
+msgstr ""
+
+#: content/post-nav-attachment.php:6
+msgid "Next Image"
+msgstr ""
+
+#: content/post-nav.php:8
+msgid "Previous Post"
+msgstr ""
+
+#: content/post-nav.php:9
+msgid "The Previous Post"
+msgstr ""
+
+#: content/post-nav.php:12
+msgid "No Older Posts"
+msgstr ""
+
+#: content/post-nav.php:13 content/post-nav.php:27
+msgid "Return to Blog"
+msgstr ""
+
+#: content/post-nav.php:22
+msgid "Next Post"
+msgstr ""
+
+#: content/post-nav.php:23
+msgid "The Next Post"
+msgstr ""
+
+#: content/post-nav.php:26
+msgid "No Newer Posts"
+msgstr ""
+
+#: content/post-tags.php:6
+msgid "Tags:"
+msgstr ""
+
+#: content/post-tags.php:9
+msgid "View all posts tagged %s"
+msgstr ""
+
+#: content/search-bar.php:11 searchform.php:3
+msgid "Search"
+msgstr ""
+
+#: content/search-bar.php:12
+msgid "Search..."
+msgstr ""
+
+#: content/search-bar.php:13 searchform.php:5
+msgid "Search for:"
+msgstr ""
+
+#: content-page.php:11 content.php:12
+msgid "Pages:"
+msgstr ""
+
+#: footer.php:11
+msgid "<a href=\"%s\">Chosen WordPress Theme</a> by Compete Themes."
+msgstr ""
+
+#: functions.php:32
+msgid "Primary"
+msgstr ""
+
+#: functions.php:55
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:63
+msgid "Reply"
+msgstr ""
+
+#: functions.php:67
+msgid "Edit"
+msgstr ""
+
+#: functions.php:79
+msgid "(optional)"
+msgstr ""
+
+#: functions.php:84
+msgid "Name"
+msgstr ""
+
+#: functions.php:91
+msgid "Email"
+msgstr ""
+
+#: functions.php:98
+msgid "Website"
+msgstr ""
+
+#: functions.php:113
+msgid "Comment"
+msgstr ""
+
+#: functions.php:144 functions.php:153 functions.php:169
+msgid "Continue reading"
+msgstr ""
+
+#: functions.php:307 functions.php:308
+msgid "email"
+msgstr ""
+
+#: functions.php:372 header.php:22 inc/scripts.php:10
+msgid "open menu"
+msgstr ""
+
+#: functions.php:383
+msgid "Featured Post"
+msgstr ""
+
+#: functions.php:440
+msgid "Customizer settings deleted"
+msgstr ""
+
+#: header.php:11
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer.php:15
+msgid "Front Page"
+msgstr ""
+
+#: inc/customizer.php:27
+msgid "Logo"
+msgstr ""
+
+#: inc/customizer.php:37
+msgid "Upload custom logo."
+msgstr ""
+
+#: inc/customizer.php:53
+msgid "Social Media Icons"
+msgstr ""
+
+#: inc/customizer.php:55
+msgid "Add the URL for each of your social profiles."
+msgstr ""
+
+#: inc/customizer.php:68
+msgid "Email Address"
+msgstr ""
+
+#: inc/customizer.php:117
+msgid ""
+"Accepts Skype link protocol (<a href=\"%s\" target=\"_blank\">learn "
+"more</a>)"
+msgstr ""
+
+#: inc/customizer.php:143
+msgid "Search Bar"
+msgstr ""
+
+#: inc/customizer.php:154
+msgid "Show search bar at top of site?"
+msgstr ""
+
+#: inc/customizer.php:158 inc/customizer.php:281
+msgid "Show"
+msgstr ""
+
+#: inc/customizer.php:159 inc/customizer.php:282
+msgid "Hide"
+msgstr ""
+
+#: inc/customizer.php:167
+msgid "Blog"
+msgstr ""
+
+#: inc/customizer.php:177
+msgid "Show full posts on blog?"
+msgstr ""
+
+#: inc/customizer.php:182 inc/customizer.php:230 inc/customizer.php:246
+#: inc/customizer.php:300
+msgid "Yes"
+msgstr ""
+
+#: inc/customizer.php:183 inc/customizer.php:231 inc/customizer.php:247
+#: inc/customizer.php:301
+msgid "No"
+msgstr ""
+
+#: inc/customizer.php:193
+msgid "Excerpt word count"
+msgstr ""
+
+#: inc/customizer.php:200
+msgid "Continue Reading"
+msgstr ""
+
+#: inc/customizer.php:205
+msgid "Read More button text"
+msgstr ""
+
+#: inc/customizer.php:215
+msgid "Additional Options"
+msgstr ""
+
+#: inc/customizer.php:225
+msgid "Make first post on blog extra wide?"
+msgstr ""
+
+#: inc/customizer.php:241
+msgid "Display post author name in byline?"
+msgstr ""
+
+#: inc/customizer.php:255
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/customizer.php:266
+msgid "Add Custom CSS Here:"
+msgstr ""
+
+#: inc/scripts.php:11
+msgid "close menu"
+msgstr ""
+
+#: inc/scripts.php:12
+msgid "open dropdown menu"
+msgstr ""
+
+#: inc/scripts.php:13
+msgid "close dropdown menu"
+msgstr ""
+
+#: index.php:19
+msgid "Previous"
+msgstr ""
+
+#: index.php:20
+msgid "Next"
+msgstr ""
+
+#: search.php:9
+msgid "%d search result for \"%s\""
+msgid_plural "%d search results for \"%s\""
+msgstr[0] ""
+msgstr[1] ""
+
+#: search.php:11
+msgid "No search results for \"%s\""
+msgstr ""
+
+#: search.php:35
+msgid "Can't find what you're looking for?  Try refining your search:"
+msgstr ""
+
+#: searchform.php:6
+msgid "Go"
+msgstr ""
+
+#: theme-options.php:4 theme-options.php:19
+msgid "Chosen Dashboard"
+msgstr ""
+
+#: theme-options.php:22
+msgid "Customization"
+msgstr ""
+
+#: theme-options.php:23
+msgid ""
+"Click the \"Customize\" link in your menu, or use the button below to get "
+"started customizing Chosen"
+msgstr ""
+
+#: theme-options.php:26
+msgid "Use Customizer"
+msgstr ""
+
+#: theme-options.php:30
+msgid "Support"
+msgstr ""
+
+#: theme-options.php:31
+msgid ""
+"You can find the knowledgebase, changelog, support forum, and more in the "
+"chosen Support Center"
+msgstr ""
+
+#: theme-options.php:34
+msgid "Visit Support Center"
+msgstr ""
+
+#: theme-options.php:38
+msgid "Get More Features & Flexibility"
+msgstr ""
+
+#: theme-options.php:39
+msgid ""
+"Download the Chosen Pro plugin and unlock custom colors, new layouts, "
+"sliders, and more"
+msgstr ""
+
+#: theme-options.php:42
+msgid "See Full Feature List"
+msgstr ""
+
+#: theme-options.php:46
+msgid "WordPress Resources"
+msgstr ""
+
+#: theme-options.php:47
+msgid ""
+"Save time and money searching for WordPress products by following our "
+"recommendations"
+msgstr ""
+
+#: theme-options.php:50
+msgid "View Resources"
+msgstr ""
+
+#: theme-options.php:54 theme-options.php:56
+msgid "Leave a Review"
+msgstr ""
+
+#: theme-options.php:55
+msgid "Help others find Chosen by leaving a review on wordpress.org."
+msgstr ""
+
+#: theme-options.php:59 theme-options.php:67
+msgid "Reset Customizer Settings"
+msgstr ""
+
+#: theme-options.php:61
+msgid ""
+"<strong>Warning:</strong> Clicking this button will erase the Chosen "
+"theme's current settings in the <a href='%s'>Customizer</a>."
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Chosen is a bold and minimalist theme for publishers who want to get their "
+"visitors' attention and keep it. Present your best content in a clean, "
+"uncluttered fashion on phones, tablets, and desktop computers with Chosen. "
+"See our fully-setup live demo here: "
+"https://www.competethemes.com/chosen-live-demo/"
+msgstr ""

@@ -1,0 +1,146 @@
+{
+  "version": "2",
+  "customize_texts": {
+    "zerif_general_section": {
+      "zerif_copyright": {
+        "type": "text"
+      }
+    },
+    "zerif_general_footer_section": {
+      "zerif_email": {
+        "type": "textarea"
+      },
+      "zerif_phone": {
+        "type": "textarea"
+      },
+      "zerif_address": {
+        "type": "textarea"
+      }
+    },
+    "zerif_bigtitle_section": {
+      "zerif_bigtitle_title": {
+        "type": "text"
+      },
+      "zerif_bigtitle_redbutton_label": {
+        "type": "text"
+      },
+	  "zerif_bigtitle_redbutton_url": {
+        "type": "url"
+      },	  
+      "zerif_bigtitle_greenbutton_label": {
+        "type": "text"
+      },
+	  "zerif_bigtitle_greenbutton_url": {
+        "type": "url"
+      }	  
+    },
+    "zerif_ourfocus_section": {
+      "zerif_ourfocus_title": {
+        "type": "text"
+      },
+      "zerif_ourfocus_subtitle": {
+        "type": "text"
+      }
+    },
+    "zerif_aboutus_main_section": {
+      "zerif_aboutus_title": {
+        "type": "text"
+      },
+      "zerif_aboutus_subtitle": {
+        "type": "text"
+      },
+      "zerif_aboutus_text": {
+        "type": "text"
+      },
+      "zerif_aboutus_biglefttitle": {
+        "type": "text"
+      }
+    },
+    "zerif_aboutus_feat1_section": {
+      "zerif_aboutus_feature1_title": {
+        "type": "text"
+      },
+      "zerif_aboutus_feature1_text": {
+        "type": "text"
+      }
+    },
+    "zerif_aboutus_feat2_section": {
+      "zerif_aboutus_feature2_title": {
+        "type": "text"
+      },
+      "zerif_aboutus_feature2_text": {
+        "type": "text"
+      }
+    },
+    "zerif_aboutus_feat3_section": {
+      "zerif_aboutus_feature3_title": {
+        "type": "text"
+      },
+      "zerif_aboutus_feature3_text": {
+        "type": "text"
+      }
+    },
+    "zerif_aboutus_feat4_section": {
+      "zerif_aboutus_feature4_title": {
+        "type": "text"
+      },
+      "zerif_aboutus_feature4_text": {
+        "type": "text"
+      }
+    },
+    "zerif_ourteam_section": {
+      "zerif_ourteam_title": {
+        "type": "text"
+      },
+      "zerif_ourteam_subtitle": {
+        "type": "text"
+      }
+    },
+    "zerif_testimonials_section": {
+      "zerif_testimonials_title": {
+        "type": "text"
+      },
+      "zerif_testimonials_subtitle": {
+        "type": "text"
+      }
+    },
+    "zerif_bottomribbon_section": {
+      "zerif_bottomribbon_text": {
+        "type": "text"
+      },
+      "zerif_bottomribbon_buttonlabel": {
+        "type": "text"
+      }
+    },
+    "zerif_rightribbon_section": {
+      "zerif_ribbonright_text": {
+        "type": "text"
+      },
+      "zerif_ribbonright_buttonlabel": {
+        "type": "text"
+      }
+    },
+    "zerif_latestnews_section": {
+      "zerif_latestnews_title": {
+        "type": "text"
+      },
+      "zerif_latestnews_subtitle": {
+        "type": "text"
+      }
+    },
+    "zerif_contactus_section": {
+      "zerif_contactus_title": {
+        "type": "text"
+      },
+      "zerif_contactus_subtitle": {
+        "type": "text"
+      },
+      "zerif_contactus_email": {
+        "type": "text"
+      },
+      "zerif_contactus_button_label": {
+        "type": "text"
+      }
+    }
+  }
+}

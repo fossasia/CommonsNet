@@ -1,0 +1,74 @@
+.customize-control-widget_form .widget-control-save {
+	display:block !important;
+}
+#customize-control-zerif_email_icon img, #customize-control-zerif_phone_icon img, #customize-control-zerif_address_icon img {
+	width: auto !important; 
+}
+
+#accordion-section-zerif_order_section .accordion-section-title, #accordion-section-zerif_googlemap_section .accordion-section-title, #accordion-section-zerif_pricing_section .accordion-section-title, #accordion-section-zerif_videobackground_in_pro_section .accordion-section-title {
+	background-image:url(../images/gray-lines.png);
+	background-repeat:repeat;
+}
+
+#accordion-section-zerif_order_section .accordion-section-title:after, #accordion-section-zerif_googlemap_section .accordion-section-title:after, #accordion-section-zerif_pricing_section .accordion-section-title:after, #accordion-section-zerif_videobackground_in_pro_section .accordion-section-title:after {
+	content: "\f160";	
+}
+
+.zerif-upgrade-to-pro-button {
+	padding: 3px 6px !important;
+	line-height: 1.5 !important;
+	font-size: 9px !important;
+	color: #ffffff !important;
+	background-color: #EA6F60;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+/* Tooltips */
+.zerif-moreinfo-icon {
+	color: #888;
+	position:relative;
+}
+.zerif-moreinfo-icon:after {
+	display:none;
+	content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+}
+.zerif-moreinfo-icon:hover:after {
+	content: "";
+	display:block;
+}
+.zerif-moreinfo-content {
+	display: none;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px;
+    position: absolute;
+    font-size: 11px;
+    line-height: 16px;
+    right: 5%;
+    left: 5%;
+	margin-top: 4px;
+	z-index: 999;
+}
+
+.customizer-review-link {
+	padding-top: 10px;
+	text-align: center;
+}
+
+.customizer-review-link p {
+	font-size: 12px;
+	margin-bottom: 0;
+}
+
+.customizer-review-link span {
+	font-size: 12px;
+	width: 12px;
+}
