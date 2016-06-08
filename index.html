@@ -1,0 +1,95 @@
+<!doctype html>
+<html ng-app="website">
+<head>
+    <title>CommonsNet</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+     <script src="js/jquery.2.0.0.js"></script>
+    <script src="js/jquery.bootstrap.wizard.min.js"></script>
+    <script src="js/main.js"></script>
+    
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/small-business.css" rel="stylesheet">
+</head>
+<body>
+
+
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/home">
+                  CommonsNet
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                   <!--  <li>
+                        <a href="#/home">Home</a>
+                    </li> -->
+                    <li>
+                         <a href="#/about-us">About Us</a>
+                    </li>
+                    <li>
+                       <a href="#/generate-wifi">Generate WiFi</a>
+                    </li>
+                    <li>
+                       <a href="#/blog">Blog</a>
+                    </li>
+                    <li>
+                       <a href="#/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<div class="shadow"></div>
+
+<div id="container">
+    <div ng-view></div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.1/angular.min.js"></script>
+<script src="http://code.angularjs.org/1.3.0-rc.1/angular-route.min.js"></script>
+<script src="js/website.js"></script>
+
+ <footer id="footer">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+
+</body>
+</html>
