@@ -29,6 +29,7 @@ angular.module('website', ['ngRoute']).
         $scope.body = 'This is the about page body';
     })
        .controller('HomeCtrl', function ($scope) {
+         $scope.title = 'We are CommonsNet';
      
     })
          .controller('GenerateWiFiCtrl', function ($scope) {
