@@ -126,7 +126,7 @@ footer {
 /* Generic Button Styles */
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-    width:100px;
+    width:150px;
     display: block;
     height: auto;
     padding:15px;
@@ -144,8 +144,19 @@ footer {
     -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
   }
 
+  .nav-justified {
+    padding-bottom: 50px;
+  }
+  #left {
+   float:left;
+  }
+  #right {
+   float:right;
+  }
   .nav-pills {
     text-align: center;
+    padding-bottom: 50px;
+
 
     }
   
@@ -153,7 +164,9 @@ footer {
     color: black;
   }
 
-
+.nav-pills>li+li {
+    padding-bottom: 50px;
+  }
 
 
 
@@ -200,6 +213,8 @@ footer {
     -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
   }
 
+  
+
   .form-btn:hover{
     background:#111;
     color: white;
@@ -219,8 +234,10 @@ input {
 
 h2  {
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
        margin-bottom: 30px;
+       margin-top: 30px;
+
 }
 
 h3  {
@@ -231,7 +248,7 @@ h3  {
 
 h1  {
   
-    font-size: 60px;
+    font-size: 80px;
     font-weight: bold;
 
 }

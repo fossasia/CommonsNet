@@ -59,19 +59,24 @@ angular.module('website', ['ngRoute']).
         vm.steps = [
           {
             step: 1,
-            name: "First step",
-            template: "partials/step1.html"
+            name: "WIRELESS SETTINGS",
+            template: "partials/1settings.html"
           },
           {
             step: 2,
-            name: "Second step",
-            template: "partials/step2.html"
+            name: "PAYMENT",
+            template: "partials/2payment.html"
           },   
           {
             step: 3,
-            name: "Third step",
-            template: "partials/step3.html"
-          },             
+            name: "CONDITIONS",
+            template: "partials/3conditions.html"
+          },  
+           {
+            step: 4,
+            name: "LEGAL RESTRICTIONS",
+            template: "partials/4legalissues.html"
+          },                 
         ];
         vm.user = {};
         
