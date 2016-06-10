@@ -37,14 +37,64 @@ angular.module('website', ['ngRoute']).
         $scope.body = 'This is the about page body';
       })
 
+
+
         .controller('ContactCtrl', function ($scope) {
-        $scope.title = 'Contact';
-        $scope.body = 'This is the about page body';
+        $scope.title = 'Have questions? Contact us';
+        $scope.body = '';
 
     })
         .controller('BlogCtrl', function ($scope) {
         $scope.title = 'Blog';
         $scope.body = 'This is the about page body';
+
+    
+    })
+
+        .controller('WizardController', function ($scope) {
+         var vm = this;
+        
+        //Model
+        vm.currentStep = 1;
+        vm.steps = [
+          {
+            step: 1,
+            name: "First step",
+            template: "partials/step1.html"
+          },
+          {
+            step: 2,
+            name: "Second step",
+            template: "partials/step2.html"
+          },   
+          {
+            step: 3,
+            name: "Third step",
+            template: "partials/step3.html"
+          },             
+        ];
+        vm.user = {};
+        
+        //Functions
+        vm.gotoStep = function(newStep) {
+          vm.currentStep = newStep;
+        }
+        
+        vm.getStepTemplate = function(){
+          for (var i = 0; i < vm.steps.length; i++) {
+                if (vm.currentStep == vm.steps[i].step) {
+                    return vm.steps[i].template;
+                }
+            }
+        }
+        
+        vm.save = function() {
+          alert(
+            "Saving form... \n\n" + 
+            "Name: " + vm.user.name + "\n" + 
+            "Email: " + vm.user.email + "\n" + 
+            "Age: " + vm.user.age);
+        }
 
     
     })

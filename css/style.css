@@ -1,0 +1,13 @@
+#wizard-step-container {
+  margin: 20px 0;
+}
+
+#wizard-content-container {
+  margin: 20px 0;
+}
+
+#wizard-navigation-container {
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+  padding-top: 20px;
+}

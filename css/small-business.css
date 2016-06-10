@@ -125,6 +125,38 @@ footer {
   
 /* Generic Button Styles */
 
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    width:100px;
+    display: block;
+    height: auto;
+    padding:15px;
+    color:#fff;
+    background:#8BC3A3;
+    border:none;
+    border-radius:3px;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin:auto;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .nav-pills {
+    text-align: center;
+
+    }
+  
+  a  {
+    color: black;
+  }
+
+
+
+
+
   .button{
     padding:8px 12px;
     background:#0A5175;
@@ -188,6 +220,12 @@ input {
 h2  {
     text-align: center;
     font-size: 40px;
+       margin-bottom: 30px;
+}
+
+h3  {
+    text-align: center;
+    font-size: 30px;
        margin-bottom: 30px;
 }
 

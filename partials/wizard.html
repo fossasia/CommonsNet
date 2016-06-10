@@ -1,16 +1,20 @@
-
-
-
-
-
-<h2>{{title}}</h2>
-
-
- <div class="container">
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet" data-semver="3.3.6" data-require="bootstrap-css@3.3.6" />
+    <link data-require="fontawesome@4.5.0" data-semver="4.5.0" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css" />
+    <script data-require="angular.js@1.4.8" data-semver="1.4.8" src="https://code.angularjs.org/1.4.8/angular.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.js" data-semver="2.1.4" data-require="jquery@*"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" data-semver="3.3.6" data-require="bootstrap@3.3.6"></script>
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+  </head>
+  <body ng-app="app">
+    <div class="container">
       <div class="row">
         <div class="col-md-12">
           
-          <h3>Simple wizard in AngularJS and Bootstrap</h3>
+          <h1>Simple wizard in AngularJS and Bootstrap</h1>
           <div id="wizard-container" ng-controller="WizardController as vm">
             
             <div id="wizard-step-container">
@@ -38,4 +42,5 @@
         </div>
       </div>
     </div>
-      
+  </body>
+</html>
