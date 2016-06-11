@@ -1,0 +1,5 @@
+Changes from version 0.1 to 0.2:
+
+`clientMaxAge` now defaults to 0.
+Zlib Deflate support
+Gzippo should now support external stores, gridfs, redis etc...

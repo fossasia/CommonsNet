@@ -1,0 +1,97 @@
+{
+  "name": "morgan",
+  "description": "HTTP request logger middleware for node.js",
+  "version": "1.7.0",
+  "contributors": [
+    {
+      "name": "Douglas Christopher Wilson",
+      "email": "doug@somethingdoug.com"
+    },
+    {
+      "name": "Jonathan Ong",
+      "email": "me@jongleberry.com",
+      "url": "http://jongleberry.com"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/expressjs/morgan"
+  },
+  "dependencies": {
+    "basic-auth": "~1.0.3",
+    "debug": "~2.2.0",
+    "depd": "~1.1.0",
+    "on-finished": "~2.3.0",
+    "on-headers": "~1.0.1"
+  },
+  "devDependencies": {
+    "istanbul": "0.4.2",
+    "mocha": "2.4.5",
+    "split": "1.0.0",
+    "supertest": "1.1.0"
+  },
+  "files": [
+    "LICENSE",
+    "HISTORY.md",
+    "README.md",
+    "index.js"
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "mocha --check-leaks --reporter spec --bail",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks --reporter spec"
+  },
+  "gitHead": "5da5ff1f5446e3f3ff29d29a2d6582712612bf89",
+  "bugs": {
+    "url": "https://github.com/expressjs/morgan/issues"
+  },
+  "homepage": "https://github.com/expressjs/morgan",
+  "_id": "morgan@1.7.0",
+  "_shasum": "eb10ca8e50d1abe0f8d3dad5c0201d052d981c62",
+  "_from": "morgan@latest",
+  "_npmVersion": "1.4.28",
+  "_npmUser": {
+    "name": "dougwilson",
+    "email": "doug@somethingdoug.com"
+  },
+  "maintainers": [
+    {
+      "name": "defunctzombie",
+      "email": "shtylman@gmail.com"
+    },
+    {
+      "name": "dougwilson",
+      "email": "doug@somethingdoug.com"
+    },
+    {
+      "name": "fishrock123",
+      "email": "fishrock123@rocketmail.com"
+    },
+    {
+      "name": "jongleberry",
+      "email": "jonathanrichardong@gmail.com"
+    },
+    {
+      "name": "mscdex",
+      "email": "mscdex@mscdex.net"
+    },
+    {
+      "name": "tjholowaychuk",
+      "email": "tj@vision-media.ca"
+    }
+  ],
+  "dist": {
+    "shasum": "eb10ca8e50d1abe0f8d3dad5c0201d052d981c62",
+    "tarball": "https://registry.npmjs.org/morgan/-/morgan-1.7.0.tgz"
+  },
+  "_npmOperationalInternal": {
+    "host": "packages-6-west.internal.npmjs.com",
+    "tmp": "tmp/morgan-1.7.0.tgz_1455857999079_0.07957377028651536"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/morgan/-/morgan-1.7.0.tgz"
+}

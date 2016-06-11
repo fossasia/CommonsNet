@@ -1,0 +1,13 @@
+node_modules/*
+.DS_STORE
+*.swp
+*.monitor
+nodemon-ignore
+.*.sw[a-z]
+*.un~i
+.DS_Store
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+bench/*

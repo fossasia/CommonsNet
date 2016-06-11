@@ -1,0 +1,83 @@
+{
+  "name": "body-parser",
+  "description": "Node.js body parsing middleware",
+  "version": "1.15.1",
+  "contributors": [
+    {
+      "name": "Douglas Christopher Wilson",
+      "email": "doug@somethingdoug.com"
+    },
+    {
+      "name": "Jonathan Ong",
+      "email": "me@jongleberry.com",
+      "url": "http://jongleberry.com"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/expressjs/body-parser.git"
+  },
+  "dependencies": {
+    "bytes": "2.3.0",
+    "content-type": "~1.0.1",
+    "debug": "~2.2.0",
+    "depd": "~1.1.0",
+    "http-errors": "~1.4.0",
+    "iconv-lite": "0.4.13",
+    "on-finished": "~2.3.0",
+    "qs": "6.1.0",
+    "raw-body": "~2.1.6",
+    "type-is": "~1.6.12"
+  },
+  "devDependencies": {
+    "istanbul": "0.4.3",
+    "methods": "1.1.2",
+    "mocha": "2.4.5",
+    "supertest": "1.1.0"
+  },
+  "files": [
+    "lib/",
+    "LICENSE",
+    "HISTORY.md",
+    "index.js"
+  ],
+  "engines": {
+    "node": ">= 0.8"
+  },
+  "scripts": {
+    "test": "mocha --require test/support/env --reporter spec --check-leaks --bail test/",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --require test/support/env --reporter dot --check-leaks test/",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --require test/support/env --reporter spec --check-leaks test/"
+  },
+  "gitHead": "e701380ab9b862bbf2223e4df4835a15e4e1ff66",
+  "bugs": {
+    "url": "https://github.com/expressjs/body-parser/issues"
+  },
+  "homepage": "https://github.com/expressjs/body-parser#readme",
+  "_id": "body-parser@1.15.1",
+  "_shasum": "9bceef0669b8f8b943f0ad8ce5d95716bd740fd2",
+  "_from": "body-parser@latest",
+  "_npmVersion": "2.15.1",
+  "_nodeVersion": "4.4.3",
+  "_npmUser": {
+    "name": "dougwilson",
+    "email": "doug@somethingdoug.com"
+  },
+  "dist": {
+    "shasum": "9bceef0669b8f8b943f0ad8ce5d95716bd740fd2",
+    "tarball": "https://registry.npmjs.org/body-parser/-/body-parser-1.15.1.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "dougwilson",
+      "email": "doug@somethingdoug.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/body-parser-1.15.1.tgz_1462512908287_0.2557021768298"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/body-parser/-/body-parser-1.15.1.tgz"
+}
