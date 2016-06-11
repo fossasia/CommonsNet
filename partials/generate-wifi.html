@@ -18,26 +18,20 @@
               <ul class="nav nav-pills nav-justified">
 
                 <li ng-repeat="step in vm.steps" ng-class="{'active':step.step == vm.currentStep}"><a ng-click="vm.gotoStep(step.step)" href="">{{step.step}}. {{step.name}}</a></li>
-                 <button ng-disabled="vm.currentStep <= 1" class="form-btn" id="left" name="previous" type="button" ng-click="vm.gotoStep(vm.currentStep - 1)"><i class="fa fa-arrow-left"></i> BACK</button>
+                 <button ng-disabled="vm.currentStep <= 1"  id="left" class="btn btn-default" name="previous" type="button" ng-click="vm.gotoStep(vm.currentStep - 1)"> BACK</button>
 
-                  <button ng-disabled="vm.currentStep >= vm.steps.length" class="form-btn" id="right" name="next" type="button" ng-click="vm.gotoStep(vm.currentStep + 1)">NEXT <i class="fa fa-arrow-right"></i></button>
+                  <button ng-disabled="vm.currentStep >= vm.steps.length" id="right" name="next"   class="btn btn-default" type="button" ng-click="vm.gotoStep(vm.currentStep + 1)">NEXT </button>
               </ul>
             </div>
-
+              <div class="col-md-2 col-lg-2"></div>
+           <div class="col-md-8 col-lg-8 col-xs-12">
             <div id="wizard-content-container">
               <ng-include src="vm.getStepTemplate()"></ng-include>
             </div>
 
+              <div class="col-md-2 col-lg-2"></div>
             
             
-              <div class="pull-right">
-                
-                 
-            
-            
-                <button ng-disabled="vm.currentStep != vm.steps.length" class="form-btn" name="next" type="button" ng-click="vm.save()"> <i class="fa fa-floppy-o"></i> Save</button>
-              </div>
-     
 
           </div>
               <div class="col-md-1 col-lg-1"></div>

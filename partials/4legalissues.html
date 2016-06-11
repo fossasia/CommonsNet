@@ -1,5 +1,17 @@
 <h3>Legal restrictions</h3>
+<h4>Do your country have any legal restrictions? Type them.</h4>
 <div class="form-group">
-     <input type="text" name="name" id="name"  class="form" placeholder="Name"  ng-model="vm.user.email" required/>
+     
+
+
+                     
+                            <textarea name="message" id="message" class=" form textarea"  placeholder="You are not allowed to..."></textarea>
+           
+
+
+       <div class="pull-right">
+             <button ng-disabled="vm.currentStep != vm.steps.length" class="form-btn" name="next" type="button" ng-click="vm.save()"> <i class="fa fa-floppy-o"></i> Save</button>
+        </div>
+     
   
 </div>

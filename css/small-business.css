@@ -57,6 +57,11 @@ footer {
        }
     */
 
+.col-md-10 {
+
+
+padding:50px;
+  }
 
  #contact{
     padding:10px 0 10px;
@@ -106,6 +111,18 @@ footer {
     -moz-transition: all 0.4s;
     transition: all 0.4s;
   }
+    .form-customised{
+    width: 100%;
+    padding: 15px;
+    background:white;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:25px;
+    color:#727272 !important;
+    font-size:13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
 
   .form:hover{
     border:1px solid #8BC3A3;
@@ -126,7 +143,7 @@ footer {
 /* Generic Button Styles */
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-    width:150px;
+    width:200px;
     display: block;
     height: auto;
     padding:15px;
@@ -146,6 +163,7 @@ footer {
 
   .nav-justified {
     padding-bottom: 50px;
+
   }
   #left {
    float:left;
@@ -228,22 +246,33 @@ center{
   margin-top:330px;
 }
 input {
-    position: relative;
+  
     z-index: 9999;
 }
 
 h2  {
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
        margin-bottom: 30px;
        margin-top: 30px;
+       font-weight: bold;
 
 }
 
 h3  {
     text-align: center;
     font-size: 30px;
-       margin-bottom: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+
+       
+}
+h4  {
+    text-align: center;
+ 
+    margin-bottom: 30px;
+
+       
 }
 
 h1  {

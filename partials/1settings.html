@@ -1,5 +1,33 @@
 <h3>Wireless settings</h3>
-<div class="form-group">
-  
-  <input type="text" name="name" id="name"  class="form" placeholder="Name"  ng-model="vm.user.email" required/>
-</div>
+<!-- <div class="form-group"> -->
+  <label for="male">SSID </label>
+  <input type="text" name="ssid" id="ssid"  class="form" placeholder="SSID name"  required/>
+   <label for="male">WIFI Password</label>
+   <input type="text" name="password" id="password"  class="form" placeholder="Your wifi password" />
+<label for="male">Authentication</label>
+   <select type="text" name="security"  class="form" placeholder="SSID name"   required>
+		    <option value="volvo">Open</option>
+		  <option value="saab">WEP Open Key</option> 
+		  <option value="saab">WEP Shared Key</option>
+		  <option value="mercedes">WPA Personal+TKIP</option>
+		    <option value="mercedes">WPA Personal+AES</option>
+		      <option value="mercedes">WPA Enterprise</option>
+		  <option value="audi">WPA2 Personal+AES</option>
+	</select>
+<label for="male">Speed</label>
+	<input type="text" name="capacity" id="capacity"  class="form" placeholder="Speed"  required/>
+
+<label for="male">WIFI Standard</label>
+   <select type="text" name="standard"  class="form" placeholder="WIFI Standars"   required>
+		    <option value="volvo">802.11a</option>
+		  <option value="saab">802.11b</option>
+		  <option value="mercedes">802.11g</option>
+		  <option value="audi">802.11n</option>
+		   <option value="audi">802.11ac</option>
+		    <option value="audi">802.11ad</option>
+		     <option value="audi">802.11ah</option>
+
+	</select>
+<!-- </div> -->
+
+

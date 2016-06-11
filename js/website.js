@@ -95,10 +95,11 @@ angular.module('website', ['ngRoute']).
         
         vm.save = function() {
           alert(
-            "Saving form... \n\n" + 
-            "Name: " + vm.user.name + "\n" + 
-            "Email: " + vm.user.email + "\n" + 
-            "Age: " + vm.user.age);
+            "Are you sure to save your file?"
+            // "Name: " + vm.user.name + "\n" + 
+            // "Email: " + vm.user.email + "\n" + 
+            // "Age: " + vm.user.age
+            );
         }
 
     
