@@ -23,7 +23,6 @@ angular.module('website', ['ngRoute']).
                 templateUrl : 'partials/contact.html',
                 controller  : 'ContactCtrl'
             })
-            
 
 
             .otherwise ({redirectTo: '/'});
@@ -98,8 +97,6 @@ angular.module('website', ['ngRoute']).
             }
         }
         
-    
-
         vm.save = function() {
        
         var doc = new jsPDF();
@@ -112,44 +109,51 @@ angular.module('website', ['ngRoute']).
           doc.text(20, 50, 'Wireless details');
 
 
-          doc.fromHTML(vm.ssid, 20, 60, {
+          doc.fromHTML(vm.ssid, 20, 55, {
           'width': 300,
           
              });
           
-          doc.fromHTML(vm.password, 20, 70, {
+          doc.fromHTML(vm.password, 20, 60, {
           'width': 300,
            });
 
 
-          doc.fromHTML(vm.securitytypes, 20, 80, {
+          doc.fromHTML(vm.securitytypes, 20, 65, {
           'width': 300,
            });
           
-           doc.fromHTML(vm.capacity, 20, 90, {
+           doc.fromHTML(vm.capacity, 20, 70, {
           'width': 300,
            });
 
        
-          doc.fromHTML(vm.wifistandards, 20, 100, {
+          doc.fromHTML(vm.wifistandards, 20, 75, {
           'width': 300,
            });
         
+          doc.setFontSize(20);
+          doc.text(20, 95, 'Payment');
+
+          doc.fromHTML(vm.payment, 20, 100, {
+          'width': 300,
+           });
 
           doc.setFontSize(20);
           doc.text(20, 120, 'Conditions');
 
-          doc.fromHTML(vm.wificonditions, 20, 130, {
+          doc.fromHTML(vm.wificonditions, 20, 125, {
           'width': 300,
            });
 
           doc.setFontSize(20);
-          doc.text(20, 150, 'Legal Restrictions');
+          doc.text(20, 145, 'Legal Restrictions');
          
-          doc.fromHTML(vm.legalrestrictions, 20, 160, {
+          doc.fromHTML(vm.legalrestrictions, 20, 150, {
           'width': 300,
            });
 
+          
           var file = doc.output('save', 'wifi.pdf');
 
 
