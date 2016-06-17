@@ -29,8 +29,8 @@ angular.module('website', ['ngRoute']).
             
 
     }).controller('AboutCtrl', function ($scope) {
-        $scope.title = 'About Page';
-        $scope.body = 'This is the about page body';
+        // $scope.title = 'About Page';
+        // $scope.body = 'This is the about page body';
     })
        .controller('HomeCtrl', function ($scope) {
          $scope.title = 'We are CommonsNet';
