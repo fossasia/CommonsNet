@@ -13,6 +13,8 @@ angular.module('website', ['ngRoute']).
                 templateUrl : 'partials/generate-wifi.html',
                 controller  : 'GenerateWiFiCtrl'
              })
+
+
             .when('/blog', {
                 templateUrl : 'partials/blog.html',
                 controller  : 'BlogCtrl'
@@ -21,6 +23,9 @@ angular.module('website', ['ngRoute']).
                 templateUrl : 'partials/contact.html',
                 controller  : 'ContactCtrl'
             })
+            
+
+
             .otherwise ({redirectTo: '/'});
             
 
@@ -93,16 +98,63 @@ angular.module('website', ['ngRoute']).
             }
         }
         
-        vm.save = function() {
-          alert(
-            "Are you sure to save your file?"
-            // "Name: " + vm.user.name + "\n" + 
-            // "Email: " + vm.user.email + "\n" + 
-            // "Age: " + vm.user.age
-            );
-        }
-
     
+
+        vm.save = function() {
+       
+        var doc = new jsPDF();
+         
+          
+          doc.setFontSize(30);
+          doc.text(80, 30, 'WiFi');
+
+          doc.setFontSize(20);
+          doc.text(20, 50, 'Wireless details');
+
+
+          doc.fromHTML(vm.ssid, 20, 60, {
+          'width': 300,
+          
+             });
+          
+          doc.fromHTML(vm.password, 20, 70, {
+          'width': 300,
+           });
+
+
+          doc.fromHTML(vm.securitytypes, 20, 80, {
+          'width': 300,
+           });
+          
+           doc.fromHTML(vm.capacity, 20, 90, {
+          'width': 300,
+           });
+
+       
+          doc.fromHTML(vm.wifistandards, 20, 100, {
+          'width': 300,
+           });
+        
+
+          doc.setFontSize(20);
+          doc.text(20, 120, 'Conditions');
+
+          doc.fromHTML(vm.wificonditions, 20, 130, {
+          'width': 300,
+           });
+
+          doc.setFontSize(20);
+          doc.text(20, 150, 'Legal Restrictions');
+         
+          doc.fromHTML(vm.legalrestrictions, 20, 160, {
+          'width': 300,
+           });
+
+          var file = doc.output('save', 'wifi.pdf');
+
+
+
+    }
     })
          
 
