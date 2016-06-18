@@ -23,6 +23,11 @@ angular.module('website', ['ngRoute']).
                 templateUrl : 'partials/contact.html',
                 controller  : 'ContactCtrl'
             })
+               .when('/generate-wifi/confirmation', {
+                templateUrl : 'partials/confirmation.html',
+                controller  : 'ContactCtrl'
+            })
+
 
 
             .otherwise ({redirectTo: '/'});
@@ -80,10 +85,20 @@ angular.module('website', ['ngRoute']).
             step: 4,
             name: "LEGAL RESTRICTIONS",
             template: "partials/4legalissues.html"
-          },                 
+          },    
+            {
+          step: 5,
+            name: "CONFIRMATION",
+            template: "partials/confirmation.html"
+          },  
+
         ];
         vm.user = {};
-        
+
+        vm.payment = {
+          option: 'FREE'
+        };
+
         //Functions
         vm.gotoStep = function(newStep) {
           vm.currentStep = newStep;
@@ -98,7 +113,7 @@ angular.module('website', ['ngRoute']).
         }
         
         vm.save = function() {
-       
+        
         var doc = new jsPDF();
          
           
@@ -135,7 +150,7 @@ angular.module('website', ['ngRoute']).
           doc.setFontSize(20);
           doc.text(20, 95, 'Payment');
 
-          doc.fromHTML(vm.payment, 20, 100, {
+          doc.fromHTML(vm.payment.option, 20, 100, {
           'width': 300,
            });
 
@@ -160,6 +175,4 @@ angular.module('website', ['ngRoute']).
 
     }
     })
-         
 
-     

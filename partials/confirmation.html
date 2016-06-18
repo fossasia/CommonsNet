@@ -1,6 +1,17 @@
-		<div class="col-md-10 col-lg-10 col-xs-12">
-                <h2>Generate your WiFi</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
-                    <a class="form-btn homebutton" href="#/generate-wifi">Generate</a>
-             </div>
-            
+
+
+        <!-- Heading Row -->
+
+           <div class="form-group">
+		
+                <h5>Congratulations. You have generated your WiFi details.<br> Choose button to save pdf file or to copy code to add to your website.</h5>
+               
+
+               		  <button ng-disabled="vm.currentStep != vm.steps.length" class="form-btn" name="next" type="button" ng-click="vm.save()"> <i class="fa fa-floppy-o"></i> Save</button>
+                  <!--   <button class="form-btn homebutton" ng-click="vm.save()"> Download pdf</button>   -->
+
+         </div>
+
+
+
+       

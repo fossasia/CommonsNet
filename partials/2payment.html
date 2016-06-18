@@ -2,12 +2,14 @@
 <div class="form-group">
  
 
-   <label for="male">Is your WIFI paid?</label>
-    <div class="checkbox" ng-mode="vm.payment">
-			 <label><input type="checkbox" value="">FREE</label>
-	</div>
-	<div class="checkbox">
-			  <label><input type="checkbox" value="">PAID</label>
-	</div>
+ 
+  <label>
+    <input type="radio" ng-model="vm.payment.option" value="FREE">
+   FREE 
+  </label><br/>
+  <label>
+    <input type="radio" ng-model="vm.payment.option" value="PAID">
+   PAID
+  </label><br/>
 
 </div>
