@@ -149,7 +149,7 @@ padding:50px;
     height: auto;
     padding:15px;
     color:#fff;
-    background:#8BC3A3;
+    background:#00a8f2;
     border:none;
     border-radius:3px;
     outline: none;
@@ -210,7 +210,7 @@ p  {
 
   .button{
     padding:8px 12px;
-    background:#0A5175;
+    background:#00a8f2;
     display: block;
     width:120px;
     margin:10px 0 0px 0;
@@ -226,7 +226,7 @@ p  {
   }
 
   .button:hover{
-    background:#8BC3A3;
+
     color:white;
     text-decoration: none;
   }
@@ -239,7 +239,7 @@ p  {
     height: auto;
     padding:15px;
     color:#fff;
-    background:#8BC3A3;
+    background:#00a8f2;
     border:none;
     border-radius:3px;
     outline: none;
@@ -255,7 +255,7 @@ p  {
   
 
   .form-btn:hover{
-    background:#111;
+ 
     color: white;
     border:none;
   }
@@ -321,7 +321,7 @@ h1  {
     height: auto;
     padding:15px;
     color:#fff;
-    background:#8BC3A3;
+    background:#00a8f2;
     border:none;
     font-size: 20px;
     text-align: center;
