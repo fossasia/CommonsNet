@@ -68,27 +68,27 @@ angular.module('website', ['ngRoute']).
         vm.steps = [
           {
             step: 1,
-            name: "WIRELESS SETTINGS",
+           
             template: "partials/1settings.html"
           },
           {
             step: 2,
-            name: "PAYMENT",
+          
             template: "partials/2payment.html"
           },   
           {
             step: 3,
-            name: "CONDITIONS",
+            
             template: "partials/3conditions.html"
           },  
            {
             step: 4,
-            name: "LEGAL RESTRICTIONS",
+          
             template: "partials/4legalissues.html"
           },    
             {
           step: 5,
-            name: "CONFIRMATION",
+            
             template: "partials/confirmation.html"
           },  
 

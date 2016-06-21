@@ -158,10 +158,10 @@ margin-top: 50px;
 /* Generic Button Styles */
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-    width:200px;
+    width:50px;
     display: block;
     height: auto;
-    padding:15px;
+   
     color:#fff;
     background:#00a8f2;
     border:none;
@@ -305,7 +305,7 @@ h2  {
 }
 
 h3  {
-    text-align: left;
+    text-align: center;
     font-size: 40px;
     margin-bottom: 30px;
  
