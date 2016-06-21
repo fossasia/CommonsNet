@@ -7,8 +7,8 @@
       <div class="row">
        
 
-       <div class="col-md-2 col-lg-2"></div>
-        <div class="col-md-8 col-lg-8 col-xs-12">
+ 
+        <div class="col-md-12 col-lg-12 col-xs-12">
           
 <h2>{{title}}</h2>
           
@@ -24,22 +24,23 @@
                   <button ng-disabled="vm.currentStep >= vm.steps.length" id="right" name="next"   class="btn btn-default" type="button" ng-click="vm.gotoStep(vm.currentStep + 1)">NEXT </button>
               </ul>
             </div>
-              <div class="col-md-2 col-lg-2"></div>
-           <div class="col-md-8 col-lg-8 col-xs-12">
+              
+           <div class="col-md-10 col-lg-10 col-xs-12">
             <div id="wizard-content-container">
               <ng-include src="vm.getStepTemplate()"></ng-include>
             </div>
 
-              <div class="col-md-2 col-lg-2"></div>
+            
             
             
 
           </div>
-              <div class="col-md-2 col-lg-2"></div>
-          
+         
         </div>
+            </div>
+                </div>
+                    </div>
+                    
      
-      </div>
-      
-    </div>
+  
       

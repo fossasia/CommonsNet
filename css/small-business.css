@@ -17,10 +17,7 @@ body {
     padding: 0 15px;
 }
 
-footer {
-    padding: 30px 0;
-    background-color: #666A73;
-}
+
 
 @media(min-width:768px) {
     body {
@@ -33,6 +30,7 @@ footer {
 }
 
 
+
 .row {
         margin-bottom: 60px;
 
@@ -40,7 +38,7 @@ footer {
 
 .nav {
         float: right;
-        color: #8BC3A3;
+     
        font-size: 15px;
        font-weight: bold;
     
@@ -63,6 +61,11 @@ footer {
 
 
 padding:50px;
+  }
+.video {
+
+margin-top: 50px;
+
   }
 
  #contact{
@@ -111,19 +114,22 @@ padding:50px;
   .form{
     width: 100%;
     padding: 15px;
-    background:#f8f8f8;
+    background:white;
     border:1px solid rgba(0, 0, 0, 0.075);
     margin-bottom:25px;
+    border-bottom-color: #00a8f2;
     color:#727272 !important;
     font-size:13px;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
   }
+
+
     .form-customised{
     width: 100%;
     padding: 15px;
-    background:white;
+    background:#F8F8F8;
     border:1px solid rgba(0, 0, 0, 0.075);
     margin-bottom:25px;
     color:#727272 !important;
@@ -133,14 +139,14 @@ padding:50px;
     transition: all 0.4s;
   }
 
-  .form:hover{
+/*  .form:hover{
     border:1px solid #8BC3A3;
-  }
+  }*/
 
   .form:focus{
     color: white;
     outline: none;
-    border:1px solid #8BC3A3;
+      border-bottom: solid 1px #00a8f2;
   }
 
   .textarea{
@@ -184,9 +190,9 @@ padding:50px;
     background: #464646;
     box-shadow: 0 0 3px gray;
 }
-.round-button:hover {
+/*.round-button:hover {
     background: #262626;
-}
+}*/
 .container-header {
    background-color: white;
    padding-left: 50px;
@@ -212,9 +218,7 @@ padding: 30px;
 
     }
   
-  a  {
-    color:  #FFFFFF;
-  }
+
 
 .nav-pills>li+li {
     padding-bottom: 50px;
@@ -249,6 +253,11 @@ p  {
 
 /* Send Button Styles */
 
+  .fa{
+
+   color: #00a8f2;
+ 
+  }
   .form-btn{
     width:180px;
     display: block;
@@ -286,11 +295,12 @@ input {
 }
 
 h2  {
-    text-align: center;
+ 
     font-size: 50px;
-       margin-bottom: 30px;
-       margin-top: 20px;
-       font-weight: bold;
+    text-align: center;
+       margin-bottom: 10px;
+       margin-top: 10px;
+   
 
 }
 
@@ -298,14 +308,14 @@ h3  {
     text-align: left;
     font-size: 40px;
     margin-bottom: 30px;
-    font-weight: bold;
+ 
     margin-top: -40px;
 
        
 }
 h4  {
     text-align: left;
-    font-weight: bold;
+
     font-size: 25px;
     margin-bottom: 30px;
 
@@ -314,13 +324,18 @@ h4  {
 
 h5  {
     text-align: center;
-    font-weight: bold;
+ 
     font-size: 25px;
     margin-bottom: 30px;
 
        
 }
+.generatewifi {
+   background-color: white;
+   padding: 20px;
 
+       
+}
 
 h1  {
   
