@@ -33,47 +33,38 @@
           <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
 </head>
 <body ng-app="app">
+<nav role="navigation" class="navbar navbar-default navbar-fixed-top navbarcommonsnet">
+  <div class="container-header">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand brand" href="#/">CommonsNet</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#/about-us">About us</a></li>
+        
+        <li><a href="#/generate-wifi">Generate WiFi</a></li>
+        <li><a href="#/contact">Contact</a></li>
+         <li><a href="#/blog">Blog</a></li>
+      </ul>
+     
+    </div>
+  </div>
+</nav>
 
 
- <nav class="navbar navbar-inverse navbar-fixed-top topmenu" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#/home">
-                  CommonsNet
-                </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                   <!--  <li>
-                        <a href="#/home">Home</a>
-                    </li> -->
-                    <li>
-                         <a href="#/about-us">ABOUT US</a>
-                    </li>
-                    <li>
-                       <a href="#/generate-wifi">GENERATE WIFI</a>
-                    </li>
-                    <li>
-                       <a href="#/blog">BLOG</a>
-                    </li>
-                    <li>
-                       <a href="#/contact">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
 
+
+
+
+
+
+
+ 
 <div class="shadow"></div>
 
 <div id="container">
@@ -84,7 +75,7 @@
 <script src="js/angular-route.min.js"></script>
 <script src="js/website.js"></script>
 
-    <footer class="footer-distributed">
+    <footer class="footer-distributed " id="footer-commonsnet">
 
             <div class="footer-left">
 
@@ -95,13 +86,13 @@
             <div class="footer-center">
 
                 <div>
-                    <i class="fa fa-map-marker"></i>
+                 
                     <p><span></span> Berlin, Germany</p>
                 </div>
 
 
                 <div>
-                    <i class="fa fa-envelope"></i>
+                    
                     <p><a href="mailto:support@company.com">support@support.com</a></p>
                 </div>
 
@@ -109,13 +100,13 @@
 
             <div class="footer-right">
 
-                <div class="footer-icons">
+            
+                <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social"></i></a>
+                <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social"></i></a>
+                <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social"></i></a>
+                <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
 
-                <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
-                <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
-                <a href="https://plus.google.com"><i class="fa fa-google-plus"></i></a>
-               
-                </div>
+</div>
 
             </div>
 
