@@ -29,10 +29,13 @@ body {
     }
 }
 
-
+a {
+  color: black;
+  font-weight: bold;
+}
 
 .row {
-        margin-bottom: 60px;
+        margin-bottom: 150px;
 
     }
 
@@ -68,6 +71,14 @@ margin-top: 50px;
 
   }
 
+
+.progress-indicator>li .bubble {
+  margin: -10px auto .5em;
+  background-color: blue;
+}
+
+
+
  #contact{
     padding:10px 0 10px;
   }
@@ -84,7 +95,7 @@ margin-top: 50px;
 .picture  {
     background-image:  url("../images/img.jpg");
     width: 100%;
-    height: 500px;
+    height: 800px;
   }
 
   .mail-message{
@@ -102,13 +113,29 @@ margin-top: 50px;
     opacity: 0;
   }
 
-  .visible-message{
-    height:auto;
-    opacity: 1;
-    margin:25px auto 0;
+ .progress-indicator>li.completed .bubble {
+   width: 40px;
+   height: 40px;
+  
+
   }
 
-/* Input Styles */
+
+
+   .progress-indicator>li.active .bubble {
+   width: 40px;
+   height: 40px;
+
+
+  }
+
+ .wizard {
+  margin: 50px 0 1em;
+ }
+
+a:focus, a:hover { 
+  text-decoration: none;
+}
 
 
   .form{
@@ -177,7 +204,7 @@ margin-top: 50px;
   }
 #wizard-content-container 
 {
-   margin-top:-50px;
+   margin-top: 100px;
   }
 
 .round-button {
@@ -201,6 +228,7 @@ margin-top: 50px;
   }
 .navbarcommonsnet  {
    border:none;
+
   }
 
   #left {
@@ -298,6 +326,7 @@ h2  {
  
     font-size: 50px;
     text-align: center;
+ 
        margin-bottom: 10px;
        margin-top: 10px;
    
@@ -378,6 +407,7 @@ h1  {
 
 #footer-commonsnet{
         background-color:  #282C35;
+        margin-top: 0px;
       
     }
 
@@ -397,3 +427,45 @@ h1  {
      -moz-transition-duration: 0.5s;
      -o-transition-duration: 0.5s;
  }
+
+.progress-indicator>li.completed .bubble, .progress-indicator>li.completed .bubble:after, .progress-indicator>li.completed .bubble:before {
+    background-color: #C0C0C0;
+    border-color: #C0C0C0;
+    color: white;
+     }
+
+.progress-indicator>li.active .bubble
+{
+  background-color: #00a8f2;
+
+}
+
+.progress-indicator>li.active .bubble,
+ .progress-indicator>li.active .bubble:after,
+  .progress-indicator>li.active .bubble:before 
+  {
+    background-color: #00a8f2;
+  color: white;
+ z-index: 1000;
+}
+
+
+
+.bubble {
+
+  font-size: 25px;
+}
+
+.generatewificontanier {
+  background-image: url("../images/technology.jpg");
+
+  width: 100%;
+  height: 100%;
+
+}
+
+.generate {
+ 
+    margin-top: 20px;
+    padding-bottom: 50px;
+}

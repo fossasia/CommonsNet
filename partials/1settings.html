@@ -1,8 +1,20 @@
-<h3 ng-model="wireless">Wireless settings</h3>
+<h3 ng-model="vm.wireless">Wireless settings</h3>
 <!-- <div class="form-group"> -->
-  <label for="male">SSID </label>
-  <input type="text" name="ssid" id="ssid"  class="form" placeholder="SSID name" ng-model="vm.ssid"  required/>
-   <label for="male">WIFI Password</label>
+  
+
+
+               
+			<!-- 	<div class="inner contact"> -->
+                <!-- Form Area -->
+           <!--      <div class="contact-form"> -->
+                    <!-- Form -->
+                    <form >
+                        <!-- Left Inputs -->
+                        <div class="col-lg-6 col-md-6 col-xs-12 wow animated slideInLeft" data-wow-delay=".5s">
+                         
+                            <label for="male">SSID </label>
+  								<input type="text" name="ssid" id="ssid"  class="form" placeholder="SSID name" ng-model="vm.ssid"  required/>
+                             <label for="male">WIFI Password</label>
    <input type="text" name="password" id="password"  class="form" placeholder="Your wifi password" ng-model="vm.password"  />
 <label for="male">Authentication</label>
    <select type="text" name="security"  class="form" placeholder="SSID name"  id="security" ng-model="vm.securitytypes" required>
@@ -14,7 +26,11 @@
 		      <option value="wpa-enterprise">WPA Enterprise</option>
 		  <option value="wpa2-personal">WPA2 Personal+AES</option>
 	</select>
-<label for="male">Speed</label>
+                        </div><!-- End Left Inputs -->
+                        <!-- Right Inputs -->
+                        <div class="col-lg-6 col-md-6 col-xs-12 wow animated slideInRight" data-wow-delay=".5s">
+                            <!-- Message -->
+                           <label for="male">Speed</label>
 	<input type="text" name="capacity" id="capacity"  class="form" placeholder="Speed" id="capacity" ng-model="vm.capacity"  required/>
 
 <label for="male">WIFI Standard</label>
@@ -28,6 +44,17 @@
 		     <option value="802.11ah">802.11ah</option>
 
 	</select>
-<!-- </div> -->
+
+                        </div><!-- End Right Inputs -->
+                      
+                    
+                    </form>
 
 
+
+
+
+
+ <<!-- !--  <label for="male">SSID </label>
+  <input type="text" name="ssid" id="ssid"  class="form" placeholder="SSID name" ng-model="vm.ssid"  required/> -->
+ 
