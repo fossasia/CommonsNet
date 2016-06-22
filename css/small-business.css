@@ -21,7 +21,7 @@ body {
 
 @media(min-width:768px) {
     body {
-        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+      ; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
     }
 
     .navbar-fixed-top .navbar-brand {
@@ -93,7 +93,7 @@ margin-top: 50px;
   }
 
 .picture  {
-    background-image:  url("../images/img.jpg");
+    background-image:  url("../images/technology.jpg");
     width: 100%;
     height: 800px;
   }
@@ -224,7 +224,7 @@ a:focus, a:hover {
    background-color: white;
    padding-left: 50px;
    padding-right: 30px;
-   height: 70px;
+  
   }
 .navbarcommonsnet  {
    border:none;
@@ -326,7 +326,7 @@ h2  {
  
     font-size: 50px;
     text-align: center;
- 
+
        margin-bottom: 10px;
        margin-top: 10px;
    
@@ -368,10 +368,10 @@ h5  {
 
 h1  {
   
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
     padding-top: 200px;
-   
+    
     color: white;
 
 }
