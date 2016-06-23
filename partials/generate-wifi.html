@@ -6,23 +6,18 @@
  	 
       <div class="row">
        
-
+ <div class="col-md-1 col-lg-1"></div>
  
-      <div class=" col-md-offset-1 col-md-10 col-lg-10 col-xs-10 generate">
-          
-            <h2>{{title}}</h2>
-          
-           
-         
-              
+      <div class="col-md-10 col-lg-10 col-xs-12 generate">
+      
           
              <div id="wizard-container" ng-controller="WizardController as vm">
                       
             <div id="wizard-step-container">
              
               <ul class="progress-indicator wizard"> 
-                <li class="completed" ng-repeat="step in vm.steps" ng-class="{'active':step.step == vm.currentStep}"> <span class="bubble"> </span> <a ng-click="vm.gotoStep(step.step)" href=""> {{step.name}}</a> </li> 
-              
+                <li class="completed" ng-repeat="step in vm.steps" ng-class=" {'active':step.step <= vm.currentStep} "> <span class="bubble"> </span> <a ng-click="vm.gotoStep(step.step)" href="">{{step.name}}</a> </li> 
+             
 
                 
               </ul>
@@ -44,7 +39,8 @@
          
         </div>
           
-            <div class="col-md-1 col-lg-1 ">   </div>
+      <div class="col-md-1 col-lg-1"></div>
+ 
 
                 </div>
                     </div>

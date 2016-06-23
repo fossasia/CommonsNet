@@ -15,10 +15,6 @@ angular.module('website', ['ngRoute']).
              })
 
 
-            .when('/blog', {
-                templateUrl : 'partials/blog.html',
-                controller  : 'BlogCtrl'
-            })
             .when('/contact', {
                 templateUrl : 'partials/contact.html',
                 controller  : 'ContactCtrl'
@@ -53,12 +49,7 @@ angular.module('website', ['ngRoute']).
         $scope.body = '';
 
     })
-        .controller('BlogCtrl', function ($scope) {
-        $scope.title = 'Blog';
-        $scope.body = 'This is the about page body';
 
-    
-    })
 
         .controller('WizardController', function ($scope) {
          var vm = this;
