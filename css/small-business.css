@@ -318,7 +318,9 @@ input {
 h2  {
  
     font-size: 45px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+   
 
    
 }
@@ -327,8 +329,7 @@ h3  {
    
     font-size: 40px;  
     margin-bottom: 20px;
- 
-    text-align: center;
+    /*text-align: center;*/
  
 }
 
@@ -547,9 +548,13 @@ footer{
 }
 
 .content-section-a {
-  padding-bottom: 0px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
+.lead {
+  padding: 10px;
+}
 
 li {
 
