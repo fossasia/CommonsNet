@@ -33,13 +33,11 @@ body {
     }
 }
 
-a {
-  color: black;
-  font-weight: bold;
-}
+
 
 .row {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+        /*padding: 20px;*/
 
     }
 
@@ -319,33 +317,41 @@ input {
 
 h2  {
  
-    font-size: 50px;
-    text-align: center;
+    font-size: 45px;
+    margin-bottom: 10px;
 
-       margin-bottom: 10px;
-       margin-top: 10px;
    
-
 }
 
 h3  {
+   
+    font-size: 40px;  
+    margin-bottom: 20px;
+ 
     text-align: center;
-    font-size: 40px;
+ 
+}
+
+
+
+.clearfix {
+   
+    margin-bottom: -20px;
  
 
        
 }
 h4  {
     text-align: left;
-
+    margin-top: 50px;
     font-size: 25px;
-    margin-bottom: 30px;
+
 
        
 }
 
 h5  {
-    text-align: center;
+    
  
     font-size: 25px;
     margin-bottom: 30px;
@@ -373,7 +379,7 @@ h1  {
   
     font-size: 70px;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 40px;
     
     color: white;
 
@@ -518,7 +524,7 @@ footer{
    
     background-color:  #282C35;
     padding: 50px 50px;
-    border-top: 5px solid grey;
+    border-top: 5px solid #777;
 
 
 
@@ -529,17 +535,27 @@ footer{
 
 }
 
+.section-heading {
+     margin-bottom: 5px; 
+}
+
 .content-section-b {
   border-bottom: none;
   border-top: none;
-
+  background-color: white;
 
 }
+
+.content-section-a {
+  padding-bottom: 0px;
+}
+
 
 li {
 
 list-style-type: none;
 color: #D2D6DF;
+font-size: 14px;
 
 }
 
@@ -572,3 +588,14 @@ padding: 0px;
 text-align: center;
 
 }
+
+p {
+margin-bottom: 40px;
+
+}
+
+
+.service-box {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  }
