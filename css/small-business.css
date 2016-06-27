@@ -36,7 +36,7 @@ a {
 }
 
 .row {
-        margin-bottom: 150px;
+        margin-bottom: 50px;
 
     }
 
@@ -349,6 +349,16 @@ h5  {
 
        
 }
+
+h6  {
+   
+ 
+    font-size: 16px;
+    color: #45494E;
+
+
+       
+}
 .generatewifi {
    background-color: white;
    padding: 20px;
@@ -360,7 +370,7 @@ h1  {
   
     font-size: 70px;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 50px;
     
     color: white;
 
@@ -478,6 +488,7 @@ h1  {
 .footer {
  
     background-color:  #282C35;
+
     }
 
 
@@ -508,6 +519,10 @@ footer{
  
    
     background-color:  #282C35;
+    padding: 50px 50px;
+    border-top: 5px solid grey;
+
+
 
 }
 
@@ -519,3 +534,44 @@ footer{
 .content-section-b {
   border-bottom: none;
   border-top: none;
+
+
+}
+
+li {
+
+list-style-type: none;
+color: #D2D6DF;
+
+}
+
+a {
+
+color: white;
+font-weight: normal;
+
+}
+
+.address {
+
+color: #D2D6DF;
+font-weight: normal;
+
+}
+
+
+.row {
+
+padding: 20px;
+
+}
+
+.nav {
+font-size: 18px;
+
+}
+
+ul {
+padding: 0px;
+
+}
