@@ -3,6 +3,9 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+html {
+    font-family: sans-serif;
+    }
 
 body {
     padding-top: 70px;
@@ -562,5 +565,10 @@ font-size: 18px;
 
 ul {
 padding: 0px;
+
+}
+
+.footerrow {
+text-align: center;
 
 }
