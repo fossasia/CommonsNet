@@ -247,6 +247,7 @@ a:focus, a:hover {
 
 p  {
     font-size: 15px;
+    font-weight: normal;
 
   }
 
@@ -518,10 +519,30 @@ h1  {
 .btn {
  
    
-    width: 100px;
+    width: 150px;
+    border: 2px solid #00a8f2;
+    background-color: transparent;
+    border-radius: 0px;
+    color: #00a8f2;
 
 }
 
+.awizard {
+ 
+   color: black;
+}
+
+
+.btn:hover, .btn:active, .btn:focus {
+ 
+   
+    width: 150px !important;
+    border: 2px solid #00a8f2 !important;
+    background-color: transparent !important;
+    border-radius: 0px !important;
+    color: #00a8f2 !important;
+
+}
 footer{
  
    
@@ -615,7 +636,7 @@ margin-bottom: 40px;
 
 
 .section-header {
-  width: 400px;
+
   
   float: center;
   background-color: #00a8f2;
@@ -633,3 +654,5 @@ margin-bottom: 40px;
   margin-top: 50px;
 
   }
+
+
