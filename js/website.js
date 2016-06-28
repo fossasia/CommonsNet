@@ -1,3 +1,5 @@
+
+// angular routes definded
 angular.module('website', ['ngRoute']).
     config(function ($routeProvider) {
         $routeProvider
@@ -29,7 +31,9 @@ angular.module('website', ['ngRoute']).
             .otherwise ({redirectTo: '/'});
             
 
-    }).controller('AboutCtrl', function ($scope) {
+    })
+    //different controllers build
+    .controller('AboutCtrl', function ($scope) {
         // $scope.title = 'About Page';
         // $scope.body = 'This is the about page body';
     })
@@ -52,6 +56,7 @@ angular.module('website', ['ngRoute']).
 
 
         .controller('WizardController', function ($scope) {
+         // contrller function - different steps in Wizard Form. Defining steps, different names and template which is used
          var vm = this;
         
         //Model
@@ -65,7 +70,6 @@ angular.module('website', ['ngRoute']).
           {
             step: 2,
             name: 'Payment',
-          
             template: "partials/2payment.html"
           },   
           {
@@ -91,11 +95,12 @@ angular.module('website', ['ngRoute']).
           option: 'FREE'
         };
 
-        //Functions
+        //Function
         vm.gotoStep = function(newStep) {
           vm.currentStep = newStep;
         }
         
+        // function to display different templates
         vm.getStepTemplate = function(){
           for (var i = 0; i < vm.steps.length; i++) {
                 if (vm.currentStep == vm.steps[i].step) {
@@ -104,6 +109,7 @@ angular.module('website', ['ngRoute']).
             }
         }
         
+        // function save to generate pdf based on different wizard form fields. 
         vm.save = function() {
         
         var doc = new jsPDF();

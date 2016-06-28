@@ -1,49 +1,47 @@
-
-
-  
- <div class="container-fluid generatewificontanier">
-
- 	 
+<!-- Container-fluid start -->
+<div class="container-fluid generatewificontanier">
       <div class="row">
-       
- <div class="col-md-1 col-lg-1"></div>
- 
-      <div class="col-md-10 col-lg-10 col-xs-12 generate">
-      
-          
-             <div id="wizard-container" ng-controller="WizardController as vm">
-                      
-            <div id="wizard-step-container">
-             
-              <ul class="progress-indicator wizard"> 
-                <li class="completed" ng-repeat="step in vm.steps" ng-class=" {'active':step.step <= vm.currentStep} "> <span class="bubble"> </span> <a class="awizard"ng-click="vm.gotoStep(step.step)" href="">{{step.name}}</a> </li> 
-             
-
-                
-              </ul>
-               <button ng-disabled="vm.currentStep <= 1"  id="left" class="btn btn-default" name="previous" type="button" ng-click="vm.gotoStep(vm.currentStep - 1)"> BACK</button>
-
-                  <button ng-disabled="vm.currentStep >= vm.steps.length" id="right" name="next"   class="btn btn-default" type="button" ng-click="vm.gotoStep(vm.currentStep + 1)">NEXT </button>
+       <div class="col-md-1 col-lg-1"></div>
+       <!-- col-md-10 col-lg-1- col-xs-12 start -->
+          <div class="col-md-10 col-lg-10 col-xs-12 generate">
+            <!-- wizard-container start ng-controller - call to Wizard Controller defined in Angular -->
+            <div id="wizard-container" ng-controller="WizardController as vm">
+              <!-- wizard step start -->
+              <div id="wizard-step-container">
+            
+            <ul class="progress-indicator wizard"> 
+                <li class="completed" ng-repeat="step in vm.steps" ng-class=" {'active':step.step <= vm.currentStep} "> 
+                  <span class="bubble"> </span> 
+                  <!-- ng click call to function vm.gotoStep -->
+                  <a class="awizard" ng-click="vm.gotoStep(step.step)" href="">{{step.name}}</a> 
+                </li> 
+            </ul>
+            <!-- Button Back -->
+               <button ng-disabled="vm.currentStep <= 1"  id="left" class="btn btn-default" name="previous" type="button" ng-click="vm.gotoStep(vm.currentStep - 1)"> BACK </button>
+               <!-- Button Next  -->
+               <button ng-disabled="vm.currentStep >= vm.steps.length" id="right" name="next"   class="btn btn-default" type="button" ng-click="vm.gotoStep(vm.currentStep + 1)">NEXT </button>
             </div>
+            <!-- wizard step end -->
            
             <div id="wizard-content-container">
               <ng-include src="vm.getStepTemplate()"></ng-include>
             </div>
+
 
             
             
             
 
           </div>
+          <!-- wizard container end -->
 
          
         </div>
+        <!-- col-md-10 col-lg-1- col-xs-12 end -->
           
-      <div class="col-md-1 col-lg-1"></div>
- 
-
-                </div>
-                    </div>
+        <div class="col-md-1 col-lg-1"></div>
+      </div>
+</div>
 
      
   
