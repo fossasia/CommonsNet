@@ -381,7 +381,6 @@ h1  {
     font-size: 70px;
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 10px;
     
     color: white;
 
@@ -549,8 +548,8 @@ footer{
 }
 
 .content-section-a {
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .lead {
@@ -605,4 +604,30 @@ margin-bottom: 40px;
 .service-box {
   padding-top: 80px;
   padding-bottom: 20px;
+  }
+
+.col-lg-4 {
+  padding-left: 0px;
+
+  }
+
+
+.section-header {
+  width: 400px;
+  
+  float: left;
+  background-color: #00a8f2;
+  height: 1px;
+  margin-top: 0px;
+  width: 100%; 
+  text-align:left;
+  margin: 0 auto 0 0;
+  margin-top: 20px;
+  margin-top: 40px;
+
+  }
+
+.col-lg-12 {
+  margin-top: 50px;
+
   }
