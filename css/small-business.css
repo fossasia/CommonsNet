@@ -229,12 +229,7 @@ a:focus, a:hover {
 
   }
 
-  #left {
-   float:left;
-  }
-  #right {
-   float:right;
-  }
+
   .nav-pills {
     text-align: center;
        }
@@ -333,14 +328,24 @@ h3  {
    
     font-size: 40px;  
     font-family: 'Lora', serif;
-   
     text-align: center;
+
+    margin-bottom: 40px;
   
  
 }
 
+#wizard-content-container {
+    margin-top: 40px;
+}
 
+.col-lg-5  {
+   
+    margin-top: 50px;
+ 
 
+       
+}
 .clearfix {
    
     margin-bottom: -20px;
@@ -349,7 +354,7 @@ h3  {
        
 }
 h4  {
-    text-align: left;
+    text-align: center;
     margin-top: 50px;
     font-size: 25px;
     font-family: 'Lora', serif;
@@ -359,14 +364,14 @@ h4  {
 }
 
 h5 {
-    font-size: 51px;
-    font-family: 'Lora', serif;
+    font-size: 40px;
+    font-family:  'Lora', serif;
 }
 h5:after {
     border-bottom: 1px solid #000;
     content: '';
     display: inline-block;
-    height: 30px;
+    height: 25px;
     vertical-align: top;
     width: 40px;
     margin-left: 20px;
@@ -376,7 +381,7 @@ h5:before {
     border-bottom: 1px solid #000;
     content: '';
     display: inline-block;
-    height: 30px;
+    height: 25px;
     vertical-align: top;
     width: 40px;
     margin-right: 20px;
@@ -386,8 +391,10 @@ h5:before {
 h6  {
    
  
-    font-size: 16px;
-    color: #45494E;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Lora', serif;
 
 
        
@@ -523,7 +530,8 @@ h1  {
 
 .agata {
  
-    background-image: url("../img/computer.jpg")!important;
+    background-image: url("../img/computer.jpg") !important;
+
   
 
 
@@ -537,14 +545,29 @@ h1  {
 
 
 }
+
+.buttons {
+ 
+   
+  
+    float: right;
+    margin-right: 100px;
+    position: relative;
+    
+
+
+}
 .btn {
  
    
-    width: 150px;
+    width: 100px;
     border: 2px solid #00a8f2;
     background-color: transparent;
     border-radius: 0px;
     color: #00a8f2;
+    margin-top: 40px;
+  
+
 
 }
 
@@ -557,7 +580,7 @@ h1  {
 .btn:hover, .btn:active, .btn:focus {
  
    
-    width: 150px !important;
+    
     border: 2px solid #00a8f2 !important;
     background-color: transparent !important;
     border-radius: 0px !important;
@@ -581,7 +604,7 @@ footer{
 }
 
 .section-heading {
-     margin-bottom: 50px; 
+     margin-bottom: 30px; 
 }
 
 .content-section-b {
@@ -601,6 +624,11 @@ footer{
   padding-bottom: 20px;
 }
 
+.navbar-default .navbar-nav>li>a  {
+
+font-size: 16px;
+
+}
 li {
 
 list-style-type: none;
