@@ -64,7 +64,7 @@ angular.module('website', ['ngRoute']).
         vm.steps = [
           {
             step: 1,
-            name: 'wireless settings',
+            name: 'Settings',
             template: "partials/1settings.html"
           },
           {
@@ -79,7 +79,7 @@ angular.module('website', ['ngRoute']).
           },  
            {
             step: 4,
-            name: 'Legal restrictions',
+            name: 'Restrictions',
             template: "partials/4legalissues.html"
           },    
             {

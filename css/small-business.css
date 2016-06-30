@@ -329,8 +329,9 @@ h3  {
     font-size: 40px;  
     font-family: 'Lora', serif;
     text-align: center;
+    margin-top: 30px;
 
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   
  
 }
@@ -354,7 +355,7 @@ h3  {
        
 }
 h4  {
-    text-align: center;
+    
     margin-top: 50px;
     font-size: 25px;
     font-family: 'Lora', serif;
@@ -363,6 +364,16 @@ h4  {
        
 }
 
+.awizard {
+    
+   
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+
+
+       
+}
 h5 {
     font-size: 40px;
     font-family:  'Lora', serif;
@@ -515,6 +526,7 @@ h1  {
 }
 
 
+
 .topnav {
  
     background-color: white;
@@ -565,7 +577,7 @@ h1  {
     background-color: transparent;
     border-radius: 0px;
     color: #00a8f2;
-    margin-top: 40px;
+    margin-top: 20px;
   
 
 
@@ -632,8 +644,8 @@ font-size: 16px;
 li {
 
 list-style-type: none;
-color: #D2D6DF;
-font-size: 14px;
+
+font-size: 16px;
 
 }
 
@@ -699,4 +711,28 @@ margin-bottom: 40px;
 
   }
 
+#cb1{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #00a8f2;
+    
+}
+
+
+.checkbox {
+   
+    padding: 15px;
+    margin: 10px;
+    position: relative;
+    float: center;
+    color: black;
+    font-weight: bold;
+    }
+
+.checkbox label, .radio label {
+   
+    padding: 8px;
+    margin-left: 10px;
+}
 

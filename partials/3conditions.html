@@ -1,5 +1,5 @@
 
-<form >
+<form class="me-select" >
                    <div class="col-lg-1 col-md-1 col-xs-1"></div>
                    <!-- col-lg-1 start and end -->
                     <!-- col-lg-5 col-md-5 col-xs-10 start  left inputs-->
@@ -7,21 +7,55 @@
 				<h3>Conditions</h3>
 					 
                 	<!-- form start -->
-					
+					  
 
 	   					<h4> Is something required to use your WIFI?</h4>
-	   					<!-- select field -->
-						   <select type="text" name="security"  class="form" placeholder="SSID name" ng-model="vm.wificonditions"  required>
-								  <option value="Accepting Terms of Use">Accepting Terms of Use</option>
-								  <option value="Liking our social media profiles">Liking our social media profiles</option> 
-								  <option value="Downloading file">Downloading file</option>
-								  <option value="Giving your email address to our newsletter">Giving your email address to our newsletter</option>
-								   <option value="and so on..">and so on...</option>
-								   
-							</select>
+	   					<ul id="me-select-list">
+						<li class="checkbox">
+							<input id="cb1" name="cb1" type="checkbox">
+								<label for="cb1">
+									<span>Special devices required</span>
+								</label>
+					<!-- 
+								<input  name="input" type="text" class="conditioninput" placeholder="Which one?"> -->
+						</li>
+						<li class="checkbox">
+							<input id="cb1" name="cb1" type="checkbox">
+								<label for="cb1">
+									<span>Special settings required</span>
+								</label>
+								<!-- <input  name="input" type="text" class="conditioninput" placeholder="List them"> -->
+						</li>
+						<li class="checkbox">
+							<input id="cb1" name="cb1" type="checkbox">
+								<label for="cb1">
+									<span>Accepting terms of use</span>
+								</label>
+						</li>
+						<li class="checkbox">
+							<input id="cb1" name="cb1" type="checkbox">
+								<label for="cb1">
+									<span>Liking social profile required</span>
+								</label>
+						</li>
+						<li class="checkbox">
+							<input id="cb1" name="cb1" type="checkbox">
+								<label for="cb1">
+									<span>Downloading pdf file</span>
+								</label>
+						</li>
+					</ul>
+				
+								</div>
+								     <div class="col-lg-1 col-md-1 col-xs-1"></div>
+							 
+ 
 
-					</div>
-					    <div class="col-lg-1 col-md-1 col-xs-1"></div>
-						<!-- form end -->
 				</form>
+
+
+					   
+
+						<!-- form end -->
+		
 				<!-- col-lg-10 finish -->
