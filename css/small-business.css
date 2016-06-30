@@ -127,10 +127,6 @@ margin-top: 50px;
 
   }
 
- .wizard {
-  margin: 50px 0 1em;
- }
-
 a:focus, a:hover { 
   text-decoration: none;
 }
@@ -202,7 +198,7 @@ a:focus, a:hover {
   }
 #wizard-content-container 
 {
-   margin-top: 100px;
+   margin-top: 50px;
   }
 
 .round-button {
@@ -323,17 +319,25 @@ h2  {
 
    
 }
+#wizard-content-container {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
 
 h3  {
    
     font-size: 40px;  
     font-family: 'Lora', serif;
     text-align: center;
-    margin-top: 30px;
+   
+}
+.ng-pristine {
+   
+    margin-top: 0px;  
 
-    margin-bottom: 30px;
-  
- 
+   
 }
 
 #wizard-content-container {
@@ -356,9 +360,22 @@ h3  {
 }
 h4  {
     
-    margin-top: 50px;
+    margin-top: 0px;
     font-size: 25px;
     font-family: 'Lora', serif;
+   
+
+
+       
+}
+
+.ng-pristine {
+    margin-bottom: 10px;
+}
+
+label  {
+    
+    margin-bottom: 0px;
 
 
        
@@ -463,7 +480,6 @@ h1  {
       
     }
 
-
 .social:hover {
      -webkit-transform: scale(1.1);
      -moz-transform: scale(1.1);
@@ -509,18 +525,32 @@ h1  {
 }
 
 .generatewificontanier {
-  background-image: url("../img/technology.jpg");
+  background-image: url("../img/hand.jpg");
 
   width: 100%;
-  height: 1000px;
+  height: 800px;
 
 
 }
 
+#wizard-step-container {
+    margin-top: 60px;
+}
 .generate {
  
-    margin-top: 60px;
-    padding-bottom: 50px;
+  margin-top: 100px;
+
+ height: 500px;
+
+
+
+
+
+  
+
+   background-color: white;
+   /*height: 30%;*/
+   float: center;
   
 
 }
@@ -562,9 +592,18 @@ h1  {
  
    
   
+   
+     position: relative; 
+    display: inline-block;
+    vertical-align: middle;
+    height: 500px;
     float: right;
-    margin-right: 100px;
-    position: relative;
+}
+
+
+   
+
+}
     
 
 
@@ -572,12 +611,17 @@ h1  {
 .btn {
  
    
-    width: 100px;
+    width: 80px;
+    height: 20px;
     border: 2px solid #00a8f2;
     background-color: transparent;
     border-radius: 0px;
     color: #00a8f2;
     margin-top: 20px;
+ 
+   
+
+
   
 
 
@@ -711,18 +755,58 @@ margin-bottom: 40px;
 
   }
 
-#cb1{
+#cb1 
+{
+    /*display: inline-block;*/
+    width: 25px;
+    height: 25px;
+    border: 2px solid #00a8f2;
+    position: absolute;
+
+    
+}
+#cb2 
+{
     display: inline-block;
     width: 25px;
     height: 25px;
     border: 2px solid #00a8f2;
     
 }
-
-
+#cb3
+{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #00a8f2;
+    
+}
+#cb4 {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #00a8f2;
+    
+}
+#cb5 {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #00a8f2;
+    
+}
+#cb6
+  {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #00a8f2;
+    
+}
 .checkbox {
    
-    padding: 15px;
+    padding: 5px;
+
     margin: 10px;
     position: relative;
     float: center;
