@@ -7,18 +7,38 @@
                 <div class="col-lg-10 col-md-10 col-xs-10">
 				
 					 <h4>Payment</h4>
+					
+					 	 <div class="col-lg-6 col-md-6 col-xs-12">
+					 	 	
+							<label for="cb1" class="labels">
+									<span>Is WIFI paid?</span>
+							</label>
+							<input id="cb5" name="cb1" type="checkbox"><label for="cb1" class="labels">
+									<span>YES</span>
+							</label>
+							<input id="cb5" name="cb1" type="checkbox"><label for="cb1" class="labels">
+									<span>NO</span>
+							</label>
+							       <input type="text" name="ssid" id="ssid"  class="form" placeholder="How much" ng-model="vm.ssid"  required/>
+						<label for="cb1" class="labels">
+									<span>Any time limit?</span>
+							</label>
+							<input id="cb5" name="cb1" type="checkbox"><label for="cb1" class="labels">
+									<span>YES</span>
+							</label>
+							<input id="cb5" name="cb1" type="checkbox"><label for="cb1" class="labels">
+									<span>NO</span>
+							</label>
+							
+                         
+                       
+  								   
+  								           <input type="text" name="ssid" id="ssid"  class="form" placeholder="How much" ng-model="vm.ssid"  required/>
 
-					 
-					  <label>
-					    <input type="radio" ng-model="vm.payment.option" value="FREE">
-					   FREE 
-					  </label><br/>
-					  <label>
-					    <input type="radio" ng-model="vm.payment.option" value="PAID">
-					   PAID
-					  </label><br/>
-
-					</div>
+							
+							
+						</div>	
+				
 					 <div class="col-lg-1 col-md-1 col-xs-1"></div>
 				</form>
 				<!-- col-lg-10 end -->

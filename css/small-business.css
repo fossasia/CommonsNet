@@ -134,7 +134,7 @@ a:focus, a:hover {
 
   .form{
     width: 100%;
-    padding: 15px;
+    padding: 8px;
     background:white;
     border:1px solid rgba(0, 0, 0, 0.075);
     margin-bottom:25px;
@@ -376,6 +376,7 @@ h4  {
 label  {
     
     margin-bottom: 0px;
+    padding-left: 0px;
 
 
        
@@ -383,11 +384,26 @@ label  {
 
 .awizard {
     
-   
-    font-size: 12px;
+   color: black;
+    font-size: 8px;
     font-weight: bold;
     font-family: 'Lora', serif;
 
+}
+
+.labels {
+    padding-left: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 10px;
+
+
+       
+}
+
+.radiobuttons{
+    
+    display: inline-block;
 
        
 }
@@ -534,13 +550,14 @@ h1  {
 }
 
 #wizard-step-container {
-    margin-top: 60px;
+    margin-top: 30px;
 }
 .generate {
  
-  margin-top: 100px;
+  margin-top: 80px;
 
- height: 500px;
+ height: 80%;
+
 
 
 
@@ -551,6 +568,7 @@ h1  {
    background-color: white;
    /*height: 30%;*/
    float: center;
+   position: relative;
   
 
 }
@@ -592,17 +610,23 @@ h1  {
  
    
   
-   
-     position: relative; 
-    display: inline-block;
-    vertical-align: middle;
-    height: 500px;
+ 
+
+  
+   display:block;
+    
     float: right;
+    margin-right: 80px;
+    margin-top: 20px;
+    
 }
 
 
-   
-
+ .radiobuttons {
+ 
+display: inline;
+ 
+    
 }
     
 
@@ -614,35 +638,15 @@ h1  {
     width: 80px;
     height: 20px;
     border: 2px solid #00a8f2;
-    background-color: transparent;
+  /*  background-color: transparent;*/
     border-radius: 0px;
     color: #00a8f2;
     margin-top: 20px;
- 
-   
-
-
-  
-
-
-}
-
-.awizard {
- 
-   color: black;
 }
 
 
-.btn:hover, .btn:active, .btn:focus {
- 
-   
-    
-    border: 2px solid #00a8f2 !important;
-    background-color: transparent !important;
-    border-radius: 0px !important;
-    color: #00a8f2 !important;
 
-}
+/**/
 footer{
  
    
@@ -758,55 +762,61 @@ margin-bottom: 40px;
 #cb1 
 {
     /*display: inline-block;*/
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border: 2px solid #00a8f2;
     position: absolute;
+
+    
+}
+.col-lg-6  {
+    /*display: inline-block;*/
+    padding-left: 0px;
 
     
 }
 #cb2 
 {
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border: 2px solid #00a8f2;
     
 }
 #cb3
 {
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border: 2px solid #00a8f2;
     
 }
 #cb4 {
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border: 2px solid #00a8f2;
     
 }
 #cb5 {
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border: 2px solid #00a8f2;
     
 }
 #cb6
   {
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border: 2px solid #00a8f2;
     
 }
 .checkbox {
    
-    padding: 5px;
-    margin: 10px;
+   
+
     position: relative;
     float: center;
     color: black;
