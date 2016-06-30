@@ -1,0 +1,200 @@
+<!doctype html>
+<html ng-app="website">
+<head>
+    <title>CommonsNet</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+     <script src="js/jquery.2.0.0.js"></script>
+     <script src="http://html2canvas.hertzen.com/build/html2canvas.js"></script>
+     <script src="js/jspdf.min.js"></script>
+    <script src="js/jquery.bootstrap.wizard.min.js"></script>
+ <!--    // <script src="js/main.js"></script> -->
+       
+        <script data-require="angular.js@1.4.8" data-semver="1.4.8" src="https://code.angularjs.org/1.4.8/angular.js"></script>
+   <!--      // <script src="js/script.js"></script> -->
+    
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+       <link href="css/footer-distributed-with-address-and-phones.css" rel="stylesheet">
+       <link href="css/prettify.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" />
+          <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+          <link href="css/progress-wizard.min.css" rel="stylesheet" />
+             
+
+                 <link href="css/landing-page.css" rel="stylesheet">
+                  <link href="css/small-business.css" rel="stylesheet">
+                  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+                  <link href='https://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
+                  <link href='https://fonts.googleapis.com/css?family=Belleza' rel='stylesheet' type='text/css'>
+</head>
+
+<body ng-app="app">
+  <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#/home">CommonsNet</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#/about-us">About us</a>
+                    </li>
+                    <li>
+                        <a href="#/generate-wifi">Generate WIFI</a>
+                    </li>
+                    <li>
+                        <a href="#/contact">Contact</a>
+                    </li>
+                     <li>
+                        <a href="https://commonsnetblog.wordpress.com/">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+
+
+
+
+
+
+ 
+<div class="shadow"></div>
+
+<div id="container">
+    <div ng-view></div>
+</div>
+
+
+<script src="js/angular-route.min.js"></script>
+<script src="js/website.js"></script>
+
+  <!-- footer code  -->
+  <footer>
+        
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+                <!-- col-lg-3 first column in footer body  -->
+                <div class="col-lg-3 col-md-6 col-xs-6">
+                     <h6>Use CommonsNet</h6>
+                     <ul> 
+                        <li>
+                            <a href="#/generate-wifi">Generate WIFI</a>
+                        </li>
+                      
+                        <li>
+                            <a href="#/about-us">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#/contact">Contact</a>
+                        </li>
+                        <li>
+                            <a href="https://commonsnetblog.wordpress.com/">Blog</a>
+                        </li>
+                         
+                    </ul>
+
+                  
+                </div>
+                   <!-- col-lg-3 first column in footer body END -->
+                    <!-- col-lg-3 first column in footer body START-->
+                   <div class="col-lg-3 col-md-6 col-xs-6">  
+                     <h6>Help</h6>  
+                            <ul> 
+                                  <li>
+                            <a href="#/how-it-worka">How does it work</a>
+                        </li>
+                       <li>
+                            <a href="#/help">Help</a>
+                        </li>
+                          <li>
+                            <a href="#/faq">FAQ</a>
+                        </li>
+                             </ul>
+
+                 </div>
+                  <!-- col-lg-3 first column in footer body END -->
+                   <!-- col-lg-3 first column in footer body START -->
+              <div class="col-lg-3 col-md-6 col-xs-6">
+                    <h6>Contact us</h6>
+                      <ul>
+                         <li>
+                            <a href="mailto:commonsnet@gmail.com" class="h-regular">commonsnet@gmail.com</a>
+                        </li>
+                     
+                        <li class="address">Berlin, Germany</li>
+                     </ul>
+                        
+                </div>
+                 <!-- col-lg-3 first column in footer body END -->
+                  <!-- col-lg-3 first column in footer body START -->
+                <div class="col-lg-3 col-md-6 col-xs-6">
+                   <h6>Follow us</h6>
+                  
+                        
+                         <ul>
+                            <li>
+                                <i class="fa fa-facebook"></i>
+                                <a href="https://web.facebook.com/fossasiacommonsnet/">Facebook</a>
+                            </li>
+                             <li>
+                                 <i class="fa fa-twitter"></i>
+                                <a href="https://twitter.com/Commons_Net">Twitter</a>
+                            </li>
+                         
+                            <li>
+                              <i class="fa fa-google-plus"></i>
+                               <a href="/google +">Google+</a>
+                            </li>
+                            <li>
+                               <i class="fa fa-youtube-play"></i>
+                               <a href="/youtube +">Youtube</a>   
+                            </li>
+                               <li>
+                            <i class="fa fa-github"></i>
+                            <a href="https://github.com/fossasia/CommonsNet">Github</a>
+                              </li>
+                        </ul>
+                   
+                 </div>
+                  <!-- col-lg-3 first column in footer body END -->
+            </div>
+        </div>
+              
+          <p class="copyright text-muted small footerrow">&copy; CommonsNet 2016</p>
+
+    </footer>
+    <!-- footer end -->
+
+
+
+
+
+</body>
+</html>
