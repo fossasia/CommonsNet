@@ -6,19 +6,57 @@
                     <!-- col-lg-5 col-md-5 col-xs-10 start  left inputs-->
                 <div class="col-lg-10 col-md-10 col-xs-10">
 				
-					 <h3>Payment</h3>
+					 <h4>Payment</h4>
+					
+					 	 <div class="col-lg-6 col-md-6 col-xs-12">
+					 	 	
+							<label for="cb1" class="labels vl-center required ">
+								Is WIFI paid?
+							</label>
+							
+					
+	   					  		<input id="cb5" name="cb1" type="checkbox" class='vi-center'>
+									<label for="cb1" class="labels"  class="labels vl-center">
+										YES
+									</label>
+						
+							
+							<input id="cb5" name="cb1" type="checkbox"  class='vi-center'>
+							<label for="cb1" class="labels">
+									NO
+							</label>
+							  <input type="text" name="ssid" id="ssid"  class="form" placeholder="How much" ng-model="vm.ssid"  required/>
+					
+									</div>
+									 <div class="col-lg-6 col-md-6 col-xs-12">
+							     
+						<label for="cb1" class="labels vl-center required ">
+								Any time limit?
+							</label>
+							
+							
+	   					  		<input id="cb5" name="cb1" type="checkbox" class='vi-center'>
+									<label for="cb1" class="labels"  class="labels vl-center">
+										YES
+									</label>
+						
+							
+							<input id="cb5" name="cb1" type="checkbox"  class='vi-center'>
+							<label for="cb1" class="labels">
+									NO
+							</label>
+							    <input type="text" name="ssid" id="ssid"  class="form" placeholder="Type it" ng-model="vm.ssid"  required/>
+							
+								</div>
+                         
+                       
+  								   
+  								       
 
-					 
-					  <label>
-					    <input type="radio" ng-model="vm.payment.option" value="FREE">
-					   FREE 
-					  </label><br/>
-					  <label>
-					    <input type="radio" ng-model="vm.payment.option" value="PAID">
-					   PAID
-					  </label><br/>
-
-					</div>
+							
+							
+						</div>	
+				
 					 <div class="col-lg-1 col-md-1 col-xs-1"></div>
 				</form>
 				<!-- col-lg-10 end -->

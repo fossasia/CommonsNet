@@ -1,9 +1,9 @@
 <!-- Container-fluid start -->
 <div class="container-fluid generatewificontanier">
       <div class="row">
-       <div class="col-md-1 col-lg-1"></div>
+       <div class="col-md-2 col-lg-2 col-xs-2"></div>
        <!-- col-md-10 col-lg-1- col-xs-12 start -->
-          <div class="col-md-10 col-lg-10 col-xs-12 generate">
+          <div class="col-md-8 col-lg-8 col-xs-8 generate">
             <!-- wizard-container start ng-controller - call to Wizard Controller defined in Angular -->
             <div id="wizard-container" ng-controller="WizardController as vm">
               <!-- wizard step start -->
@@ -23,12 +23,20 @@
            
             <div id="wizard-content-container">
               <ng-include src="vm.getStepTemplate()"></ng-include>
-              <div class="buttons">
-               <button ng-disabled="vm.currentStep <= 1"  id="left" class="btn btn-default" name="previous" type="button" ng-click="vm.gotoStep(vm.currentStep - 1)"> BACK </button>
-               <!-- Button Next  -->
-               <button ng-disabled="vm.currentStep >= vm.steps.length" id="right" name="next"   class="btn btn-default" type="button" ng-click="vm.gotoStep(vm.currentStep + 1)">NEXT </button>
-              </div>
+             
             </div>
+            <!--  <div class="col-md-1 col-lg-1 col-xs-1"> -->
+                <div class="row buttons">
+     
+               <button ng-disabled="vm.currentStep <= 1" class="btn btn-default previous-step" name="previous" type="button" ng-click="vm.gotoStep(vm.currentStep - 1)"> <i class="fa fa-chevron-left"></i> Previous </button>
+               <!-- Button Next  -->
+               <button ng-disabled="vm.currentStep >= vm.steps.length" name="next"   class="btn btn-default next-step" type="button" ng-click="vm.gotoStep(vm.currentStep + 1)">Next <i class="fa fa-chevron-right"></i> </button>
+              </div>
+
+             
+<!--  </div>
+           -->   
+ </div>
 
 
             
@@ -42,8 +50,9 @@
         </div>
         <!-- col-md-10 col-lg-1- col-xs-12 end -->
           
-        <div class="col-md-1 col-lg-1"></div>
+        <div class="col-md-2 col-lg-2 col-xs-2"></div>
       </div>
+        </div>
 </div>
 
      

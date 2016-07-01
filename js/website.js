@@ -84,7 +84,7 @@ angular.module('website', ['ngRoute']).
           },    
             {
           step: 5,
-              name:'Confirmation',
+              name:'Confirm',
             template: "partials/confirmation.html"
           },  
 
@@ -173,4 +173,6 @@ angular.module('website', ['ngRoute']).
 
     }
     })
+
+
 

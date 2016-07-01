@@ -5,8 +5,17 @@
                 <div class="col-lg-10 col-md-10 col-xs-10">
 
 
-					<h3>Legal restrictions</h3>
-					<h4>Does your country have any legal restrictions? Type them.</h4>
+					<h4>Legal restrictions</h4>
+					  <label for="male">Choose your country</label>
+                             <select type="text" name="security"  class="form" placeholder="SSID name"  id="security" ng-model="vm.securitytypes" required>
+                          		  <option >Poland</option>
+                          		 <option >USA</option>
+                          		 <option >France</option>
+                          		 <option >Germany</option>
+                          		 <option >Russia</option>
+                          		 <option >China</option>
+                          	</select>
+					<h6>Does your country have any legal restrictions? Type them.</h6>
 					<!-- form group start  -->
 				
 						<textarea name="message" id="message" class=" form textarea"  ng-model="vm.legalrestrictions"placeholder="You are not allowed to..."></textarea>
