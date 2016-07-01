@@ -171,7 +171,7 @@ a:focus, a:hover {
   }
 
   .textarea{
-    height: 200px;
+    height: 160px;
     max-height: 200px;
     max-width: 100%;
   }
@@ -274,7 +274,7 @@ p  {
  
   }
   .form-btn{
-    width:180px;
+    width:150px;
     display: block;
     height: auto;
     padding:15px;
@@ -578,6 +578,7 @@ h1  {
 .topnav {
  
     background-color: white;
+    z-index: 10000;
 
 }
 
@@ -766,6 +767,7 @@ margin-bottom: 40px;
     height: 20px;
     border: 2px solid #00a8f2;
     position: absolute;
+    margin-bottom: 8px;
 
     
 }
@@ -781,6 +783,7 @@ margin-bottom: 40px;
     width: 20px;
     height: 20px;
     border: 2px solid #00a8f2;
+    margin-bottom: 8px;
     
 }
 #cb3
@@ -789,6 +792,7 @@ margin-bottom: 40px;
     width: 20px;
     height: 20px;
     border: 2px solid #00a8f2;
+    margin-bottom: 8px;
     
 }
 #cb4 {
@@ -796,6 +800,7 @@ margin-bottom: 40px;
     width: 20px;
     height: 20px;
     border: 2px solid #00a8f2;
+    margin-bottom: 8px;
     
 }
 #cb5 {
@@ -803,7 +808,7 @@ margin-bottom: 40px;
     width: 20px;
     height: 20px;
     border: 2px solid #00a8f2;
-    
+    margin-bottom: 8px;
 }
 #cb6
   {
@@ -811,6 +816,7 @@ margin-bottom: 40px;
     width: 20px;
     height: 20px;
     border: 2px solid #00a8f2;
+    margin-bottom: 8px;
     
 }
 .checkbox {
@@ -823,9 +829,40 @@ margin-bottom: 40px;
     font-weight: bold;
     }
 
+.fa-floppy-o {
+   
+   
+background-color: white;
+margin-left: 3px;
+margin-right: 3px;
+    }
 .checkbox label, .radio label {
    
     padding: 8px;
     margin-left: 10px;
 }
 
+.vi-center {
+
+
+    position:relative;
+
+    vertical-align:middle;
+}
+
+.vl-center {
+   
+
+    position:relative;
+      margin-bottom: 4px;
+    margin-top: 0px;
+
+
+
+    display:inline-block;    
+    vertical-align:middle; 
+}
+
+
+.required:before { content:" *";
+color: red }
