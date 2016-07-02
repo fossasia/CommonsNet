@@ -114,49 +114,63 @@ angular.module('website', ['ngRoute']).
            var docDefinition = {
                content: [
                  {
-                  text: 'Wifi Details', style: 'header'
-                   // text: 'by CommonsNet', style: 'header' 
+                  text: 'Wifi Details by CommonsNet', style: 'header'
+                   
                  },
-                   {   text: 'Wireless Settings', style: 'anotherStyle' 
+                 // margin: [left, top, right, bottom]
+
+                   {   text: 'Wireless Settings', style: 'anotherStyle',  margin: [ 0, 10, 0, 10 ]
 
                   },
                  
                  {   
-                  text:vm.ssid,  style: 'anotherStyle' 
+                  text: 'SSID:' + ' ' + vm.ssid,  style: 'paragraphStyle' 
 
                   },
                       {   
-                  text:vm.password,  style: 'anotherStyle' 
+                  text: 'Password:' + ' ' + vm.password,  style: 'paragraphStyle' 
 
                   },
                  {   
-                  text:vm.securitytypes,  style: 'anotherStyle' 
+                  text:  'Authentication:' + ' ' +  vm.securitytypes,  style: 'paragraphStyle' 
 
                   },
                    {   
-                  text:vm.capacity,  style: 'anotherStyle' 
+                  text:  'Speed:' + ' ' +  vm.capacity,  style: 'paragraphStyle' 
 
                   },
                 {   
-                  text:vm.wifistandards,  style: 'anotherStyle' 
+                  text: 'WIFI Standard:' + ' ' +  vm.wifistandards,  style: 'paragraphStyle' 
 
                   },
+
+
+                   {   text: 'Payment', style: 'anotherStyle' , margin: [ 0, 10, 0, 10 ]
+
+                  },
+                 
+                
                ],
 
                styles: {
                  header: {
-                   fontSize: 22,
+                   fontSize: 30,
                    bold: true,
                    alignment: 'center'
                    
 
                  },
                  anotherStyle: {
-       italic: true,
-       alignment: 'left'
-     },
-                 
-               }
+                   italic: true,
+                    fontSize: 22,
+                   alignment: 'left'
+                 },
+                paragraphStyle: {
+               italic: true,
+                fontSize: 18,
+               alignment: 'left'
+             },         
+                       }
              };
                       
           
