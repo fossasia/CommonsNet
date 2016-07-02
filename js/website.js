@@ -111,63 +111,115 @@ angular.module('website', ['ngRoute']).
         
         // function save to generate pdf based on different wizard form fields. 
         vm.save = function() {
+           var docDefinition = {
+               content: [
+                 {
+                  text: 'Wifi Details', style: 'header'
+                   // text: 'by CommonsNet', style: 'header' 
+                 },
+                   {   text: 'Wireless Settings', style: 'anotherStyle' 
+
+                  },
+                 
+                 {   
+                  text:vm.ssid,  style: 'anotherStyle' 
+
+                  },
+                      {   
+                  text:vm.password,  style: 'anotherStyle' 
+
+                  },
+                 {   
+                  text:vm.securitytypes,  style: 'anotherStyle' 
+
+                  },
+                   {   
+                  text:vm.capacity,  style: 'anotherStyle' 
+
+                  },
+                {   
+                  text:vm.wifistandards,  style: 'anotherStyle' 
+
+                  },
+               ],
+
+               styles: {
+                 header: {
+                   fontSize: 22,
+                   bold: true,
+                   alignment: 'center'
+                   
+
+                 },
+                 anotherStyle: {
+       italic: true,
+       alignment: 'left'
+     },
+                 
+               }
+             };
+                      
+          
+
+         
+          pdfMake.createPdf(docDefinition).download('wifi.pdf');
         
-        var doc = new jsPDF();
+    //     var doc = new jsPDF();
          
           
-          doc.setFontSize(30);
-          doc.text(80, 30, 'WiFi');
+    //       doc.setFontSize(30);
+    //       doc.text(80, 30, 'WiFi');
 
-          doc.setFontSize(20);
-          doc.text(20, 50, 'Wireless details');
+    //       doc.setFontSize(20);
+    //       doc.text(20, 50, 'Wireless details');
 
 
-          doc.fromHTML(vm.ssid, 20, 55, {
-          'width': 300,
+    //       doc.fromHTML(vm.ssid, 20, 55, {
+    //       'width': 300,
           
-             });
+    //          });
           
-          doc.fromHTML(vm.password, 20, 60, {
-          'width': 300,
-           });
+    //       doc.fromHTML(vm.password, 20, 60, {
+    //       'width': 300,
+    //        });
 
 
-          doc.fromHTML(vm.securitytypes, 20, 65, {
-          'width': 300,
-           });
+    //       doc.fromHTML(vm.securitytypes, 20, 65, {
+    //       'width': 300,
+    //        });
           
-           doc.fromHTML(vm.capacity, 20, 70, {
-          'width': 300,
-           });
+    //        doc.fromHTML(vm.capacity, 20, 70, {
+    //       'width': 300,
+    //        });
 
        
-          doc.fromHTML(vm.wifistandards, 20, 75, {
-          'width': 300,
-           });
+    //       doc.fromHTML(vm.wifistandards, 20, 75, {
+    //       'width': 300,
+    //        });
         
-          doc.setFontSize(20);
-          doc.text(20, 95, 'Payment');
+    //       doc.setFontSize(20);
+    //       doc.text(20, 95, 'Payment');
 
-          doc.fromHTML(vm.payment.option, 20, 100, {
-          'width': 300,
-           });
+    //       doc.fromHTML(vm.payment.option, 20, 100, {
+    //       'width': 300,
+    //        });
 
-          doc.setFontSize(20);
-          doc.text(20, 120, 'Conditions');
+    //       doc.setFontSize(20);
+    //       doc.text(20, 120, 'Conditions');
 
-          doc.fromHTML(vm.wificonditions, 20, 125, {
-          'width': 300,
-           });
+    //       doc.fromHTML(vm.wificonditions, 20, 125, {
+    //       'width': 300,
+    //        });
 
-          doc.setFontSize(20);
-          doc.text(20, 145, 'Legal Restrictions');
+    //       doc.setFontSize(20);
+    //       doc.text(20, 145, 'Legal Restrictions');
          
-          doc.fromHTML(vm.legalrestrictions, 20, 150, {
-          'width': 300,
-           });
+    //       doc.fromHTML(vm.legalrestrictions, 20, 150, {
+    //       'width': 300,
+    //        });
 
           
-          var file = doc.output('save', 'wifi.pdf');
+    //       var file = doc.output('save', 'wifi.pdf');
 
 
 
