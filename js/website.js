@@ -55,7 +55,7 @@ angular.module('website', ['ngRoute']).
     })
 
 
-        .controller('WizardController', function ($scope) {
+        .controller('WizardController', function ($scope, $http) {
          // contrller function - different steps in Wizard Form. Defining steps, different names and template which is used
          var vm = this;
         
@@ -111,72 +111,92 @@ angular.module('website', ['ngRoute']).
         
         // function save to generate pdf based on different wizard form fields. 
         vm.save = function() {
-           var docDefinition = {
-               content: [
-                 {
-                  text: 'Wifi Details by CommonsNet', style: 'header'
+               $http({
+            method: 'GET',
+            url: 'http://127.0.0.1:8080/CommonsNet/generatefile.fodt',
+           
+        }).success(function(data){
+            // With the data succesfully returned, call our callback
+           
+            var result = data.replace("INPUTSSID", vm.ssid);
+            var result  = result.replace("INPUTPASSWORD", vm.password);
+            var result  = result.replace("INPUTSPEED", vm.speed);
+             var result  = result.replace("INPUTAUTHENTICATION", vm.securitytypes); 
+              var result  = result.replace("INPUTSTANDARD", vm.wifistandards);
+
+
+       console.log(result)
+        }).error(function(){
+            alert("error");
+        });
+
+          
+          //  var docDefinition = {
+          //      content: [
+          //        {
+          //         text: 'Wifi Details by CommonsNet', style: 'header'
                    
-                 },
-                 // margin: [left, top, right, bottom]
+          //        },
+          //        // margin: [left, top, right, bottom]
 
-                   {   text: 'Wireless Settings', style: 'anotherStyle',  margin: [ 0, 10, 0, 10 ]
+          //          {   text: 'Wireless Settings', style: 'anotherStyle',  margin: [ 0, 10, 0, 10 ]
 
-                  },
+          //         },
                  
-                 {   
-                  text: 'SSID:' + ' ' + vm.ssid,  style: 'paragraphStyle' 
+          //        {   
+          //         text: 'SSID:' + ' ' + vm.ssid,  style: 'paragraphStyle' 
 
-                  },
-                      {   
-                  text: 'Password:' + ' ' + vm.password,  style: 'paragraphStyle' 
+          //         },
+          //             {   
+          //         text: 'Password:' + ' ' + vm.password,  style: 'paragraphStyle' 
 
-                  },
-                 {   
-                  text:  'Authentication:' + ' ' +  vm.securitytypes,  style: 'paragraphStyle' 
+          //         },
+          //        {   
+          //         text:  'Authentication:' + ' ' +  vm.securitytypes,  style: 'paragraphStyle' 
 
-                  },
-                   {   
-                  text:  'Speed:' + ' ' +  vm.capacity,  style: 'paragraphStyle' 
+          //         },
+          //          {   
+          //         text:  'Speed:' + ' ' +  vm.capacity,  style: 'paragraphStyle' 
 
-                  },
-                {   
-                  text: 'WIFI Standard:' + ' ' +  vm.wifistandards,  style: 'paragraphStyle' 
+          //         },
+          //       {   
+          //         text: 'WIFI Standard:' + ' ' +  vm.wifistandards,  style: 'paragraphStyle' 
 
-                  },
+          //         },
 
 
-                   {   text: 'Payment', style: 'anotherStyle' , margin: [ 0, 10, 0, 10 ]
+          //          {   text: 'Payment', style: 'anotherStyle' , margin: [ 0, 10, 0, 10 ]
 
-                  },
+          //         },
                  
                 
-               ],
+          //      ],
 
-               styles: {
-                 header: {
-                   fontSize: 30,
-                   bold: true,
-                   alignment: 'center'
+          //      styles: {
+          //        header: {
+          //          fontSize: 30,
+          //          bold: true,
+          //          alignment: 'center'
                    
 
-                 },
-                 anotherStyle: {
-                   italic: true,
-                    fontSize: 22,
-                   alignment: 'left'
-                 },
-                paragraphStyle: {
-               italic: true,
-                fontSize: 18,
-               alignment: 'left'
-             },         
-                       }
-             };
+          //        },
+          //        anotherStyle: {
+          //          italic: true,
+          //           fontSize: 22,
+          //          alignment: 'left'
+          //        },
+          //       paragraphStyle: {
+          //      italic: true,
+          //       fontSize: 18,
+          //      alignment: 'left'
+          //    },         
+          //              }
+          //    };
                       
           
 
          
-          pdfMake.createPdf(docDefinition).download('wifi.pdf');
+          // pdfMake.createPdf(docDefinition).download('wifi.pdf');
         
     //     var doc = new jsPDF();
          
