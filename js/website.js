@@ -110,9 +110,20 @@ angular.module('website', ['ngRoute']).
             }
         }
 
-         function Download(url) {
-                  document.getElementById('my_iframe').src = url;
-                        };
+        vm.makeTextFile = function (text) {
+          var textFile = null
+              var data = new Blob([text], {type: 'text/plain'});
+
+              // If we are replacing a previously generated file we need to
+              // manually revoke the object URL to avoid memory leaks.
+              if (textFile !== null) {
+                window.URL.revokeObjectURL(textFile);
+              }
+
+              textFile = window.URL.createObjectURL(data);
+
+              return textFile;
+            };
               
         
         // function save to generate pdf based on different wizard form fields. 
@@ -124,12 +135,14 @@ angular.module('website', ['ngRoute']).
         }).success(function(data){
 
             // With the data succesfully returnd, call our callback
-            console.log(vm.paymentfieldyes)
+          
+
             var result = data.replace("INPUTS", vm.ssid);
             var result  = result.replace("INPUTP", vm.password);
-            var result  = result.replace("INPUTA", vm.speed);
-             var result  = result.replace("INPUTSP", vm.securitytypes); 
+            var result  = result.replace("INPUTA", vm.securitytypes);
+             var result  = result.replace("123", vm.speed); 
               var result  = result.replace("INPUTT", vm.wifistandards);
+
               if (vm.paymentfieldyes ==='yes') {
              var result  = result.replace("PAIDFIELD", vm.paymentfieldyes);
               }
@@ -145,7 +158,7 @@ angular.module('website', ['ngRoute']).
 
               }
             if (vm.timelimityes ==='yes') {
-             var result  = result.replace("TIMELIMITFIELD", vm.timelimityes);
+             var result  = result.replace("TFIELD", vm.timelimityes);
               }
               else {
              console.log('nothing')
@@ -160,25 +173,45 @@ angular.module('website', ['ngRoute']).
 
               }
 
-            // With the data succesfully returned, call our callback
-           
-            var result = data.replace("INPUTS", vm.ssid);
-            var result  = result.replace("INPUTP", vm.password);
-             var result  = result.replace("INPUTA", vm.securitytypes); 
-              var result  = result.replace("INPUTSP", vm.speed);
-            
-              var result  = result.replace("INPUTT", vm.wifistandards);
-          
-             
-      
-              
+
+                      
+          // if  ($scope.vm.specialsettings === true) {
+          //         var result  = result.replace("REQ", vm.specialsettings);
+          //     }
+          //      else {
+          //    console.log('nothing')
+
+          //     }
+          var result = result.replace("888", vm.countires);
+          var result = result.replace("456", vm.legalrestrictions);
+         console.log(result)
 
 
-       console.log(result)
+
+          var link = document.getElementById('downloadlink');
+          link.href = vm.makeTextFile(result);
+
+
+
+
+
+                // var result = result;
+        // var a = document.getElementById('a');
+        //  a.href='data:text/csv;base64,' + btoa(result);
+
+
+
+        //  function download() {
+        //     var result = document.getElementById('invisible');
+        //     result.src = "generatefile.fodt";
+        // }
+        //     download(result);
+
         }).error(function(){
             alert("error");
         });
-
+   }
+    })
           
           //  var docDefinition = {
           //      content: [
@@ -306,8 +339,8 @@ angular.module('website', ['ngRoute']).
 
 
 
-    }
-    })
+ 
 
 
  
+"Downloading generated odt file"
