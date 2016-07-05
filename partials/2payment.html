@@ -8,24 +8,22 @@
 				
 					 <h4>Payment</h4>
 					
-					 	 <div class="col-lg-6 col-md-6 col-xs-12">
+					 	 <div class="col-lg-6 col-md-6 col-xs-12" >
 					 	 	
 							<label for="cb1" class="labels vl-center required ">
 								Is WIFI paid?
 							</label>
 							
 					
-	   					  		<input id="cb5" name="cb1" type="checkbox" class='vi-center'>
+	   					  		<input id="yes" name="cb1" type="checkbox" class='vi-center' ng-model="vm.paymentfieldyes"
+                             ng-false-value="'no'" ng-true-value="'yes'" >
 									<label for="cb1" class="labels"  class="labels vl-center">
 										YES
 									</label>
 						
 							
-							<input id="cb5" name="cb1" type="checkbox"  class='vi-center'>
-							<label for="cb1" class="labels">
-									NO
-							</label>
-							  <input type="text" name="ssid" class="form" placeholder="How much" ng-model="vm.paymentfield" required/>
+						
+							  <input type="text" name="ssid" class="form" placeholder="How much per hour" ng-model="vm.paymentfield" ng-if="vm.paymentfieldyes == 'yes' " required/>
 					
 									</div>
 									 <div class="col-lg-6 col-md-6 col-xs-12">
@@ -35,17 +33,15 @@
 							</label>
 							
 							
-	   					  		<input id="cb5" name="cb1" type="checkbox" class='vi-center'>
-									<label for="cb1" class="labels"  class="labels vl-center">
+	   					  		<input id="timeyes" name="cb1" type="checkbox" class='vi-center' ng-model="vm.timelimityes" ng-false-value="'no'" ng-true-value="'yes'" >
+									<label for="cb1" class="labels"  class="labels vl-center" >
 										YES
 									</label>
 						
 							
-							<input id="cb5" name="cb1" type="checkbox"  class='vi-center'>
-							<label for="cb1" class="labels">
-									NO
-							</label>
-							    <input type="text" name="ssid"   class="form" placeholder="Type it" ng-model="vm.timelimit"  required/>
+						
+							
+							    <input type="text" name="ssid"   class="form" placeholder="Type it" ng-model="vm.timelimitfield" ng-if="vm.timelimityes == 'yes' "  required/>
 							
 								</div>
                          

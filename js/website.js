@@ -54,7 +54,8 @@ angular.module('website', ['ngRoute']).
 
     })
 
-
+    
+        
         .controller('WizardController', function ($scope, $http) {
          // contrller function - different steps in Wizard Form. Defining steps, different names and template which is used
          var vm = this;
@@ -116,14 +117,42 @@ angular.module('website', ['ngRoute']).
             url: 'http://127.0.0.1:8080/CommonsNet/generatefile.fodt',
            
         }).success(function(data){
-            // With the data succesfully returned, call our callback
-           
-            var result = data.replace("INPUTSSID", vm.ssid);
-            var result  = result.replace("INPUTPASSWORD", vm.password);
-            var result  = result.replace("INPUTSPEED", vm.speed);
-             var result  = result.replace("INPUTAUTHENTICATION", vm.securitytypes); 
-              var result  = result.replace("INPUTSTANDARD", vm.wifistandards);
+            // With the data succesfully returnd, call our callback
+            console.log(vm.paymentfieldyes)
+            var result = data.replace("INPUTS", vm.ssid);
+            var result  = result.replace("INPUTP", vm.password);
+            var result  = result.replace("INPUTA", vm.speed);
+             var result  = result.replace("INPUTSP", vm.securitytypes); 
+              var result  = result.replace("INPUTT", vm.wifistandards);
+              if (vm.paymentfieldyes ==='yes') {
+             var result  = result.replace("PAIDFIELD", vm.paymentfieldyes);
+              }
+              else {
+             console.log('nothing')
 
+              } 
+              if (vm.paymentfieldyes ==='yes') {
+             var result  = result.replace("HOWFIELD", vm.paymentfield);
+              }
+              else {
+             console.log('nothing')
+
+              }
+            if (vm.timelimityes ==='yes') {
+             var result  = result.replace("TIMELIMITFIELD", vm.timelimityes);
+              }
+              else {
+             console.log('nothing')
+
+              }
+ 
+            if (vm.timelimityes ==='yes') {
+             var result  = result.replace("HOWTIME", vm.timelimitfield);
+              }
+              else {
+             console.log('nothing')
+
+              }
 
        console.log(result)
         }).error(function(){
@@ -261,4 +290,4 @@ angular.module('website', ['ngRoute']).
     })
 
 
-
+ 

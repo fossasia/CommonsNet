@@ -810,6 +810,34 @@ margin-bottom: 40px;
     border: 2px solid #00a8f2;
     margin-bottom: 8px;
 }
+#yes {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00a8f2;
+    margin-bottom: 8px;
+}
+#no {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00a8f2;
+    margin-bottom: 8px;
+}
+#timeyes {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00a8f2;
+    margin-bottom: 8px;
+}
+#timeno {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00a8f2;
+    margin-bottom: 8px;
+}
 #cb6
   {
     display: inline-block;
