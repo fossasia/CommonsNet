@@ -158,7 +158,7 @@ angular.module('website', ['ngRoute']).
 
               }
             if (vm.timelimityes ==='yes') {
-             var result  = result.replace("TFIELD", vm.timelimityes);
+             var result  = result.replace("800", vm.timelimityes);
               }
               else {
              console.log('nothing')
