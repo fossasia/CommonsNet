@@ -109,6 +109,11 @@ angular.module('website', ['ngRoute']).
                 }
             }
         }
+
+         function Download(url) {
+                  document.getElementById('my_iframe').src = url;
+                        };
+              
         
         // function save to generate pdf based on different wizard form fields. 
         vm.save = function() {
@@ -117,6 +122,7 @@ angular.module('website', ['ngRoute']).
             url: 'http://127.0.0.1:8080/CommonsNet/generatefile.fodt',
            
         }).success(function(data){
+<<<<<<< HEAD
             // With the data succesfully returnd, call our callback
             console.log(vm.paymentfieldyes)
             var result = data.replace("INPUTS", vm.ssid);
@@ -153,6 +159,21 @@ angular.module('website', ['ngRoute']).
              console.log('nothing')
 
               }
+=======
+            // With the data succesfully returned, call our callback
+           
+            var result = data.replace("INPUTS", vm.ssid);
+            var result  = result.replace("INPUTP", vm.password);
+             var result  = result.replace("INPUTA", vm.securitytypes); 
+              var result  = result.replace("INPUTSP", vm.speed);
+            
+              var result  = result.replace("INPUTT", vm.wifistandards);
+          
+             
+      
+              
+
+>>>>>>> i17
 
        console.log(result)
         }).error(function(){
