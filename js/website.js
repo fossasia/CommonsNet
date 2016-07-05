@@ -130,7 +130,7 @@ angular.module('website', ['ngRoute']).
         vm.save = function() {
                $http({
             method: 'GET',
-            url: 'http://127.0.0.1:8080/CommonsNet/generatefile.fodt',
+            url: 'https://commonsnet.herokuapp.com/generatefile.fodt',
            
         }).success(function(data){
 
@@ -343,4 +343,3 @@ angular.module('website', ['ngRoute']).
 
 
  
-"Downloading generated odt file"
