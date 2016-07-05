@@ -108,6 +108,11 @@ angular.module('website', ['ngRoute']).
                 }
             }
         }
+
+         function Download(url) {
+                  document.getElementById('my_iframe').src = url;
+                        };
+              
         
         // function save to generate pdf based on different wizard form fields. 
         vm.save = function() {
@@ -118,11 +123,16 @@ angular.module('website', ['ngRoute']).
         }).success(function(data){
             // With the data succesfully returned, call our callback
            
-            var result = data.replace("INPUTSSID", vm.ssid);
-            var result  = result.replace("INPUTPASSWORD", vm.password);
-            var result  = result.replace("INPUTSPEED", vm.speed);
-             var result  = result.replace("INPUTAUTHENTICATION", vm.securitytypes); 
-              var result  = result.replace("INPUTSTANDARD", vm.wifistandards);
+            var result = data.replace("INPUTS", vm.ssid);
+            var result  = result.replace("INPUTP", vm.password);
+             var result  = result.replace("INPUTA", vm.securitytypes); 
+              var result  = result.replace("INPUTSP", vm.speed);
+            
+              var result  = result.replace("INPUTT", vm.wifistandards);
+          
+             
+      
+              
 
 
        console.log(result)
