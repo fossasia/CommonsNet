@@ -570,6 +570,8 @@ h1  {
    /*height: 30%;*/
    float: center;
    position: relative;
+   display: inline-block;
+   vertical-align: middle;
   
 
 }
