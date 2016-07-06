@@ -5,6 +5,7 @@
  */
 html {
     font-family: sans-serif;
+    height: 100%; 
     }
 
 body {
@@ -550,7 +551,7 @@ h1  {
 }
 
 #wizard-step-container {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .generate {
  
