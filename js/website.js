@@ -130,7 +130,7 @@ angular.module('website', ['ngRoute']).
         vm.save = function() {
                $http({
             method: 'GET',
-            url: 'https://commonsnet.herokuapp.com/generatefile.fodt',
+            url: 'http://commonsnet.herokuapp.com/generatefile.fodt',
            
         }).success(function(data){
 
@@ -147,21 +147,21 @@ angular.module('website', ['ngRoute']).
              var result  = result.replace("PAIDFIELD", vm.paymentfieldyes);
               }
               else {
-             console.log('nothing')
+           var result  = result.replace("PAIDFIELD", " " );
 
               } 
               if (vm.paymentfieldyes ==='yes') {
              var result  = result.replace("HOWFIELD", vm.paymentfield);
               }
               else {
-             console.log('nothing')
+              var result  = result.replace("HOWFIELD", " ");
 
               }
             if (vm.timelimityes ==='yes') {
              var result  = result.replace("800", vm.timelimityes);
               }
               else {
-             console.log('nothing')
+            var result  = result.replace("800", " ");
 
               }
  
@@ -169,19 +169,51 @@ angular.module('website', ['ngRoute']).
              var result  = result.replace("HOWTIME", vm.timelimitfield);
               }
               else {
-             console.log('nothing')
+            var result  = result.replace("HOWTIME", " ");
 
               }
 
+            if (vm.specialdevices ==='yes') {
+                var result  = result.replace("785", 'Special devices');
+                  }
+            else {
+               var result  = result.replace("785", " ");
 
-                      
-          // if  ($scope.vm.specialsettings === true) {
-          //         var result  = result.replace("REQ", vm.specialsettings);
-          //     }
-          //      else {
-          //    console.log('nothing')
+                  } 
+           
+            if (vm.specialsettings ==='yes') {
+                var result  = result.replace("163", 'Special settings');
+                  }
+            else {
+               var result  = result.replace("163", " ");
 
-          //     }
+                  } 
+            
+            if (vm.acceptterms ==='yes') {
+                var result  = result.replace("125", 'Accepting terms of use');
+                  }
+            else {
+               var result  = result.replace("125", " ");
+
+                  } 
+            if (vm.socialprofile ==='yes') {
+                var result  = result.replace("186", 'Liking social profile');
+                  }
+            else {
+               var result  = result.replace("186", " ");
+
+                  } 
+                  if (vm.downloading ==='yes') {
+                var result  = result.replace("236", 'Downloading pdf file');
+                  }
+            else {
+               var result  = result.replace("236", " ");
+
+                  } 
+
+
+
+         
           var result = result.replace("888", vm.countires);
           var result = result.replace("456", vm.legalrestrictions);
          console.log(result)
