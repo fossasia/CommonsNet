@@ -130,7 +130,7 @@ angular.module('website', ['ngRoute']).
         vm.save = function() {
                $http({
             method: 'GET',
-            url: 'http://commonsnet.herokuapp.com/generatefile.fodt',
+            url: 'https://commonsnet.herokuapp.com/generatefile.fodt',
            
         }).success(function(data){
 
@@ -140,28 +140,28 @@ angular.module('website', ['ngRoute']).
             var result = data.replace("INPUTS", vm.ssid);
             var result  = result.replace("INPUTP", vm.password);
             var result  = result.replace("INPUTA", vm.securitytypes);
-             var result  = result.replace("123", vm.speed); 
+             var result  = result.replace("863", vm.capacity); 
               var result  = result.replace("INPUTT", vm.wifistandards);
 
               if (vm.paymentfieldyes ==='yes') {
-             var result  = result.replace("PAIDFIELD", vm.paymentfieldyes);
+             var result  = result.replace("PAIDFIELD", "YES" );
               }
               else {
-           var result  = result.replace("PAIDFIELD", " " );
+           var result  = result.replace("PAIDFIELD", " - " );
 
               } 
               if (vm.paymentfieldyes ==='yes') {
              var result  = result.replace("HOWFIELD", vm.paymentfield);
               }
               else {
-              var result  = result.replace("HOWFIELD", " ");
+              var result  = result.replace("HOWFIELD", " - ");
 
               }
             if (vm.timelimityes ==='yes') {
-             var result  = result.replace("800", vm.timelimityes);
+             var result  = result.replace("800", "YES");
               }
               else {
-            var result  = result.replace("800", " ");
+            var result  = result.replace("800", " - ");
 
               }
  
@@ -169,15 +169,15 @@ angular.module('website', ['ngRoute']).
              var result  = result.replace("HOWTIME", vm.timelimitfield);
               }
               else {
-            var result  = result.replace("HOWTIME", " ");
+            var result  = result.replace("HOWTIME", " - ");
 
               }
 
             if (vm.specialdevices ==='yes') {
-                var result  = result.replace("785", 'Special devices');
+                var result  = result.replace("452", 'Special devices');
                   }
             else {
-               var result  = result.replace("785", " ");
+               var result  = result.replace("452", " ");
 
                   } 
            
@@ -190,10 +190,10 @@ angular.module('website', ['ngRoute']).
                   } 
             
             if (vm.acceptterms ==='yes') {
-                var result  = result.replace("125", 'Accepting terms of use');
+                var result  = result.replace("365", 'Accepting terms of use');
                   }
             else {
-               var result  = result.replace("125", " ");
+               var result  = result.replace("365", " ");
 
                   } 
             if (vm.socialprofile ==='yes') {
@@ -201,6 +201,7 @@ angular.module('website', ['ngRoute']).
                   }
             else {
                var result  = result.replace("186", " ");
+
 
                   } 
                   if (vm.downloading ==='yes') {
