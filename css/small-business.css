@@ -559,13 +559,6 @@ h1  {
 
  height: 80%;
 
-
-
-
-
-
-  
-
    background-color: rgb(255,255,255); 
     background-color: rgba(255,255,255); 
    /*height: 30%;*/
@@ -577,7 +570,10 @@ h1  {
 
 }
 
+.contactcontainer {
+height: 600px;
 
+}
 
 .topnav {
  
