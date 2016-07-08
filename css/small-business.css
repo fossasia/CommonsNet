@@ -316,6 +316,7 @@ h2  {
     margin-bottom: 20px;
     margin-top: 60px;
     font-family: 'Lora', serif;
+    color: white;
    
 
    
@@ -361,10 +362,12 @@ h3  {
 }
 h4  {
     
-    margin-top: 0px;
-    font-size: 25px;
+    margin-top: 50px;
+    font-size: 20px;
     font-family: 'Lora', serif;
-   
+    color: black;
+
+   text-align: left;
 
 
        
@@ -409,14 +412,14 @@ label  {
        
 }
 h5 {
-    font-size: 40px;
+    font-size: 30px;
     font-family:  'Lora', serif;
 }
 h5:after {
     border-bottom: 1px solid #000;
     content: '';
     display: inline-block;
-    height: 25px;
+    height: 20px;
     vertical-align: top;
     width: 40px;
     margin-left: 20px;
@@ -426,7 +429,7 @@ h5:before {
     border-bottom: 1px solid #000;
     content: '';
     display: inline-block;
-    height: 25px;
+    height: 20px;
     vertical-align: top;
     width: 40px;
     margin-right: 20px;
@@ -451,6 +454,12 @@ h6  {
        
 }
 
+.text{
+  vertical-align: middle;
+  margin-top: 40px;
+
+       
+}
 h1  {
   
     font-size: 70px;
@@ -581,7 +590,13 @@ height: 800px;
     z-index: 10000;
 
 }
+.transparency{
+ 
+    margin-top: 50px;
+    margin-left: 40px;
 
+
+}
 .footer {
  
     background-color:  #282C35;
@@ -591,7 +606,9 @@ height: 800px;
 
 .agata {
  
-    background-image: url("../img/office1.jpg") !important;
+    background-image: url("../img/office1.png") !important;
+    height: 500px;
+    
 
   
 
@@ -672,6 +689,7 @@ footer{
   border-bottom: none;
   border-top: none;
   background-color: white;
+  padding-bottom: 0px;
 
 }
 
@@ -731,11 +749,12 @@ text-align: center;
 p {
 margin-bottom: 40px;
 
+
 }
 
 
 .service-box {
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 20px;
   }
 
