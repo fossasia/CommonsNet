@@ -314,9 +314,9 @@ h2  {
  
     font-size: 45px;
     margin-bottom: 20px;
-    margin-top: 60px;
+  
     font-family: 'Lora', serif;
-    color: white;
+   text-align: center;
 
    
 
@@ -412,14 +412,14 @@ label  {
        
 }
 h5 {
-    font-size: 30px;
+    font-size: 40px;
     font-family:  'Lora', serif;
 }
 h5:after {
     border-bottom: 1px solid #000;
     content: '';
     display: inline-block;
-    height: 20px;
+    height: 25px;
     vertical-align: top;
     width: 40px;
     margin-left: 20px;
@@ -429,7 +429,7 @@ h5:before {
     border-bottom: 1px solid #000;
     content: '';
     display: inline-block;
-    height: 20px;
+    height: 25px;
     vertical-align: top;
     width: 40px;
     margin-right: 20px;
@@ -464,7 +464,7 @@ h1  {
   
     font-size: 60px;
     text-align: center;
-    padding-top: 20px;
+   
     font-family: 'Lora', serif;
     
     color: white;
@@ -907,3 +907,13 @@ margin-right: 3px;
 
 .required:before { content:" *";
 color: red }
+
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+.blog { 
+   color: black;
+}
