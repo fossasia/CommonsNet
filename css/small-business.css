@@ -5,6 +5,7 @@
  */
 html {
     font-family: sans-serif;
+    height: 100%; 
     }
 
 body {
@@ -313,8 +314,10 @@ h2  {
  
     font-size: 45px;
     margin-bottom: 20px;
-    margin-top: 60px;
+  
     font-family: 'Lora', serif;
+   text-align: center;
+
    
 
    
@@ -331,7 +334,7 @@ h3  {
     font-size: 40px;  
     font-family: 'Lora', serif;
     text-align: center;
-   
+
 }
 .ng-pristine {
    
@@ -360,10 +363,11 @@ h3  {
 }
 h4  {
     
-    margin-top: 0px;
-    font-size: 25px;
+    
+    font-size: 30px;
     font-family: 'Lora', serif;
-   
+    color: black;
+    text-align: left;
 
 
        
@@ -450,11 +454,17 @@ h6  {
        
 }
 
+.text{
+  vertical-align: middle;
+  margin-top: 40px;
+
+       
+}
 h1  {
   
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
-    padding-top: 30px;
+   
     font-family: 'Lora', serif;
     
     color: white;
@@ -550,7 +560,7 @@ h1  {
 }
 
 #wizard-step-container {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .generate {
  
@@ -558,22 +568,21 @@ h1  {
 
  height: 80%;
 
-
-
-
-
-
-  
-
-   background-color: white;
+   background-color: rgb(255,255,255); 
+    background-color: rgba(255,255,255); 
    /*height: 30%;*/
    float: center;
    position: relative;
+   display: inline-block;
+   vertical-align: middle;
   
 
 }
 
+.contactcontainer {
+height: 800px;
 
+}
 
 .topnav {
  
@@ -581,7 +590,13 @@ h1  {
     z-index: 10000;
 
 }
+.transparency{
+ 
+    margin-top: 50px;
+    margin-left: 40px;
 
+
+}
 .footer {
  
     background-color:  #282C35;
@@ -591,7 +606,9 @@ h1  {
 
 .agata {
  
-    background-image: url("../img/computer.jpg") !important;
+    background-image: url("../img/office1.png") !important;
+    height: 500px;
+    
 
   
 
@@ -672,6 +689,7 @@ footer{
   border-bottom: none;
   border-top: none;
   background-color: white;
+  padding-bottom: 0px;
 
 }
 
@@ -729,13 +747,15 @@ text-align: center;
 }
 
 p {
-margin-bottom: 40px;
+margin-bottom: 30px;
+font-size: 18px;
+
 
 }
 
 
 .service-box {
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 20px;
   }
 
@@ -810,6 +830,27 @@ margin-bottom: 40px;
     border: 2px solid #00a8f2;
     margin-bottom: 8px;
 }
+#yes {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00a8f2;
+    margin-bottom: 8px;
+}
+#yes {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00a8f2;
+    margin-bottom: 8px;
+}
+#timeyes  {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00a8f2;
+    margin-bottom: 8px;
+}
 #cb6
   {
     display: inline-block;
@@ -866,3 +907,13 @@ margin-right: 3px;
 
 .required:before { content:" *";
 color: red }
+
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+.blog { 
+   color: black;
+}
