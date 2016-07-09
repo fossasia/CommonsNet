@@ -317,6 +317,7 @@ h2  {
     margin-top: 60px;
     font-family: 'Lora', serif;
     color: white;
+
    
 
    
@@ -333,7 +334,7 @@ h3  {
     font-size: 40px;  
     font-family: 'Lora', serif;
     text-align: center;
-   
+
 }
 .ng-pristine {
    
@@ -362,12 +363,11 @@ h3  {
 }
 h4  {
     
-    margin-top: 50px;
-    font-size: 20px;
+    
+    font-size: 30px;
     font-family: 'Lora', serif;
     color: black;
-
-   text-align: left;
+    text-align: left;
 
 
        
@@ -462,9 +462,9 @@ h6  {
 }
 h1  {
   
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
     font-family: 'Lora', serif;
     
     color: white;
@@ -747,7 +747,8 @@ text-align: center;
 }
 
 p {
-margin-bottom: 40px;
+margin-bottom: 30px;
+font-size: 18px;
 
 
 }
