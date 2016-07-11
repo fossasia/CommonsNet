@@ -8,13 +8,18 @@
 
           
 		
-                <h4>Congratulations. You have generated your WiFi details.<br> Choose button to save pdf file or to copy code to add to your website.</h4>
+                <h4>Congratulations. You have generated your WiFi details.<br> Choose button to save pdf file or copy code to add to your website.</h4>
                
                     <!-- Button ng-click call to function vm.save created in Javascript and AngularJS -->
+                          <div class="col-lg-6 col-md-6 col-xs-12 confirmation">
                		   <button ng-disabled="vm.currentStep != vm.steps.length" class="form-btn"  type="button" ng-click="vm.save()"><i class="fa fa-floppy-o" aria-hidden="true"></i><a download="generate-wifi.odt" id="downloadlink">Download</a>
-                     </button>
-                 <iframe id="invisible" style="display:none;"></iframe>
-
+                        </button>
+                         </div>
+                         <div class="col-lg-6 col-md-6 col-xs-12 confirmation">
+                   
+                    <textarea name="message" id="message" class="form textarea" placeholder="<copy code>" ></textarea>
+                   
+ </div>
             
          </div>
       <!-- Form group end -->
