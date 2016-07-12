@@ -1,5 +1,10 @@
 # CommonsNet
-Sharing and Transparency for WiFi Networks
+## Sharing and Transparency for WiFi Networks
+
+Across the world there are different legal settings and requirements for sharing of Internet connections and specifically Open Wifi connections. 
+
+CommonsNet website reflects these details and makes them transparent to the user. The site generates a human readable file a machine readable file of the level of sharing that is offered by someone.
+
 
 ## Getting started
 
