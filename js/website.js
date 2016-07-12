@@ -155,7 +155,7 @@ angular.module('website', ['ngRoute']).
         vm.save = function() {
                $http({
             method: 'GET',
-            url: 'https://commonsnet.herokuapp.com/generatefile.fodt',
+            url: 'http://127.0.0.1:8080/CommonsNet/generatefile.fodt',
            
         }).success(function(data){
 
