@@ -12,9 +12,9 @@ For installation steps on how to deploy CommonsNet using vagrant please refer to
 ### How to configure Bower? :
 In order to install and configure bower please refer to Bower installation
 
-### How to run tests for Open-Event Server?:
+### How to run tests for CommonsNet?:
 
-### How do I deploy Open-Event Server to Heroku?:
+### How do I deploy CommonsNet to Heroku?:
 For steps regarding how to deploy your version of the CommonsNet to Heroku, please refer Heroku deployment
 
 ## Demo version  
