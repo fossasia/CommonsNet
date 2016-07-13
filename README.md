@@ -1,6 +1,6 @@
 # CommonsNet
 ## Sharing and Transparency for WiFi Networks
-
+[![Build Status](https://travis-ci.org/fossasia/commonsnet.svg?branch=master)](https://travis-ci.org/fossasia/CommonsNet)
 Across the world there are different legal settings and requirements for sharing of Internet connections and specifically Open Wifi connections. 
 
 CommonsNet website reflects these details. It generates a human readable file and a machine readable file of the level of sharing that is offered by someone and makes wifi details transparent to the users.
