@@ -1,5 +1,5 @@
 # CommonsNet
-[![Build Status](https://travis-ci.org/fossasia/commonsnet.svg?branch=master)](https://travis-ci.org/fossasia/CommonsNet)
+[![Build Status](https://travis-ci.org/fossasia/CommonsNet.svg)](https://travis-ci.org/fossasia/CommonsNet)
 
 ## Sharing and Transparency for WiFi Networks
 Across the world there are different legal settings and requirements for sharing of Internet connections and specifically Open Wifi connections. 
