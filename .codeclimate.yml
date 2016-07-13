@@ -14,9 +14,7 @@ engines:
 ratings:
   paths:
   - "**.css"
-  - "**.inc"
   - "**.js"
   - "**.jsx"
-  - "**.module"
 exclude_paths:
-- node_modules/
+- tests/
