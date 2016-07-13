@@ -17,4 +17,4 @@ ratings:
   - "**.js"
   - "**.jsx"
 exclude_paths:
-- tests/
+-node_modules/
