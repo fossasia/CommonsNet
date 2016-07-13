@@ -1,5 +1,7 @@
 # CommonsNet
 [![Build Status](https://travis-ci.org/fossasia/CommonsNet.svg)](https://travis-ci.org/fossasia/CommonsNet)
+[![Issue Count](https://codeclimate.com/github/fossasia/CommonsNet/badges/gpa.svg)](https://codeclimate.com/github/fossasia/CommonsNet)
+[![Test Coverage](https://codeclimate.com/github/fossasia/CommonsNet/badges/coverage.svg)](https://codeclimate.com/github/fossasia/open-event-orga-server/coverage)
 
 ## Sharing and Transparency for WiFi Networks
 Across the world there are different legal settings and requirements for sharing of Internet connections and specifically Open Wifi connections. 
