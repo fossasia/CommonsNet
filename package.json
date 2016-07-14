@@ -7,11 +7,15 @@
   },
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "istanbul cover --include-all-sources jasmine-node test"
   },
   "dependencies": {
     "ejs": "2.4.1",
-    "express": "4.13.3"
+    "express": "4.13.3",
+    "grunt": "^1.0.1",
+    "istanbul": "^0.4.4",
+    "jasmine-node": "^1.14.5"
   },
   "repository": {
     "type": "git",
@@ -22,5 +26,9 @@
     "heroku",
     "express"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-coveralls": "^1.0.1"
+  }
 }

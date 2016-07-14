@@ -1,0 +1,142 @@
+{
+  "name": "grunt",
+  "description": "The JavaScript Task Runner",
+  "version": "1.0.1",
+  "author": {
+    "name": "Grunt Development Team",
+    "url": "http://gruntjs.com/development-team"
+  },
+  "homepage": "http://gruntjs.com/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gruntjs/grunt.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "grunt test",
+    "test-tap": "grunt test:tap"
+  },
+  "main": "lib/grunt",
+  "bin": {
+    "grunt": "bin/grunt"
+  },
+  "keywords": [
+    "task",
+    "async",
+    "cli",
+    "minify",
+    "uglify",
+    "build",
+    "lodash",
+    "unit",
+    "test",
+    "qunit",
+    "nodeunit",
+    "server",
+    "init",
+    "scaffold",
+    "make",
+    "jake",
+    "tool"
+  ],
+  "dependencies": {
+    "coffee-script": "~1.10.0",
+    "dateformat": "~1.0.12",
+    "eventemitter2": "~0.4.13",
+    "exit": "~0.1.1",
+    "findup-sync": "~0.3.0",
+    "glob": "~7.0.0",
+    "grunt-cli": "~1.2.0",
+    "grunt-known-options": "~1.1.0",
+    "grunt-legacy-log": "~1.0.0",
+    "grunt-legacy-util": "~1.0.0",
+    "iconv-lite": "~0.4.13",
+    "js-yaml": "~3.5.2",
+    "minimatch": "~3.0.0",
+    "nopt": "~3.0.6",
+    "path-is-absolute": "~1.0.0",
+    "rimraf": "~2.2.8"
+  },
+  "devDependencies": {
+    "difflet": "~0.2.3",
+    "grunt-contrib-jshint": "~1.0.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-jscs": "~2.8.0",
+    "semver": "2.1.0",
+    "shelljs": "~0.5.3",
+    "temporary": "~0.0.4",
+    "through2": "~2.0.0"
+  },
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "contributors": [
+    {
+      "name": "\"Cowboy\" Ben Alman",
+      "url": "http://benalman.com/"
+    },
+    {
+      "name": "Kyle Robinson Young",
+      "url": "http://dontkry.com/"
+    },
+    {
+      "name": "Tyler Kellen",
+      "url": "http://goingslowly.com"
+    },
+    {
+      "name": "Sindre Sorhus",
+      "url": "http://sindresorhus.com"
+    },
+    {
+      "name": "Vlad Filippov",
+      "url": "http://vladfilippov.com/"
+    }
+  ],
+  "gitHead": "8ada4948b69c6ec9b1e956b5e6b2e6814fa054ca",
+  "bugs": {
+    "url": "https://github.com/gruntjs/grunt/issues"
+  },
+  "_id": "grunt@1.0.1",
+  "_shasum": "e8778764e944b18f32bb0f10b9078475c9dfb56b",
+  "_from": "grunt@>=1.0.1 <2.0.0",
+  "_npmVersion": "2.15.2",
+  "_nodeVersion": "4.4.1",
+  "_npmUser": {
+    "name": "shama",
+    "email": "kyle@dontkry.com"
+  },
+  "maintainers": [
+    {
+      "name": "cowboy",
+      "email": "cowboy@rj3.net"
+    },
+    {
+      "name": "shama",
+      "email": "kyle@dontkry.com"
+    },
+    {
+      "name": "tkellen",
+      "email": "tyler@sleekcode.net"
+    },
+    {
+      "name": "vladikoff",
+      "email": "vlad@vladikoff.com"
+    }
+  ],
+  "dist": {
+    "shasum": "e8778764e944b18f32bb0f10b9078475c9dfb56b",
+    "tarball": "https://registry.npmjs.org/grunt/-/grunt-1.0.1.tgz"
+  },
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/grunt-1.0.1.tgz_1459880209209_0.8634267684537917"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/grunt/-/grunt-1.0.1.tgz",
+  "readme": "ERROR: No README data found!"
+}
