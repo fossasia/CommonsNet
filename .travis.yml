@@ -1,13 +1,7 @@
-language: python
+language: node_js
 node_js:
   - "4.4.7"
-after_script:
-  - codeclimate-test-reporter < lcov.info
 after_success:
   - npm run coveralls
   - codeclimate-test-reporter
-addons:
-  code_climate:
-    repo_token: KNUl2uVAMDiaD21dqLhTrSHOh7Q4z0e9M
-
 
