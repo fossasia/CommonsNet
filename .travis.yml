@@ -4,4 +4,4 @@ node_js:
 
 after_success:
   - codeclimate-test-reporter
- 
+
