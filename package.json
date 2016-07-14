@@ -7,7 +7,10 @@
   },
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha",
+    "cover": "istanbul cover _mocha",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "dependencies": {
     "ejs": "2.4.1",
@@ -22,5 +25,11 @@
     "heroku",
     "express"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "coveralls": "^2.11.11",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
+    "mocha-lcov-reporter": "^1.2.0"
+  }
 }
