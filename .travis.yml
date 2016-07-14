@@ -3,6 +3,5 @@ node_js:
   - "4.4.7"
 
 after_success:
-  - codeclimate-test-reporter
   - npm run coveralls
-
+  - codeclimate-test-reporter
