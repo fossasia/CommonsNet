@@ -624,6 +624,7 @@ height: 800px;
  
     background-image: url("../img/office1.png") !important;
     height: 500px;
+    overflow-x: hidden;
 
 }
 
