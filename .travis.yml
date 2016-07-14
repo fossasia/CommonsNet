@@ -6,6 +6,6 @@ after_script:
 after_success:
   - npm run coveralls
   - codeclimate-test-reporter
-  addons:
+addons:
   code_climate:
     repo_token: KNUl2uVAMDiaD21dqLhTrSHOh7Q4z0e9M
