@@ -14,8 +14,7 @@
     "ejs": "2.4.1",
     "express": "4.13.3",
     "grunt": "^1.0.1",
-    // "istanbul": "^0.4.4",
-    // "jasmine-node": "^1.14.5"
+   
   },
   "repository": {
     "type": "git",
