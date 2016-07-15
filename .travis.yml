@@ -1,7 +1,13 @@
 language: node_js
 node_js:
   - "4.4.7"
+script:
+  - istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec
+  - codecov
 after_success:
-  - npm run coveralls
-  - codeclimate-test-reporter
+  - bash <(curl -s https://codecov.io/bash)
+  - npm run coverage
+  - codecov
+
+
 
