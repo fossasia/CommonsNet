@@ -6,9 +6,10 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/bbe4d39d3d164b598f9a988b5b835cb4)](https://www.codacy.com/app/ag-e-wisniewska/CommonsNet?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fossasia/CommonsNet&amp;utm_campaign=Badge_Grade)
 
 ## Sharing and Transparency for WiFi Networks
+
 Across the world there are different legal settings and requirements for sharing of Internet connections and specifically Open Wifi connections. 
 
-CommonsNet website reflects these details. It generates a human readable file and a machine readable file of the level of sharing that is offered by someone and makes wifi details transparent to the users.
+CommonsNet website reflects these details. We provide with a great tool to collect all wifi details and enable people to share them with others. Our simple and easy-to-follow form let gather WiFi information in a orderly and transparent manner, and then immediately generate a human readable file to download or machine readable file of the level of sharing that is offered by someone to copy and paste on website and make transparent details public.
 
 
 ## Getting started
