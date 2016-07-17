@@ -14,11 +14,11 @@ CommonsNet website reflects these details. We provide with a great tool to colle
 
 ## Getting started
 
-## Vagrant
+### Vagrant
 
 - To run CommonsNet on Vagrant environment please follow [instruction](https://github.com/fossasia/CommonsNet/blob/master/docs/VAGRANT.md)
 
-## Heroku 
+### Heroku 
 - To deploy CommonsNet to Heroku follow this [instruction](https://github.com/fossasia/CommonsNet/blob/master/docs/VAGRANT.md)
 
 ## Demo version  
