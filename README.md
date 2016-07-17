@@ -14,6 +14,9 @@ CommonsNet website reflects these details. It generates a human readable file an
 ## Getting started
 ## Vagrant
 - To run CommonsNet on Vagrant environment please follow [instruction](https://github.com/fossasia/CommonsNet/blob/master/docs/VAGRANT.md)
+- 
+## Heroku 
+- To deploy CommonsNet to Heroku follow this [instruction]
 
 ## Demo version  
 [Go to demo version](https://commonsnet.herokuapp.com/) 
