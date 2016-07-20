@@ -6,7 +6,7 @@
 html {
     font-family: sans-serif;
     height: 100%; 
-    }
+    }f
 
 body {
     padding-top: 70px;
@@ -2503,28 +2503,20 @@ height: 800px;
 
 
 }
+h4.abouttext {
+  margin-top: 50px;
+}
 
 .buttons {
- 
-   
-  
- 
-
-  
-   display:block;
-    
+    display:block;
     float: right;
     margin-right: 90px;
-   
     
 }
 
- .radiobuttons {
+.radiobuttons {
  
 display: inline;
- 
-    
-}
     
 
 
