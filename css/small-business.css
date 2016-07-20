@@ -6,7 +6,7 @@
 html {
     font-family: sans-serif;
     height: 100%; 
-    }
+    }f
 
 body {
     padding-top: 70px;
@@ -197,10 +197,7 @@ a:focus, a:hover {
     -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
     -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
   }
-#wizard-content-container 
-{
-   margin-top: 50px;
-  }
+
 
 .round-button {
     width: 10%;
@@ -336,7 +333,9 @@ h3  {
     text-align: center;
 
 }
-
+#wizard-step-container {
+  margin-top: 40px;
+}
 }
 .ng-pristine {
    
@@ -345,9 +344,7 @@ h3  {
    
 }
 
-#wizard-content-container {
-    margin-top: 40px;
-}
+
 
 .clearfix {
    
@@ -384,7 +381,7 @@ label  {
 .awizard {
     
    color: black;
-    font-size: 8px;
+    font-size: 12px;
     font-weight: bold;
     font-family: 'Lora', serif;
 
@@ -392,8 +389,8 @@ label  {
 
 .labels {
     padding-left: 0px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-right: 10px;
 
 
@@ -575,9 +572,6 @@ text-align: center;
 
 }
 
-#wizard-step-container {
-    margin-top: 50px;
-}
 .generate {
  
   margin-top: 80px;
@@ -636,12 +630,13 @@ height: 800px;
 }
 
 
- .instruction     {
+.instruction {
     border-bottom: 2px solid #00a8f2;
     background-color: white;
     margin: 5px;
-   padding: 10px;
-   }
+    padding: 10px;
+    opacity: 0.9;
+}
 
 .navbar-brand {
  
@@ -662,11 +657,20 @@ height: 800px;
    display:block;
     
     float: right;
-    margin-right: 80px;
-    margin-top: 20px;
+    margin-right: 90px;
+ 
     
 }
-
+.btn:active { 
+    color: #00a8f2; 
+background-color: white;
+border-color: #00a8f2;
+}
+.btn:hover {
+color: #00a8f2; 
+background-color: white;
+border-color: #00a8f2;
+  }
 
  .radiobuttons {
  
@@ -688,6 +692,7 @@ display: inline;
     border-radius: 0px;
     color: #00a8f2;
     margin-top: 20px;
+    background-color: white;
 }
 
 
@@ -711,6 +716,8 @@ footer{
 
 .section-heading {
      margin-bottom: 30px; 
+    
+
 }
 
 .content-section-b {
@@ -724,6 +731,8 @@ footer{
 .content-section-a {
   padding-bottom: 20px;
   padding-top: 20px;
+  
+
 }
 
 .content-section-c   {
@@ -820,11 +829,12 @@ font-size: 18px;
 #cb1 
 {
     /*display: inline-block;*/
+     display: inline-block;
     width: 20px;
     height: 20px;
-    border: 2px solid #00a8f2;
-    position: absolute;
-    margin-bottom: 8px;
+    /* border: 2px solid #00a8f2; */
+    /* margin-bottom: 8px; */
+    
 
     
 }
@@ -839,62 +849,69 @@ font-size: 18px;
     display: inline-block;
     width: 20px;
     height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
+    /* border: 2px solid #00a8f2; */
+    /* margin-bottom: 8px; */
+   
     
 }
 #cb3
 {
-    display: inline-block;
+   display: inline-block;
     width: 20px;
     height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
+    /* border: 2px solid #00a8f2; */
+    /* margin-bottom: 8px; */
+   
     
 }
 #cb4 {
-    display: inline-block;
+     display: inline-block;
     width: 20px;
     height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
+    /* border: 2px solid #00a8f2; */
+    /* margin-bottom: 8px; */
     
-}
+  }
 #cb5 {
     display: inline-block;
     width: 20px;
     height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
+    /* border: 2px solid #00a8f2; */
+    /* margin-bottom: 8px; */
+    
 }
+#yes {
+     display: inline-block;
+    width: 20px;
+    height: 20px;
+    /* border: 2px solid #00a8f2; */
+    /* margin-bottom: 8px; */
+ 
+  }
 #yes {
     display: inline-block;
     width: 20px;
     height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
-}
-#yes {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
+    /* border: 2px solid #00a8f2; */
+    /* margin-bottom: 8px; */
+
 }
 #timeyes  {
-    display: inline-block;
+     display: inline-block;
     width: 20px;
     height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
+    /* border: 2px solid #00a8f2; */
+    /* margin-bottom: 8px; */
+   
 }
 #cb6
   {
-    display: inline-block;
+     display: inline-block;
     width: 20px;
     height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
+    /* border: 2px solid #00a8f2; */
+    /* margin-bottom: 8px; */
+ 
     
 }
 .checkbox {
@@ -1106,6 +1123,7 @@ a:focus, a:hover {
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
+    -webkit-appearance: menulist-button;
   }
 
 
@@ -1157,10 +1175,6 @@ a:focus, a:hover {
     box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
     -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
     -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-  }
-#wizard-content-container 
-{
-   margin-top: 50px;
   }
 
 .round-button {
@@ -1304,9 +1318,7 @@ h3  {
    
 }
 
-#wizard-content-container {
-    margin-top: 40px;
-}
+
 
 .col-lg-5  {
    
@@ -1350,7 +1362,7 @@ label  {
 .awizard {
     
    color: black;
-    font-size: 8px;
+    font-size: 12px;
     font-weight: bold;
     font-family: 'Lora', serif;
 
@@ -1526,7 +1538,7 @@ color: white;
 }
 
 .generatewificontanier {
-  background-image: url("../img/hand.jpg");
+  background-image: url("../img/apple.jpg");
 
   width: 100%;
   height: 800px;
@@ -1534,9 +1546,6 @@ color: white;
 
 }
 
-#wizard-step-container {
-    margin-top: 50px;
-}
 .generate {
  
   margin-top: 80px;
@@ -1556,6 +1565,7 @@ color: white;
 
 .contactcontainer {
 height: 800px;
+
 
 }
 
@@ -1595,12 +1605,13 @@ height: 800px;
 }
 
 
- .instruction     {
+.instruction {
     border-bottom: 2px solid #00a8f2;
     background-color: white;
     margin: 5px;
-   padding: 10px;
-   }
+    padding: 10px;
+    opacity: 0.9;
+}
 
 .navbar-brand {
  
@@ -1621,8 +1632,8 @@ height: 800px;
    display:block;
     
     float: right;
-    margin-right: 80px;
-    margin-top: 20px;
+    margin-right: 90px;
+    
     
 }
 
@@ -1670,6 +1681,7 @@ footer{
 
 .section-heading {
      margin-bottom: 30px; 
+     
 }
 
 .content-section-b {
@@ -1683,6 +1695,8 @@ footer{
 .content-section-a {
   padding-bottom: 20px;
   padding-top: 20px;
+ 
+
 }
 
 .content-section-c   {
@@ -1776,86 +1790,14 @@ font-size: 18px;
 
   }
 
-#cb1 
-{
-    /*display: inline-block;*/
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00a8f2;
-    position: absolute;
-    margin-bottom: 8px;
 
-    
-}
 .col-lg-6  {
     /*display: inline-block;*/
     padding-left: 0px;
 
     
 }
-#cb2 
-{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
-    
-}
-#cb3
-{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
-    
-}
-#cb4 {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
-    
-}
-#cb5 {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
-}
-#yes {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
-}
-#yes {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
-}
-#timeyes  {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
-}
-#cb6
-  {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
-    
-}
+
 .checkbox {
    
    
@@ -2300,7 +2242,7 @@ label  {
 .awizard {
     
    color: black;
-    font-size: 8px;
+    font-size: 10px;
     font-weight: bold;
     font-family: 'Lora', serif;
 
@@ -2486,9 +2428,7 @@ color: white;
 
 }
 
-#wizard-step-container {
-    margin-top: 50px;
-}
+
 .generate {
  
   margin-top: 80px;
@@ -2547,12 +2487,13 @@ height: 800px;
 }
 
 
- .instruction     {
+.instruction {
     border-bottom: 2px solid #00a8f2;
     background-color: white;
     margin: 5px;
-   padding: 10px;
-   }
+    padding: 10px;
+    opacity: 0.9;
+}
 
 .navbar-brand {
  
@@ -2562,29 +2503,20 @@ height: 800px;
 
 
 }
+h4.abouttext {
+  margin-top: 50px;
+}
 
 .buttons {
- 
-   
-  
- 
-
-  
-   display:block;
-    
+    display:block;
     float: right;
-    margin-right: 80px;
-    margin-top: 20px;
+    margin-right: 90px;
     
 }
 
-
- .radiobuttons {
+.radiobuttons {
  
 display: inline;
- 
-    
-}
     
 
 
@@ -2604,7 +2536,7 @@ display: inline;
 .confirmation
  {
  
-   margin-top: 30px;
+   margin-top: 10px;
     text-align: center;
 
 }
@@ -2627,6 +2559,7 @@ footer{
 
 .section-heading {
      margin-bottom: 30px; 
+   
 }
 
 .content-section-b {
@@ -2640,15 +2573,16 @@ footer{
 .content-section-a {
   padding-bottom: 20px;
   padding-top: 20px;
+  
 }
 
 .content-section-c   {
-
-  background-color: #282C35;
+background-color: #282C35;
   padding: 40px;
 
- 
-
+}
+.hcontact {
+  margin-top: 100px;
 }
 
 .lead {
@@ -2733,86 +2667,14 @@ font-size: 18px;
 
   }
 
-#cb1 
-{
-    /*display: inline-block;*/
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00a8f2;
-    position: absolute;
-    margin-bottom: 8px;
 
-    
-}
 .col-lg-6  {
     /*display: inline-block;*/
     padding-left: 0px;
 
     
 }
-#cb2 
-{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
-    
-}
-#cb3
-{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
-    
-}
-#cb4 {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
-    
-}
-#cb5 {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
-}
-#yes {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
-}
-#yes {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
-}
-#timeyes  {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
-}
-#cb6
-  {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00a8f2;
-    margin-bottom: 8px;
-    
-}
+
 .checkbox {
    
    
@@ -2863,10 +2725,12 @@ color: red }
 
 
 .image { 
-   position: relative; 
+   
    width: 100%; /* for IE 6 */
 }
-
+.textimage { 
+ z-index: 100;
+  }
 a:focus, a:hover {
     color: #00a8f2;
 
