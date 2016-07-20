@@ -2510,10 +2510,10 @@ h4.abouttext {
 .buttons {
     display:block;
     float: right;
-    margin-right: 90px;   
-}
 
- .radiobuttons {
+    margin-right: 90px;
+}
+.radiobuttons {
  
 display: inline;
  
