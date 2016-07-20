@@ -4,26 +4,31 @@
                    <!-- col-lg-1 start and end -->
                     <!-- col-lg-5 col-md-5 col-xs-10 start  left inputs-->
                 <div class="col-lg-10 col-md-10 col-xs-10">
-				<h4>Conditions</h4>
+				
 					 
                 	<!-- form start -->
 					  
 
-	   					<h6> Is something required to use your WIFI?</h6>
+	   					<p> Is something required to use your WIFI?</p>
 	   					  <div class="col-lg-6 col-md-6 col-xs-12">
 	   					  	
 	   					  	<div >
+	   					  		
 	   					  		<input id="cb5" name="cb1" type="checkbox" class='vi-center' ng-model="vm.specialdevices"  ng-false-value="'no'" ng-true-value="'yes'" >
 									<label for="cb1" class="labels"  class="labels vl-center">
 										Special devices 
 									</label>
 									  <input type="text" name="ssid" class="form" placeholder="List them" ng-model="vm.specialdevicesfield" ng-if="vm.specialdevices == 'yes' " required/>
+									  
+
+						  
 							</div>
 							<div >
 								<input id="cb5" name="cb1" type="checkbox" class='vi-center' ng-model="vm.specialsettings"  ng-false-value="'no'" ng-true-value="'yes'" >
 									<label for="cb1" class="labels">
 										Special settings 
 									</label>
+									<input type="text" name="ssid" class="form" placeholder="List them" ng-model="vm.specialsettingsfield" ng-if="vm.specialsettings == 'yes' " required/>
 							</div>
 							<div >
 							<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.acceptterms"  ng-false-value="'no'" ng-true-value="'yes'" >

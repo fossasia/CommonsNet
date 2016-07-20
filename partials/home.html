@@ -99,7 +99,7 @@
                    <div class="col-lg-4 col-md-6 col-xs-12">
                       <div class="instruction">
                      <h5 class="text-center numbers">1</h5>
-                         <h6 class="text-center">FILL FORM</h6> 
+                         <p class="text-center">FILL FORM</ps> 
 
                       <p class="text-center">Collect all details about your Wifi connection and put them into a prepared an easy-to-follow form.
 </p>
@@ -111,7 +111,7 @@
                      <div class="col-lg-4 col-md-6 col-xs-12">
                        <div class="instruction">
                        <h5 class="text-center numbers">2</h5>
-                       <h6 class="text-center">GENERATE</h6>
+                       <p class="text-center">GENERATE</p>
                             <p class="text-center">As you finish filling, click save button to generate file or code and share with your customers 
 </p>
                        <!--  <div class="thumbnail">
@@ -122,7 +122,7 @@
                       <div class="col-lg-4 col-md-6 col-xs-12">
                           <div class="instruction">
                       <h5 class="text-center numbers">3</h5>
-                       <h6 class="text-center">ENJOY</h6>
+                       <p class="text-center">ENJOY</p>
                         <p class="text-center">Enjoy providing your customers with a transparent and trustworthy wireless connection.
                        <!--  <div class="thumbnail">
                           <img src="img/img5.jpg" style="width:100%;"/>
@@ -180,9 +180,12 @@
                       
                       <div class="col-lg-3 col-md-4 col-xs-6 " ng-repeat="n in results ">
                           <div class="image">
-                           
+               <div class="textimage">
+{{n.title}}
+ <img src="{{n.img}} " style="width:100%; height:180px"/>
+ </div>             
 
-     <img src="{{n.img}} " style="width:100%; height:180px"/>
+    
       
       <h6> <a class="blog" href="{{n.url}}">Read<i class="fa fa-arrow-right" aria-hidden="true"></i></a> </h6>
 
