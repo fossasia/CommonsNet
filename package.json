@@ -26,10 +26,10 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "coveralls": "^2.11.11",
+    "coveralls": "~2.11.11",
     "istanbul": "^0.4.4",
     "mocha": "^2.5.3",
-    "mocha-lcov-reporter": "^1.2.0",
+    "mocha-lcov-reporter": "~1.2.0",
     "codecov": "^1.0.1"
   }
 }

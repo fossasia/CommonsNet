@@ -81,15 +81,14 @@ margin-top: 50px;
 
 .whitebuttons {
   
-  padding-top:15px;
-  padding-bottom: 15px;
-  padding-left: 30px;
+  padding-top:10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
   padding-right: 50px;
-  width: 100%;
+  width: 40%;
   border: 2px solid #00a8f2;
   background-color: white;
-  margin-right: 50px;
-  margin-top: 10px;
+  margin-right: 40px;
   color: #00a8f2;
   font-weight: bold;
   text-align: left;
