@@ -2,6 +2,7 @@ language: node_js
 node_js:
   - "4.4.7"
 install:
+  - npm install -g istanbul
   - npm install -g codecov
 script:
   - istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec
