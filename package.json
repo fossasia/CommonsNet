@@ -30,6 +30,7 @@
     "istanbul": "^0.4.4",
     "mocha": "^2.5.3",
     "mocha-lcov-reporter": "~1.2.0",
-    "codecov": "^1.0.1"
+    "codecov": "^1.0.1",
+    "pg": "~6.0.3"
   }
 }
