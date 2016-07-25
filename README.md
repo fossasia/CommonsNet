@@ -1,7 +1,6 @@
 # CommonsNet
 [![Build Status](https://travis-ci.org/fossasia/CommonsNet.svg)](https://travis-ci.org/fossasia/CommonsNet)
 [![Issue Count](https://codeclimate.com/github/fossasia/CommonsNet/badges/gpa.svg)](https://codeclimate.com/github/fossasia/CommonsNet)
-[![Test Coverage](https://codeclimate.com/github/fossasia/CommonsNet/badges/coverage.svg)](https://codeclimate.com/github/fossasia/open-event-orga-server/coverage)
 [![Issue Count](https://codeclimate.com/github/fossasia/CommonsNet/badges/issue_count.svg)](https://codeclimate.com/github/fossasia/CommonsNet)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/bbe4d39d3d164b598f9a988b5b835cb4)](https://www.codacy.com/app/ag-e-wisniewska/CommonsNet?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fossasia/CommonsNet&amp;utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/fossasia/CommonsNet/branch/master/graph/badge.svg)](https://codecov.io/gh/fossasia/CommonsNet)
