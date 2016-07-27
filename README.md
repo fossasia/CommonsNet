@@ -24,5 +24,14 @@ CommonsNet website reflects these details. We provide with a great tool to colle
 ## Demo version  
 [Go to demo version](https://commonsnet.herokuapp.com/) 
 
+## Blog
+
+[Visit blog](commonsnetblog.wordpress.com) 
+
+## Social Media
+- [Facebook](https://www.facebook.com/CommonsNetApp/) 
+- [Twitter](https://twitter.com/Commons_Net) 
+
+
 ## License
 This project is currently licensed under the GNU General Public License v3. A copy of LICENSE.md should be present along with the source code. To obtain the software under a different license, please contact FOSSASIA.
