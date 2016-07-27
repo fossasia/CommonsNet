@@ -1,0 +1,11 @@
+[
+    {
+    "country":"Poland", "restricions":"asdsada"
+    },
+    {
+    "country":"Germany", "restrictions":"blxckbxcbx"
+    },
+    {
+    "country":"France", "restrictions":"blbclblcb"
+    }
+]

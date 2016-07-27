@@ -85,6 +85,34 @@ angular.module('website', ['ngRoute']).
          // contrller function - different steps in Wizard Form. Defining steps, different names and template which is used
          var vm = this;
         
+         
+       function myFunction(arr) {
+            var out = "";
+            var i;
+            for(i = 0; i < arr.length; i++) {
+                out += arr[i].restrictions + " " + arr[i].country;
+            }
+            vm.legalrestrictions = out;
+        } 
+
+        var xmlhttp = new XMLHttpRequest();
+        var url = "restrictions.txt";
+
+        xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            var myArr = JSON.parse(xmlhttp.responseText);
+            myFunction(myArr);
+            }
+        };
+
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+
+
+
+
+          
+
         //Model
         vm.currentStep = 1;
         vm.steps = [
@@ -271,6 +299,7 @@ angular.module('website', ['ngRoute']).
    }
     })
           
+
      
 
 
