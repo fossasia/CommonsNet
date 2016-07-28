@@ -2,21 +2,20 @@
                    <div class="col-lg-1 col-md-1 col-xs-1"></div>
                    <!-- col-lg-1 start and end -->
                     <!-- col-lg-5 col-md-5 col-xs-10 start  left inputs-->
-                <div class="col-lg-10 col-md-10 col-xs-10">
+                <div class="col-lg-10 col-md-10 col-xs-10 " >
 
 					  <label for="male">Choose your country</label>
-                             <select type="text" name="countires"  class="form"  ng-model="vm.countires" required>
-                          		  <option >Poland</option>
-                          		 <option >USA</option>
-                          		 <option >France</option>
-                          		 <option >Germany</option>
-                          		 <option >Russia</option>
-                          		 <option >China</option>
-                          	</select>
+             
+    <select type="text" class="form" ng-model="vm.countries" ng-options="x.name for x in countries" ng-change="update()">
+   <!--    <option ng-repeat="x.name for x in countries" value="{{x.name}}">{{x.name}</option>  -->
+      </select>
+
+  
+                             
 					<label for="male">Does your country have any legal restrictions? Type them.</label>
 					<!-- form group start  -->
 				
-						<textarea name="message" id="message" class=" form textarea"  ng-model="vm.legalrestrictions" placeholder="You are not allowed to..."></textarea>
+						<textarea name="message" id="legalarea" class=" form textarea"  ng-model="vm.legalrestrictions" placeholder="You are not allowed to..."></textarea>
            
 
 

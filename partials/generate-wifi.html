@@ -1,5 +1,6 @@
 <!-- Container-fluid start -->
-<div class="container-fluid generatewificontanier">
+<div class="container-fluid">
+  
       <div class="row">
        <div class="col-md-2 col-lg-2 col-xs-2"></div>
        <!-- col-md-10 col-lg-1- col-xs-12 start -->
@@ -26,13 +27,16 @@
              
             </div>
             <!--  <div class="col-md-1 col-lg-1 col-xs-1"> -->
-                <div class="row buttons">
-     
-               <button ng-disabled="vm.currentStep <= 1" class="btn btn-default previous-step" name="previous" type="button" ng-click="vm.gotoStep(vm.currentStep - 1)"> <i class="fa fa-chevron-left"></i> Previous </button>
-               <!-- Button Next  -->
-               <button ng-disabled="vm.currentStep >= vm.steps.length" name="next"   class="btn btn-default next-step" type="button" ng-click="vm.gotoStep(vm.currentStep + 1)">Next <i class="fa fa-chevron-right"></i> </button>
+               <div class="buttons">
+                  
+                  <!--  <button ng-disabled="vm.currentStep <= 1" class="btn btn-default previous-step" name="previous" type="button" ng-click="vm.gotoStep(vm.currentStep - 1)"> <i class="fa fa-chevron-left"></i> Previous </button> -->
+                   <!-- Button Next  -->
+                   <button ng-disabled="vm.currentStep >= vm.steps.length"  type="submit" name="next" class="whitebuttonswifi" ng-click="vm.gotoStep(vm.currentStep + 1)">Next <i class="fa fa-chevron-right"></i> </button>
+                     <button ng-disabled="vm.currentStep <= 1" type="submit" name="previous" class="whitebuttonswifi" ng-click="vm.gotoStep(vm.currentStep - 1)"> <i class="fa fa-chevron-left"></i> Back</button>
+         
               </div>
-              <div style="clear:both"></div>
+          
+           <!--    <div style="clear:both"></div> -->
 
              
 <!--  </div>
