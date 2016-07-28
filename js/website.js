@@ -84,36 +84,35 @@ angular.module('website', ['ngRoute']).
         .controller('WizardController', function ($scope, $http) {
          // contrller function - different steps in Wizard Form. Defining steps, different names and template which is used
          var vm = this;
+   
+        $scope.countries = [
+          {name:'France' },
+          {name:'Poland' },
+          {name:'Germany' },
+          {name:'USA' },
+          {name:'Russia' }
+        ];
+
+         // getting data from JSON file on ng-change select 
+    $scope.update = function() {
+         var country = vm.countries.name;
+         console.log(country);
+      
+       var table = [];
+         $http.get('restrictions.txt').success(function(data) {
+           table=data
+           for (var i=0; i<table.length; i++) {
+              console.log(table[i].country);
+                    if (country === table[i].country) {
+                      vm.legalrestrictions = table[i].restrictions;
+                    }
+                 }
+         });
+            
         
-         
-       function myFunction(arr) {
-            var out = "";
-            var i;
-            for(i = 0; i < arr.length; i++) {
-                out += arr[i].restrictions + " " + arr[i].country;
-            }
-            vm.legalrestrictions = out;
-        } 
-
-        var xmlhttp = new XMLHttpRequest();
-        var url = "restrictions.txt";
-
-        xmlhttp.onreadystatechange = function() {
-        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            var myArr = JSON.parse(xmlhttp.responseText);
-            myFunction(myArr);
-            }
-        };
-
-        xmlhttp.open("GET", url, true);
-        xmlhttp.send();
-
-
-
-
-          
-
-        //Model
+      }
+       
+        //Wizard Model
         vm.currentStep = 1;
         vm.steps = [
           {
@@ -179,7 +178,7 @@ angular.module('website', ['ngRoute']).
             };
               
         
-        // function save to generate pdf based on different wizard form fields. 
+        // function save to replacing values in fodt file based on different wizard form fields. 
         vm.save = function() {
                $http({
             method: 'GET',
@@ -264,9 +263,6 @@ angular.module('website', ['ngRoute']).
                var result  = result.replace("236", " ");
 
                   } 
-
-
-
          
           var result = result.replace("888", vm.countires);
           var result = result.replace("456", vm.legalrestrictions);
@@ -278,25 +274,13 @@ angular.module('website', ['ngRoute']).
           link.href = vm.makeTextFile(result);
 
 
-
-
-
-                // var result = result;
-        // var a = document.getElementById('a');
-        //  a.href='data:text/csv;base64,' + btoa(result);
-
-
-
-        //  function download() {
-        //     var result = document.getElementById('invisible');
-        //     result.src = "generatefile.fodt";
-        // }
-        //     download(result);
-
         }).error(function(){
             alert("error");
         });
    }
+
+
+ 
     })
           
 

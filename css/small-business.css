@@ -12,7 +12,8 @@ body {
     padding-top: 70px;
     background-color: #F8F8F8; 
     color: #404040  ; 
-    font-family: 'Lora', serif; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    font-family: 'Lora', serif;
+    overflow-x: hidden; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
 
 .navbar-fixed-top .nav {
