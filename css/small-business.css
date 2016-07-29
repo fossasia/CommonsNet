@@ -51,19 +51,18 @@ body {
        font-weight: bold;
     
     }
-.form-group #submit {
+/*.form-group #submit {
         margin-bottom: 40px;
      
 
         margin-top: 20px;
       
     
-    }
-/*#submit {
-        margin-bottom: 30px;
-        margin-top: 30px;
+    }*/
+#submit:hover {
+        opacity: 0.5;
        }
-    */
+   
 
 .video {
 
@@ -349,11 +348,12 @@ input {
 
 h2  {
  
-    font-size: 45px;
+    font-size: 40px;
     margin-bottom: 20px;
   
     font-family: 'Lora', serif;
    text-align: center;
+
 
    
 
@@ -368,7 +368,7 @@ h2  {
 
 h3  {
    
-    font-size: 40px;  
+    font-size: 35px;  
     font-family: 'Lora', serif;
     text-align: center;
 
@@ -396,7 +396,7 @@ h3  {
 h4  {
     
     
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Lora', serif;
     color: black;
     text-align: left;
@@ -444,10 +444,10 @@ label  {
        
 }
 h5 {
-    font-size: 40px;
+    font-size: 20px;
     font-family:  'Lora', serif;
 }
-h5:after {
+/*h5:after {
     border-bottom: 1px solid #00a8f2;
     content: '';
     display: inline-block;
@@ -467,7 +467,7 @@ h5:before {
     width: 40px;
     margin-right: 20px;
     }
-
+*/
 
 h6  {
    
@@ -498,11 +498,8 @@ h1  {
   
     font-size: 60px;
     text-align: right;
-   
     font-family: 'Lora', serif;
-    
     color: white;
-
 }
 
 .homebutton {
@@ -587,16 +584,11 @@ h1  {
 .white {
 
   font-size: 25px;
-color: white;
+  color: white;
+  text-align: left;
 }
 
-.generatebutton {
 
-
- width: 200px;
- margin-top: 20px;
-
-}
 
 .generatebuttondiv {
 
@@ -753,24 +745,21 @@ footer{
   border-bottom: none;
   border-top: none;
   background-color: white;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
 
 }
 
 .content-section-a {
   padding-bottom: 20px;
   padding-top: 20px;
+  background-color: white;
   
 
 }
-
-.content-section-c   {
-
-  background-color: #282C35;
-  padding: 30px;
-
- 
-
+.sec-c {
+    background-color: #282C35;
+    padding: 30px;
+    margin-top: 30px;
 }
 
 .lead {
@@ -999,7 +988,7 @@ color: red }
 .firststep {
 
   background-color: #00a8f2;
-  padding: 100px;
+  padding: 70px;
   
   color: white;
   text-align: center;
@@ -1008,10 +997,11 @@ color: red }
       margin-top: -50px;
  
 }
+
 .secondstep {
   
-  background-color: #00a8f2;
-  padding: 60px;
+  background-color: #282C35;
+  padding: 70px;
  
   color: white;
   text-align: center;
@@ -1021,13 +1011,56 @@ color: red }
 .ab {
   background-image: url("../img/people.jpg");
   height: 500px;
+}
+.imagev {
+  width: 25%;
+  float:left;
+  position: relative;
+   
+}
+ 
+.half {
+  width: 100%;
+  height: 200px;
 
-    
+  background-size: 300px 200px;
+}
+
+
+
+.special {
+  margin-bottom: 50px;
+  margin-top: 10px;
+  font-size: 15px;
+  color: black;
+
+}
+
+.imagev:hover {
+  opacity: 0.5; 
+  cursor: pointer; 
+}
+.imgDescription {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 22px;
+
+ 
+}
+.imagev:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  font-weight: bold;
+
 }
 .thirdstep {
    
   background-color: #00a8f2;
-  padding: 60px;
+  padding: 70px;
  
   color: white;
   text-align: center;
@@ -1054,8 +1087,9 @@ color: red }
 }
 
 a:focus, a:hover {
-    color: #00a8f2;
+    color: white;
     font-weight: bold;
+
 
     /*!
  * Start Bootstrap - Small Business HTML Template (http://startbootstrap.com)
