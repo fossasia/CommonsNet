@@ -147,6 +147,7 @@ margin-top: 50px;
   .not-visible-message{
     height:0px;
     opacity: 0;
+    padding: 0px;
   }
 
  .progress-indicator>li.completed .bubble {
