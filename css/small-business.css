@@ -51,14 +51,12 @@ body {
        font-weight: bold;
     
     }
-/*.form-group #submit {
-        margin-bottom: 40px;
-     
+.hcontact {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: left;
 
-        margin-top: 20px;
-      
-    
-    }*/
+}
 #submit:hover {
         opacity: 0.5;
        }
