@@ -43,6 +43,9 @@ body {
         /*padding: 20px;*/
 
     }
+.ng-dirty.ng-invalid {
+    color: red;
+}
 
 .nav {
         float: right;
@@ -51,6 +54,13 @@ body {
        font-weight: bold;
     
     }
+
+.form-btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: .2;
+  
+}
 .hcontact {
   margin-top: 50px;
   margin-bottom: 20px;
@@ -61,11 +71,24 @@ body {
         opacity: 0.5;
        }
    
-
+#messages {
+  color: green;
+  text-align: left;
+  margin-top: 20px;
+  font-size: 15px;
+}
 .video {
 
 margin-top: 50px;
 
+  }
+  .quimage {
+    background-image: url("../img/question.jpg");
+    background-size: 300px 300px;
+    width: 300px;
+    height: 300px;
+   
+}
   }
 .blue {
   color: #00a8f2;
@@ -337,7 +360,11 @@ p  {
   }
 
   .form-btn:active{
-    opacity: 0.9;
+    opacity: 0.8;
+  }
+
+  .form-btn:disabled {
+    opacity: 0.4px;
   }
 
 input {
