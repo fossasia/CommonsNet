@@ -3,56 +3,56 @@
 
  
 <div class="container contactcontainer">
-
         <!-- Heading Row -->
         <div class="row">
-        	<div class="col-lg-1"> </div>
-  			<div class="col-lg-10 col-md-12 col-xs-12">
-
-  				<h2 class="hcontact">{{title}}</h2>
-
-               
-				<div class="inner contact">
-                <!-- Form Area -->
-                <div class="contact-form">
+        	<div class="col-lg-1 col-md-1 col-xs-1"> </div>
+                <div id="messages" class="alert alert-success" ng-show="message">
+                        {{ message }}
+                </div>
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                <h3 class="hcontact">{{title}}</h3>
                     <!-- Form -->
-                    <form id="contact-us" method="post" action="#">
+                    <form name="myForm" id="contact-us" ng-submit="submitForm()" >
                         <!-- Left Inputs -->
-                        <div class="col-xs-12 col-lg-6 co-md-6 wow animated slideInLeft" data-wow-delay=".5s">
+                        <div class="col-lg-6 co-md-6 col-xs-12 ">
                             <!-- Name -->
-                            <input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
+                            <span  ng-show="myForm.nameInput.$dirty && myForm.nameInput.$invalid">The name is required!</span> 
+                                <input type="text" name="nameInput" id="name" ng-model="nameInput" class="form" placeholder="Name" ng-change="submit()" required />
                             <!-- Email -->
-                            <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+                            <span ng-show="myForm.nameMail.$dirty && myForm.nameMail.$invalid"></span>
+                            <span ng-show="myForm.nameMail.$dirty && myForm.nameMail.$invalid">Email is required!</span>
+
+                            <span ng-show="myForm.nameMail.$error.pattern">Not a valid email form!</span>
+                                <input type="email" name="nameMail" id="mail" ng-model="nameMail" class="form" placeholder="Email" ng-pattern="/\S+@\S+\.\S+/" ng-change="submit()" required/>
                             <!-- Subject -->
-                            <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject" />
-                        </div><!-- End Left Inputs -->
-                        <!-- Right Inputs -->
-                        <div class="col-xs-12 col-lg-6 co-md-6 wow animated slideInRight" data-wow-delay=".5s">
+                             <span  ng-show="myForm.subjectInput.$dirty && myForm.subjectInput.$invalid">The subject is required!</span>
+                                <input type="text" name="subjectInput" id="subject"  ng-model="subjectInput" class="form" placeholder="Subject" ng-change="submit()" required/>
                             <!-- Message -->
-                            <textarea name="message" id="message" class="form textarea"  placeholder="Message"></textarea>
-                        </div><!-- End Right Inputs -->
-                        <!-- Bottom Submit -->
-                        <div class="relative fullwidth col-xs-12">
+                            <span  ng-show="myForm.messageInput.$dirty && myForm.messageInput.$invalid">The message is required!</span>
+                                <textarea type="text" name="messageInput" id="message" class="form textarea" ng-model="messageInput" placeholder="Message"  ng-change="submit()" required> </textarea>   
                             <!-- Send Button -->
-                            <button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button> 
-                        </div><!-- End Bottom Submit -->
-                        <!-- Clear -->
-                        <div class="clear"></div>
+                            <button type="submit" class="form-btn" ng-class="{'disabled': disableButtons}" >Send Message</button> 
+                       
+                        </div>
+                        <!-- End Left Inputs --> 
                     </form>
 
                     <!-- Your Mail Message -->
-                    <div class="mail-message-area">
-                        <!-- Message -->
-                        <div class="alert gray-bg mail-message not-visible-message">
-                                 <strong>Thank You !</strong> Your email has been delivered.
-
-                        </div>
-                    </div>
+                
 
                 </div><!-- End Contact Form Area -->
-            </div><!-- End Inner -->
-             	<div class="col-lg-1"> </div>
- 		
-  		 	</div>
- 		</div>
+               
+            
+
+            <div class="col-lg-1 col-md-1 col-xs-1"> </div>
+        </div><!-- End Inner -->
+       
  </div>
+            
+         
+            
+
+ 		
+  	
+ 		
+
