@@ -68,7 +68,7 @@ angular.module('website', ['ngRoute']).
    
          .controller('GenerateWiFiCtrl', function ($scope) {
         $scope.title = 'Generate WiFi';
-        $scope.body = 'This is the about page body';
+    
       })
 
 
@@ -134,27 +134,27 @@ angular.module('website', ['ngRoute']).
         vm.steps = [
           {
             step: 1,
-            name: 'Settings',
+            name: 'DETAILS',
             template: "partials/1settings.html"
           },
-          {
-            step: 2,
-            name: 'Payment',
-            template: "partials/2payment.html"
-          },   
-          {
-            step: 3,
-            name: 'Conditions',
-            template: "partials/3conditions.html"
-          },  
+          // {
+          //   step: 2,
+          //   name: 'Payment',
+          //   template: "partials/2payment.html"
+          // },   
+          // {
+          //   step: 3,
+          //   name: 'Conditions',
+          //   template: "partials/3conditions.html"
+          // },  
            {
-            step: 4,
-            name: 'Restrictions',
+            step: 2,
+            name: 'CONDITIONS',
             template: "partials/4legalissues.html"
           },    
             {
-          step: 5,
-              name:'Confirm',
+          step: 3,
+              name:'CONFIRMATION',
             template: "partials/confirmation.html"
           },  
 

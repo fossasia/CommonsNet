@@ -1,27 +1,55 @@
 <form >
-                   <div class="col-lg-1 col-md-1 col-xs-1"></div>
-                   <!-- col-lg-1 start and end -->
-                    <!-- col-lg-5 col-md-5 col-xs-10 start  left inputs-->
-                <div class="col-lg-10 col-md-10 col-xs-10 " >
-
-					  <label for="male">Choose your country</label>
-             
-    <select type="text" class="form" ng-model="vm.countries" ng-options="x.name for x in countries" ng-change="update()">
-   <!--    <option ng-repeat="x.name for x in countries" value="{{x.name}}">{{x.name}</option>  -->
-      </select>
-
-  
-                             
-					<label for="male">Does your country have any legal restrictions? Type them.</label>
-					<!-- form group start  -->
-				
-						<textarea name="message" id="legalarea" class=" form textarea"  ng-model="vm.legalrestrictions" placeholder="You are not allowed to..."></textarea>
-           
-
-
-  
-					</div>
-					 <!-- col-lg-10 end  -->
-<div class="col-lg-1 col-md-1 col-xs-1"></div>
-
+	<div class="row">
+	   <div class="col-lg-1 col-md-1 col-xs-1"></div>
+	     <div class="col-lg-10 col-md-10 col-xs-10">
+	     	<h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-gavel" aria-hidden="true"></i> Legal restrictions<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
+				<label for="male">Choose your country</label>    
+			    	<select type="text" class="form" ng-model="vm.countries" ng-options="x.name for x in countries" ng-change="update()">
+			   		<!--    <option ng-repeat="x.name for x in countries" value="{{x.name}}">{{x.name}</option>  -->
+			    	</select>       
+				<label for="male">Does your country have any legal restrictions? Type them.</label>
+					<textarea name="message" id="legalarea" class=" form textarea"  ng-model="vm.legalrestrictions" placeholder="You are not allowed to..."></textarea>
+	       </div>
+		<div class="col-lg-1 col-md-1 col-xs-1"></div>
+	</div>
+	<div class="row">
+   		<div class="col-lg-1 col-md-1 col-xs-1"></div>
+     		<div class="col-lg-10 col-md-10 col-xs-10">
+     			<h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-check" aria-hidden="true"></i> Conditions <hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
+     			 <div class="col-lg-6 col-md-6 col-xs-12">
+	   					  	<div>
+	   					  		<input id="cb5" name="cb1" type="checkbox" class='vi-center' ng-model="vm.specialdevices"  ng-false-value="'no'" ng-true-value="'yes'" >
+									<label for="cb1" class="labels"  class="labels vl-center">
+										Special devices 
+									</label>
+									  <input type="text" name="ssid" class="form" placeholder="List them" ng-model="vm.specialdevicesfield" ng-if="vm.specialdevices == 'yes' " required/>
+							</div>
+							<div>
+								<input id="cb5" name="cb1" type="checkbox" class='vi-center' ng-model="vm.specialsettings"  ng-false-value="'no'" ng-true-value="'yes'" >
+									<label for="cb1" class="labels">
+										Special settings 
+									</label>
+									<input type="text" name="ssid" class="form" placeholder="List them" ng-model="vm.specialsettingsfield" ng-if="vm.specialsettings == 'yes' " required/>
+							</div>
+							<div >
+								<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.acceptterms"  ng-false-value="'no'" ng-true-value="'yes'" >
+									<label for="cb1" class="labels"  class="labels vl-center">
+										Accepting terms of use
+									</label>
+							</div>
+							<div>
+								<input id="cb5" name="cb1" type="checkbox" class='vi-center' ng-model="vm.socialprofile"  ng-false-value="'no'" ng-true-value="'yes'" >
+									<label for="cb1" class="labels">
+										Liking social profile required
+									</label>
+							</div>
+							<div >
+								<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.downloading"  ng-false-value="'no'" ng-true-value="'yes'" >	
+									<label for="cb1" class="labels"  class="labels vl-center">
+										Downloading pdf file
+									</label>
+							</div>
+				</div>
+		</div>
+		<div class="col-lg-1 col-md-1 col-xs-1"> </div>
 </form>

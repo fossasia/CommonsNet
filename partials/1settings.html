@@ -1,18 +1,19 @@
 
 <!-- form wireless settings  -->
-              <form >
-                   <div class="col-lg-1 col-md-1 col-xs-1"></div>
-                    <div class="col-lg-10 col-md-10 col-xs-10">
-        
+<form>
+  <div class="row">
+      <div class="col-lg-1 col-md-1 col-xs-1"></div>
+          <div class="col-lg-10 col-md-10 col-xs-10">
+              <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-wifi" aria-hidden="true"></i></i> WiFi Details<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
                    <!-- col-lg-1 start and end -->
                     <!-- col-lg-5 col-md-5 col-xs-10 start  left inputs-->
-                <div class="col-lg-6 col-md-6 col-xs-12">
+                  <div class="col-lg-6 col-md-6 col-xs-12">
                          <label for="male" class="required ">SSID </label>
-  								          <input type="text" name="ssid" id="ssid"  class="form " placeholder="SSID name" ng-model="vm.ssid"  required/>
+  								          <input type="text" name="ssid" id="ssid"  class="form "  ng-model="vm.ssid"  required/>
                           <label for="male">WIFI Password</label>
-                            <input type="text" name="password" id="password"  class="form" placeholder="Your wifi password" ng-model="vm.password" />
+                            <input type="text" name="password" id="password"  class="form" ng-model="vm.password" />
                           <label for="male" class="required ">Authentication</label>
-                             <select type="text" name="security"  class="form " placeholder="SSID name"  id="security" ng-model="vm.securitytypes" required>
+                             <select type="text" name="security"  class="form "  id="security" ng-model="vm.securitytypes" required>
                           		  <option value="open">Open</option>
                           		  <option value="Web-Open-Key">WEP Open Key</option> 
                           		  <option value="Web-Shared-Key">WEP Shared Key</option>
@@ -21,35 +22,61 @@
                           		  <option value="Wpa-Enterprise">WPA Enterprise</option>
                           		  <option value="Wpa2-Personal">WPA2 Personal+AES</option>
                           	</select>
-               </div> 
-               <!-- col-lg-5 col-md-5 col-xs-10 end right inputs -->
-               <!-- Start col-lg-5 col-md-5 col-xs-10 start right inputs-->
-              <div class="col-lg-6 col-md-6 col-xs-12">
-                  <label for="male">Speed</label>
-	                   <input type="text" name="capacity" id="capacity"  class="form" placeholder="Speed" id="capacity" ng-model="vm.capacity"  required/>
-                       <label for="male" class="required ">WiFi Standards</label>
-                             <select type="text" name="standard"  class="form " placeholder="WiFi standards"  id="wifi-standards" ng-model="vm.wifistandards" required>
-                               <option value="802.11a">802.11a</option>
-                            <option value="802.11b">802.11b</option>
-                            <option value="802.11g">802.11g</option>
-                            <option value="802.11n">802.11n</option>
-                            <option value="802.11ac">802.11ac</option>
-                            <option value="802.11ad">802.11ad</option>
-                            <option value="802.11ah">802.11ah</option>
-                            </select>
-                
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-xs-6">
+                          <label for="male">Speed</label>
+        	                   <input type="text" name="capacity" id="capacity"  class="form" id="capacity" ng-model="vm.capacity"  required/>
+                          <label for="male">WiFi Standards</label>
+                                <select type="text" name="standard"  class="form "  id="wifi-standards" ng-model="vm.wifistandards" required>
+                                    <option value="802.11a">802.11a</option>
+                                    <option value="802.11b">802.11b</option>
+                                    <option value="802.11g">802.11g</option>
+                                    <option value="802.11n">802.11n</option>
+                                    <option value="802.11ac">802.11ac</option>
+                                    <option value="802.11ad">802.11ad</option>
+                                    <option value="802.11ah">802.11ah</option>
+                                </select>
 
+                    </div>
                </div>
-            <!--     <div class="row buttons"> -->
-     
-               
-               <!-- Button Next  -->
-             
-         <!--      </div> -->
-
-             </div><!-- End col-lg- col-md- col-xs-10 - right inputs -->
-            <div class="col-lg-1 col-md-1 col-xs-1"></div>
-            </form>
+          <div class="col-lg-1 col-md-1 col-xs-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-lg-1 col-md-1 col-xs-1"></div>
+      <div class="col-lg-10 col-md-10 col-xs-10">
+        <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-usd" aria-hidden="true"></i> Payment<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
+            <div class="col-lg-6 col-md-6 col-xs-12" >
+              <label for="cb1" class="labels vl-center ">
+                Is WIFI paid?
+              </label>
+                    <input id="yes" name="cb1" type="checkbox" class='vi-center' ng-model="vm.paymentfieldyes"
+                             ng-false-value="'no'" ng-true-value="'yes'" >
+                  <label for="cb1" class="labels"  class="labels vl-center">
+                    YES
+                  </label>
+                    <input type="text" name="ssid" class="form" placeholder="How much per hour" ng-model="vm.paymentfield" ng-if="vm.paymentfieldyes == 'yes' " required/>
+              </div>
+          </div>
+      <div class="col-lg-1 col-md-1 col-xs-1"></div>
+  </div>
+  <div class="row">
+      <div class="col-lg-1 col-md-1 col-xs-1"></div>
+        <div class="col-lg-10 col-md-10 col-xs-10">
+          <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-clock-o" aria-hidden="true"></i> Time Limit<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
+              <div class="col-lg-6 col-md-6 col-xs-12" >       
+                <label for="cb1" class="labels vl-center  ">
+                Time limit?
+                </label>
+                    <input id="timeyes" name="cb1" type="checkbox" class='vi-center' ng-model="vm.timelimityes" ng-false-value="'no'" ng-true-value="'yes'" >
+                <label for="cb1" class="labels"  class="labels vl-center" >
+                    YES
+                </label>
+                    <input type="text" name="ssid"   class="form" placeholder="Type it" ng-model="vm.timelimitfield" ng-if="vm.timelimityes == 'yes' "  required/>
+              </div>
+          </div>
+      <div class="col-lg-1 col-md-1 col-xs-1"></div>
+  </div>
+</form>
                     <!-- Finish form -->
 
 
