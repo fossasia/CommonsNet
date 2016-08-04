@@ -39,7 +39,7 @@ body {
 
 
 .row {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         /*padding: 20px;*/
 
     }
@@ -54,6 +54,7 @@ body {
        font-weight: bold;
     
     }
+
 
 .form-btn.disabled, .btn[disabled], fieldset[disabled] .btn {
   cursor: not-allowed;
@@ -95,6 +96,7 @@ margin-top: 50px;
   font-weight: bold;
 }
 
+
 .progress-indicator>li .bubble {
   margin: -10px auto .5em;
   background-color: blue;
@@ -117,26 +119,9 @@ margin-top: 50px;
   text-align: left;
  
 }
-.whitebuttonswifi {
-  
-  padding-top:10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 20%;
-  border: 1px solid #00a8f2;
-  background-color: white;
-  margin-right: 20px;
-  color: #00a8f2;
-  margin-top: 20px;
 
-  float:right;
-  
-}
-.buttons {
-  margin-right: 50px;
 
-}
+
 
  #contact{
     padding:10px 0 10px;
@@ -150,7 +135,10 @@ margin-top: 50px;
     width:100%;
     padding:0 15px;
   }
-
+.bubble {
+  height: 40px;
+  width: 40px;
+}
 .picture  {
     background-image:  url("../img/technology.jpg");
     width: 100%;
@@ -191,6 +179,7 @@ margin-top: 50px;
 
 a:focus, a:hover { 
   text-decoration: none;
+
 }
 
 
@@ -200,7 +189,7 @@ a:focus, a:hover {
     background:white;
     border:1px solid rgba(0, 0, 0, 0.075);
     margin-bottom:25px;
-    border-bottom-color: #00a8f2;
+ /*   border-bottom-color: #00a8f2;*/
     color:#727272 !important;
     font-size:13px;
     -webkit-transition: all 0.4s;
@@ -351,12 +340,11 @@ p  {
     -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
   }
 
-  
 
   .form-btn:hover{
  
     color: white;
-    border:none;
+
   }
 
   .form-btn:active{
@@ -378,19 +366,10 @@ h2  {
     margin-bottom: 20px;
   
     font-family: 'Lora', serif;
-   text-align: center;
-
-
-   
+   text-align: center;   
 
    
 }
-#wizard-content-container {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-
 
 h3  {
    
@@ -399,10 +378,34 @@ h3  {
     text-align: center;
 
 }
-#wizard-step-container {
-  margin-top: 40px;
+
+
+.section-heading:after {
+    content:' ';
+    display:block;
+    border:1px solid #00a8f2;
+    width: 10%;
+      justify-content: center;
+        align-items: stretch;
+        margin: 0 auto;
+       margin-top: 10px;
+    border-radius:2px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
 }
+#wizard-content-container {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
+
+#wizard-step-container  {
+  margin-top: 0px;
+}
+
+
 .ng-pristine {
    
     margin-top: 0px;  
@@ -447,11 +450,12 @@ label  {
 .awizard {
     
    color: black;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
     font-family: 'Lora', serif;
 
 }
+
 
 .labels {
     padding-left: 0px;
@@ -494,6 +498,13 @@ h5:before {
     margin-right: 20px;
     }
 */
+label {
+  color: #73879C;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 13px;
+  margin-top: 10px;
+}
 
 h6  {
    
@@ -582,7 +593,7 @@ h1  {
 .progress-indicator>li.completed .bubble, .progress-indicator>li.completed .bubble:after, .progress-indicator>li.completed .bubble:before {
     background-color: #e7eef2;
     border-color: #e7eef2;
-    color: white;
+    
      }
 
 .progress-indicator>li.active .bubble
@@ -604,12 +615,12 @@ h1  {
 
 .bubble {
 
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .white {
 
-  font-size: 25px;
+ font-size: 32px;
   color: white;
   text-align: left;
 }
@@ -633,19 +644,15 @@ text-align: center;
 
 .generate {
  
-  
-
-    height: 100%;
-
+   height: 100%;
    background-color: white;
-   /*height: 30%;*/
    float: center;
-   position: relative;
    display: inline-block;
-   vertical-align: middle;
-   margin-top: 80px;
-   border-left: 2px solid white;
-   border-bottom: 2px solid white;
+   margin-top: 50px;
+   padding: 40px;
+
+
+   
   
 
 }
@@ -692,11 +699,11 @@ height: 800px;
 
 
 .instruction {
-    border-bottom: 2px solid #00a8f2;
+    /*border-bottom: 2px solid #00a8f2;*/
     background-color: white;
     margin: 5px;
-    padding: 10px;
-    opacity: 0.9;
+    padding: 20px;
+    opacity: 0.8;
 }
 
 .navbar-brand {
@@ -778,14 +785,17 @@ footer{
 .content-section-a {
   padding-bottom: 20px;
   padding-top: 20px;
-  background-color: white;
+  background-color: #F7F7F7;
   
 
 }
 .sec-c {
-    background-color: #282C35;
+    background-color: 
+#000033;
     padding: 30px;
     margin-top: 30px;
+
+
 }
 
 .lead {
@@ -1103,19 +1113,14 @@ color: red }
 }
 /*aboutus page container backgorund*/
 #container {
-  background-color: white;
-  padding-bottom: 80px;
+  background-color: #F7F7F7;
+  padding-bottom: 30px;
 }
 .wifi {
   background-color: #00a8f2;
   padding: 150px;
 
 }
-
-a:focus, a:hover {
-    color: white;
-    font-weight: bold;
-
 
     /*!
  * Start Bootstrap - Small Business HTML Template (http://startbootstrap.com)
