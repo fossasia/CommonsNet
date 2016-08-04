@@ -24,6 +24,10 @@ CommonsNet website reflects these details. We provide with a great tool to colle
 ## Demo version  
 [Go to demo version](https://commonsnet.herokuapp.com/) 
 
+## How to run tests
+
+See [instruction] (https://github.com/agwisniewska/CommonsNet/blob/master/docs/runTESTS.md)
+
 ## Blog
 
 [Visit blog](commonsnetblog.wordpress.com) 
