@@ -68,15 +68,32 @@ angular.module('website', ['ngRoute']).
    
          .controller('GenerateWiFiCtrl', function ($scope) {
         $scope.title = 'Generate WiFi';
-        $scope.body = 'This is the about page body';
+    
       })
 
 
 
-        .controller('ContactCtrl', function ($scope) {
+        .controller('ContactCtrl', function ($scope, $http) {
         $scope.title = 'Have questions? Contact us';
-        $scope.body = '';
+        $scope.disableButtons = true;
+        $scope.submit = function() {
+          
+           if ($scope.myForm.$valid) {
+                $scope.disableButtons = false;
+               
+        }
 
+
+        $scope.submitForm = function() {
+
+            // check to make sure the form is completely valid
+           if ($scope.myForm.$valid) {
+                $scope.message = "Thank you! Your email has been delivered."
+            }
+
+        };
+
+}
     })
 
     
@@ -84,33 +101,60 @@ angular.module('website', ['ngRoute']).
         .controller('WizardController', function ($scope, $http) {
          // contrller function - different steps in Wizard Form. Defining steps, different names and template which is used
          var vm = this;
+   
+        $scope.countries = [
+          {name:'France' },
+          {name:'Poland' },
+          {name:'Germany' },
+          {name:'USA' },
+          {name:'Russia' }
+        ];
+
+         // getting data from JSON file on ng-change select 
+    $scope.update = function() {
+         var country = vm.countries.name;
+         console.log(country);
+      
+       var table = [];
+         $http.get('restrictions.txt').success(function(data) {
+           table=data
+           for (var i=0; i<table.length; i++) {
+              console.log(table[i].country);
+                    if (country === table[i].country) {
+                      vm.legalrestrictions = table[i].restrictions;
+                    }
+                 }
+         });
+            
         
-        //Model
+      }
+       
+        //Wizard Model
         vm.currentStep = 1;
         vm.steps = [
           {
             step: 1,
-            name: 'Settings',
+            name: 'DETAILS',
             template: "partials/1settings.html"
           },
-          {
-            step: 2,
-            name: 'Payment',
-            template: "partials/2payment.html"
-          },   
-          {
-            step: 3,
-            name: 'Conditions',
-            template: "partials/3conditions.html"
-          },  
+          // {
+          //   step: 2,
+          //   name: 'Payment',
+          //   template: "partials/2payment.html"
+          // },   
+          // {
+          //   step: 3,
+          //   name: 'Conditions',
+          //   template: "partials/3conditions.html"
+          // },  
            {
-            step: 4,
-            name: 'Restrictions',
+            step: 2,
+            name: 'CONDITIONS',
             template: "partials/4legalissues.html"
           },    
             {
-          step: 5,
-              name:'Confirm',
+          step: 3,
+              name:'CONFIRMATION',
             template: "partials/confirmation.html"
           },  
 
@@ -151,7 +195,7 @@ angular.module('website', ['ngRoute']).
             };
               
         
-        // function save to generate pdf based on different wizard form fields. 
+        // function save to replacing values in fodt file based on different wizard form fields. 
         vm.save = function() {
                $http({
             method: 'GET',
@@ -236,9 +280,6 @@ angular.module('website', ['ngRoute']).
                var result  = result.replace("236", " ");
 
                   } 
-
-
-
          
           var result = result.replace("888", vm.countires);
           var result = result.replace("456", vm.legalrestrictions);
@@ -250,27 +291,16 @@ angular.module('website', ['ngRoute']).
           link.href = vm.makeTextFile(result);
 
 
-
-
-
-                // var result = result;
-        // var a = document.getElementById('a');
-        //  a.href='data:text/csv;base64,' + btoa(result);
-
-
-
-        //  function download() {
-        //     var result = document.getElementById('invisible');
-        //     result.src = "generatefile.fodt";
-        // }
-        //     download(result);
-
         }).error(function(){
             alert("error");
         });
    }
+
+
+ 
     })
           
+
      
 
 

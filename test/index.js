@@ -1,0 +1,1 @@
+var index = require('../js/main.js');

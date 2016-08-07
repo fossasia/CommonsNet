@@ -1,0 +1,18 @@
+[
+    {
+    "country":"Poland", "restrictions":["Poland restrictions",  "Poland restrictions 2"]
+    },
+    {
+    "country":"Germany", "restrictions":"Germany restrictions"
+    },
+    {
+    "country":"France", "restrictions":"France restrictions"
+    },
+     {
+    "country":"Russia", "restrictions":"Russia restrictions"
+    },
+     {
+    "country":"USA", "restrictions":"USA restrictions"
+    }
+
+]

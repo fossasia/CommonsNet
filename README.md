@@ -1,9 +1,9 @@
 # CommonsNet
 [![Build Status](https://travis-ci.org/fossasia/CommonsNet.svg)](https://travis-ci.org/fossasia/CommonsNet)
 [![Issue Count](https://codeclimate.com/github/fossasia/CommonsNet/badges/gpa.svg)](https://codeclimate.com/github/fossasia/CommonsNet)
-[![Test Coverage](https://codeclimate.com/github/fossasia/CommonsNet/badges/coverage.svg)](https://codeclimate.com/github/fossasia/open-event-orga-server/coverage)
 [![Issue Count](https://codeclimate.com/github/fossasia/CommonsNet/badges/issue_count.svg)](https://codeclimate.com/github/fossasia/CommonsNet)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/bbe4d39d3d164b598f9a988b5b835cb4)](https://www.codacy.com/app/ag-e-wisniewska/CommonsNet?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fossasia/CommonsNet&amp;utm_campaign=Badge_Grade)
+[![codecov](https://codecov.io/gh/fossasia/CommonsNet/branch/master/graph/badge.svg)](https://codecov.io/gh/fossasia/CommonsNet)
 
 ## Sharing and Transparency for WiFi Networks
 
@@ -19,10 +19,23 @@ CommonsNet website reflects these details. We provide with a great tool to colle
 - To run CommonsNet on Vagrant environment please follow [instruction](https://github.com/fossasia/CommonsNet/blob/master/docs/VAGRANT.md)
 
 ### Heroku 
-- To deploy CommonsNet to Heroku follow this [instruction](https://github.com/fossasia/CommonsNet/blob/master/docs/VAGRANT.md)
+- To deploy CommonsNet to Heroku follow this [instruction](https://github.com/agwisniewska/CommonsNet/blob/master/docs/HEROKU.md)
 
 ## Demo version  
 [Go to demo version](https://commonsnet.herokuapp.com/) 
+
+## How to run tests
+
+See [instruction] (https://github.com/agwisniewska/CommonsNet/blob/master/docs/runTESTS.md)
+
+## Blog
+
+[Visit blog](commonsnetblog.wordpress.com) 
+
+## Social Media
+- [Facebook](https://www.facebook.com/CommonsNetApp/) 
+- [Twitter](https://twitter.com/Commons_Net) 
+
 
 ## License
 This project is currently licensed under the GNU General Public License v3. A copy of LICENSE.md should be present along with the source code. To obtain the software under a different license, please contact FOSSASIA.

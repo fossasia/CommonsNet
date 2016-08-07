@@ -1,9 +1,12 @@
 <!-- Container-fluid start -->
-<div class="container-fluid generatewificontanier">
+<div class="container">
+  
       <div class="row">
-       <div class="col-md-2 col-lg-2 col-xs-2"></div>
+      <!--  <div class="col-md-1 col-lg-1 col-xs-1"></div> -->
        <!-- col-md-10 col-lg-1- col-xs-12 start -->
-          <div class="col-md-8 col-lg-8 col-xs-8 generate">
+
+          <div class="col-md-12 col-lg-12 col-xs-12 generate">
+               
             <!-- wizard-container start ng-controller - call to Wizard Controller defined in Angular -->
             <div id="wizard-container" ng-controller="WizardController as vm">
               <!-- wizard step start -->
@@ -26,13 +29,19 @@
              
             </div>
             <!--  <div class="col-md-1 col-lg-1 col-xs-1"> -->
-                <div class="row buttons">
-     
-               <button ng-disabled="vm.currentStep <= 1" class="btn btn-default previous-step" name="previous" type="button" ng-click="vm.gotoStep(vm.currentStep - 1)"> <i class="fa fa-chevron-left"></i> Previous </button>
-               <!-- Button Next  -->
-               <button ng-disabled="vm.currentStep >= vm.steps.length" name="next"   class="btn btn-default next-step" type="button" ng-click="vm.gotoStep(vm.currentStep + 1)">Next <i class="fa fa-chevron-right"></i> </button>
+            <div class="btn-toolbar pull-right " style="margin-top: 25px;"> <div class="btn-group btn-group-lg"> 
+              
+                  
+                  <!--  <button ng-disabled="vm.currentStep <= 1" class="btn btn-default previous-step" name="previous" type="button" ng-click="vm.gotoStep(vm.currentStep - 1)"> <i class="fa fa-chevron-left"></i> Previous </button> -->
+                   <!-- Button Next  -->
+                    <button ng-disabled="vm.currentStep <= 1" type="button" name="previous" class="btn btn-default prev-step" ng-click="vm.gotoStep(vm.currentStep - 1)"> <i class="fa fa-chevron-left"></i> Previous</button>
+               
+                   <button ng-disabled="vm.currentStep >= vm.steps.length"  type="button" name="next" class="btn btn-default next-step"  ng-click="vm.gotoStep(vm.currentStep + 1)">Next <i class="fa fa-chevron-right"></i> </button>
+                    
+         
               </div>
-              <div style="clear:both"></div>
+          
+           <!--    <div style="clear:both"></div> -->
 
              
 <!--  </div>
@@ -50,11 +59,10 @@
          
         </div>
         <!-- col-md-10 col-lg-1- col-xs-12 end -->
-          
-        <div class="col-md-2 col-lg-2 col-xs-2"></div>
-      </div>
-        </div>
-</div>
+     <!--      
+        <div class="col-md-1 col-lg-1 col-xs-1"></div> -->
+  
+ 
 
      
   
