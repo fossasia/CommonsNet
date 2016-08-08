@@ -954,9 +954,17 @@ font-size: 18px;
      display: inline-block;
     width: 20px;
     height: 20px;
-    /* border: 2px solid #00a8f2; */
-    /* margin-bottom: 8px; */
+ 
    
+}
+#serviceyes{
+
+     display: inline-block;
+    width: 20px;
+    height: 20px;
+
+   
+
 }
 #cb6
   {
@@ -1024,7 +1032,7 @@ color: red }
 .firststep {
 
   background-color: #00a8f2;
-  padding: 70px;
+  padding: 40px;
   
   color: white;
   text-align: center;
@@ -1037,7 +1045,7 @@ color: red }
 .secondstep {
   
   background-color: #282C35;
-  padding: 70px;
+  padding: 40px;
  
   color: white;
   text-align: center;
@@ -1045,7 +1053,7 @@ color: red }
   font-weight: normal;
 }
 .ab {
-  background-image: url("../img/people.jpg");
+  background-image: url("../img/notebook.jpg");
   height: 500px;
 }
 .imagev {
@@ -1096,7 +1104,7 @@ color: red }
 .thirdstep {
    
   background-color: #00a8f2;
-  padding: 70px;
+  padding: 40px;
  
   color: white;
   text-align: center;
@@ -1122,6 +1130,9 @@ color: red }
 
 }
 
+.note-editor.note-frame .note-editing-area .note-editable  {
+  height: 200px;
+}
     /*!
  * Start Bootstrap - Small Business HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.

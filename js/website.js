@@ -1,6 +1,6 @@
 
 // angular routes definded
-angular.module('website', ['ngRoute']).
+angular.module('website', ['ngRoute', 'summernote']).
     config(function ($routeProvider) {
         $routeProvider
             .when('/', {
@@ -67,7 +67,20 @@ angular.module('website', ['ngRoute']).
     })
    
          .controller('GenerateWiFiCtrl', function ($scope) {
-        $scope.title = 'Generate WiFi';
+     
+        $scope.options = {
+            
+              toolbar: [
+                    
+                      ['style', ['bold', 'italic' ]],
+                      ['alignment', ['ul', 'ol' ]],
+                   
+                  ]
+            };
+      
+   
+
+       
     
       })
 
@@ -95,12 +108,16 @@ angular.module('website', ['ngRoute']).
 
 }
     })
+  
+       
+       
+
 
     
         
         .controller('WizardController', function ($scope, $http) {
          // contrller function - different steps in Wizard Form. Defining steps, different names and template which is used
-         var vm = this;
+
    
         $scope.countries = [
           {name:'France' },
@@ -128,6 +145,9 @@ angular.module('website', ['ngRoute']).
             
         
       }
+     
+  var vm = this;  
+
        
         //Wizard Model
         vm.currentStep = 1;
@@ -299,7 +319,7 @@ angular.module('website', ['ngRoute']).
 
  
     })
-          
+
 
      
 

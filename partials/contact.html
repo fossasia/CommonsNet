@@ -1,7 +1,3 @@
-
-
-
- 
 <div class="container contactcontainer">
         <!-- Heading Row -->
         <div class="row">
@@ -9,38 +5,43 @@
                 <div id="messages" class="alert alert-success" ng-show="message">
                         {{ message }}
                 </div>
-            <div class="col-lg-12 col-md-12 col-xs-12">
-                <h3 class="hcontact">{{title}}</h3>
+            <div class="col-lg-12 col-md-12 col-xs-6">
+                
                     <!-- Form -->
-                    <form name="myForm" id="contact-us" ng-submit="submitForm()" >
+                     <div class="col-lg-6 co-md-6 col-xs-6">
+                        <h3 class="hcontact">{{title}}</h3>
+                            <form name="myForm" id="contact-us" ng-submit="submitForm()" >
                         <!-- Left Inputs -->
-                        <div class="col-lg-6 co-md-6 col-xs-12 ">
-                            <!-- Name -->
-                            <span  ng-show="myForm.nameInput.$dirty && myForm.nameInput.$invalid">The name is required!</span> 
-                                <input type="text" name="nameInput" id="name" ng-model="nameInput" class="form" placeholder="Name" ng-change="submit()" required />
-                            <!-- Email -->
-                            <span ng-show="myForm.nameMail.$dirty && myForm.nameMail.$invalid"></span>
-                            <span ng-show="myForm.nameMail.$dirty && myForm.nameMail.$invalid">Email is required!</span>
-
-                            <span ng-show="myForm.nameMail.$error.pattern">Not a valid email form!</span>
-                                <input type="email" name="nameMail" id="mail" ng-model="nameMail" class="form" placeholder="Email" ng-pattern="/\S+@\S+\.\S+/" ng-change="submit()" required/>
-                            <!-- Subject -->
-                             <span  ng-show="myForm.subjectInput.$dirty && myForm.subjectInput.$invalid">The subject is required!</span>
-                                <input type="text" name="subjectInput" id="subject"  ng-model="subjectInput" class="form" placeholder="Subject" ng-change="submit()" required/>
-                            <!-- Message -->
-                            <span  ng-show="myForm.messageInput.$dirty && myForm.messageInput.$invalid">The message is required!</span>
-                                <textarea type="text" name="messageInput" id="message" class="form textarea" ng-model="messageInput" placeholder="Message"  ng-change="submit()" required> </textarea>   
-                            <!-- Send Button -->
-                            <button type="submit" class="form-btn" ng-class="{'disabled': disableButtons}" >Send Message</button> 
                        
-                        </div>
+                                <!-- Name -->
+                                <span  ng-show="myForm.nameInput.$dirty && myForm.nameInput.$invalid">The name is required!</span> 
+                                    <input type="text" name="nameInput" id="name" ng-model="nameInput" class="form" placeholder="Name" ng-change="submit()" required />
+                                <!-- Email -->
+                                <span ng-show="myForm.nameMail.$dirty && myForm.nameMail.$invalid"></span>
+                                <span ng-show="myForm.nameMail.$dirty && myForm.nameMail.$invalid">Email is required!</span>
+
+                                <span ng-show="myForm.nameMail.$error.pattern">Not a valid email form!</span>
+                                    <input type="email" name="nameMail" id="mail" ng-model="nameMail" class="form" placeholder="Email" ng-pattern="/\S+@\S+\.\S+/" ng-change="submit()" required/>
+                                <!-- Subject -->
+                                 <span  ng-show="myForm.subjectInput.$dirty && myForm.subjectInput.$invalid">The subject is required!</span>
+                                    <input type="text" name="subjectInput" id="subject"  ng-model="subjectInput" class="form" placeholder="Subject" ng-change="submit()" required/>
+                                <!-- Message -->
+                                <span  ng-show="myForm.messageInput.$dirty && myForm.messageInput.$invalid">The message is required!</span>
+                                    <textarea type="text" name="messageInput" id="message" class="form textarea" ng-model="messageInput" placeholder="Message"  ng-change="submit()" required> </textarea>   
+                                <!-- Send Button -->
+                                <button type="submit" class="form-btn" ng-class="{'disabled': disableButtons}" >Send Message</button> 
+                            </form>
+                  
                         <!-- End Left Inputs --> 
-                    </form>
+                    </div>
+                   
+                </div>
+
 
                     <!-- Your Mail Message -->
                 
 
-                </div><!-- End Contact Form Area -->
+               <!-- End Contact Form Area -->
                
             
 
