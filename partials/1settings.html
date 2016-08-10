@@ -15,14 +15,15 @@
                             <input type="text" name="password" id="password"  class="form" ng-model="vm.password" />
                           <label for="male">Authentication</label>
                              <select type="text" name="security"  class="form "  id="security" ng-model="vm.securitytypes" required>
-                          		  <option value="open">Open</option>
-                                 <option value="mac">Mac Authentication</option>
-                          		  <option value="Wep">WEP</option> 
-                          		  <option value="Wpa-TKIP">WPA+TKIP</option>
-                          		  <option value="Wpa--TKIP-AES">WPA+TKIP/AES</option>
-                                <option value="Wpa2-wpa">WPA2/WPA</option>
-                          		  <option value="Wpa-AES">WPA+AES</option>
-                          		  <option value="Wpa2-AES">WPA2+AES</option>
+                             <option selected disabled>Choose here</option>
+                          		  <option value="OPEN">Open</option>
+                                 <option value="MAC">Mac Authentication</option>
+                          		  <option value="WEP">WEP</option> 
+                          		  <option value="WPA+TKIP">WPA+TKIP</option>
+                          		  <option value="WPA+TKIP/AES">WPA+TKIP/AES</option>
+                                <option value="WPA2/WPA">WPA2/WPA</option>
+                          		  <option value="WPA+AES">WPA+AES</option>
+                          		  <option value="WPA2+AES">WPA2+AES</option>
                           	</select>
                                <label for="cb1" class="labels vl-center ">
                                   Do you provide a dual band?
