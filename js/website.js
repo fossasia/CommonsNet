@@ -220,7 +220,7 @@ angular.module('website', ['ngRoute', 'summernote']).
           var table = [];
                $http({
             method: 'GET',
-            url: 'http://127.0.0.1:8083/generatefile.fodt',
+            url: 'http://commonsnet.herokuapp.com/generatefile.fodt',
            
         }).success(function(data){
           console.log(vm.securitytypes);
