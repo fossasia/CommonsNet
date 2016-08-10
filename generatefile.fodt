@@ -1444,7 +1444,7 @@
    <text:p text:style-name="P106">Across the world there are different settings and requirements for sharing of Internet connections and specifically Open Wifi connections.This document is an attempt to show those details and make them transparent to our Wifi users. </text:p>
    <text:p text:style-name="P105">The file is a way of formalizing the interaction between an owner of network and user. </text:p>
    <text:h text:style-name="P126" text:outline-level="3">1. Basic information: </text:h>
-   <text:h text:style-name="P133" text:outline-level="3">The owner provides network connection. Network s INPUT_SSID</text:h>
+   <text:h text:style-name="P133" text:outline-level="3">The owner provides NETWORK_NAME network connection.</text:h>
    <text:h text:style-name="P138" text:outline-level="3">INPUT_PASSWORD</text:h>
    <text:p text:style-name="P114">SECURITY_TYPE</text:p>
    <text:p text:style-name="P115">STANDARD_WIFI</text:p>
@@ -1454,15 +1454,13 @@
    <text:h text:style-name="P137" text:outline-level="3">LIMIT_FIELD</text:h>
    <text:h text:style-name="P140" text:outline-level="3"><text:span text:style-name="T108">TIME_LIMIT</text:span></text:h>
    <text:h text:style-name="P126" text:outline-level="3">3. Service: </text:h>
-   <text:h text:style-name="P134" text:outline-level="3">The owner guarantees Wifi service </text:h>
-   <text:h text:style-name="P134" text:outline-level="3">The owner does not guarantee Wifi service </text:h>
-   <text:h text:style-name="P132" text:outline-level="3">The service is provided &quot;as is&quot;, with no warranty or liability of whatsoever kind</text:h>
-   <text:h text:style-name="P132" text:outline-level="3">The service can be scaled back or withdrawn at any time with no notice</text:h>
+   <text:h text:style-name="P134" text:outline-level="3">SERVICE_FIELD</text:h>
    <text:h text:style-name="P126" text:outline-level="3">4. Terms of Use:</text:h>
-   <text:h text:style-name="P135" text:outline-level="3">To use WiFi network users are obliged to <text:span text:style-name="T20">INPUT_CONDITIONS</text:span></text:h>
+   <text:h text:style-name="P135" text:outline-level="3">CONDITIONS</text:h>
+   <text:h text:style-name="P135" text:outline-level="3">To use Wifi you are required to SPECIAL_DEVICES SPECIAL_SETTINGS ACCEPT_TERMS LIKE DOWNLOAD</text:h>
    <text:h text:style-name="P131" text:outline-level="3">5. Legal restrictions: </text:h>
-   <text:p text:style-name="P119">The owner states that are not not known to him any legal restrictions of connecting to wireless network, using Internet resources or taking action on the Internet in <text:span text:style-name="T20">INPUT_COUNTRY</text:span> </text:p>
-   <text:p text:style-name="P118">The owner informs users that law of the <text:span text:style-name="T20">INPUT_COUNTRY</text:span> prohibits <text:span text:style-name="T20">LEGAL_RESTRICTIONS</text:span></text:p>
+   <text:p text:style-name="P119">LEGAL_RESTRICTIONS</text:p>
+   <text:p text:style-name="P118">FIELD_RESTRICTIONS</text:p>
    <text:h text:style-name="P123" text:outline-level="2">Definition of terms</text:h>
    <text:h text:style-name="P125" text:outline-level="2">The Owner: The Owner is an entity which provides a wireless network. </text:h>
    <text:p text:style-name="P28">The Service: </text:p>

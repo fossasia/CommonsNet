@@ -223,10 +223,12 @@ angular.module('website', ['ngRoute', 'summernote']).
             url: 'http://127.0.0.1:8083/generatefile.fodt',
            
         }).success(function(data){
-          console.log(vm.securitytypes)
+          console.log(vm.securitytypes);
+          console.log(vm.conditions);
 
 
             var result = data.replace("INPUT_SSID", vm.ssid);
+            result = result.replace("NETWORK_NAME", vm.ssid)
               
             if ((vm.password !== "") && (typeof vm.password !== "undefined")) {
              result = result.replace("INPUT_PASSWORD", "The owner informs that password is" + " " + vm.password);
@@ -262,7 +264,7 @@ angular.module('website', ['ngRoute', 'summernote']).
            result  = result.replace("PAYMENT_FIELD", "The owner declares that Wifi connection is completely free of any charge.");
 
               } 
-              if (vm.paymentfieldyes ==='yes') {
+              if (vm.paymentfieldyes ==='yes'  && (typeof vm.paymentfied !== "undefned" || (vm.paymentfield !== ''))) {
              result  = result.replace("FEE_FIELD", "The fee is" + " " + vm.paymentfield);
               }
               else {
@@ -270,63 +272,90 @@ angular.module('website', ['ngRoute', 'summernote']).
 
               }
             if (vm.timelimityes ==='yes') {
-             result  = result.replace("LIMIT_FIELD", "The owner informs that access to the network is limited");
+             result  = result.replace("LIMIT_FIELD", "The owner informs that the access to the network is limited");
+              }
+             else {
+              result = result.replace("LIMIT_FIELD", "The owner declares that the access to the network is unlimited")
+             }
+
+              if (vm.timelimityes ==='yes' && (typeof vm.timelimitfield !== "undefned" || (vm.timelimitfield !== '')) ){
+                 result  = result.replace("TIME_LIMIT", "Users are allowed to use wifi" + " " + vm.timelimitfield );
+
               }
               else {
-            result  = result.replace("LIMIT_FIELD", "The owner provides unlimited access to the network");
-
+                result = result.replace('<text:h text:style-name="P140" text:outline-level="3"><text:span text:style-name="T108">TIME_LIMIT</text:span></text:h>', " ")
               }
  
-            if (vm.timelimityes ==='yes') {
-             result  = result.replace("TIME_LIMIT", "The owner declares that you are able to use the network" + " " + vm.timelimitfield);
+            
+            if (vm.serviceyes ==='yes') {
+             result  = result.replace("SERVICE_FIELD", "The owner guarantees Wifi service" );
+             // <text:h text:style-name="P132" text:outline-level="3">The service is provided &quot;as is&quot;, with no warranty or liability of whatsoever kind</text:h>
+
               }
               else {
-            result  = result.replace('<text:h text:style-name="P140" text:outline-level="3"><text:span text:style-name="T108">TIME_LIMIT</text:span></text:h>', ' ');
+            result  = result.replace("SERVICE_FIELD", "The owner does not guarantee Wifi service");
 
               }
 
-         //    if (vm.specialdevices ==='yes') {
-         //        var result  = result.replace("452", 'Special devices');
-         //          }
-         //    else {
-         //       var result  = result.replace("452", " ");
-
-         //          } 
-           
-         //    if (vm.specialsettings ==='yes') {
-         //        var result  = result.replace("163", 'Special settings');
-         //          }
-         //    else {
-         //       var result  = result.replace("163", " ");
-
-         //          } 
+            if (vm.specialdevices === "yes" || vm.specialsettings === "yes" || vm.socialprofile === "yes" || vm.acceptterms === "yes" || vm.socialprofile === "yes" || vm.downloading === "yes") {
+              result = result.replace("CONDITIONS", "The owner declares that there are some requirments to use Wifi")
+            }
+            else {
+              result = result. replace("CONDITIONS", "The owner declares that there is no requirments to use Wifi")
+              result = result.replace(' <text:h text:style-name="P135" text:outline-level="3">To use Wifi you are required to SPECIAL_DEVICES SPECIAL_SETTINGS ACCEPT_TERMS LIKE DOWNLOAD</text:h>', ' ' )
+              }
             
-         //    if (vm.acceptterms ==='yes') {
-         //        var result  = result.replace("365", 'Accepting terms of use');
-         //          }
-         //    else {
-         //       var result  = result.replace("365", " ");
+            if (vm.specialdevices ==='yes') {
+                var result  = result.replace("SPECIAL_DEVICES", 'use special devices like' + ' ' + vm.specialdevicesfield+",");
+                  }
+            else {
+               var result  = result.replace("SPECIAL_DEVICES", " ");
 
-         //          } 
-         //    if (vm.socialprofile ==='yes') {
-         //        var result  = result.replace("186", 'Liking social profile');
-         //          }
-         //    else {
-         //       var result  = result.replace("186", " ");
+                  } 
+
+             if (vm.specialsettings ==='yes') {
+                var result  = result.replace("SPECIAL_SETTINGS", 'run special settings like' + ' ' + vm.specialsettingsfield+ ",");
+                  }
+            else {
+               var result  = result.replace("SPECIAL_SETTINGS", " ");
+
+                  } 
+
+             if (vm.acceptterms ==='yes') {
+                var result  = result.replace("ACCEPT_TERMS", 'accept terms of use' + ",");
+                  }
+            else {
+               var result  = result.replace("ACCEPT_TERMS", " ");
+
+                  } 
+            
+
+            if (vm.socialprofile ==='yes') {
+                var result  = result.replace("LIKE", 'like social profile' + ",");
+                  }
+            else {
+               var result  = result.replace("LIKE", " ");
 
 
-         //          } 
-         //          if (vm.downloading ==='yes') {
-         //        var result  = result.replace("236", 'Downloading pdf file');
-         //          }
-         //    else {
-         //       var result  = result.replace("236", " ");
+                  } 
+            if (vm.downloading ==='yes') {
+                var result  = result.replace("DOWNLOAD", ', downloading pdf file'+ ".");
+                  }
+            else {
+               var result  = result.replace("DOWNLOAD", " ");
 
-         //          } 
+                  } 
          
-         //  var result = result.replace("888", vm.countires);
-         //  var result = result.replace("456", vm.legalrestrictions);
-         // console.log(result)
+          if (vm.country !== "yes") {
+            result = result.replace("LEGAL_RESTRICTIONS", "The owner informs that there are not known to him any legal restriction to use Wifi connection, using Internet resources or taking actions in the network in"+ " " + vm.countries);
+            result = result.replace('<text:p text:style-name="P118">FIELD_RESTRICTIONS</text:p>', ' ')
+          }
+          else {
+            result = result.replace("LEGAL_RESTRICTIONS", "The owner declares that the law of" + " " + vm.countries + " " + "prohibits:")
+            result = result.replace("FIELD_RESTRICTIONS", "vm.legalrestrictions")
+          }
+          
+          
 
 
 
