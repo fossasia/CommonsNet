@@ -352,7 +352,7 @@ angular.module('website', ['ngRoute', 'summernote']).
           }
           else {
             result = result.replace("LEGAL_RESTRICTIONS", "The owner declares that the law of" + " " + vm.countries + " " + "prohibits:")
-            result = result.replace("FIELD_RESTRICTIONS", "vm.legalrestrictions")
+            result = result.replace("FIELD_RESTRICTIONS", vm.legalrestrictions)
           }
           
           
