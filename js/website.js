@@ -119,6 +119,19 @@ angular.module('website', ['ngRoute', 'summernote']).
        
        .controller('FileCtrl',['$scope', '$routeParams', function ($scope, $routeParams) {
             $scope.ssid = $routeParams.ssid;
+            $scope.password = $routeParams.password;
+            $scope.security = $routeParams.security;
+            $scope.standard = $routeParams.standard;
+            $scope.payment = $routeParams.payment;
+            $scope.fee = $routeParams.fee;
+            $scope.timelimit = $routeParams.timelimit;
+            $scope.limit = $routeParams.limit;
+            $scope.service = $routeParams.service;
+            $scope.specialdevices = $routeParams.specialdevices;
+            $scope.specialsettings= $routeParams.specialsettings;
+            $scope.downloading = $routeParams.downloading;
+            $scope.liking = $routeParams.liking;
+            $scope.acceptterms = $routeParams.acceptterms;
             console.log($routeParams)
 
        }])
@@ -201,7 +214,7 @@ angular.module('website', ['ngRoute', 'summernote']).
         vm.gotoStep = function(newStep) {
           vm.currentStep = newStep;
           if (vm.currentStep === 3) {
-              var link = "commonsnet.herokuapp.com/#/file?ssid=" + vm.ssid + "&password=" + vm.password + "&security=" + vm.securitytypes + "&standard=" + vm.standard + '&payment=' + vm.paymentfieldyes
+              var link = "commonsnet.herokuapp.com/#/file?ssid=" + vm.ssid + "&password=" + vm.password + "&security=" + vm.securitytypes + "&standard=" + vm.wifistandards + "&payment=" + vm.paymentfieldyes + "&fee=" + vm.paymentfield + "&timelimit=" + vm.timelimityes + "&limit=" + vm.timelimitfield + "&service=" + vm.serviceyes + "&specialdevices=" + vm.specialdevices + "&specialsettings=" + vm.specialsettings + "&acceptterms=" + vm.acceptterms + "&liking=" + vm.socialprofile + "&downloading=" + vm.downloading
               vm.code = '<a href="' + link + '">CommonsNet</a>'
           }
         }

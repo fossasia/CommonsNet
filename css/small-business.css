@@ -4,16 +4,26 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 html {
-    font-family: sans-serif;
+  
     height: 100%; 
+
     }
 
 body {
     padding-top: 70px;
     background-color: #F8F8F8; 
     color: #404040  ; 
-    font-family: 'Lora', serif;
+
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
     overflow-x: hidden; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+
+
+
+body, h1, h2, h3, h4, h5, h6 {
+   font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
 }
 
 .navbar-fixed-top .nav {
@@ -59,7 +69,7 @@ body {
         float: right;
      
        font-size: 15px;
-       font-weight: bold;
+      
     
     }
 
@@ -101,7 +111,7 @@ margin-top: 50px;
   }
 .blue {
   color: #00a8f2;
-  font-weight: bold;
+ 
 }
 
 
@@ -121,7 +131,7 @@ margin-top: 50px;
   background-color: white;
   margin-right: 40px;
   color: #00a8f2;
-  font-weight: bold;
+ 
   display: inline-block;
 
   text-align: left;
@@ -218,7 +228,9 @@ a:focus, a:hover {
     -moz-transition: all 0.4s;
     transition: all 0.4s;
   }
-
+.wh {
+  color: white;
+}
 /*  .form:hover{
     border:1px solid #8BC3A3;
   }*/
@@ -295,7 +307,7 @@ a:focus, a:hover {
 
 p  {
     font-size: 15px;
-    font-weight: normal;
+   
 
   }
 
@@ -373,7 +385,6 @@ h2  {
     font-size: 40px;
     margin-bottom: 20px;
   
-    font-family: 'Lora', serif;
    text-align: center;   
 
    
@@ -382,7 +393,7 @@ h2  {
 h3  {
    
     font-size: 35px;  
-    font-family: 'Lora', serif;
+  
     text-align: center;
 
 }
@@ -434,7 +445,7 @@ h4  {
     
     
     font-size: 25px;
-    font-family: 'Lora', serif;
+ 
     color: black;
     text-align: left;
 
@@ -459,8 +470,8 @@ label  {
     
    color: black;
     font-size: 15px;
-    font-weight: bold;
-    font-family: 'Lora', serif;
+   
+    
 
 }
 
@@ -483,7 +494,7 @@ label  {
 }
 h5 {
     font-size: 20px;
-    font-family:  'Lora', serif;
+ 
 }
 /*h5:after {
     border-bottom: 1px solid #00a8f2;
@@ -520,7 +531,7 @@ h6  {
     font-size: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
-    font-family: 'Lora', serif;
+  
     color: #AAAAAA;
 
 
@@ -543,7 +554,8 @@ h1  {
   
     font-size: 60px;
     text-align: right;
-    font-family: 'Lora', serif;
+   
+
     color: white;
 }
 
@@ -694,6 +706,9 @@ height: 800px;
  
     background-image: url("../img/office1.png") !important;
     height: 500px;
+        background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
 
@@ -786,7 +801,8 @@ footer{
   border-bottom: none;
   border-top: none;
   background-color: white;
-  padding-bottom: 10px;
+  
+  padding: 40px;
 
 }
 
@@ -797,6 +813,25 @@ footer{
   
 
 }
+      .content-section-h { 
+      height: 100%;
+      padding: 50px;
+      background-color: white;
+ }
+.content-section-c {
+  background-image: url("../img/off2.jpg");
+  height: 100%;
+  padding: 50px;
+  
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.content-section-d {
+  padding: 50px;
+}
+
 .sec-c {
     background-color: 
 #000033;
@@ -827,14 +862,14 @@ font-size: 16px;
 a {
 
 color: white;
-font-weight: normal;
+
 
 }
 
 .address {
 
 color: #D2D6DF;
-font-weight: normal;
+
 
 }
 
@@ -991,7 +1026,7 @@ font-size: 18px;
     position: relative;
     float: center;
     color: black;
-    font-weight: bold;
+
     }
 
 .fa-floppy-o {
@@ -1045,7 +1080,7 @@ color: red }
   color: white;
   text-align: center;
   font-size: 23px;
-  font-weight: normal;
+
       margin-top: -50px;
  
 }
@@ -1058,7 +1093,7 @@ color: red }
   color: white;
   text-align: center;
   font-size: 25px;
-  font-weight: normal;
+ 
 }
 .ab {
   background-image: url("../img/notebook.jpg");
@@ -1106,7 +1141,7 @@ color: red }
   color: white;
   text-align: center;
   padding: 50px;
-  font-weight: bold;
+  
 
 }
 .thirdstep {
@@ -1117,7 +1152,7 @@ color: red }
   color: white;
   text-align: center;
   font-size: 25px;
-  font-weight: normal;
+  
 }
 .linkout {
     color: #2752ff;
