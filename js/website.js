@@ -1,6 +1,6 @@
 
 // angular routes definded
-angular.module('website', ['ngRoute']).
+angular.module('website', ['ngRoute', 'summernote']).
     config(function ($routeProvider) {
         $routeProvider
             .when('/', {
@@ -25,6 +25,11 @@ angular.module('website', ['ngRoute']).
                 templateUrl : 'partials/confirmation.html',
                 controller  : 'ContactCtrl'
             })
+           .when('/file', {
+              templateUrl : 'partials/file_structure.html',
+              controller: 'FileCtrl'
+
+           })
 
 
 
@@ -53,12 +58,14 @@ angular.module('website', ['ngRoute']).
                 
         
                  // console.log(title, img);
-                   if(typeof title !== "undefined")  {
+                   if(typeof title !== "undefined") {
+
                       results.push({'title': title, 'img': img, 'url': url});
+                    
               }
 
             }
-          $scope.results = results;
+          $scope.results = results.slice(-8);
           console.log(results )
         }
 });
@@ -67,7 +74,20 @@ angular.module('website', ['ngRoute']).
     })
    
          .controller('GenerateWiFiCtrl', function ($scope) {
-        $scope.title = 'Generate WiFi';
+     
+        $scope.options = {
+            
+              toolbar: [
+                    
+                      ['style', ['bold', 'italic' ]],
+                      ['alignment', ['ul', 'ol' ]],
+                   
+                  ]
+            };
+      
+   
+
+       
     
       })
 
@@ -95,12 +115,34 @@ angular.module('website', ['ngRoute']).
 
 }
     })
+  
+       
+       .controller('FileCtrl',['$scope', '$routeParams', function ($scope, $routeParams) {
+            $scope.ssid = $routeParams.ssid;
+            $scope.password = $routeParams.password;
+            $scope.security = $routeParams.security;
+            $scope.standard = $routeParams.standard;
+            $scope.payment = $routeParams.payment;
+            $scope.fee = $routeParams.fee;
+            $scope.timelimit = $routeParams.timelimit;
+            $scope.limit = $routeParams.limit;
+            $scope.service = $routeParams.service;
+            $scope.specialdevices = $routeParams.specialdevices;
+            $scope.specialsettings= $routeParams.specialsettings;
+            $scope.downloading = $routeParams.downloading;
+            $scope.liking = $routeParams.liking;
+            $scope.acceptterms = $routeParams.acceptterms;
+            console.log($routeParams)
+
+       }])
+
 
     
         
         .controller('WizardController', function ($scope, $http) {
          // contrller function - different steps in Wizard Form. Defining steps, different names and template which is used
-         var vm = this;
+
+
    
         $scope.countries = [
           {name:'France' },
@@ -128,6 +170,9 @@ angular.module('website', ['ngRoute']).
             
         
       }
+     
+  var vm = this;  
+
        
         //Wizard Model
         vm.currentStep = 1;
@@ -155,7 +200,7 @@ angular.module('website', ['ngRoute']).
             {
           step: 3,
               name:'CONFIRMATION',
-            template: "partials/confirmation.html"
+              template: "partials/confirmation.html"
           },  
 
         ];
@@ -168,6 +213,10 @@ angular.module('website', ['ngRoute']).
         //Function
         vm.gotoStep = function(newStep) {
           vm.currentStep = newStep;
+          if (vm.currentStep === 3) {
+              var link = "commonsnet.herokuapp.com/#/file?ssid=" + vm.ssid + "&password=" + vm.password + "&security=" + vm.securitytypes + "&standard=" + vm.wifistandards + "&payment=" + vm.paymentfieldyes + "&fee=" + vm.paymentfield + "&timelimit=" + vm.timelimityes + "&limit=" + vm.timelimitfield + "&service=" + vm.serviceyes + "&specialdevices=" + vm.specialdevices + "&specialsettings=" + vm.specialsettings + "&acceptterms=" + vm.acceptterms + "&liking=" + vm.socialprofile + "&downloading=" + vm.downloading
+              vm.code = '<a href="' + link + '">CommonsNet</a>'
+          }
         }
         
         // function to display different templates
@@ -197,93 +246,145 @@ angular.module('website', ['ngRoute']).
         
         // function save to replacing values in fodt file based on different wizard form fields. 
         vm.save = function() {
+          var table = [];
                $http({
             method: 'GET',
-            url: 'https://commonsnet.herokuapp.com/generatefile.fodt',
+            url: 'http://commonsnet.herokuapp.com/generatefile.fodt',
            
         }).success(function(data){
+          console.log(vm.securitytypes);
+          console.log(vm.conditions);
 
-            // With the data succesfully returnd, call our callback
-          
 
-            var result = data.replace("INPUTS", vm.ssid);
-            var result  = result.replace("INPUTP", vm.password);
-            var result  = result.replace("INPUTA", vm.securitytypes);
-             var result  = result.replace("863", vm.capacity); 
-              var result  = result.replace("INPUTT", vm.wifistandards);
-
-              if (vm.paymentfieldyes ==='yes') {
-             var result  = result.replace("PAIDFIELD", "YES" );
+            var result = data.replace("INPUT_SSID", vm.ssid);
+            result = result.replace("NETWORK_NAME", "The owner provides" + " "  + vm.ssid + "network connection")
+              
+            if ((vm.password !== "") && (typeof vm.password !== "undefined")) {
+             result = result.replace("INPUT_PASSWORD", "The owner informs that password is" + " " + vm.password);
+           
               }
+             else {
+              result = result.replace("INPUT_PASSWORD", "The owner declars that there is no password")
+             }
+
+              if ((vm.securitytypes !== "") && (typeof vm.securitytypes !== "undefined") && (vm.securitytypes !== "OPEN")) {
+              result  = result.replace("SECURITY_TYPE", "The owner informs that network is secured under" + " " + vm.securitytypes);
+           
+              }
+              if((vm.securitytypes === "OPEN") && (vm.securitytypes !== "") && (typeof vm.securitytypes !== "undefined") )
+                result = result.replace("SECURITY_TYPE", "The owner declares that the network is" + " " + vm.securitytypes)
+             else {
+               result = result.replace("SECURITY_TYPE", "The owner declars that the network is unsecured")
+             }
+
+              if((vm.wifistandards !== "") && (typeof vm.wifistandards !== "undefined") )
+                result = result.replace("STANDARD_WIFI", "The owner declares that the network uses" + " " + vm.wifistandards + "" + "standard")
+             else {
+               result = result.replace('<text:p text:style-name="P115">STANDARD_WIFI</text:p>', '')
+             }
+           
+           
+       
+             
+          if (vm.paymentfieldyes ==='yes') {
+              result  = result.replace("PAYMENT_FIELD", "The owner declares that Wifi network is paid");
+              } 
               else {
-           var result  = result.replace("PAIDFIELD", " - " );
+           result  = result.replace("PAYMENT_FIELD", "The owner declares that Wifi connection is completely free of any charge.");
 
               } 
-              if (vm.paymentfieldyes ==='yes') {
-             var result  = result.replace("HOWFIELD", vm.paymentfield);
+              if (vm.paymentfieldyes ==='yes'  && (typeof vm.paymentfied !== "undefned" || (vm.paymentfield !== ''))) {
+             result  = result.replace("FEE_FIELD", "The fee is" + " " + vm.paymentfield);
               }
               else {
-              var result  = result.replace("HOWFIELD", " - ");
+             result  = result.replace('<text:p text:style-name="P116">FEE_FIELD</text:p>' , 'The owner declares that he does not require any fee');
 
               }
             if (vm.timelimityes ==='yes') {
-             var result  = result.replace("800", "YES");
+             result  = result.replace("LIMIT_FIELD", "The owner informs that the access to the network is limited");
+              }
+             else {
+              result = result.replace("LIMIT_FIELD", "The owner declares that the access to the network is unlimited")
+             }
+
+              if (vm.timelimityes ==='yes' && (typeof vm.timelimitfield !== "undefned" || (vm.timelimitfield !== '')) ){
+                 result  = result.replace("TIME_LIMIT", "Users are allowed to use wifi" + " " + vm.timelimitfield );
+
               }
               else {
-            var result  = result.replace("800", " - ");
-
+                result = result.replace('<text:h text:style-name="P140" text:outline-level="3"><text:span text:style-name="T108">TIME_LIMIT</text:span></text:h>', " ")
               }
  
-            if (vm.timelimityes ==='yes') {
-             var result  = result.replace("HOWTIME", vm.timelimitfield);
+            
+            if (vm.serviceyes ==='yes') {
+             result  = result.replace("SERVICE_FIELD", "The owner guarantees Wifi service" );
+             // <text:h text:style-name="P132" text:outline-level="3">The service is provided &quot;as is&quot;, with no warranty or liability of whatsoever kind</text:h>
+
               }
               else {
-            var result  = result.replace("HOWTIME", " - ");
+            result  = result.replace("SERVICE_FIELD", "The owner does not guarantee Wifi service");
 
               }
 
+            if (vm.specialdevices === "yes" || vm.specialsettings === "yes" || vm.socialprofile === "yes" || vm.acceptterms === "yes" || vm.socialprofile === "yes" || vm.downloading === "yes") {
+              result = result.replace("CONDITIONS", "The owner declares that there are some requirments to use Wifi")
+            }
+            else {
+              result = result. replace("CONDITIONS", "The owner declares that there is no requirments to use Wifi")
+              result = result.replace(' <text:h text:style-name="P135" text:outline-level="3">To use Wifi you are required to SPECIAL_DEVICES SPECIAL_SETTINGS ACCEPT_TERMS LIKE DOWNLOAD</text:h>', ' ' )
+              }
+            
             if (vm.specialdevices ==='yes') {
-                var result  = result.replace("452", 'Special devices');
+                var result  = result.replace("SPECIAL_DEVICES", 'use special devices like' + ' ' + vm.specialdevicesfield+",");
                   }
             else {
-               var result  = result.replace("452", " ");
+               var result  = result.replace("SPECIAL_DEVICES", " ");
 
                   } 
-           
-            if (vm.specialsettings ==='yes') {
-                var result  = result.replace("163", 'Special settings');
+
+             if (vm.specialsettings ==='yes') {
+                var result  = result.replace("SPECIAL_SETTINGS", 'run special settings like' + ' ' + vm.specialsettingsfield+ ",");
                   }
             else {
-               var result  = result.replace("163", " ");
+               var result  = result.replace("SPECIAL_SETTINGS", " ");
+
+                  } 
+
+             if (vm.acceptterms ==='yes') {
+                var result  = result.replace("ACCEPT_TERMS", 'accept terms of use' + ",");
+                  }
+            else {
+               var result  = result.replace("ACCEPT_TERMS", " ");
 
                   } 
             
-            if (vm.acceptterms ==='yes') {
-                var result  = result.replace("365", 'Accepting terms of use');
-                  }
-            else {
-               var result  = result.replace("365", " ");
 
-                  } 
             if (vm.socialprofile ==='yes') {
-                var result  = result.replace("186", 'Liking social profile');
+                var result  = result.replace("LIKE", 'like social profile' + ",");
                   }
             else {
-               var result  = result.replace("186", " ");
+               var result  = result.replace("LIKE", " ");
 
 
                   } 
-                  if (vm.downloading ==='yes') {
-                var result  = result.replace("236", 'Downloading pdf file');
+            if (vm.downloading ==='yes') {
+                var result  = result.replace("DOWNLOAD", ', downloading pdf file'+ ".");
                   }
             else {
-               var result  = result.replace("236", " ");
+               var result  = result.replace("DOWNLOAD", " ");
 
                   } 
          
-          var result = result.replace("888", vm.countires);
-          var result = result.replace("456", vm.legalrestrictions);
-         console.log(result)
+          if (vm.country !== "yes") {
+            result = result.replace("LEGAL_RESTRICTIONS", "The owner informs that there are not known to him any legal restriction to use Wifi connection, using Internet resources or taking actions in the network in"+ " " + vm.countries);
+            result = result.replace('<text:p text:style-name="P118">FIELD_RESTRICTIONS</text:p>', ' ')
+          }
+          else {
+            result = result.replace("LEGAL_RESTRICTIONS", "The owner declares that the law of" + " " + vm.countries + " " + "prohibits:")
+            result = result.replace("FIELD_RESTRICTIONS", vm.legalrestrictions)
+          }
+          
+          
 
 
 
@@ -294,12 +395,14 @@ angular.module('website', ['ngRoute']).
         }).error(function(){
             alert("error");
         });
-   }
+   
 
 
+      
  
-    })
-          
+    }
+  })
+
 
      
 

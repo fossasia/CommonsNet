@@ -1,0 +1,107 @@
+<div class="container file">
+	<div class="col-lg-12 col-md-12 col-xs-12">
+   		<div class="col-lg-8 col-md-8 col-xs-12">
+			<div class="row">
+        		<h3 class="lefta"> {{ ssid }}  Wireless Settings </h3>
+         	</div>
+         	<div class="row">
+         		<h4>Preamble </h4>
+
+   				<p>Across the world there are different settings and requirements for sharing of Internet connections and specifically Open Wifi connections.This document is an attempt to show those details and make them transparent to our Wifi users.</p>
+
+   				<p>The file is a way of formalizing the interaction between an Owner of network and an User.</p>
+
+
+            </div>
+         	<div class="row">
+         		<h4>1. Basic details: </h4>
+	         		<div ng-if="ssid && ssid != 'undefined' ">
+	         			<p> The Owner provides network connection. The SSID is {{ ssid }} </p>
+	         		</div>
+	         		<div ng-if="password && password != 'undefined' ">
+	         			<p> The Owner informs that there is password is {{ password }} </p>
+	         		</div>
+	         		<div ng-if="password == 'undefined' ">
+	         			<p> The Owner informs that there is no password </p>
+	         		</div>
+	         		<div ng-if="security == 'undefined' ">
+	         			<p> The Owner informs that network is open and not secured </p>
+	         		</div>
+	         		<div ng-if="security && security != 'undefined' && security != 'OPEN'">
+	         			<p> The Owner informs that network is secured under {{ security }} </p>
+	         		</div>
+	         		<div ng-if="security == 'OPEN' ">
+	         			<p> The Owner informs that network is open </p>
+	         		</div>
+	         		<div ng-if="standard && standard != 'undefined'">
+	         			<p> The Owner inform that network uses {{ standard }} standard </p>
+	         		</div>
+
+            </div>
+            <div class="row">
+            	<h4>2. Payment: </h4>
+            		<div ng-if="payment != 'yes' && payment != 'undefined' ">
+            			<p>The Owner declares that Wifi connection is completely free of any charge.</p>
+            		</div>
+            		<div ng-if="payment == 'yes' ">
+        				<p> The Owner declares that Wifi is paid </p>
+        			</div>
+        			<div ng-inf="fee == 'undefined' ">
+            			<p> The Owner declares that fee is not required </p>
+            		</div>
+        			<div ng-if="fee && fee != 'undefined' ">
+            			<p>The Owner informs that fee is  {{ fee }} </p>
+            		</div>
+            		
+
+            </div>
+            <div class="row"> 
+            	<h4>3. Time Limit: </h4>
+            	<div ng-if="timelimit != 'yes' && timelimit != 'undefined'">
+            			<p>The Owner declares that an access to the network in unlimited </p>
+            	</div>
+            	<div ng-if="timelimit == 'yes' ">
+            		<p>The Owner declares that an access to the network is limited</p>
+            	</div>
+            	<div ng-if="limit == 'undefined' ">
+            			<p> The Owner declares that time limit is indefined</p>
+            	</div>
+            	<div ng-if="limit  && limit != 'undefined' ">
+            			<p>The Owner informs that users are able to use Wifi connection {{ limit }} </p>
+            	</div>
+
+            		
+
+            </div>
+            <div class="row">
+				<h4>4. Service: </h4>
+					<div ng-if="service == 'undefined' ">
+						<p> The Owner does not guarantee Wifi service </p>
+					</div>
+					<div ng-if="service && service != 'undefined' ">
+						<p> The Owner guarantees Wifi service </p>
+					</div>
+
+            </div>
+            <div class="row">
+            	<h4>5. Terms of Use: </h4>
+            		<div ng-if=" specialdevices == 'undefined' && specialsettings == 'undefined' &&  acceptterms == 'undefined' 
+            		&& liking == 'undefined'  &&  downloading == 'undefined' ">
+            			<p> The Owner declares that there are not any requirements to use wifi </p>
+            		</div>
+            		<div ng-if="specialldevices == 'yes' || specialsettings == 'yes' || acceptterms == 'yes' || liking == 'yes' || downloading == 'yes' ">
+            			<p> The Owner declares that there are some requirements to use Wifi connection </p>
+            		</div>
+            </div>
+            <div class="row">
+            	<h4>6. Legal restrictions </h4>
+            	<p>The 0wner informs that there are not known to him any legal restriction to use Wifi connection, using Internet resources or taking actions in the network </p>
+            </div>
+            <div class="row">
+            	<h4>Definition of terms </h4>
+            	<p> The Owner: The Owner is an entity which provides a wireless network. </p>
+            </div>
+        </div>
+    </div>
+</div>
+

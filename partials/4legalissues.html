@@ -1,22 +1,10 @@
 <form >
 	<div class="row">
 	   <div class="col-lg-1 col-md-1 col-xs-1"></div>
-	     <div class="col-lg-10 col-md-10 col-xs-10">
-	     	<h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-gavel" aria-hidden="true"></i> Legal restrictions<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
-				<label for="male">Choose your country</label>    
-			    	<select type="text" class="form" ng-model="vm.countries" ng-options="x.name for x in countries" ng-change="update()">
-			   		<!--    <option ng-repeat="x.name for x in countries" value="{{x.name}}">{{x.name}</option>  -->
-			    	</select>       
-				<label for="male">Does your country have any legal restrictions? Type them.</label>
-					<textarea name="message" id="legalarea" class=" form textarea"  ng-model="vm.legalrestrictions" placeholder="You are not allowed to..."></textarea>
-	       </div>
-		<div class="col-lg-1 col-md-1 col-xs-1"></div>
-	</div>
-	<div class="row">
-   		<div class="col-lg-1 col-md-1 col-xs-1"></div>
-     		<div class="col-lg-10 col-md-10 col-xs-10">
+	   		<div class="col-lg-10 col-md-10 col-xs-10">
      			<h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-check" aria-hidden="true"></i> Conditions <hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
      			 <div class="col-lg-6 col-md-6 col-xs-12">
+     		
 	   					  	<div>
 	   					  		<input id="cb5" name="cb1" type="checkbox" class='vi-center' ng-model="vm.specialdevices"  ng-false-value="'no'" ng-true-value="'yes'" >
 									<label for="cb1" class="labels"  class="labels vl-center">
@@ -49,7 +37,54 @@
 										Downloading pdf file
 									</label>
 							</div>
+
 				</div>
 		</div>
+	
+	</div>
+
+	<div class="row">
+   		<div class="col-lg-1 col-md-1 col-xs-1"></div>
+   		     <div class="col-lg-10 col-md-10 col-xs-10">
+	     	<h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-gavel" aria-hidden="true"></i> Legal restrictions<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
+	     
+
+	     		<label for="cb1" class="labels vl-center  ">
+                Does your country have any legal restrictions related to using Internet/Wifi?
+                </label>
+      
+                <label for="male">
+						YES
+						</label>
+
+                	<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.country"  ng-false-value="'no'" ng-true-value="'yes'" >
+                	<br>
+                <label for="male">Choose your country</label>    
+			    	<select type="text" class="form" ng-model="vm.countries" ng-options="x.name for x in countries" ng-change="update()">
+			   		<!--    <option ng-repeat="x.name for x in countries" value="{{x.name}}">{{x.name}</option>  -->
+			    	</select>
+
+			    
+
+         
+			     	
+
+						
+					<br>
+				     
+			    
+
+			<label for="male">Type them
+				</label>
+
+			<summernote ng-model="vm.legalrestrictions" config="options"> 
+			</summernote>
+			
+		
+
+
+		<div class="col-lg-1 col-md-1 col-xs-1"></div>
+	</div>
+     
 		<div class="col-lg-1 col-md-1 col-xs-1"> </div>
 </form>
