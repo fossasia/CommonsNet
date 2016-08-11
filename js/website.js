@@ -25,6 +25,11 @@ angular.module('website', ['ngRoute', 'summernote']).
                 templateUrl : 'partials/confirmation.html',
                 controller  : 'ContactCtrl'
             })
+           .when('/file', {
+              templateUrl : 'partials/file_structure.html',
+              controller: 'FileCtrl'
+
+           })
 
 
 
@@ -53,12 +58,14 @@ angular.module('website', ['ngRoute', 'summernote']).
                 
         
                  // console.log(title, img);
-                   if(typeof title !== "undefined")  {
+                   if(typeof title !== "undefined") {
+
                       results.push({'title': title, 'img': img, 'url': url});
+                    
               }
 
             }
-          $scope.results = results;
+          $scope.results = results.slice(-8);
           console.log(results )
         }
 });
@@ -110,13 +117,18 @@ angular.module('website', ['ngRoute', 'summernote']).
     })
   
        
-       
+       .controller('FileCtrl',['$scope', '$routeParams', function ($scope, $routeParams) {
+            $scope.ssid = $routeParams.ssid;
+            console.log($routeParams)
+
+       }])
 
 
     
         
         .controller('WizardController', function ($scope, $http) {
          // contrller function - different steps in Wizard Form. Defining steps, different names and template which is used
+
 
    
         $scope.countries = [
@@ -175,7 +187,7 @@ angular.module('website', ['ngRoute', 'summernote']).
             {
           step: 3,
               name:'CONFIRMATION',
-            template: "partials/confirmation.html"
+              template: "partials/confirmation.html"
           },  
 
         ];
@@ -188,6 +200,10 @@ angular.module('website', ['ngRoute', 'summernote']).
         //Function
         vm.gotoStep = function(newStep) {
           vm.currentStep = newStep;
+          if (vm.currentStep === 3) {
+              var link = "commonsnet.herokuapp.com/#/file?ssid=" + vm.ssid + "&password=" + vm.password + "&security=" + vm.securitytypes + "&standard=" + vm.standard + '&payment=' + vm.paymentfieldyes
+              vm.code = '<a href="' + link + '">CommonsNet</a>'
+          }
         }
         
         // function to display different templates
@@ -228,7 +244,7 @@ angular.module('website', ['ngRoute', 'summernote']).
 
 
             var result = data.replace("INPUT_SSID", vm.ssid);
-            result = result.replace("NETWORK_NAME", vm.ssid)
+            result = result.replace("NETWORK_NAME", "The owner provides" + " "  + vm.ssid + "network connection")
               
             if ((vm.password !== "") && (typeof vm.password !== "undefined")) {
              result = result.replace("INPUT_PASSWORD", "The owner informs that password is" + " " + vm.password);
@@ -249,7 +265,7 @@ angular.module('website', ['ngRoute', 'summernote']).
              }
 
               if((vm.wifistandards !== "") && (typeof vm.wifistandards !== "undefined") )
-                result = result.replace("STANDARD_WIFI", "The owner declares that the network uses" + " " + vm.wifistandards)
+                result = result.replace("STANDARD_WIFI", "The owner declares that the network uses" + " " + vm.wifistandards + "" + "standard")
              else {
                result = result.replace('<text:p text:style-name="P115">STANDARD_WIFI</text:p>', '')
              }
@@ -268,7 +284,7 @@ angular.module('website', ['ngRoute', 'summernote']).
              result  = result.replace("FEE_FIELD", "The fee is" + " " + vm.paymentfield);
               }
               else {
-             result  = result.replace('<text:p text:style-name="P116">FEE_FIELD</text:p>' , '');
+             result  = result.replace('<text:p text:style-name="P116">FEE_FIELD</text:p>' , 'The owner declares that he does not require any fee');
 
               }
             if (vm.timelimityes ==='yes') {

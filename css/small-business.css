@@ -35,8 +35,16 @@ body {
         padding: 15px 0;
     }
 }
+.file {
+  height: 100%;
+  padding: 50px;
+  margin: 20px;
+  background-color: white;
 
-
+}
+.lefta {
+  text-align: left;
+}
 
 .row {
         margin-bottom: 20px;
