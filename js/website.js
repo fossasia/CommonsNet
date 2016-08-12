@@ -1,7 +1,7 @@
 
 // angular routes definded
-angular.module('website', ['ngRoute', 'summernote']).
-    config(function ($routeProvider) {
+var app = angular.module('website', ['ngRoute', 'summernote']);
+    app.config(function ($routeProvider) {
         $routeProvider
             .when('/', {
                 templateUrl : 'partials/home.html',
@@ -38,11 +38,22 @@ angular.module('website', ['ngRoute', 'summernote']).
 
     })
     //different controllers build
-    .controller('AboutCtrl', function ($scope) {
-        // $scope.title = 'About Page';
-        // $scope.body = 'This is the about page body';
-    })
-       .controller('HomeCtrl', function ($scope, $http) {
+    // .controller('AboutCtrl', function ($scope) {
+    //     $scope.descriptions = [ 
+    //         {
+    //           who: 'We are a network of people who believe that network transparency and highest standards are possible. We wan to see the trustworthy global network, and feel secured, but not restricted. ',
+    //           title: 'WHO ARE WE'
+    //         },
+    //         {
+    //           who: 'sasa',
+    //           title: 'WHY WE DO IT'
+    //         }
+            
+    //         ] 
+        
+    // })
+  
+       app.controller('HomeCtrl', function ($scope, $http) {
          $scope.title = 'We are CommonsNet';
 
         $http.get("https://public-api.wordpress.com/rest/v1.1/sites/commonsnetblog.wordpress.com/posts/")
@@ -73,7 +84,7 @@ angular.module('website', ['ngRoute', 'summernote']).
      
     })
    
-         .controller('GenerateWiFiCtrl', function ($scope) {
+         app.controller('GenerateWiFiCtrl', function ($scope) {
      
         $scope.options = {
             
@@ -117,7 +128,7 @@ angular.module('website', ['ngRoute', 'summernote']).
     })
   
        
-       .controller('FileCtrl',['$scope', '$routeParams', function ($scope, $routeParams) {
+       app.controller('FileCtrl',['$scope', '$routeParams', function ($scope, $routeParams) {
             $scope.ssid = $routeParams.ssid;
             $scope.password = $routeParams.password;
             $scope.security = $routeParams.security;
@@ -144,7 +155,7 @@ angular.module('website', ['ngRoute', 'summernote']).
 
     
         
-        .controller('WizardController', function ($scope, $http) {
+        app.controller('WizardController', function ($scope, $http) {
          // contrller function - different steps in Wizard Form. Defining steps, different names and template which is used
 
 

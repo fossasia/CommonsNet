@@ -56,11 +56,16 @@ body, h1, h2, h3, h4, h5, h6 {
   text-align: left;
 }
 
+
 .row {
         margin-bottom: 20px;
         /*padding: 20px;*/
 
     }
+  .pad {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 .ng-dirty.ng-invalid {
     color: red;
 }
@@ -1161,6 +1166,9 @@ color: red }
 }
 .blog { 
    color: black;
+}
+.about { 
+padding: 80px; 
 }
 /*aboutus page container backgorund*/
 #container {
