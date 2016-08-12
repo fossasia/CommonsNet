@@ -128,10 +128,15 @@ angular.module('website', ['ngRoute', 'summernote']).
             $scope.limit = $routeParams.limit;
             $scope.service = $routeParams.service;
             $scope.specialdevices = $routeParams.specialdevices;
+            $scope.specialdevicesfield = $routeParams.specialdevicesfield;
             $scope.specialsettings= $routeParams.specialsettings;
+            $scope.specialsettingsfield = $routeParams.specialsettingsfield;
             $scope.downloading = $routeParams.downloading;
             $scope.liking = $routeParams.liking;
             $scope.acceptterms = $routeParams.acceptterms;
+            $scope.restrictions = $routeParams.restrictions;
+            $scope.country = $routeParams.country;
+            $scope.law = $routeParams.law;
             console.log($routeParams)
 
        }])
@@ -214,7 +219,7 @@ angular.module('website', ['ngRoute', 'summernote']).
         vm.gotoStep = function(newStep) {
           vm.currentStep = newStep;
           if (vm.currentStep === 3) {
-              var link = "commonsnet.herokuapp.com/#/file?ssid=" + vm.ssid + "&password=" + vm.password + "&security=" + vm.securitytypes + "&standard=" + vm.wifistandards + "&payment=" + vm.paymentfieldyes + "&fee=" + vm.paymentfield + "&timelimit=" + vm.timelimityes + "&limit=" + vm.timelimitfield + "&service=" + vm.serviceyes + "&specialdevices=" + vm.specialdevices + "&specialsettings=" + vm.specialsettings + "&acceptterms=" + vm.acceptterms + "&liking=" + vm.socialprofile + "&downloading=" + vm.downloading
+              var link = "commonsnet.herokuapp.com/#/file?ssid=" + vm.ssid + "&password=" + vm.password + "&security=" + vm.securitytypes + "&standard=" + vm.wifistandards + "&payment=" + vm.paymentfieldyes + "&fee=" + vm.paymentfield + "&timelimit=" + vm.timelimityes + "&limit=" + vm.timelimitfield + "&service=" + vm.serviceyes + "&specialdevices=" + vm.specialdevices + "&devices=" + vm.specialdevicesfield + "&specialsettings=" + vm.specialsettings + "&settings=" + vm.specialsettingsfield + "&acceptterms=" + vm.acceptterms + "&liking=" + vm.socialprofile + "&downloading=" + vm.downloading + "&restrictions=" + vm.country + "&country=" + vm.countries + "&law=" + vm.legalrestrictions
               vm.code = '<a href="' + link + '">CommonsNet</a>'
           }
         }

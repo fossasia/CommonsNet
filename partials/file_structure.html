@@ -64,7 +64,7 @@
             		<p>The Owner declares that an access to the network is limited</p>
             	</div>
             	<div ng-if="limit == 'undefined' ">
-            			<p> The Owner declares that time limit is indefined</p>
+            			<p> The Owner declares that time limit is undefined</p>
             	</div>
             	<div ng-if="limit  && limit != 'undefined' ">
             			<p>The Owner informs that users are able to use Wifi connection {{ limit }} </p>
@@ -92,10 +92,41 @@
             		<div ng-if="specialldevices == 'yes' || specialsettings == 'yes' || acceptterms == 'yes' || liking == 'yes' || downloading == 'yes' ">
             			<p> The Owner declares that there are some requirements to use Wifi connection </p>
             		</div>
-            </div>
+            		<div ng-if="specialdevices == 'yes'"> 
+            			<p> The Owner declares that to use Wifi you are required to have a dedicated harware </p>
+            		</div>
+            		<div ng-if="specialdevicesfield && specialdevicesfield != 'undefined'">
+            			<p> The Owner declares that a dedicated harware means devices like these {{ specialdevices }} </p>
+            		</div>
+            		<div ng-if="specialsettings == 'yes'"> 
+            			<p> The Owner declares that to use Wifi special settings are required </p>
+            		</div>
+            		<div ng-if="specialsettingsfield && specialsettingsfield != 'undefined' ">
+            			<p> The Owner declares that a special settings mean settings like these {{ specialdevices }} </p>
+            		</div>
+            		<div ng-if="acceptterms == 'yes' "> 
+            			<p> The Owner declares that to use Wifi users are obliged to accept terms of use </p>
+            		</div>
+            		<div ng-if="liking == 'yes' ">
+            			<p> The Owner declares to use Wifi connection users are obliged to like The Owner social profile </p>
+            		</div>
+            		<div ng-if="downloading == 'yes'">
+            			<p> The Owner declares to use Wifi connection users are obliged to download a terms of use file </p>
+            		</div>	
+
+			</div>
+           
             <div class="row">
             	<h4>6. Legal restrictions </h4>
-            	<p>The 0wner informs that there are not known to him any legal restriction to use Wifi connection, using Internet resources or taking actions in the network </p>
+            	<div ng-if="restrictions == 'yes'">
+            		<p>The 0wner informs that under the law some activities are forbidden </p>
+            	</div>
+            	<div ng-if="restrictions == 'no' ">
+            		<p>The 0wner informs that there are not known to him any legal restriction to use Wifi connection, using Internet resources or taking actions in the network </p>
+            	</div>
+            	<div ng-if="country != 'undefined' && law != 'undefined' ">
+            		<p>The 0wner informs that under the law of {{ country }} users are not allowed to {{ law }}</p>
+            	</div>
             </div>
             <div class="row">
             	<h4>Definition of terms </h4>
