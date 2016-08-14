@@ -1,101 +1,4 @@
-
-// angular routes definded
-var app = angular.module('website', ['ngRoute', 'summernote']);
-    app.config(function ($routeProvider) {
-        $routeProvider
-            .when('/', {
-                templateUrl : 'partials/home.html',
-                controller  : 'HomeCtrl'
-            })
-            .when('/about-us', {
-                templateUrl : 'partials/about.html',
-                controller  : 'AboutCtrl'
-             })
-            .when('/generate-wifi', {
-                templateUrl : 'partials/generate-wifi.html',
-                controller  : 'GenerateWiFiCtrl'
-             })
-
-
-            .when('/contact', {
-                templateUrl : 'partials/contact.html',
-                controller  : 'ContactCtrl'
-            })
-               .when('/generate-wifi/confirmation', {
-                templateUrl : 'partials/confirmation.html',
-                controller  : 'ContactCtrl'
-            })
-           .when('/file', {
-              templateUrl : 'partials/file_structure.html',
-              controller: 'FileCtrl'
-
-           })
-
-
-
-            .otherwise ({redirectTo: '/'});
-            
-
-    })
- 
-  
-
-   
-
-
-
-        .controller('ContactCtrl', function ($scope, $http) {
-        $scope.title = 'Have questions? Contact us';
-        $scope.disableButtons = true;
-        $scope.submit = function() {
-          
-           if ($scope.myForm.$valid) {
-                $scope.disableButtons = false;
-               
-        }
-
-
-        $scope.submitForm = function() {
-
-            // check to make sure the form is completely valid
-           if ($scope.myForm.$valid) {
-                $scope.message = "Thank you! Your email has been delivered."
-            }
-
-        };
-
-}
-    })
-  
-       
-       app.controller('FileCtrl',['$scope', '$routeParams', function ($scope, $routeParams) {
-            $scope.ssid = $routeParams.ssid;
-            $scope.password = $routeParams.password;
-            $scope.security = $routeParams.security;
-            $scope.standard = $routeParams.standard;
-            $scope.payment = $routeParams.payment;
-            $scope.fee = $routeParams.fee;
-            $scope.timelimit = $routeParams.timelimit;
-            $scope.limit = $routeParams.limit;
-            $scope.service = $routeParams.service;
-            $scope.specialdevices = $routeParams.specialdevices;
-            $scope.specialdevicesfield = $routeParams.specialdevicesfield;
-            $scope.specialsettings= $routeParams.specialsettings;
-            $scope.specialsettingsfield = $routeParams.specialsettingsfield;
-            $scope.downloading = $routeParams.downloading;
-            $scope.liking = $routeParams.liking;
-            $scope.acceptterms = $routeParams.acceptterms;
-            $scope.restrictions = $routeParams.restrictions;
-            $scope.country = $routeParams.country;
-            $scope.law = $routeParams.law;
-            console.log($routeParams)
-
-       }])
-
-
-    
-        
-        app.controller('WizardController', function ($scope, $http) {
+ app.controller('WizardController', function ($scope, $http) {
          // contrller function - different steps in Wizard Form. Defining steps, different names and template which is used
 
 
@@ -170,7 +73,8 @@ var app = angular.module('website', ['ngRoute', 'summernote']);
         vm.gotoStep = function(newStep) {
           vm.currentStep = newStep;
           if (vm.currentStep === 3) {
-              var link = "commonsnet.herokuapp.com/#/file?ssid=" + vm.ssid + "&password=" + vm.password + "&security=" + vm.securitytypes + "&standard=" + vm.wifistandards + "&payment=" + vm.paymentfieldyes + "&fee=" + vm.paymentfield + "&timelimit=" + vm.timelimityes + "&limit=" + vm.timelimitfield + "&service=" + vm.serviceyes + "&specialdevices=" + vm.specialdevices + "&devices=" + vm.specialdevicesfield + "&specialsettings=" + vm.specialsettings + "&settings=" + vm.specialsettingsfield + "&acceptterms=" + vm.acceptterms + "&liking=" + vm.socialprofile + "&downloading=" + vm.downloading + "&restrictions=" + vm.country + "&country=" + vm.countries + "&law=" + vm.legalrestrictions
+
+              var link = "http://commonsnet.herokuapp.com/#/file?ssid=" + vm.ssid + "&password=" + vm.password + "&security=" + vm.securitytypes + "&standard=" + vm.wifistandards + "&ban_control=" + vm.dualbandyes + "&payment=" + vm.paymentfieldyes + "&fee=" + vm.paymentfield + "&timelimit=" + vm.timelimityes + "&limit=" + vm.timelimitfield + "&service=" + vm.serviceyes +  "&specialdevices=" + vm.specialdevices + "&devices=" + vm.specialdevicesfield + "&specialsettings=" + vm.specialsettings + "&settings=" + vm.specialsettingsfield + "&acceptterms=" + vm.acceptterms + "&liking=" + vm.socialprofile + "&downloading=" + vm.downloading + "&restrictions=" + vm.country + "&country=" + vm.countries.name + "&law=" + vm.legalrestrictions             
               vm.code = '<a href="' + link + '">CommonsNet</a>'
           }
         }
@@ -238,6 +142,13 @@ var app = angular.module('website', ['ngRoute', 'summernote']);
              else {
                result = result.replace('<text:p text:style-name="P115">STANDARD_WIFI</text:p>', '')
              }
+              if ((vm.dualbandyes !== "") && (typeof vm.dualbandyes !== "undefined")) {
+             result = result.replace("BANDWIDTH_CONTROL", "The Owner declares to provide a bandwidth control");
+           
+              }
+              else {
+                result.result.replace('<text:p text:style-name="P115">BANDWIDTH_CONTROL</text:p>', '')
+              }
            
            
        
@@ -359,12 +270,3 @@ var app = angular.module('website', ['ngRoute', 'summernote']);
     }
   })
 
-
-     
-
-
-
- 
-
-
- 

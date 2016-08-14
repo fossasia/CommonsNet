@@ -11,7 +11,7 @@ html {
 
 body {
     padding-top: 70px;
-    background-color: #F8F8F8; 
+    background-color: white; 
     color: #404040  ; 
 
   font-family: 'Titillium Web', sans-serif;
@@ -19,8 +19,14 @@ body {
     overflow-x: hidden; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
 
-
-
+.bor {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.padd {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 body, h1, h2, h3, h4, h5, h6 {
    font-family: 'Titillium Web', sans-serif;
     font-weight: 300;
@@ -45,6 +51,16 @@ body, h1, h2, h3, h4, h5, h6 {
         padding: 15px 0;
     }
 }
+.btn-default:hover, .btn-default:active, .btn-default:focus {
+  
+  background-color: white !important;
+  
+}
+
+.downbutt {
+  padding: 10px;
+  margin: 20px;
+}
 .file {
   height: 100%;
   padding: 50px;
@@ -56,11 +72,7 @@ body, h1, h2, h3, h4, h5, h6 {
   text-align: left;
 }
 
-.row {
-        margin-bottom: 20px;
-        /*padding: 20px;*/
 
-    }
 .ng-dirty.ng-invalid {
     color: red;
 }
@@ -72,7 +84,12 @@ body, h1, h2, h3, h4, h5, h6 {
       
     
     }
+.icons {
+  color: black;
+  padding-left: 60px;
+  padding-right: 60px;
 
+}
 
 .form-btn.disabled, .btn[disabled], fieldset[disabled] .btn {
   cursor: not-allowed;
@@ -336,7 +353,7 @@ p  {
 
 /* Send Button Styles */
 
-  .fa{
+  .sr-icons{
 
    color: #00a8f2;
  
@@ -830,6 +847,7 @@ footer{
 }
 .content-section-d {
   padding: 50px;
+  background-color: #F8F8F8;
 }
 
 .sec-c {
@@ -1161,6 +1179,10 @@ color: red }
 }
 .blog { 
    color: black;
+}
+.about { 
+padding: 80px; 
+
 }
 /*aboutus page container backgorund*/
 #container {
