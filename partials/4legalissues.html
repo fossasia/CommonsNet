@@ -59,10 +59,16 @@
 
                 	<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.country"  ng-false-value="'no'" ng-true-value="'yes'" >
                 	<br>
+
+
+                	  
+			
                 <label for="male">Choose your country</label>    
-			    	<select type="text" class="form" ng-model="vm.countries" ng-options="x.name for x in countries" ng-change="update()">
-			   		<!--    <option ng-repeat="x.name for x in countries" value="{{x.name}}">{{x.name}</option>  -->
+			    	<select type="text" class="form" ng-options="country as country.name for country in countries" ng-model="vm.countries" ng-change="update()" >
+			    		<option value="" >-- Choose country --</option>
+			   	
 			    	</select>
+			   
 
 			    
 

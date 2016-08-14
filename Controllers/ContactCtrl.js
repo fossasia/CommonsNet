@@ -1,4 +1,4 @@
- .controller('ContactCtrl', function ($scope, $http) {
+ app.controller('ContactCtrl', function ($scope, $http) {
         $scope.title = 'Have questions? Contact us';
         $scope.disableButtons = true;
         $scope.submit = function() {

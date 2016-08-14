@@ -8,6 +8,7 @@
             $scope.timelimit = $routeParams.timelimit;
             $scope.limit = $routeParams.limit;
             $scope.service = $routeParams.service;
+            $scope.ban_control = $routeParams.ban_control;
             $scope.specialdevices = $routeParams.specialdevices;
             $scope.specialdevicesfield = $routeParams.specialdevicesfield;
             $scope.specialsettings= $routeParams.specialsettings;

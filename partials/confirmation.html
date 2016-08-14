@@ -9,12 +9,12 @@
        
       <div class="row">        
         <div class="col-lg-6 col-md-6 col-xs-12 confirmation">
-            <button ng-disabled="vm.currentStep != vm.steps.length" class="form-btn btn-lg"  type="button" ng-click="vm.save()"><i class="fa fa-floppy-o" aria-hidden="true"></i>
+            
+            <button ng-disabled="vm.currentStep != vm.steps.length" class="form-btn btn-lg downbutt"  type="button" ng-click="vm.save()">
                 <a download="generate-wifi.odt" id="downloadlink">Download</a>
             </button>
         </div>
         <div class="col-lg-6 col-md-6 col-xs-12 confirmation">
-         <a href="#/file">Copy code</a>
               <textarea name="message" id="message" class="form textarea" ng-model="vm.code">
                 
               </textarea>           

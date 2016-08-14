@@ -34,8 +34,11 @@
 	         			<p> The Owner informs that network is open </p>
 	         		</div>
 	         		<div ng-if="standard && standard != 'undefined'">
-	         			<p> The Owner inform that network uses {{ standard }} standard </p>
-	         		</div>
+	         			<p> The Owner informs that network uses {{ standard }} standard </p>
+	         		</div> 
+                    <div ng-if="ban_control == 'yes' && ban_control != 'undefined' ">
+                        <p> The Owner declares to provide bandwidth control </p>
+                    </div>
 
             </div>
             <div class="row">
@@ -46,9 +49,6 @@
             		<div ng-if="payment == 'yes' ">
         				<p> The Owner declares that Wifi is paid </p>
         			</div>
-        			<div ng-inf="fee == 'undefined' ">
-            			<p> The Owner declares that fee is not required </p>
-            		</div>
         			<div ng-if="fee && fee != 'undefined' ">
             			<p>The Owner informs that fee is  {{ fee }} </p>
             		</div>
@@ -131,6 +131,8 @@
             <div class="row">
             	<h4>Definition of terms </h4>
             	<p> The Owner: The Owner is an entity which provides a wireless network. </p>
+                <p> The User: The User is an entity who uses a wireless network. </p>
+                <p> The Service: The Service means that the Owner takes care of used hardware, update the firmare and solve connection's troubles. </p>
             </div>
         </div>
     </div>

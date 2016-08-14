@@ -1448,6 +1448,7 @@
    <text:h text:style-name="P138" text:outline-level="3">INPUT_PASSWORD</text:h>
    <text:p text:style-name="P114">SECURITY_TYPE</text:p>
    <text:p text:style-name="P115">STANDARD_WIFI</text:p>
+   <text:p text:style-name="P115">BANDWIDTH_CONTROL</text:p>
    <text:h text:style-name="P126" text:outline-level="3">2. Payment: </text:h>
    <text:h text:style-name="P137" text:outline-level="3">PAYMENT_FIELD</text:h>
    <text:p text:style-name="P116">FEE_FIELD</text:p>

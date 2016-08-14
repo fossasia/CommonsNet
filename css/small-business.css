@@ -18,9 +18,6 @@ body {
   font-weight: 300;
     overflow-x: hidden; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
-.pad {
-  padding: 20px;
-}
 
 .bor {
   padding-top: 50px;
@@ -53,6 +50,16 @@ body, h1, h2, h3, h4, h5, h6 {
     .navbar-fixed-top .navbar-brand {
         padding: 15px 0;
     }
+}
+.btn-default:hover, .btn-default:active, .btn-default:focus {
+  
+  background-color: white !important;
+  
+}
+
+.downbutt {
+  padding: 10px;
+  margin: 20px;
 }
 .file {
   height: 100%;
