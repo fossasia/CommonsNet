@@ -25,6 +25,8 @@
                           		  <option value="WPA+AES">WPA+AES</option>
                           		  <option value="WPA2+AES">WPA2+AES</option>
                           	</select>
+                             <label for="male">Data rate</label>
+                            <input type="text" name="datarate" id="datarate"  class="form" ng-model="vm.datarate" />
                               
                         </div>
                         <div class="col-lg-6 col-md-6 col-xs-12">
@@ -37,6 +39,21 @@
                                     <option value="802.11n">802.11n</option>
                                     <option value="802.11ac">802.11ac</option>
                                 </select>
+                                
+                                <label for="male">How many devices can be connected? </label>
+                                <select type="text" name="standard"  class="form "  id="number_of_devices" ng-model="vm.numberdevices" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+
                                  <label for="cb1" class="labels vl-center ">
                                   Do you provide a bandwidth control?
                                 </label>
@@ -75,17 +92,26 @@
   <div class="row">
       <div class="col-lg-1 col-md-1 col-xs-1"></div>
         <div class="col-lg-10 col-md-10 col-xs-10">
-          <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-clock-o" aria-hidden="true"></i> Time Limit<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
+          <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-database" aria-hidden="true"></i> Limit<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
               <div class="col-lg-6 col-md-6 col-xs-12" >       
                 <label for="cb1" class="labels vl-center  ">
-                Time limit?
+               Any time limit?
                 </label>
                     <input id="timeyes" name="cb1" type="checkbox" class='vi-center' ng-model="vm.timelimityes" ng-false-value="'no'" ng-true-value="'yes'" >
                 <label for="cb1" class="labels"  class="labels vl-center" >
                     YES
                 </label>
-                    <input type="text" name="ssid"   class="form" placeholder="Type it and 
-concretize if it's a limit to a free usage of a paid one" ng-model="vm.timelimitfield" ng-if="vm.timelimityes == 'yes' "  required/>
+                <br>
+                    <input type="text" name="ssid"   class="form" placeholder="Define time limit" ng-model="vm.timelimitfield" ng-if="vm.timelimityes == 'yes' "  required/>
+                      <label for="cb1" class="labels vl-center  ">
+
+                Data usage limit?
+                </label>
+                    <input id="timeyes" name="cb1" type="checkbox" class='vi-center' ng-model="vm.datausageyes" ng-false-value="'no'" ng-true-value="'yes'" >
+                <label for="cb1" class="labels"  class="labels vl-center" >
+                    YES
+                </label>
+                    <input type="text" name="ssid"   class="form" placeholder="What is the limit?" ng-model="vm.datausagefield" ng-if="vm.datausageyes == 'yes' "  required/>
               </div>
           </div>
       <div class="col-lg-1 col-md-1 col-xs-1"></div>

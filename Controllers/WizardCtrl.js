@@ -74,7 +74,7 @@
           vm.currentStep = newStep;
           if (vm.currentStep === 3) {
 
-              var link = "http://commonsnet.herokuapp.com/#/file?ssid=" + vm.ssid + "&password=" + vm.password + "&security=" + vm.securitytypes + "&standard=" + vm.wifistandards + "&ban_control=" + vm.dualbandyes + "&payment=" + vm.paymentfieldyes + "&fee=" + vm.paymentfield + "&timelimit=" + vm.timelimityes + "&limit=" + vm.timelimitfield + "&service=" + vm.serviceyes +  "&specialdevices=" + vm.specialdevices + "&devices=" + vm.specialdevicesfield + "&specialsettings=" + vm.specialsettings + "&settings=" + vm.specialsettingsfield + "&acceptterms=" + vm.acceptterms + "&liking=" + vm.socialprofile + "&downloading=" + vm.downloading + "&restrictions=" + vm.country + "&country=" + vm.countries.name + "&law=" + vm.legalrestrictions             
+              var link = "http://commonsnet.herokuapp.com/#/file?ssid=" + vm.ssid + "&password=" + vm.password + "&security=" + vm.securitytypes + "&standard=" + vm.wifistandards + "&ban_control=" + vm.dualbandyes + "&payment=" + vm.paymentfieldyes + "&fee=" + vm.paymentfield + "&timelimit=" + vm.timelimityes + "&limit=" + vm.timelimitfield + "&service=" + vm.serviceyes +  "&specialdevices=" + vm.specialdevices + "&devices=" + vm.specialdevicesfield + "&specialsettings=" + vm.specialsettings + "&settings=" + vm.specialsettingsfield + "&acceptterms=" + vm.acceptterms + "&liking=" + vm.socialprofile + "&downloading=" + vm.downloading + "&restrictions=" + vm.country + "&country=" + vm.countries + "&law=" + vm.legalrestrictions             
               vm.code = '<a href="' + link + '">CommonsNet</a>'
           }
         }
