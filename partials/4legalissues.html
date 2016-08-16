@@ -73,8 +73,15 @@
 							<div>
 								<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.autoupdatedisabled"  ng-false-value="'no'" ng-true-value="'yes'" >	
 									<label for="cb1" class="labels"  class="labels vl-center">
-										Auto-update function in devices is required to be disabled 
+										Disable auto-update function is required
 									</label>
+							</div>
+							<div>
+								<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.referencenumber"  ng-false-value="'no'" ng-true-value="'yes'" >	
+									<label for="cb1" class="labels"  class="labels vl-center">
+										Having a reference number provided by the Owner
+									</label>
+								
 							</div>
 
 				</div>
@@ -96,6 +103,7 @@
 						YES
 				</label>
 				<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.ownrestrictionyes"  ng-false-value="'no'" ng-true-value="'yes'" >
+				 <input type="text" name="restrictions"   class="form" placeholder="List them" ng-model="vm.ownrestrictionsfield" ng-if="vm.ownrestrictionyes == 'yes' "  required/>
                 	<br>
             
              <label for="cb1" class="labels vl-center  ">
@@ -110,7 +118,7 @@
       
                 
                 	<br>
-			 <input type="text" name="restrictions"   class="form" placeholder="List them" ng-model="vm.ownrestrictionsfield" ng-if="vm.ownrestrictionyes == 'yes' "  required/>
+			
 			 </div>
 			 
 			 <div class="row">
