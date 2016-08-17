@@ -1,9 +1,9 @@
-app.directive('appInfo', function() { 
+app.directive('appHome', function() { 
   return { 
     restrict: 'EA', 
     scope: { 
       info: '=' 
     }, 
-    templateUrl: 'partials/appInfo.html' 
+    templateUrl: 'partials/apphome.html' 
   }; 
 });

@@ -62,47 +62,53 @@
   <div class="row">
     <div class="col-lg-1 col-md-1 col-xs-1"></div>
       <div class="col-lg-10 col-md-10 col-xs-10">
-        <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-usd" aria-hidden="true"></i> Payment<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
-            <div class="col-lg-6 col-md-6 col-xs-12" >
+        <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-usd" aria-hidden="true"></i> Payment and limits<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
+        <div id="paidrow">
+            <div class="col-lg-4 col-md-4 col-xs-12" >
               <label for="cb1" class="labels vl-center ">
-                Is WIFI paid?
+                PAYMENT
               </label>
-                    <input id="yes" name="cb1" type="checkbox" class='vi-center' ng-model="vm.paymentfieldyes"
+                    <!-- <input id="yes" name="cb1" type="checkbox" class='vi-center' ng-model="vm.paymentfieldyes"
                              ng-false-value="'no'" ng-true-value="'yes'" >
                   <label for="cb1" class="labels"  class="labels vl-center">
                     YES
-                  </label>
-                    <input type="text" name="ssid" class="form" placeholder="How much per hour" ng-model="vm.paymentfield" ng-if="vm.paymentfieldyes == 'yes' " required/>
+                  </label> -->
+                    <input type="text" name="ssid" class="form" placeholder="How much per hour" ng-model="vm.paymentfield" required/>
               </div>
-          </div>
-      <div class="col-lg-1 col-md-1 col-xs-1"></div>
-  </div>
-  <div class="row">
-      <div class="col-lg-1 col-md-1 col-xs-1"></div>
-        <div class="col-lg-10 col-md-10 col-xs-10">
-          <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-database" aria-hidden="true"></i> Limit<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
-              <div class="col-lg-6 col-md-6 col-xs-12" >       
+          
+     
+  
+              <div class="col-lg-4 col-md-4 col-xs-12" >       
                 <label for="cb1" class="labels vl-center  ">
-               Any time limit?
-                </label>
+               TIME LIMIT
+               </label>
+                <!-- </label>
                     <input id="timeyes" name="cb1" type="checkbox" class='vi-center' ng-model="vm.timelimityes" ng-false-value="'no'" ng-true-value="'yes'" >
                 <label for="cb1" class="labels"  class="labels vl-center" >
                     YES
-                </label>
-                <br>
-                    <input type="text" name="ssid"   class="form" placeholder="Define time limit" ng-model="vm.timelimitfield" ng-if="vm.timelimityes == 'yes' "  required/>
+                </label> -->
+            
+                    <input type="text" name="ssid"   class="form" placeholder="Define time limit" ng-model="vm.timelimitfield" required/>
+                  </div>
+
+            <div class="col-lg-4 col-md-4 col-xs-12" >  
+
                       <label for="cb1" class="labels vl-center  ">
 
-                Data usage limit?
+               DATA USAGE LIMIT
                 </label>
-                    <input id="timeyes" name="cb1" type="checkbox" class='vi-center' ng-model="vm.datausageyes" ng-false-value="'no'" ng-true-value="'yes'" >
+                    <!-- <input id="timeyes" name="cb1" type="checkbox" class='vi-center' ng-model="vm.datausageyes" ng-false-value="'no'" ng-true-value="'yes'" >
                 <label for="cb1" class="labels"  class="labels vl-center" >
                     YES
-                </label>
-                    <input type="text" name="ssid"   class="form" placeholder="What is the limit?" ng-model="vm.datausagefield" ng-if="vm.datausageyes == 'yes' "  required/>
+                </label> -->
+                    <input type="text" name="ssid"   class="form" placeholder="What is the limit?" ng-model="vm.datausagefield"  required/>
               </div>
+               <button type="button" class="btn btn-default" ng-click="add()">+</button>
           </div>
+          </div>
+
       <div class="col-lg-1 col-md-1 col-xs-1"></div>
+
   </div>
   <div class="row">
       <div class="col-lg-1 col-md-1 col-xs-1"></div>
