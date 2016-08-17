@@ -16,13 +16,15 @@
         <div class="row pad">
 
           <div ng-repeat="description in descriptions">
-              <div class="col-lg-4 col-md-4 col-xs-4" >
+             <div class="col-lg-4 col-md-4 col-xs-4" >
+           
+                   <app-info info="description"></app-info>
 
-                <i class="fa fa-2x fa-{{description.icon}} icons "></i>
+                <!-- <i class="fa fa-2x fa-{{description.icon}} icons "></i>
               
                 <h4> {{ description.title }} </h4>
          
-                <p> {{ description.who }} </p>
+                <p> {{ description.who }} </p> -->
 
                
 
@@ -37,14 +39,13 @@
           
           </div>
            <div class="row pad">
-
+         
            <div ng-repeat="section in sections">
-       
-
-              <div class="col-lg-6 col-md-6 col-xs-6" >
+        <div class="col-lg-6 col-md-6 col-xs-6" >
+                <app-info info="section"></app-info>
+              
              
-                <h4> {{ section.title }} </h4>
-                <p> {{ section. content }} </p>
+                
          
               
               </div>
