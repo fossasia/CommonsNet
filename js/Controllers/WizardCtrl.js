@@ -137,41 +137,12 @@
               for (var i=0; i<$scope.choices.length; i++) {
                 if ($scope.choices[i].payment || $scope.choices[i].timelimit || $scope.choices[i].datalimit) {
                     result = result.replace('<text:h text:style-name="P166" text:outline-level="3">The Owner declares that using Wifi is free of any charge, as well there are not any time or data limits.</text:h>', '<text:h text:style-name="P166" text:outline-level="3">The Owner declares that there are some limits of using Wifi in terms of payment, time and data usage.</text:h>')
-                   line += '<text:h text:style-name="P166" text:outline-level="3">'+ "Paid:" +  " " + $scope.choices[i].payment +  " " + " " + "Time Limit: " +  " " + $scope.choices[i].timelimit + " " + " " + "Data Usage Limit:" + " " +  $scope.choices[i].datalimit + '</text:h>'
+                    line += '<text:p text:style-name="P155">'+ "Paid:" +  " " + $scope.choices[i].payment +  " " + " " + "Time Limit: " +  " " + $scope.choices[i].timelimit + " " + " " + "Data Usage Limit:" + " " +  $scope.choices[i].datalimit + '</text:p>'
                 }
               }
-              result = result.replace('<text:h text:style-name="P166" text:outline-level="3">LIMITS_FIELD</text:h>', line);
-             
-            // if (vm.choice.payment != 'undefined' || vm.choice.payment != ' ') {
-            //     result  = result.replace("PAYMENT_FIELD", "The owner declares that Wifi network is paid");
-            //   } 
-            //   else {
-            //     result  = result.replace("PAYMENT_FIELD", "The owner declares that Wifi connection is completely free of any charge.");
-
-            //   } 
-            // if (vm.choice.payment)  {
-            //     result  = result.replace("FEE_FIELD", "The fee is" + " " + vm.choice.payment);
-            //   }
-            // else {
-            //     result  = result.replace(' <text:p text:style-name="P150">FEE_FIELD</text:p>' , 'The owner declares that he does not require any fee');
-
-            //   }
-            // if (vm.timelimityes ==='yes') {
-            //     result  = result.replace("LIMIT_FIELD", "The owner informs that the access to the network is limited");
-            //   }
-            //  else {
-            //     result = result.replace("LIMIT_FIELD", "The owner declares that the access to the network is unlimited")
-            //  }
-
-            // if (vm.timelimityes ==='yes' && (typeof vm.timelimitfield !== "undefned" || (vm.timelimitfield !== '')) ){
-            //     result  = result.replace("TIME_LIMIT", "Users are allowed to use wifi" + " " + vm.timelimitfield );
-
-            //   }
-            // else {
-            //     result = result.replace(' <text:h text:style-name="P167" text:outline-level="3">TIME_LIMIT</text:h>', " ")
-            //   }
- 
-            
+              result = result.replace('<text:p text:style-name="P155">LIMITS_FIELD</text:p>', line);
+      
+       
             if (vm.serviceyes ==='yes') {
                 result  = result.replace("SERVICE_FIELD", "The owner guarantees Wifi service" );
              // <text:h text:style-name="P132" text:outline-level="3">The service is provided &quot;as is&quot;, with no warranty or liability of whatsoever kind</text:h>

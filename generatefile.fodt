@@ -1639,7 +1639,11 @@
    <text:p text:style-name="P149">BANDWIDTH_CONTROL</text:p>
    <text:h text:style-name="P160" text:outline-level="3">2. Payment and limit: </text:h>
    <text:h text:style-name="P166" text:outline-level="3">The Owner declares that using Wifi is free of any charge, as well there are not any time or data limits.</text:h>
-   <text:h text:style-name="P166" text:outline-level="3">LIMITS_FIELD</text:h>
+   <text:list xml:id="list533319923915382650" text:style-name="L2">
+    <text:list-item>
+    <text:p text:style-name="P155">LIMITS_FIELD</text:p>
+  </text:list-item>
+</text:list>
    <text:h text:style-name="P160" text:outline-level="3">4. Service: </text:h>
    <text:h text:style-name="P163" text:outline-level="3">SERVICE_FIELD</text:h>
    <text:h text:style-name="P160" text:outline-level="3">5. Terms of Use:</text:h>
