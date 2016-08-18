@@ -63,53 +63,127 @@
     <div class="col-lg-1 col-md-1 col-xs-1"></div>
       <div class="col-lg-10 col-md-10 col-xs-10">
         <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-usd" aria-hidden="true"></i> Payment and limits<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
-        <div id="paidrow">
-            <div class="col-lg-4 col-md-4 col-xs-12" >
-              <label for="cb1" class="labels vl-center ">
-                PAYMENT
-              </label>
+  <div class="col-lg-4 col-md-4 col-xs-4">
+     <label for="cb1" class="labels vl-center"> PAYMENT </label>
+     </div>
+      <div class="col-lg-4 col-md-4 col-xs-4">
+     <label for="cb1" class="labels vl-center">TIME LIMIT </label>
+     </div>
+      <div class="col-lg-4 col-md-4 col-xs-4">
+        <label for="cb1" class="labels vl-center" > DATA USAGE </label>
+      </div>
+ <div ng-repeat="choice in choices">
+
+      <div class="col-lg-4 col-md-4 col-xs-4">
+         
+          <input class="form" type="text"  ng-model="choice.payment" placeholder="How much per hour?"/>
+      </div> 
+      <div class="col-lg-4 col-md-4 col-xs-4">
+        
+        <input class= "form" type="text" ng-model="choice.timelimit" name="" placeholder="Define time limit">
+      </div>
+      <div class="col-lg-4 col-md-4 col-xs-4">
+        
+        <input class="form" type="text" ng-model="choice.datalimit" name="" placeholder="What is the limit?">
+      </div>
+        <button class="btn btn-default rig"  ng-show="$last" ng-click="removeChoice()">-</button>
+
+ 
+ 
+  </div>
+   <button class="btn btn-default rig"  ng-click="addNewChoice()">+</button>
+
+       
+        
+      
+  
+
+     
+
+
+
+
+
+
+
+   
+
+    
+    
+      </div>
+         <div class="col-lg-1 col-md-1 col-xs-1"></div>
+      </div>
+
+
+
+
+
+  <!--    <div id="paidrow">
+  
+    <div class="main">
+     <div class="col-lg-4 col-md-4 col-xs-12" >
+        <label for="cb1" class="labels vl-center" ng-show="$first">
+                        PAYMENT
+                  </label>
+          <input type="text" name="ssid" class="form" placeholder="How much per hour" ng-mode="choice.name" required/>
+      </div>
+      <div class="col-lg-4 col-md-4 col-xs-12">
+      <label for="cb1" class="labels vl-center  ">
+                        TIME LIMIT
+                  </label>
+            <input type="text" name="ssid"   class="form" placeholder="Define time limit" ng-model="vm.timelimitfield" required/>
+      </div>
+      <div class="col-lg-4 col-md-4 col-xs-12">
+      <label for="cb1" class="labels vl-center  ">
+                        DATA USAGE LIMIT
+                  </label>
+         <input type="text" name="ssid"   class="form" placeholder="What is the limit?" ng-model="vm.datausagefield"  required/>
+      </div>
+
+ </div>
+ <button class="btn btn-default"  data-ng-click="submit()" my-directive>+</button> -->
                     <!-- <input id="yes" name="cb1" type="checkbox" class='vi-center' ng-model="vm.paymentfieldyes"
                              ng-false-value="'no'" ng-true-value="'yes'" >
                   <label for="cb1" class="labels"  class="labels vl-center">
                     YES
                   </label> -->
-                    <input type="text" name="ssid" class="form" placeholder="How much per hour" ng-model="vm.paymentfield" required/>
-              </div>
+                    <!-- <input type="text" name="ssid" class="form" placeholder="How much per hour" ng-model="vm.paymentfield" required/>
+              </div> -->
           
      
   
-              <div class="col-lg-4 col-md-4 col-xs-12" >       
+             <!--  <div class="col-lg-4 col-md-4 col-xs-12" >       
                 <label for="cb1" class="labels vl-center  ">
                TIME LIMIT
-               </label>
+               </label> -->
                 <!-- </label>
                     <input id="timeyes" name="cb1" type="checkbox" class='vi-center' ng-model="vm.timelimityes" ng-false-value="'no'" ng-true-value="'yes'" >
                 <label for="cb1" class="labels"  class="labels vl-center" >
                     YES
                 </label> -->
             
-                    <input type="text" name="ssid"   class="form" placeholder="Define time limit" ng-model="vm.timelimitfield" required/>
-                  </div>
+                <!--     <input type="text" name="ssid"   class="form" placeholder="Define time limit" ng-model="vm.timelimitfield" required/>
+                  </div> -->
 
-            <div class="col-lg-4 col-md-4 col-xs-12" >  
+           <!--  <div class="col-lg-4 col-md-4 col-xs-12" >  
 
                       <label for="cb1" class="labels vl-center  ">
 
                DATA USAGE LIMIT
-                </label>
+                </label> -->
                     <!-- <input id="timeyes" name="cb1" type="checkbox" class='vi-center' ng-model="vm.datausageyes" ng-false-value="'no'" ng-true-value="'yes'" >
                 <label for="cb1" class="labels"  class="labels vl-center" >
                     YES
                 </label> -->
-                    <input type="text" name="ssid"   class="form" placeholder="What is the limit?" ng-model="vm.datausagefield"  required/>
-              </div>
-               <button type="button" class="btn btn-default" ng-click="add()">+</button>
-          </div>
-          </div>
+                   <!--  <input type="text" name="ssid"   class="form" placeholder="What is the limit?" ng-model="vm.datausagefield"  required/>
+              </div> -->
+           
+        <!--   </div> -->
+        
 
-      <div class="col-lg-1 col-md-1 col-xs-1"></div>
-
+   <!-- 
   </div>
+  </div> -->
   <div class="row">
       <div class="col-lg-1 col-md-1 col-xs-1"></div>
         <div class="col-lg-10 col-md-10 col-xs-10">

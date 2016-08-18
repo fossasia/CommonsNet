@@ -18,7 +18,9 @@ body {
   font-weight: 300;
     overflow-x: hidden; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
-
+.addfield {
+  float:right;
+}
 .bor {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -1206,7 +1208,26 @@ padding: 80px;
 .note-editor.note-frame .note-editing-area .note-editable  {
   height: 200px;
 }
+
+.rig {
+  float: right;
+}
+
+.col-lg-4  {
+  padding-left: 0px;
+
+
+}
+.col-md-4 {
+   padding-left: 0px;
+  
+  }
+  .col-xs-4 {
+     padding-left: 0px;
+
+   }
     /*!
+  }
  * Start Bootstrap - Small Business HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.

@@ -26,12 +26,23 @@
           {name:'Russia' }
         ];
 
-        $scope.add = function () {
-          var paidrow =   angular.element(document.querySelector('#paidrow'));
-               var childrow = $compile(paidrow)(paidrow);
-               container.append(childrow);
-             }
-
+        // $scope.add = function () {
+        //   var paidrow =   angular.element(document.querySelector('#paidrow'));
+        //        var childrow = $compile(paidrow)(paidrow);
+        //        container.append(childrow);
+        //      }
+        
+       $scope.choices = [{'id':'choice1', "payment": '', "timelimit": '', "datalimit": ''}];
+  
+  $scope.addNewChoice = function() {
+    var newItemNo = $scope.choices.length+1;
+    $scope.choices.push({'id':'choice'+newItemNo});
+  };
+    
+  $scope.removeChoice = function() {
+    var lastItem = $scope.choices.length-1;
+    $scope.choices.splice(lastItem);
+  };
         vm.currentStep = 1;
         vm.steps = [
           {

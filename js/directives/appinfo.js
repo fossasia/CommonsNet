@@ -5,7 +5,7 @@ app.directive('appInfo', function() {
 	      info: '=' 
 	    }, 
 	    templateUrl: 'partials/appInfo.html' 
-	  
+	  // test asaaS
 	  }; 
 });
 // test
