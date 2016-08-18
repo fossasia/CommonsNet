@@ -1637,12 +1637,9 @@
    <text:p text:style-name="P148">SECURITY_TYPE</text:p>
    <text:p text:style-name="P149">STANDARD_WIFI</text:p>
    <text:p text:style-name="P149">BANDWIDTH_CONTROL</text:p>
-   <text:h text:style-name="P160" text:outline-level="3">2. Payment: </text:h>
-   <text:h text:style-name="P166" text:outline-level="3">PAYMENT_FIELD</text:h>
-   <text:p text:style-name="P150">FEE_FIELD</text:p>
-   <text:h text:style-name="P160" text:outline-level="3">3. Time limit: </text:h>
-   <text:h text:style-name="P166" text:outline-level="3">LIMIT_FIELD</text:h>
-   <text:h text:style-name="P167" text:outline-level="3">TIME_LIMIT</text:h>
+   <text:h text:style-name="P160" text:outline-level="3">2. Payment and limit: </text:h>
+   <text:h text:style-name="P166" text:outline-level="3">The Owner declares that using Wifi is free of any charge, as well there are not any time or data limits.</text:h>
+   <text:h text:style-name="P166" text:outline-level="3">LIMITS_FIELD</text:h>
    <text:h text:style-name="P160" text:outline-level="3">4. Service: </text:h>
    <text:h text:style-name="P163" text:outline-level="3">SERVICE_FIELD</text:h>
    <text:h text:style-name="P160" text:outline-level="3">5. Terms of Use:</text:h>
@@ -1693,7 +1690,8 @@
    <text:p text:style-name="P152">FIELD_RESTRICTIONS</text:p>
    <text:h text:style-name="P158" text:outline-level="2">Definition of terms</text:h>
    <text:h text:style-name="P159" text:outline-level="2">The Owner: The Owner is an entity which provides a wireless network. </text:h>
-   <text:p text:style-name="P145">The Service: </text:p>
+   <text:p text:style-name="P145">The Service: The User: The User is an entity who uses a wireless network.</text:p>
+    <text:p text:style-name="P145"> The Service: The Service means that the Owner takes care of used hardware, update the firmare and solve connection's troubles.</text:p>
    <text:h text:style-name="P141" text:outline-level="1"/>
    <text:p text:style-name="P146"><text:span text:style-name="T24"><text:tab/></text:span><text:tab/><text:tab/></text:p>
    <text:p text:style-name="P142"><text:tab/><text:tab/></text:p>
