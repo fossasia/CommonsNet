@@ -8,14 +8,14 @@
 	   					  	<div>
 	   					  		<input id="cb5" name="cb1" type="checkbox" class='vi-center' ng-model="vm.specialdevices"  ng-false-value="'no'" ng-true-value="'yes'" >
 									<label for="cb1" class="labels"  class="labels vl-center">
-										Special devices 
+										Some devices are not applicable
 									</label>
 									  <input type="text" name="ssid" class="form" placeholder="List them" ng-model="vm.specialdevicesfield" ng-if="vm.specialdevices == 'yes' " required/>
 							</div>
 							<div>
 								<input id="cb5" name="cb1" type="checkbox" class='vi-center' ng-model="vm.specialsettings"  ng-false-value="'no'" ng-true-value="'yes'" >
 									<label for="cb1" class="labels">
-										Special settings 
+										Special settings are required
 									</label>
 									<input type="text" name="ssid" class="form" placeholder="List them" ng-model="vm.specialsettingsfield" ng-if="vm.specialsettings == 'yes' " required/>
 							</div>
@@ -25,6 +25,7 @@
 										Accepting terms of use
 									</label>
 							</div>
+
 							<div>
 								<input id="cb5" name="cb1" type="checkbox" class='vi-center' ng-model="vm.socialprofile"  ng-false-value="'no'" ng-true-value="'yes'" >
 									<label for="cb1" class="labels">
@@ -37,6 +38,54 @@
 										Downloading pdf file
 									</label>
 							</div>
+							<div >
+								<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.register"  ng-false-value="'no'" ng-true-value="'yes'" >
+									<label for="cb1" class="labels"  class="labels vl-center">
+										Registering to a website
+									</label>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-xs-12">
+							
+							<div >
+								<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.newsletter"  ng-false-value="'no'" ng-true-value="'yes'" >
+									<label for="cb1" class="labels"  class="labels vl-center">
+										Signing up to a newsletter
+									</label>
+							</div>
+							<div>
+								<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.mobilenumber"  ng-false-value="'no'" ng-true-value="'yes'" >	
+									<label for="cb1" class="labels"  class="labels vl-center">
+										Providing a mobile number
+									</label>
+								
+							</div>
+							<div>
+								<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.emailaddress"  ng-false-value="'no'" ng-true-value="'yes'" >	
+									<label for="cb1" class="labels"  class="labels vl-center">
+										Provading an email address
+									</label>
+								
+							</div>
+							<div>
+								<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.personaldetails"  ng-false-value="'no'" ng-true-value="'yes'" >	
+									<label for="cb1" class="labels"  class="labels vl-center">
+										Entering a personal details like age group, geneder etc. 
+									</label>
+							</div>
+							<div>
+								<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.autoupdatedisabled"  ng-false-value="'no'" ng-true-value="'yes'" >	
+									<label for="cb1" class="labels"  class="labels vl-center">
+										Disable auto-update function is required
+									</label>
+							</div>
+							<div>
+								<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.referencenumber"  ng-false-value="'no'" ng-true-value="'yes'" >	
+									<label for="cb1" class="labels"  class="labels vl-center">
+										Having a reference number provided by the Owner
+									</label>
+								
+							</div>
 
 				</div>
 		</div>
@@ -46,7 +95,41 @@
 	<div class="row">
    		<div class="col-lg-1 col-md-1 col-xs-1"></div>
    		     <div class="col-lg-10 col-md-10 col-xs-10">
-	     	<h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-gavel" aria-hidden="true"></i> Legal restrictions<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
+   		     <div class="row">
+   		     <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-ban" aria-hidden="true"></i> Restrictions<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
+
+   		     <label for="cb1" class="labels vl-center  ">
+                Do you restrict something in your wireless network?
+                </label>
+      
+                <label for="male">
+						YES
+				</label>
+				<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.ownrestrictionyes"  ng-false-value="'no'" ng-true-value="'yes'" >
+				 <input type="text" name="restrictions"   class="form" placeholder="List them" ng-model="vm.ownrestrictionsfield" ng-if="vm.ownrestrictionyes == 'yes' "  required/>
+                	<br>
+            
+             <label for="cb1" class="labels vl-center  ">
+               Do you limit number of connected devices?
+             </label>
+             <label for="male">
+						YES
+				</label>
+				<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.limitdevicesyes"  ng-false-value="'no'" ng-true-value="'yes'" >
+			 <input type="text" name="limitdevices"   class="form" placeholder="How many?" ng-model="vm.limitdevicesfield" ng-if="vm.limitdevicesyes == 'yes' "  required/>
+			 
+      
+                
+                	<br>
+			
+			 </div>
+			 
+			 <div class="row">
+                   
+           
+	     		<h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-gavel" aria-hidden="true"></i> Legal restrictions<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
+	     	
+
 	     
 
 	     		<label for="cb1" class="labels vl-center  ">
@@ -55,10 +138,10 @@
       
                 <label for="male">
 						YES
-						</label>
+				</label>
 
-                	<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.country"  ng-false-value="'no'" ng-true-value="'yes'" >
-                	<br>
+                <input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.country"  ng-false-value="'no'" ng-true-value="'yes'" >
+                <br>
 
 
                 	  
@@ -88,7 +171,7 @@
 			
 		
 
-
+</div>
 		<div class="col-lg-1 col-md-1 col-xs-1"></div>
 	</div>
      

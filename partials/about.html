@@ -1,57 +1,31 @@
 
 
-<div class="container about" ng-controller="AboutCtrl">
-      
-            
-         
+<div class="container about" ng-controller="AboutCtrl">   
 
-        <div class="row bor">
-          
-          <div class="col-lg-12 col-md-12 col-xs-12 padd">
-              <h4 class="lefta"> {{ title }}  </h4>
-          </div>
-        
-        </div>
-
-        <div class="row pad">
-
+    
+         <div class="col-lg-12 col-md-12 col-xs-12 padd">
+             <div class="row">
           <div ng-repeat="description in descriptions">
               <div class="col-lg-4 col-md-4 col-xs-4" >
-
-                <i class="fa fa-2x fa-{{description.icon}} icons "></i>
-              
-                <h4> {{ description.title }} </h4>
-         
-                <p> {{ description.who }} </p>
-
-               
-
+                   <app-info info="description"></app-info>
               </div>
           </div>
-        </div>
-          <div class="row bor">
-            
-            <div class="col-lg-12 col-md-12 col-xs-12 padd">
-              <h4 class="lefta"> {{ title2 }}  </h4>
-            </div>
-          
           </div>
-           <div class="row pad">
+        
 
-           <div ng-repeat="section in sections">
-       
-
+         
+           <div class="row">
+            <div ng-repeat="section in sections">
               <div class="col-lg-6 col-md-6 col-xs-6" >
-             
-                <h4> {{ section.title }} </h4>
-                <p> {{ section. content }} </p>
-         
-              
+                <app-info info="section"></app-info>
               </div>
           </div>
-        </div>
+     
+         
+         </div>
       </div>
-</div>
+ </div>
+
                
                
           
@@ -60,47 +34,4 @@
               
                     
               
-                
-
-              
-                  <!--   <p>  <b> We want to see the world of transparent, shared wifi, which let all people over the world to enjoy unlimited Internet resources and build network community. That's why we focuses on making wireless connection transparent to it users and supporting it sharing. We want people to be provided with clear data about wireless connection they want to use in below section. </b>  </p>
-                    <p>
-                      </p>
-                     <p> <b class="blue"> Settings  </b> - We want people to know what are the basic settings of wireless connection. SSID, password, authentication and standard are all important features for us to get to know while starting using a specific WiFi. Based on that we can say how safe are we, and what is the possibilies of capacity’s trouble or even what kind of devices can we use.  </p>
-                        <p> <b class="blue">  Payment </b> - Next, we believe people should get clear information if the wifi they want to use is paid or not, or if they are obliged to keep time limit. </p>
-                         <p> <b class="blue"> Conditions </b> - We want also to make people aware of conditions to use wireless connection and let them know what do they need to do in order to connect to offered wifi. </p>
-                          <p> <b class="blue"> Legal restrictions </b>  - Finally, we have no doubt that last but not least part of imporant information about wifi are legal restrictions. We don’t want them to be a real boundary or make some trouble for someone due to the lack of knowledge. We want people to be aware of things they are not allowed to do while connecting to Internet in a specific place and be safer as well. </p>
-     
-     
-      
             
-           
-          
-            
-               Supporting Internet users to be provided with clear wifi information is an important voice in increasing standards.
-               
-                  <p>As the CommonsNet team we believe wirless connection plays one of the most important role in our everyday life. We believe that a transparency is a key in building high standard and quality of wireless connection as well as making it trustworthy. We have no doubts that if we support Internet users to be provided with clear wifi information we are an important voice in increasing standards.
-                  </p>
-                  
-                  
-                <h4> Why we do it</h4>
-               
-                  We are a network of people who believe that network transparency and highest standards are possible. We want to see the trustworthy global network, and feel secured, but not restricted. 
-                </p>
-             
-                <h4>Who are we</h4>
-                
-             Collect your WiFi information in an orderly and transparent manner using our form, and then  immediately download them or copy the generated code and paste on your Internet website to make them public.
-               
-               
-            
-                <h4>What we can do for you</h4>
-                
-                <p>CommonsNet can help you to become an important member of community and work with us for our common goal. </p>
-                   <p>Using our great website you are able to quickly collect all information about wifi you offered to your customers and provide them in a transparent manner. That helps you to be an active member in building a global transparent network, improving Internet connection's standards and strenghtening people awarness of wifi details to let them choose that is the most convienient to them. 
-                   </div>
-
-              	<h4>What we provide</h4>
-                
-              	<p>CommonsNet loves providing you with a great tool to collect all your wifi details and and wants to enable you to share them with your users. Our simple and easy-to-follow form let you gather WiFi information in a orderly and transparent manner, and then let you immediately download them or copy and paste on your Internet website to make them public. </p>
-                 --> 

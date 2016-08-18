@@ -18,7 +18,9 @@ body {
   font-weight: 300;
     overflow-x: hidden; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
-
+.addfield {
+  float:right;
+}
 .bor {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -356,6 +358,13 @@ p  {
   .sr-icons{
 
    color: #00a8f2;
+   visibility: visible;  
+   -webkit-transform: scale(1); 
+   opacity: 1;
+   transform: scale(1); 
+   opacity: 1;
+   -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+   transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
  
   }
   .form-btn{
@@ -742,8 +751,9 @@ height: 800px;
     /*border-bottom: 2px solid #00a8f2;*/
     background-color: white;
     margin: 5px;
-    padding: 20px;
+    padding: 25px;
     opacity: 0.8;
+    width: 32%;
 }
 
 .navbar-brand {
@@ -829,6 +839,10 @@ footer{
   background-color: #F7F7F7;
   
 
+}
+
+.ag {
+  margin-top: 50px;
 }
       .content-section-h { 
       height: 100%;
@@ -920,10 +934,6 @@ font-size: 18px;
   padding-bottom: 20px;
   }
 
-.col-lg-4 {
-  padding-left: 0px;
-
-  }
 
 
 .section-header {
@@ -1198,7 +1208,26 @@ padding: 80px;
 .note-editor.note-frame .note-editing-area .note-editable  {
   height: 200px;
 }
+
+.rig {
+  float: right;
+}
+
+.col-lg-4  {
+  padding-left: 0px;
+
+
+}
+.col-md-4 {
+   padding-left: 0px;
+  
+  }
+  .col-xs-4 {
+     padding-left: 0px;
+
+   }
     /*!
+  }
  * Start Bootstrap - Small Business HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
