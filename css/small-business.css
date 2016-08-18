@@ -4,16 +4,34 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 html {
-    font-family: sans-serif;
+  
     height: 100%; 
+
     }
 
 body {
     padding-top: 70px;
-    background-color: #F8F8F8; 
+    background-color: white; 
     color: #404040  ; 
-    font-family: 'Lora', serif;
+
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
     overflow-x: hidden; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+.addfield {
+  float:right;
+}
+.bor {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.padd {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+body, h1, h2, h3, h4, h5, h6 {
+   font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
 }
 
 .navbar-fixed-top .nav {
@@ -35,14 +53,28 @@ body {
         padding: 15px 0;
     }
 }
+.btn-default:hover, .btn-default:active, .btn-default:focus {
+  
+  background-color: white !important;
+  
+}
+
+.downbutt {
+  padding: 10px;
+  margin: 20px;
+}
+.file {
+  height: 100%;
+  padding: 50px;
+  margin: 20px;
+  background-color: white;
+
+}
+.lefta {
+  text-align: left;
+}
 
 
-
-.row {
-        margin-bottom: 20px;
-        /*padding: 20px;*/
-
-    }
 .ng-dirty.ng-invalid {
     color: red;
 }
@@ -51,10 +83,15 @@ body {
         float: right;
      
        font-size: 15px;
-       font-weight: bold;
+      
     
     }
+.icons {
+  color: black;
+  padding-left: 60px;
+  padding-right: 60px;
 
+}
 
 .form-btn.disabled, .btn[disabled], fieldset[disabled] .btn {
   cursor: not-allowed;
@@ -93,7 +130,7 @@ margin-top: 50px;
   }
 .blue {
   color: #00a8f2;
-  font-weight: bold;
+ 
 }
 
 
@@ -113,7 +150,7 @@ margin-top: 50px;
   background-color: white;
   margin-right: 40px;
   color: #00a8f2;
-  font-weight: bold;
+ 
   display: inline-block;
 
   text-align: left;
@@ -210,7 +247,9 @@ a:focus, a:hover {
     -moz-transition: all 0.4s;
     transition: all 0.4s;
   }
-
+.wh {
+  color: white;
+}
 /*  .form:hover{
     border:1px solid #8BC3A3;
   }*/
@@ -287,7 +326,7 @@ a:focus, a:hover {
 
 p  {
     font-size: 15px;
-    font-weight: normal;
+   
 
   }
 
@@ -316,9 +355,16 @@ p  {
 
 /* Send Button Styles */
 
-  .fa{
+  .sr-icons{
 
    color: #00a8f2;
+   visibility: visible;  
+   -webkit-transform: scale(1); 
+   opacity: 1;
+   transform: scale(1); 
+   opacity: 1;
+   -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+   transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
  
   }
   .form-btn{
@@ -365,7 +411,6 @@ h2  {
     font-size: 40px;
     margin-bottom: 20px;
   
-    font-family: 'Lora', serif;
    text-align: center;   
 
    
@@ -374,7 +419,7 @@ h2  {
 h3  {
    
     font-size: 35px;  
-    font-family: 'Lora', serif;
+  
     text-align: center;
 
 }
@@ -426,7 +471,7 @@ h4  {
     
     
     font-size: 25px;
-    font-family: 'Lora', serif;
+ 
     color: black;
     text-align: left;
 
@@ -451,8 +496,8 @@ label  {
     
    color: black;
     font-size: 15px;
-    font-weight: bold;
-    font-family: 'Lora', serif;
+   
+    
 
 }
 
@@ -475,7 +520,7 @@ label  {
 }
 h5 {
     font-size: 20px;
-    font-family:  'Lora', serif;
+ 
 }
 /*h5:after {
     border-bottom: 1px solid #00a8f2;
@@ -512,7 +557,7 @@ h6  {
     font-size: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
-    font-family: 'Lora', serif;
+  
     color: #AAAAAA;
 
 
@@ -535,7 +580,8 @@ h1  {
   
     font-size: 60px;
     text-align: right;
-    font-family: 'Lora', serif;
+   
+
     color: white;
 }
 
@@ -686,6 +732,9 @@ height: 800px;
  
     background-image: url("../img/office1.png") !important;
     height: 500px;
+        background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
 
@@ -702,8 +751,9 @@ height: 800px;
     /*border-bottom: 2px solid #00a8f2;*/
     background-color: white;
     margin: 5px;
-    padding: 20px;
+    padding: 25px;
     opacity: 0.8;
+    width: 32%;
 }
 
 .navbar-brand {
@@ -778,7 +828,8 @@ footer{
   border-bottom: none;
   border-top: none;
   background-color: white;
-  padding-bottom: 10px;
+  
+  padding: 40px;
 
 }
 
@@ -789,6 +840,30 @@ footer{
   
 
 }
+
+.ag {
+  margin-top: 50px;
+}
+      .content-section-h { 
+      height: 100%;
+      padding: 50px;
+      background-color: white;
+ }
+.content-section-c {
+  background-image: url("../img/off2.jpg");
+  height: 100%;
+  padding: 50px;
+  
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.content-section-d {
+  padding: 50px;
+  background-color: #F8F8F8;
+}
+
 .sec-c {
     background-color: 
 #000033;
@@ -819,14 +894,14 @@ font-size: 16px;
 a {
 
 color: white;
-font-weight: normal;
+
 
 }
 
 .address {
 
 color: #D2D6DF;
-font-weight: normal;
+
 
 }
 
@@ -859,10 +934,6 @@ font-size: 18px;
   padding-bottom: 20px;
   }
 
-.col-lg-4 {
-  padding-left: 0px;
-
-  }
 
 
 .section-header {
@@ -954,9 +1025,17 @@ font-size: 18px;
      display: inline-block;
     width: 20px;
     height: 20px;
-    /* border: 2px solid #00a8f2; */
-    /* margin-bottom: 8px; */
+ 
    
+}
+#serviceyes{
+
+     display: inline-block;
+    width: 20px;
+    height: 20px;
+
+   
+
 }
 #cb6
   {
@@ -975,7 +1054,7 @@ font-size: 18px;
     position: relative;
     float: center;
     color: black;
-    font-weight: bold;
+
     }
 
 .fa-floppy-o {
@@ -1024,12 +1103,12 @@ color: red }
 .firststep {
 
   background-color: #00a8f2;
-  padding: 70px;
+  padding: 40px;
   
   color: white;
   text-align: center;
   font-size: 23px;
-  font-weight: normal;
+
       margin-top: -50px;
  
 }
@@ -1037,15 +1116,15 @@ color: red }
 .secondstep {
   
   background-color: #282C35;
-  padding: 70px;
+  padding: 40px;
  
   color: white;
   text-align: center;
   font-size: 25px;
-  font-weight: normal;
+ 
 }
 .ab {
-  background-image: url("../img/people.jpg");
+  background-image: url("../img/notebook.jpg");
   height: 500px;
 }
 .imagev {
@@ -1090,18 +1169,18 @@ color: red }
   color: white;
   text-align: center;
   padding: 50px;
-  font-weight: bold;
+  
 
 }
 .thirdstep {
    
   background-color: #00a8f2;
-  padding: 70px;
+  padding: 40px;
  
   color: white;
   text-align: center;
   font-size: 25px;
-  font-weight: normal;
+  
 }
 .linkout {
     color: #2752ff;
@@ -1110,6 +1189,10 @@ color: red }
 }
 .blog { 
    color: black;
+}
+.about { 
+padding: 80px; 
+
 }
 /*aboutus page container backgorund*/
 #container {
@@ -1122,7 +1205,29 @@ color: red }
 
 }
 
+.note-editor.note-frame .note-editing-area .note-editable  {
+  height: 200px;
+}
+
+.rig {
+  float: right;
+}
+
+.col-lg-4  {
+  padding-left: 0px;
+
+
+}
+.col-md-4 {
+   padding-left: 0px;
+  
+  }
+  .col-xs-4 {
+     padding-left: 0px;
+
+   }
     /*!
+  }
  * Start Bootstrap - Small Business HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
