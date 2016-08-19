@@ -1,15 +1,19 @@
 <div class="container contactcontainer">
         <!-- Heading Row -->
-        <div class="row">
-        	<div class="col-lg-1 col-md-1 col-xs-1"> </div>
+        
+        
                 <div id="messages" class="alert alert-success" ng-show="message">
                         {{ message }}
                 </div>
             <div class="col-lg-12 col-md-12 col-xs-12">
+                <div class="row">
                 
                     <!-- Form -->
-                     <div class="col-lg-6 col-md-6 col-xs-12">
-                        <h3 class="hcontact">{{title}}</h3>
+                
+                     <div class="col-lg-7 col-md-7 col-xs-12">
+                         <div class="row">
+                        <h1 class="hcontact black"> <b> {{title}} </b> </h1>
+                        <p> {{ subtitle }} </p>
                             <form name="myForm" id="contact-us" ng-submit="submitForm()" >
                         <!-- Left Inputs -->
                        
@@ -29,13 +33,91 @@
                                 <span  ng-show="myForm.messageInput.$dirty && myForm.messageInput.$invalid">The message is required!</span>
                                     <textarea type="text" name="messageInput" id="message" class="form textarea" ng-model="messageInput" placeholder="Message"  ng-change="submit()" required> </textarea>   
                                 <!-- Send Button -->
-                                <button type="submit" class="form-btn" ng-class="{'disabled': disableButtons}" >Send Message</button> 
+                                <button type="submit" class="form-btn" >Send Message</button> 
                             </form>
                   
                         <!-- End Left Inputs --> 
-                    </div>
+                        </div>
+                  
                    
-                </div>
+                    <div class="row">
+                        <h3 class="hcontact"> <b> {{ title2 }} </b> </h3>
+                        <p> {{ subtitle2 }} </p>
+                        <ul> 
+                            <li ><h4> {{ address }} </h4> </li>
+                        </ul>
+
+                    </div>
+                    <div class="row">
+                        <h3 class="hcontact"><b> {{ title3 }} </b> </h3>
+                        <p> {{ subtitle3 }} <a class="sidebar-menu" href="http://github.com/fossasia/CommonsNet"> or you can create an issue on GitHub.</a> </p>
+                    </div>
+                  
+                    <div class="row">
+                        <h3 class="hcontact"><b> {{ title5 }} </b> </h3>
+                            <p> {{ subtitle5 }} </p>
+                        <h4 class="hcontact"> <b> {{ subtitletitle6 }}  </b> </h4>
+                            <li> <a class="sidebar-menu" href="https://twitter.com/Commons_Net"> Follow us on Twitter </li>
+                            <li> <a class="sidebar-menu" href="https://www.facebook.com/CommonsNetApp" > Find us on Facebook </a> </li>
+
+                         <h4 class="hcontact"> <b> {{ subtitletitle7 }}  </b> </h4>
+                         <li> <b> {{  subtitle77 }} </b> <a class="sidebar-menu" href="https://github.com/fossasia/CommonsNet"> Join us on GitHub </a>
+                         </li>
+                   
+                       
+                    </div>
+                    </div>
+                    
+           
+                    
+
+                    
+                    <div class="col-lg-4 col-md-4 col-xs-12 space"> 
+                        <div class="row">
+                        <section>
+                            <h2 class="hcontact">{{ title4 }}</h2>
+                                <ul class="child-sidebar-menu">
+                                    <li >
+                                        <a class="sidebar-menu" href="">FAQ</a>
+                                    </li>
+                                    <li>    
+                                        <a class="sidebar-menu" href="">Get Involved</a>
+                                    </li>
+                                    <li>
+                                        <a class="sidebar-menu" href="">Team</a>
+                                    </li>
+                                    <li>
+                                        <a class="sidebar-menu" href="">History</a>
+                                    </li>
+
+                                </ul> 
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section>
+                            <span>
+                                <h4 class="hcontact"><i class="fa fa-envelope-o" aria-hidden="true"></i> Connect with CommonsNet</h4> 
+                                
+                                </span>
+                                <div>
+                                    <form>
+                                      
+                                        <span>
+                                            <input class="form" placeholder="Your email address" type="email" required="">
+                                            <button class="form-btn bt" type="submit">Sign up</button>
+                                        </span>
+
+                                       
+
+                                    </form>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                 
+
+
+             
 
 
                     <!-- Your Mail Message -->
@@ -45,11 +127,12 @@
                
             
 
-            <div class="col-lg-1 col-md-1 col-xs-1"> </div>
+         
         </div><!-- End Inner -->
        
  </div>
             
+         
          
             
 

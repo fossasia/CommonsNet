@@ -31,7 +31,7 @@ body {
 }
 body, h1, h2, h3, h4, h5, h6 {
    font-family: 'Titillium Web', sans-serif;
-    font-weight: 300;
+   font-weight: 300;
 }
 
 .navbar-fixed-top .nav {
@@ -57,6 +57,13 @@ body, h1, h2, h3, h4, h5, h6 {
   
   background-color: white !important;
   
+}
+.contactinfo {
+      margin-top: 50px;
+      background-color: white;
+      width: 100%;
+      height: 100%;
+      padding: 50px;
 }
 
 .downbutt {
@@ -104,6 +111,9 @@ body, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
   text-align: left;
 
+}
+.hcontact2 {
+  text-align: left;
 }
 #submit:hover {
         opacity: 0.5;
@@ -408,7 +418,7 @@ input {
 
 h2  {
  
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 20px;
   
    text-align: center;   
@@ -418,7 +428,7 @@ h2  {
 
 h3  {
    
-    font-size: 35px;  
+    font-size: 40px;  
   
     text-align: center;
 
@@ -700,11 +710,6 @@ text-align: center;
 
    
   
-
-}
-
-.contactcontainer {
-height: 800px;
 
 }
 
@@ -1141,7 +1146,19 @@ color: red }
   background-size: 300px 200px;
 }
 
+.bt {
+  float:left
 
+  }
+
+.sidebar-menu {
+  color: #00a8f2;
+  font-size: 20px;
+}
+
+.black {
+  color: black;
+}
 
 .special {
   margin-bottom: 50px;
@@ -1196,7 +1213,7 @@ padding: 80px;
 }
 /*aboutus page container backgorund*/
 #container {
-  background-color: #F7F7F7;
+  background-color: white;
   padding-bottom: 30px;
 }
 .wifi {
@@ -1213,19 +1230,13 @@ padding: 80px;
   float: right;
 }
 
-.col-lg-4  {
-  padding-left: 0px;
 
-
+.col-lg-7 {
+  margin-right: 50px;
 }
-.col-md-4 {
-   padding-left: 0px;
-  
-  }
-  .col-xs-4 {
-     padding-left: 0px;
-
-   }
+.col-md-7 {
+  margin-right: 50px;
+}
     /*!
   }
  * Start Bootstrap - Small Business HTML Template (http://startbootstrap.com)
