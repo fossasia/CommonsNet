@@ -40,11 +40,11 @@ app.controller('HomeCtrl', ['$scope', 'blog', function($scope, blog) {
           ]
            $scope.parts = [
            {
-            title: 'FILL FORM',
-            description: 'Collect all details about your Wifi connection and put them into a prepared an easy-to-follow form.'
+            title: 'FILL',
+            description: 'Collect all details about Wifi you provided and put them into a prepared an easy-to-follow form.'
            },
             {
-            title: 'GENERATE',
+            title: 'CREATE',
             description: 'As you finish filling, click save button to generate file or code and share with your customers.'
            },
             {
