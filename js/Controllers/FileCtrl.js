@@ -3,12 +3,10 @@
             $scope.password = $routeParams.password;
             $scope.security = $routeParams.security;
             $scope.standard = $routeParams.standard;
-            $scope.payment = $routeParams.payment;
-            $scope.fee = $routeParams.fee;
-            $scope.timelimit = $routeParams.timelimit;
-            $scope.limit = $routeParams.limit;
             $scope.service = $routeParams.service;
             $scope.ban_control = $routeParams.ban_control;
+            $scope.limits = JSON.parse($routeParams.limits);
+            $scope.captiveportal = $routeParams.captiveportal;
             $scope.specialdevices = $routeParams.specialdevices;
             $scope.specialdevicesfield = $routeParams.specialdevicesfield;
             $scope.specialsettings= $routeParams.specialsettings;
@@ -16,9 +14,19 @@
             $scope.downloading = $routeParams.downloading;
             $scope.liking = $routeParams.liking;
             $scope.acceptterms = $routeParams.acceptterms;
+            $scope.register = $routeParams.register;
+            $scope.newsletter = $routeParams.newsletter;
+            $scope.mobilenumber = $routeParams.mobilenumber;
+            $scope.emailaddress = $routeParams.emailaddress;
+            $scope.personaldetails = $routeParams.personaldetails;
+            $scope.autodisable = $routeParams.autodisable;
+            $scope.rnumber = $routeParams.rnumber;
+            $scope.ownrestr = $routeParams.ownrestr;
+            $scope.ownrestfield = $routeParams.ownrestfield;
             $scope.restrictions = $routeParams.restrictions;
             $scope.country = $routeParams.country;
             $scope.law = $routeParams.law;
-            console.log($routeParams)
+            console.log($scope.limits)
+
 
        }])

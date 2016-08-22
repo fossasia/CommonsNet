@@ -1,6 +1,6 @@
  app.controller('ContactCtrl', function ($scope, $http) {
         $scope.title = 'Contact us';
-        $scope.subtitle = 'Many questions are answered in our FAQ and you can find out more about our CommonsNet network here. If you are unable to find your answer via our FAQ or website please contact us'
+        $scope.subtitle = 'Many questions are answered in our FAQ and you can find out more about our CommonsNet network and community here.      If you are unable to find your answer via our FAQ or website please contact us'
         $scope.title2 = 'Mailing Address'
         $scope.subtitle2 = 'Please note: we are a distributed team working all over the world. We don’t have an office, but if you need to send us an  email please use above form or send it to:'
         $scope.address = 'commonsnet.team@gmail.com '
