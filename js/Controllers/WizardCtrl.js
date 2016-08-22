@@ -67,9 +67,17 @@
         vm.gotoStep = function(newStep) {
           vm.currentStep = newStep;
           if (vm.currentStep === 3) {
-
-              var link = "http://commonsnet.herokuapp.com/#/file?ssid=" + vm.ssid + "&password=" + vm.password + "&security=" + vm.securitytypes + "&standard=" + vm.wifistandards + "&ban_control=" + vm.dualbandyes + "&payment=" + vm.paymentfieldyes + "&fee=" + vm.paymentfield + "&timelimit=" + vm.timelimityes + "&limit=" + vm.timelimitfield + "&service=" + vm.serviceyes +  "&specialdevices=" + vm.specialdevices + "&devices=" + vm.specialdevicesfield + "&specialsettings=" + vm.specialsettings + "&settings=" + vm.specialsettingsfield + "&acceptterms=" + vm.acceptterms + "&liking=" + vm.socialprofile + "&downloading=" + vm.downloading + "&restrictions=" + vm.country + "&country=" + vm.countries + "&law=" + vm.legalrestrictions             
+              var table = []
+               for (var i=0; i<$scope.choices.length; i++) {
+                if ($scope.choices[i].payment || $scope.choices[i].timelimit || $scope.choices[i].datalimit) {
+                    table.push({payment: $scope.choices[i].payment, timelimit: $scope.choices[i].timelimit, datalimit: $scope.choices[i].datalimit});
+                     console.log(table)
+                    }
+                  }
+             
+              var link = "http://commonsnet.herokuapp.com/#/file?ssid=" + vm.ssid + "&password=" + vm.password + "&security=" + vm.securitytypes + "&standard=" + vm.wifistandards + "&datarate=" + vm.datarate + "&ban_control=" +  vm.dualbandyes + "&service=" + vm.serviceyes +  "&limits=" + JSON.stringify(table) + "&captiveportal=" + vm.captiveportal + "&specialdevices=" + vm.specialdevices + "&devices=" + vm.specialdevicesfield + "&specialsettings=" + vm.specialsettings + "&settings=" + vm.specialsettingsfield + "&acceptterms=" + vm.acceptterms + "&liking=" + vm.socialprofile + "&downloading=" + vm.downloading + "&register=" + vm.register + "&newsletter=" +vm.newsletter + "&mobilenumber=" + vm.mobilenumber + "&emailaddress=" + vm.emailaddress + "&personaldetails=" + vm.personaldetails + "&autodisable=" + vm.autoupdatedisabled + "&rnumber=" +vm.referencenumber + "&ownrestr=" + vm.ownrestrictionyes + "&ownrestfield=" + vm.ownrestrictionsfield + "&limitdevices=" + vm.limitdevicesyes + "&howmany=" + vm.limitdevicesfield+ "&restrictions=" + vm.country + "&country=" + vm.countries + "&law=" + vm.legalrestrictions             
               vm.code = '<a href="' + link + '">CommonsNet</a>'
+
           }
         }
         
@@ -134,10 +142,12 @@
            
           console.log($scope.choices)
               var line = ''
+             
               for (var i=0; i<$scope.choices.length; i++) {
                 if ($scope.choices[i].payment || $scope.choices[i].timelimit || $scope.choices[i].datalimit) {
                     result = result.replace('<text:h text:style-name="P166" text:outline-level="3">The Owner declares that using Wifi is free of any charge, as well there are not any time or data limits.</text:h>', '<text:h text:style-name="P166" text:outline-level="3">The Owner declares that there are some limits of using Wifi in terms of payment, time and data usage.</text:h>')
                     line += '<text:p text:style-name="P155">'+ "Paid:" +  " " + $scope.choices[i].payment +  " " + " " + "Time Limit: " +  " " + $scope.choices[i].timelimit + " " + " " + "Data Usage Limit:" + " " +  $scope.choices[i].datalimit + '</text:p>'
+                    
                 }
               }
               result = result.replace('<text:p text:style-name="P155">LIMITS_FIELD</text:p>', line);
