@@ -31,7 +31,7 @@ body {
 }
 body, h1, h2, h3, h4, h5, h6 {
    font-family: 'Titillium Web', sans-serif;
-    font-weight: 300;
+   font-weight: 300;
 }
 
 .navbar-fixed-top .nav {
@@ -57,6 +57,13 @@ body, h1, h2, h3, h4, h5, h6 {
   
   background-color: white !important;
   
+}
+.contactinfo {
+      margin-top: 50px;
+      background-color: white;
+      width: 100%;
+      height: 100%;
+      padding: 50px;
 }
 
 .downbutt {
@@ -104,6 +111,9 @@ body, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
   text-align: left;
 
+}
+.hcontact2 {
+  text-align: left;
 }
 #submit:hover {
         opacity: 0.5;
@@ -408,7 +418,7 @@ input {
 
 h2  {
  
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 20px;
   
    text-align: center;   
@@ -418,7 +428,7 @@ h2  {
 
 h3  {
    
-    font-size: 35px;  
+    font-size: 40px;  
   
     text-align: center;
 
@@ -691,20 +701,15 @@ text-align: center;
 .generate {
  
    height: 100%;
-   background-color: white;
    float: center;
    display: inline-block;
    margin-top: 50px;
-   padding: 40px;
+   padding: 80px;
+   background-color: white;
 
 
    
   
-
-}
-
-.contactcontainer {
-height: 800px;
 
 }
 
@@ -737,6 +742,13 @@ height: 800px;
     background-attachment: fixed;
 
 }
+/*.picture1 {
+   background-image: url("../img/phone.jpg") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}*/
 
 
  .transparent {
@@ -745,13 +757,19 @@ height: 800px;
     margin-top: 20px;
     margin-right: 200px;
 }
-
+.abo { 
+    background-image: url("../img/lap.jpg") !important;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
 
 .instruction {
     /*border-bottom: 2px solid #00a8f2;*/
     background-color: white;
     margin: 5px;
-    padding: 25px;
     opacity: 0.8;
     width: 32%;
 }
@@ -813,6 +831,57 @@ footer{
 
 }
 
+.fa-quote-left {
+  color: #00a8f2;
+}
+.spa {
+  margin-top: 50px;
+  margin-right: 100px;
+}
+
+.spa2 {
+    margin-right: 150px;
+
+}
+.spa3 {
+  margin-top: 80px
+} 
+.spa4 {
+  margin-top: 70px;
+}
+.pic {
+  margin-top: 50px;
+}
+.picture1 {
+    background-image: url("../img/phone.jpg") !important;
+    height: 250px;
+    width: 400px;
+    background-size: 400px 300px;
+    margin-top: 20px;
+  
+
+}
+
+.picture2 {
+    background-image: url("../img/phonecopy.jpg") !important;
+    background-size: 400px 300px;
+    height: 250px;
+    width: 400px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+ 
+   
+
+}
+
+.picture3 {
+  background-image: url("../img/men.jpg") !important;
+    background-size: 400px 300px;
+    height: 250px;
+    width: 400px;
+    margin-bottom: 50px;
+    margin-top: 70px;
+}
 .section-heading-spacer {
      border-top: 1px solid #00a8f2;
 
@@ -823,13 +892,15 @@ footer{
     
 
 }
-
+.hcon {
+  text-align: left;
+}
 .content-section-b {
   border-bottom: none;
   border-top: none;
   background-color: white;
   
-  padding: 40px;
+  padding: 50px;
 
 }
 
@@ -840,7 +911,9 @@ footer{
   
 
 }
-
+.nopad {
+  padding-left: 0px;
+}
 .ag {
   margin-top: 50px;
 }
@@ -966,9 +1039,10 @@ font-size: 18px;
 .col-lg-6  {
     /*display: inline-block;*/
     padding-left: 0px;
-
-    
+    margin-right: 80px;
 }
+
+
 #cb2 
 {
     display: inline-block;
@@ -1141,7 +1215,19 @@ color: red }
   background-size: 300px 200px;
 }
 
+.bt {
+  float:left
 
+  }
+
+.sidebar-menu {
+  color: #00a8f2;
+  font-size: 20px;
+}
+
+.black {
+  color: black;
+}
 
 .special {
   margin-bottom: 50px;
@@ -1196,7 +1282,7 @@ padding: 80px;
 }
 /*aboutus page container backgorund*/
 #container {
-  background-color: #F7F7F7;
+  background-color: #F8F8F8;
   padding-bottom: 30px;
 }
 .wifi {
@@ -1204,6 +1290,7 @@ padding: 80px;
   padding: 150px;
 
 }
+
 
 .note-editor.note-frame .note-editing-area .note-editable  {
   height: 200px;
@@ -1213,19 +1300,16 @@ padding: 80px;
   float: right;
 }
 
-.col-lg-4  {
-  padding-left: 0px;
-
-
+.backgr {
+  background-color: #F5F5F5;
 }
-.col-md-4 {
-   padding-left: 0px;
-  
-  }
-  .col-xs-4 {
-     padding-left: 0px;
 
-   }
+.col-lg-7 {
+  margin-right: 50px;
+}
+.col-md-7 {
+  margin-right: 50px;
+}
     /*!
   }
  * Start Bootstrap - Small Business HTML Template (http://startbootstrap.com)
