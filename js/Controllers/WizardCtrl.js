@@ -1,11 +1,14 @@
  app.controller('WizardController', ['$scope', 'wizard', 'file', function($scope, wizard, file) { 
-      var vm = this;       
+      var vm = this; 
+      // vm.legalformatted = ''      
       var table = [];
             wizard.success(function(data) { 
                $scope.table = data
                table=data
+             
     
               })
+              
               $scope.update = function() {
               var country = vm.countries.name;
               for (var i=0; i<table.length; i++) {
@@ -26,11 +29,6 @@
           {name:'Russia' }
         ];
 
-        // $scope.add = function () {
-        //   var paidrow =   angular.element(document.querySelector('#paidrow'));
-        //        var childrow = $compile(paidrow)(paidrow);
-        //        container.append(childrow);
-        //      }
     
       $scope.choices = [{'id':'choice1', "payment": '', "timelimit": '', "datalimit": ''}];
     
@@ -108,27 +106,53 @@
         
         // function save to replacing values in fodt file based on different wizard form fields. 
         vm.save = function() {
+
+
           var table = [];
             file.success(function(data){
+
+         
+                        
+                                    // console.log(vm.legalrestrictions)
+                                    // vm.legalformatted = ''
+                                    // for (var i=0; i<vm.legalrestrictions.length; i++) {
+                                    //   vm.legalformatted +=  '<text:p text:style-name="P152">' + vm.legalrestrictions[i] + '</text:p>'
+                                    //   console.log(vm.legalformatted);
+                                      
+                                 // }
+                              
+            if(vm.countries) {
+              var current_country_name = vm.countries.name
+                for (var i=0; i < $scope.table.length; i++){
+                  if (current_country_name === $scope.table[i].country){
+                    for(var j =0; j < $scope.table[i].restrictions.length; j++){
+                      vm.legalformatted += '<text:p text:style-name="P152">' + $scope.table[i].restrictions[j] + '</text:p>'
+                  
+                      }
+                 
+              }
+            }
+          }
+                              
             var result = data.replace("INPUT_SSID", vm.ssid);
-                result = result.replace("NETWORK_NAME", "The owner provides" + " "  + vm.ssid +  " " + "network connection")
+                result = result.replace("NETWORK_NAME", "The Owner provides" + " "  + vm.ssid +  " " + "network connection")
               
               if ((vm.password !== "") && (typeof vm.password !== "undefined")) {
-                  result = result.replace("INPUT_PASSWORD", "The owner informs that password is" + " " + vm.password);
+                  result = result.replace("INPUT_PASSWORD", "The Owner informs that password is" + " " + vm.password);
                   }
               else  {
                   result = result.replace("INPUT_PASSWORD", "The owner declars that there is no password")
               }
               if ((vm.securitytypes !== "") && (typeof vm.securitytypes !== "undefined") && (vm.securitytypes !== "OPEN")) {
-                  result  = result.replace("SECURITY_TYPE", "The owner informs that network is secured under" + " " + vm.securitytypes);
+                  result  = result.replace("SECURITY_TYPE", "The Owner informs that network is secured under" + " " + vm.securitytypes);
               }
               if((vm.securitytypes === "OPEN") && (vm.securitytypes !== "") && (typeof vm.securitytypes !== "undefined") )
-                  result = result.replace("SECURITY_TYPE", "The owner declares that the network is" + " " + vm.securitytypes)
+                  result = result.replace("SECURITY_TYPE", "The Owner declares that the network is" + " " + vm.securitytypes)
              else {
-                  result = result.replace("SECURITY_TYPE", "The owner declars that the network is unsecured")
+                  result = result.replace("SECURITY_TYPE", "The Owner declars that the network is unsecured")
              }
               if((vm.wifistandards !== "") && (typeof vm.wifistandards !== "undefined") )
-                  result = result.replace("STANDARD_WIFI", "The owner declares that the network uses" + " " + vm.wifistandards + "" + "standard")
+                  result = result.replace("STANDARD_WIFI", "The Owner declares that the network uses" + " " + vm.wifistandards + " " + "standard")
              else {
                   result = result.replace('<text:p text:style-name="P149">STANDARD_WIFI</text:p>', '')
              }
@@ -154,12 +178,12 @@
       
        
             if (vm.serviceyes ==='yes') {
-                result  = result.replace("SERVICE_FIELD", "The owner guarantees Wifi service" );
+                result  = result.replace("SERVICE_FIELD", "The Owner guarantees Wifi service" );
              // <text:h text:style-name="P132" text:outline-level="3">The service is provided &quot;as is&quot;, with no warranty or liability of whatsoever kind</text:h>
 
               }
             else {
-                  result  = result.replace("SERVICE_FIELD", "The owner does not guarantee Wifi service");
+                  result  = result.replace("SERVICE_FIELD", "The Owner does not guarantee Wifi service");
               }
 
             if (vm.specialdevices === "yes" || vm.specialsettings === "yes" || vm.socialprofile === "yes" || vm.acceptterms === "yes" || vm.socialprofile === "yes" || vm.downloading === "yes" || vm.register === "yes" || vm.newsletter === "yes" || vm.mobilenumber === "yes" || vm.emailaddress === "yes" || vm.personaldetails === "yes" || vm.autoupdatedisabled === "yes" || vm.referencenumber === "yes" ) {
@@ -168,79 +192,76 @@
             else {
               result = result. replace("CONDITIONS", "The Owner declares that there are not any requirmenets to use Wifi")
               result = result.replace('<text:h text:style-name="P164" text:outline-level="3">The Owner informs that to use Wifi the User is required to:</text:h>', ' ')
-              result = result.replace('<text:list xml:id="list533319923915382650" text:style-name="L2"><text:list-item><text:p text:style-name="P155">SPECIAL_DEVICES</text:p></text:list-item><text:list-item><text:p text:style-name="P155">SPECIAL SETTINGS</text:p></text:list-item><text:list-item><text:p text:style-name="P155">ACCEPT_TERMS</text:p></text:list-item><text:list-item><text:p text:style-name="P155">LIKE</text:p></text:list-item><text:list-item><text:p text:style-name="P155">DOWNLOAD</text:p></text:list-item> <text:list-item><text:p text:style-name="P155">REGISTER</text:p></text:list-item><text:list-item><text:p text:style-name="P155">NEWSLETTER</text:p></text:list-item><text:list-item><text:p text:style-name="P155">MOBILE_NUMER</text:p></text:list-item> <text:list-item><text:p text:style-name="P155">EMAIL_ADDRESS</text:p></text:list-item><text:list-item><text:p text:style-name="P155">PERSONAL_DETAILS</text:p></text:list-item><text:list-item><text:p text:style-name="P155">DISABLE_FUNCTION</text:p></text:list-item><text:list-item><text:p text:style-name="P155">REFERENCE_NUMBER</text:p> </text:list-item></text:list>', '')
+              result = result.replace('<text:list xml:id="list533319923915382650" text:style-name="L2"><text:list-item><text:p text:style-name="P155">SPECIAL_DEVICES</text:p></text:list-item><text:list-item><text:p text:style-name="P155">SPECIAL SETTINGS</text:p></text:list-item><text:list-item><text:p text:style-name="P155">ACCEPT_TERMS</text:p></text:list-item><text:list-item><text:p text:style-name="P155">LIKE</text:p></text:list-item><text:list-item><text:p text:style-name="P155">DOWNLOAD</text:p></text:list-item> <text:list-item><text:p text:style-name="P155">REGISTER</text:p></text:list-item><text:list-item><text:p text:style-name="P155">NEWSLETTER</text:p></text:list-item><text:list-item><text:p text:style-name="P155">MOBILE_NUMER</text:p></text:list-item> <text:list-item><text:p text:style-name="P155">EMAIL_ADDRESS</text:p></text:list-item><text:list-item><text:p text:style-name="P155">PERSONAL_DETAILS</text:p></text:list-item><text:list-item><text:p text:style-name="P155">DISABLE_FUNCTION</text:p></text:list-item><text:list-item><text:p text:style-name="P155">REFERENCE_NUMBER</text:p> </text:list-item></text:list>', ' ')
               }
             
-            if (vm.specialdevices ==='yes') {
-              result  = result.replace("SPECIAL_DEVICES", 'use special devices like' + ' ' + vm.specialdevicesfield );
+            if (vm.specialdevices === 'yes') {
+                  result  = result.replace("SPECIAL_DEVICES", 'use special devices like' + ' ' + vm.specialdevicesfield);
                   }
             else {
               result  = result.replace('<text:p text:style-name="P155">SPECIAL_DEVICES</text:p>', ' ');
-
                   } 
 
-             if (vm.specialsettings ==='yes') {
+             if (vm.specialsettings === 'yes') {
                 result  = result.replace("SPECIAL_SETTINGS", 'run special settings like' + ' ' + vm.specialsettingsfield);
                   }
             else {
-                result  = result.replace('<text:p text:style-name="P155">SPECIAL SETTINGS</text:p>', " ");
-
+                result  = result.replace('<text:p text:style-name="P155">SPECIAL SETTINGS</text:p>', ' ');
                   } 
 
-             if (vm.acceptterms ==='yes') {
+             if (vm.acceptterms === 'yes') {
                 result  = result.replace("ACCEPT_TERMS", 'accept terms of use');
                   }
             else {
-                result  = result.replace('<text:p text:style-name="P155">ACCEPT_TERMS</text:p>', " ");
+                result  = result.replace('<text:p text:style-name="P155">ACCEPT_TERMS</text:p>', ' ');
 
                   } 
 
       
-            if (vm.socialprofile ==='yes') {
+            if (vm.socialprofile === 'yes') {
                 result  = result.replace("LIKE", 'like social profile');
                   }
             else {
-                result  = result.replace('<text:p text:style-name="P155">LIKE</text:p>', " ");
+                result  = result.replace('<text:p text:style-name="P155">LIKE</text:p>', ' ');
 
 
                   } 
-            if (vm.downloading ==='yes') {
+            if (vm.downloading === 'yes') {
                 result  = result.replace("DOWNLOAD", 'download terms of use pdf file');
                   }
             else {
-                result  = result.replace('<text:p text:style-name="P155">DOWNLOAD</text:p>', " ");
-
+                result  = result.replace('<text:p text:style-name="P155">DOWNLOAD</text:p>', ' ');
                   } 
             if (vm.register === 'yes') {
                 result = result.replace("REGISTER", 'register to website to use Wifi')
             }
-            else {
+            else  {
                 result = result.replace('<text:p text:style-name="P155">REGISTER</text:p>', ' ')
             }
             if (vm.newsletter === 'yes') {
                 result = result.replace("NEWSLETTER", 'sign up to a newsletter')
             }
             else {
-              result = result.replace('<text:p text:style-name="P155">NEWSLETTER</text:p>', '')
+              result = result.replace('<text:p text:style-name="P155">NEWSLETTER</text:p>', ' ')
             }
             if (vm.mobilenumber === 'yes') {
               result = result.replace("MOBILE_NUMER", 'give a mobile number')
             }
             else  {
-              result = result.replace('<text:p text:style-name="P155">MOBILE_NUMER</text:p>', '')
+              result = result.replace('<text:p text:style-name="P155">MOBILE_NUMER</text:p>', ' ')
             }
 
             if (vm.emailaddress === 'yes') {
               result = result.replace("EMAIL_ADDRESS", 'give an email address')
             }
             else { 
-              result = result.replace('<text:p text:style-name="P155">EMAIL_ADDRESS</text:p>', '') 
+              result = result.replace('<text:p text:style-name="P155">EMAIL_ADDRESS</text:p>', ' ') 
             }
              if (vm.personaldetails === 'yes') {
               result = result.replace("PERSONAL_DETAILS", 'provide personal details like age, gender etc.')
             }
             else { 
-              result = result.replace('<text:p text:style-name="P155">PERSONAL_DETAILS</text:p>', '') 
+              result = result.replace('<text:p text:style-name="P155">PERSONAL_DETAILS</text:p>', ' ') 
             }
             if (vm.autoupdatedisabled === 'yes') {
               result = result.replace("DISABLE_FUNCTION", 'disable auto-update function')
@@ -278,8 +299,8 @@
             result = result.replace('<text:p text:style-name="P152">FIELD_RESTRICTIONS</text:p>', ' ')
           }
           else {
-            result = result.replace("LEGAL_RESTRICTIONS", "The owner declares that the law of" + " " + vm.countries + " " + "prohibits:")
-            result = result.replace("FIELD_RESTRICTIONS", vm.legalrestrictions)
+            result = result.replace("LEGAL_RESTRICTIONS", "The owner declares that the law prohibits:")
+            result = result.replace('<text:p text:style-name="P152">FIELD_RESTRICTIONS</text:p>', vm.legalformatted)
           }
           
           
