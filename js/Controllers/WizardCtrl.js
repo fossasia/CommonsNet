@@ -1,4 +1,4 @@
- app.controller('WizardController', ['$scope', 'wizard', 'file', function($scope, wizard, file) { 
+ app.controller('WizardController', ['$scope', 'wizard', 'file', 'countryService', function($scope, wizard, file, countryService) { 
       var vm = this;       
       var table = [];
             wizard.success(function(data) { 
@@ -18,13 +18,7 @@
 
 
    
-        $scope.countries = [
-          {name:'France' },
-          {name:'Poland' },
-          {name:'Germany' },
-          {name:'USA' },
-          {name:'Russia' }
-        ];
+        $scope.countries = countryService.getCountries();
 
         // $scope.add = function () {
         //   var paidrow =   angular.element(document.querySelector('#paidrow'));
