@@ -95,18 +95,12 @@ var app = angular.module('website', ['ngRoute', 'summernote']);
 
     
         
-        app.controller('WizardController', function ($scope, $http) {
+        app.controller('WizardController', function ($scope, $http, countryService) {
          // contrller function - different steps in Wizard Form. Defining steps, different names and template which is used
 
 
    
-        $scope.countries = [
-          {name:'France' },
-          {name:'Poland' },
-          {name:'Germany' },
-          {name:'USA' },
-          {name:'Russia' }
-        ];
+        $scope.countries = countryService.getCountries();
 
          // getting data from JSON file on ng-change select 
     $scope.update = function() {
