@@ -108,7 +108,7 @@ var app = angular.module('website', ['ngRoute', 'summernote']);
          console.log(country);
       
        var table = [];
-         $http.get('restrictions.txt').success(function(data) {
+         $http.get('restrictions.json').success(function(data) {
            table=data
            for (var i=0; i<table.length; i++) {
               console.log(table[i].country);
