@@ -13,6 +13,10 @@
     <label for="location" class="required ">Location (Address) </label>
     <input type="text" name="location" id="location"  class="form" ng-model="vm.location" />
   </div>
+  <div class="col-lg-6 col-md-6 col-xs-6">
+    <label for="isp" class="required ">Internet Service Provider </label>
+    <input type="text" name="isp" id="isp"  class="form" ng-model="vm.isp" />
+  </div>
  
  </div>
   <div class="col-lg-1 col-md-1 col-xs-1"></div>
@@ -25,13 +29,13 @@
                     <!-- col-lg-5 col-md-5 col-xs-10 start  left inputs-->
                   <div class="col-lg-6 col-md-6 col-xs-12">
              
-                         <label for="male" class="required ">SSID </label>
+                         <label for="male" class="required ">Network name </label>
   								          <input type="text" name="ssid" id="ssid"  class="form "  ng-model="vm.ssid"  required/>
                           <label for="male">WIFI Password</label>
                             <input type="text" name="password" id="password"  class="form" ng-model="vm.password" />
-                          <label for="male">Authentication</label>
+                          <label for="male">Authentication (Security) </label>
                              <select type="text" name="security"  class="form "  id="security" ng-model="vm.securitytypes" required>
-                           
+                                <option value="uknown">Unknown</option>
                           		  <option value="OPEN">Open</option>
                                 <option value="MAC">Mac Authentication</option>
                           		  <option value="WEP">WEP</option> 
@@ -41,14 +45,16 @@
                           		  <option value="WPA+AES">WPA+AES</option>
                           		  <option value="WPA2+AES">WPA2+AES</option>
                           	</select>
-                             <label for="male">Data rate</label>
-                            <input type="text" name="datarate" id="datarate"  class="form" ng-model="vm.datarate" />
+                          
                               
                         </div>
                         <div class="col-lg-6 col-md-6 col-xs-12">
+                          <label for="male">Speed (for e.g. 54 Mbps) </label>
+                            <input type="text" name="datarate" id="datarate"  class="form" ng-model="vm.datarate" />
                          
                           <label for="male">WiFi Standards <a class="btn btn-info btn-xs standard-help" data-toggle="standard-modal" data-target="#standar_modal">?</a></label>
                                 <select type="text" name="standard"  class="form "  id="wifi-standards" ng-model="vm.wifistandards" required>
+                                    <option value="Unknown">Unknown</option>
                                     <option value="802.11a">802.11a</option>
                                     <option value="802.11b">802.11b</option>
                                     <option value="802.11g">802.11g</option>
@@ -80,13 +86,13 @@
       <div class="col-lg-10 col-md-10 col-xs-10">
         <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-usd" aria-hidden="true"></i> Payment and limits<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
   <div class="col-lg-4 col-md-4 col-xs-4">
-     <label for="cb1" class="labels vl-center"> PAYMENT </label>
+     <label for="cb1" class="labels vl-center">PAYMENT</label>
      </div>
       <div class="col-lg-4 col-md-4 col-xs-4">
      <label for="cb1" class="labels vl-center">TIME LIMIT </label>
      </div>
       <div class="col-lg-4 col-md-4 col-xs-4">
-        <label for="cb1" class="labels vl-center" > DATA USAGE </label>
+        <label for="cb1" class="labels vl-center">DATA USAGE</label>
       </div>
  <div ng-repeat="choice in choices">
 
