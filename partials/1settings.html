@@ -1,6 +1,22 @@
 
 <!-- form wireless settings  -->
 <form>
+<div class="row">
+ <div class="col-lg-1 col-md-1 col-xs-1"></div>
+   <div class="col-lg-10 col-md-10 col-xs-10">
+              <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> 
+                 <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  Location<hr style="margin:0;border-width: 1px; border-color: #00a8f2;">  
+               </h5>
+
+ <div class="col-lg-6 col-md-6 col-xs-6">
+    <label for="location" class="required ">Location (Address) </label>
+    <input type="text" name="location" id="location"  class="form" ng-model="vm.location" />
+  </div>
+ 
+ </div>
+  <div class="col-lg-1 col-md-1 col-xs-1"></div>
+</div>
   <div class="row">
       <div class="col-lg-1 col-md-1 col-xs-1"></div>
           <div class="col-lg-10 col-md-10 col-xs-10">
@@ -17,7 +33,7 @@
                              <select type="text" name="security"  class="form "  id="security" ng-model="vm.securitytypes" required>
                            
                           		  <option value="OPEN">Open</option>
-                                 <option value="MAC">Mac Authentication</option>
+                                <option value="MAC">Mac Authentication</option>
                           		  <option value="WEP">WEP</option> 
                           		  <option value="WPA+TKIP">WPA+TKIP</option>
                           		  <option value="WPA+TKIP/AES">WPA+TKIP/AES</option>
