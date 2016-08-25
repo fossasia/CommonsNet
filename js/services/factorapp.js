@@ -12,7 +12,7 @@ app.factory('wizard', ['$http', function($http) {
 
 app.factory('file', ['$http', function($http){
 
-return $http.get('http://127.0.0.1:8083/generatefile.fodt') 
+return $http.get('http://commonsnet.herokuapp.com/generatefile.fodt') 
         .success(function(data) { 
             return data; 
 
