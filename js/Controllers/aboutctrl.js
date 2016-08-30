@@ -4,7 +4,7 @@
 			
              $scope.descriptions = [
               {
-              content: 'We are a network of people who believe that network transparency and highest standards are possible. We wan to see the trustworthy global network, and feel secured, but not restricted. ',
+              content: 'We are a network of people who believe that network transparency is possible to build and we want to have an important impact on doing that. That is why we have prepared a great tool to help everyone make his or her Wifi details open and clear to everyone.',
               title: 'What we do'
         
 
@@ -18,10 +18,10 @@
             ]
          
               
-                $scope.maintitle1 = 'We are a team of Wifi enthusiasts.',
-                $scope.maintitle2 = 'Across the world there are different legal settings and requirements for sharing of Internet connections. CommonsNet is a website that helps to make them transparent to users.',
+                $scope.maintitle1 = 'We are a team of Wifi enthusiasts',
+                $scope.maintitle2 = 'Across the world there are different legal settings and requirements for sharing of Internet connections. CommonsNet is a webiste which reflects these details and make them transparent to users.',
                 $scope.maintitle3 = 'We want people to be provided with clear data about wireless connection they use' 
-
+                $scope.maintitle4 = 'Our system enables to collect all Wifi details in a easy-to-follow wizrd form, and then based on that details generate a human readable pdf file and a machine readeable link'
             
             
             

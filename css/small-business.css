@@ -21,6 +21,10 @@ body {
 .addfield {
   float:right;
 }
+.blue {
+  color: #00a8f2;
+ 
+}
 .bor {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -72,7 +76,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 .file {
   height: 100%;
-  padding: 50px;
+  
   margin: 20px;
   background-color: white;
 
@@ -138,10 +142,7 @@ margin-top: 50px;
    
 }
   }
-.blue {
-  color: #00a8f2;
- 
-}
+
 
 
 .progress-indicator>li .bubble {
@@ -995,7 +996,7 @@ text-align: center;
 }
 
 p {
-margin-bottom: 30px;
+margin-bottom: 10px;
 font-size: 18px;
 
 

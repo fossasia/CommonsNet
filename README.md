@@ -30,7 +30,7 @@ See [instruction] (https://github.com/agwisniewska/CommonsNet/blob/master/docs/r
 
 ## Blog
 
-[Visit blog](commonsnetblog.wordpress.com) 
+[Visit blog](https://commonsnetblog.wordpress.com/) 
 
 ## Social Media
 - [Facebook](https://www.facebook.com/CommonsNetApp/) 

@@ -1,7 +1,7 @@
 app.factory('wizard', ['$http', function($http) { 
   return $http.get('restrictions.txt') 
         .success(function(data) { 
-            return data; 
+              return data; 
 
              
         })
