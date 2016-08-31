@@ -84,10 +84,11 @@
    
  
     <div class="row row5">
-    <h3 class="hcontact black"> <b> How it looks </b></h3>
+    <h3 class="hcontact black"> <b> {{ 'about_us.process.title' | translate }} </b></h3>
         <div class="col-lg-9 col-md-9 col-xs-9 nopad">
             <div ng-repeat="section in sections">
-              <app-info info="section"></app-info>
+              <h4> <b> {{ section.title | translate }} </b> </h4>
+              <p>{{ section.content | translate }}</p> 
           </div>
         </div>
     </div>

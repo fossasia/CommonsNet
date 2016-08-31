@@ -1,0 +1,23 @@
+{
+  "about_us": {
+    "process": {
+      "title": "How it looks",
+      "basic_details": {
+        "title": "Basic details",
+        "content": "We want people to know what are the basic settings of wireless connection like SSID, password, authentication, standard, provided service etc."
+      },
+      "payment_and_limits": {
+        "title": "Payment & time limit",
+        "content": "We believe people should get clear information if the wifi they want to use is paid or limited. This section helps you to provide users with clear information about your fee and other limits like data usage and time."
+      },
+      "conditions": {
+        "title": "Conditions",
+        "content": "We want also to make people aware of conditions to use wireless connection and let them know what do they need to do in order to connect to offered wifi."
+      },
+      "legal_restrictions": {
+        "title": "Legal restrictions",
+        "content": "We don’t want legal restrictions to be a boundary. We want people to be aware of things they are not allowed to do while connecting to Internet using a wireless connection in a specific place to protect them from the negative consequences."
+      }
+    }
+  }
+}
