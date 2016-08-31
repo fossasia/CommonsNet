@@ -1,83 +1,113 @@
-<div ng-controller="AboutCtrl">
-  <div class="container">
-    <div class="row row1">
-      <div class="col-lg-9 col-md-9 col-xs-9 nopad">
-        <h1 class="hcontact black pic">{{ 'about_us.title' | translate }}</h1>
-        <p>{{ 'about_us.description1' | translate }}</p>
-        <p>{{ 'about_us.description2' | translate }}</p>
-      </div>
-    <div class="col-lg-2 col-md-2 col-xs-2 space">
-    <div id="input" class="row">
+<div class="container" ng-controller="AboutCtrl">
+  <div class="row">
+    <div class="col-lg-9 col-md-9 col-xs-9">
+      <article>
+        <h1 class="black" id="about-us">
+          {{ 'about_us.title' | translate }}
+        </h1>
+        <p>
+          {{ 'about_us.description1' | translate }}
+        </p>
+        <p>
+          {{ 'about_us.description2' | translate }}
+        </p>
+
+        <h3 id="our-activity">
+          {{ 'about_us.activity.title' | translate }}
+        </h3>
+        <p>
+          {{ 'about_us.activity.content' | translate }}
+        </p>
+
+        <h3 id="what-we-can-do">
+          {{ 'about_us.offer.title' | translate }}
+        </h3>
+        <p>
+          {{ 'about_us.offer.content' | translate }}
+        </p>
+
+        <h3>
+          <i class="fa fa-1x fa-quote-left" aria-hidden="true"></i>
+          {{ 'about_us.mission_quote' | translate }}
+        </h3>
+
+        <h3 id="how-it-looks">
+          {{ 'about_us.process.title' | translate }}
+        </h3>
+
+        <h4>
+          {{ 'about_us.process.basic_details.title' | translate }}
+        </h4>
+        <p>
+          {{ 'about_us.process.basic_details.content' | translate }}
+        </p>
+
+        <h4>
+          {{ 'about_us.process.payment_and_limits.title' | translate }}
+        </h4>
+        <p>
+          {{ 'about_us.process.payment_and_limits.content' | translate }}
+        </p>
+
+        <h4>
+          {{ 'about_us.process.conditions.title' | translate }}
+        </h4>
+        <p>
+          {{ 'about_us.process.conditions.content' | translate }}
+        </p>
+
+        <h4>
+          {{ 'about_us.process.legal_restrictions.title' | translate }}
+        </h4>
+        <p>
+          {{ 'about_us.process.legal_restrictions.content' | translate }}
+        </p>
+      </article>
+    </div>
+    <div class="col-lg-2 col-md-2 col-xs-2">
       <section>
-        <h4 class="hcontact">In this section</h4>
+        <h4>In this section</h4>
         <ul class="child-sidebar-menu">
-          <li >
-            <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/about#row1">
+          <li>
+            <a class="sidebar-menu" href="#about-us">
               {{ 'about_us.title_short' | translate }}
             </a>
           </li>
           <li>
-            <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/about#row2">
+            <a class="sidebar-menu" href="#our-activity">
               {{ 'about_us.activity.title_short' | translate }}
             </a>
           </li>
           <li>
-            <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/about#row2">
+            <a class="sidebar-menu" href="#what-we-can-do">
               {{ 'about_us.offer.title_short' | translate }}
             </a>
           </li>
           <li>
-            <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/about#row5">
+            <a class="sidebar-menu" href="#how-it-looks">
               {{ 'about_us.process.title_short' | translate }}
             </a>
           </li>
         </ul>
       </section>
-    </div>
-    <div class="row">
+
+      <!-- TODO: move 'Connect with CommonsNet' to a directive -->
       <section>
-        <span>
-          <h4 class="hcontact">
-            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-            Connect with CommonsNet
-          </h4>
-        </span>
-        <div>
-          <form>
-            <span>
-              <input class="form" placeholder="Your email address" type="email" required="">
-              <button class="form-btn bt" type="submit">Sign up</button>
-            </span>
-          </form>
-        </div>
+        <h4>
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          Connect with CommonsNet
+        </h4>
+        <form>
+          <input
+            class="form"
+            type="email"
+            placeholder="Your email address"
+            required>
+          <button class="form-btn bt" type="submit">
+            Sign up
+          </button>
+        </form>
       </section>
-    </div>
-  </div>
-  <div class="row row2">
-    <div class="col-lg-9 col-md-9 col-xs-9 spa">
-      <div ng-repeat="description in descriptions">
-      <h3 class="text-left">{{ description.title | translate }}</h3>
-      <p>{{ description.content | translate }}</p>
-      </div>
-      </div>
-    </div>
-  </div>
-    <div class="row row3">
-      <div class="col-lg-9 col-md-9 col-xs-9 spa">
-        <h3 class="text-center">
-          <i class="fa fa-1x fa-quote-left" aria-hidden="true"></i>
-          {{ 'about_us.mission_quote' | translate }}
-        </h3>
-      </div>
-    </div>
-    <div class="row row5">
-      <h3 class="hcontact black">{{ 'about_us.process.title' | translate }}</h3>
-      <div class="col-lg-9 col-md-9 col-xs-9 nopad">
-        <div ng-repeat="section in sections">
-          <h4>{{ section.title | translate }}</h4>
-          <p>{{ section.content | translate }}</p>
-        </div>
-      </div>
     </div>
   </div>
 </div>
