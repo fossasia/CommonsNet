@@ -29,7 +29,27 @@
           {name:'Russia' }
         ];
 
+        $scope.standards = [
+          {standard: 'Unknown', value: "Unknown" },
+          {standard: '802.11a', value: "802.11a"},
+          {standard: '802.11b', value: '802.11b'},
+          {standard: '802.11g', value: '802.11g'},
+          {standard: '802.11n', value: '802.11n'},
+          {standard: '802.11ac', value: '802.11ac'}
+        ];
 
+        $scope.securities = [
+          {type: 'Unknown', value: 'Unknown'},
+          {type: "Open", value: "Open"},
+          {type: "Mac Authentication", value: "Mac Authentication"},
+          {type: "WEP", value: "WEP"},
+          {type: "WPA+TKIP", value: "WPA+TKIP"},
+          {type: "WPA+TKIP/AES", value: "WPA+TKIP/AES"},
+          {type: "WPA2/WPA", value: "WPA2/WPA"},
+          {type: "WPA+AES", value: "WPA+AES"},
+          {type: "WPA2+AES", value: "WPA2+AES"}
+
+        ];
       $scope.choices = [{'id':'choice1', "payment": '', "timelimit": '', "datalimit": ''}];
 
       $scope.addNewChoice = function() {
@@ -110,7 +130,7 @@
 
           var table = [];
             file.success(function(data){
-              
+
 
             if(vm.countries) {
               var current_country_name = vm.countries.name
@@ -151,7 +171,7 @@
               else  {
                   result = result.replace(' <text:p text:style-name="P209">SPEED</text:p>', ' ')
               }
-              // ISP 
+              // ISP
                if ((vm.isp !== "") && (typeof vm.isp !== "undefined")) {
                   result = result.replace("ISP", "The Internet Service Provider is:" + " " + vm.isp);
                   }
@@ -175,13 +195,13 @@
              else {
                   result = result.replace("SECURITY_TYPE", "The Network is unsecured")
              }
-             // WIFI STANDARDS 
+             // WIFI STANDARDS
               if((vm.wifistandards !== "") && (typeof vm.wifistandards !== "undefined") )
                   result = result.replace("STANDARD_WIFI", "The network uses" + " " + vm.wifistandards + " " + "standard")
              else {
                   result = result.replace('<text:p text:style-name="P210">STANDARD_WIFI</text:p>', '')
              }
-             
+
 
 
           // console.log($scope.choices)
