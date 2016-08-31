@@ -1,6 +1,6 @@
 
 // angular routes definded
-var app = angular.module('website', ['ngRoute', 'summernote']);
+var app = angular.module('website', ['ngRoute', 'summernote', 'pascalprecht.translate']);
     app.config(function ($routeProvider) {
         $routeProvider
             .when('/', {
@@ -36,6 +36,14 @@ var app = angular.module('website', ['ngRoute', 'summernote']);
             .otherwise ({redirectTo: '/'});
             
 
+    })
+    .config(function($translateProvider) {
+      $translateProvider.useStaticFilesLoader({
+        prefix: 'i18n/locale-',
+        suffix: '.json'
+      });
+      
+      $translateProvider.preferredLanguage('en');
     })
  
   

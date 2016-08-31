@@ -1,134 +1,83 @@
-
-
-<div ng-controller="AboutCtrl">   
-
+<div ng-controller="AboutCtrl">
   <div class="container">
-  <div class="row row1">
-
-    <div class="col-lg-9 col-md-9 col-xs-9 nopad">
-  
-        <h1 class="hcontact black pic"> <b> {{ maintitle1 }} </b> </h1>
-        <p> {{ maintitle2 }} </p>
-        <p> {{ maintitle4 }} </p>
-        
+    <div class="row row1">
+      <div class="col-lg-9 col-md-9 col-xs-9 nopad">
+        <h1 class="hcontact black pic">{{ 'about_us.title' | translate }}</h1>
+        <p>{{ 'about_us.description1' | translate }}</p>
+        <p>{{ 'about_us.description2' | translate }}</p>
+      </div>
+    <div class="col-lg-2 col-md-2 col-xs-2 space">
+    <div id="input" class="row">
+      <section>
+        <h4 class="hcontact">In this section</h4>
+        <ul class="child-sidebar-menu">
+          <li >
+            <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/about#row1">
+              {{ 'about_us.title_short' | translate }}
+            </a>
+          </li>
+          <li>
+            <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/about#row2">
+              {{ 'about_us.activity.title_short' | translate }}
+            </a>
+          </li>
+          <li>
+            <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/about#row2">
+              {{ 'about_us.offer.title_short' | translate }}
+            </a>
+          </li>
+          <li>
+            <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/about#row5">
+              {{ 'about_us.process.title_short' | translate }}
+            </a>
+          </li>
+        </ul>
+      </section>
     </div>
-     <div class="col-lg-2 col-md-2 col-xs-2 space"> 
-                        <div id="input" class="row">
-                          <section>
-                            <h4 class="hcontact">In this section </h4>
-                                <ul class="child-sidebar-menu">
-                                    <li >
-                                        <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/about#row1">About us</a>
-                                    </li>
-                                    <li>    
-                                        <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/about#row2">Our activity</a>
-                                    </li>
-                                    <li>
-                                        <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/about#row2">What we can do</a>
-                                    </li>
-                                    <li>
-                                        <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/about#row5">How it looks</a>
-                                    </li>
-
-                                </ul> 
-                            </section>
-                        </div>
-                        <div class="row">
-                            <section>
-                            <span>
-                                <h4 class="hcontact"><i class="fa fa-envelope-o" aria-hidden="true"></i> Connect with CommonsNet</h4> 
-                                
-                                </span>
-                                <div>
-                                    <form>
-                                      
-                                        <span>
-                                            <input class="form" placeholder="Your email address" type="email" required="">
-                                            <button class="form-btn bt" type="submit">Sign up</button>
-                                        </span>
-
-                                       
-
-                                    </form>
-                                </div>
-                            </section>
-                        </div>
- 
-     
-   </div>
-   <div class="row row2">
+    <div class="row">
+      <section>
+        <span>
+          <h4 class="hcontact">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            Connect with CommonsNet
+          </h4>
+        </span>
+        <div>
+          <form>
+            <span>
+              <input class="form" placeholder="Your email address" type="email" required="">
+              <button class="form-btn bt" type="submit">Sign up</button>
+            </span>
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="row row2">
     <div class="col-lg-9 col-md-9 col-xs-9 spa">
       <div ng-repeat="description in descriptions">
-            
-                   <app-info info="description"></app-info>
-              </div>
-          
-    
-    
-
-    </div>
-    
-   
-  
-         
-        
-    </div>
- 
-   
-  </div>
-       <div class="row row3">
-          <div class="col-lg-9 col-md-9 col-xs-9 spa">
-            <h3 class="text-center">  <i class="fa fa-1x fa-quote-left" aria-hidden="true"> </i> {{ maintitle3 }}  </h3>
-          </div>
+      <h3 class="text-left">{{ description.title | translate }}</h3>
+      <p>{{ description.content | translate }}</p>
       </div>
-   
- 
+      </div>
+    </div>
+  </div>
+    <div class="row row3">
+      <div class="col-lg-9 col-md-9 col-xs-9 spa">
+        <h3 class="text-center">
+          <i class="fa fa-1x fa-quote-left" aria-hidden="true"></i>
+          {{ 'about_us.mission_quote' | translate }}
+        </h3>
+      </div>
+    </div>
     <div class="row row5">
-    <h3 class="hcontact black"> <b> How it looks </b></h3>
-        <div class="col-lg-9 col-md-9 col-xs-9 nopad">
-            <div ng-repeat="section in sections">
-              <app-info info="section"></app-info>
-          </div>
+      <h3 class="hcontact black">{{ 'about_us.process.title' | translate }}</h3>
+      <div class="col-lg-9 col-md-9 col-xs-9 nopad">
+        <div ng-repeat="section in sections">
+          <h4>{{ section.title | translate }}</h4>
+          <p>{{ section.content | translate }}</p>
         </div>
+      </div>
     </div>
-    
-     
-   
-    </div>
-   
-  
-
-    <!-- 
-         <div class="col-lg-12 col-md-12 col-xs-12 padd">
-             <div class="row">
-          <div ng-repeat="description in descriptions">
-              <div class="col-lg-8 col-md-8 col-xs-8" >
-                   <app-info info="description"></app-info>
-              </div>
-          </div>
-          </div>
-        
-
-         
-           <div class="row">
-            <div ng-repeat="section in sections">
-              <div class="col-lg-6 col-md-6 col-xs-6" >
-                <app-info info="section"></app-info>
-              </div>
-          </div> -->
-     
-      <!--    
-         </div>
-      </div> -->
-
+  </div>
 </div>
-
-               
-               
-          
-              
-             
-              
-                    
-              
-            
