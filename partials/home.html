@@ -4,8 +4,8 @@
                 <div class="col-lg-12 col-md-12 col-xs-12">
                    <div class="col-lg-6 col-md-6 col-xs-6 transparent">
                         <h1>{{title}}</h1>
-                          <button type="submit" id="submit" name="submit" class="form-btn semibold"><a href="#/about-us">LEARN MORE</a></button> 
-                  </div>   
+                          <button type="submit" id="submit" name="submit" class="form-btn semibold"><a href="#/about-us">LEARN MORE</a></button>
+                  </div>
                 </div>
             </div>
         </div>
@@ -14,31 +14,31 @@
         <div class="container">
             <div class="row">
                     <div class="col-lg-3 col-md-6 col-xs-6 text-center ag" ng-repeat="icon in icons">
-                        <app-home info="icon"></app-home> 
-                  </div>  
+                        <app-home info="icon"></app-home>
+                  </div>
             </div>
         </div>
 </div>
-<div class="content-section-c">                    
+<div class="content-section-c">
       <div class="container">
             <div class="row">
                  <div class="col-lg-12 col-md-12  col-xs-12">
-                    <h2 class="section-heading">How it works</h2>
-                    <h3 class="special">Learn how you can use our great tool for your needs</h3>
+                    <h2 class="section-heading">{{ 'home.sections.section1.title' | translate  }}</h2>
+                    <h3 class="special">{{ 'home.sections.section1.content' | translate  }}</h3>
                       <div class="col-lg-4 col-md-4 col-xs-4 instruction" ng-repeat="part in parts">
-                        <app-home info="part"></app-home> 
-                      </div>  
+                        <app-home info="part"></app-home>
+                      </div>
                 </div>
             </div>
-      </div>                               
+      </div>
 </div>
-<div class="content-section-h">                    
+<div class="content-section-h">
       <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12  col-xs-12 ">
-                    <h2 class="section-heading"> Generate </h2>
-                    <p class="text-center">Generate your file or a code now to start providing users with a transparent Wifi details</p>
-                    <button type="submit" id="submit" name="submit" class="form-btn semibold"><a href="#/generate-wifi">GENERATE</a></button> 
+                    <h2 class="section-heading"> {{ 'home.sections.section2.title' | translate  }} </h2>
+                    <p class="text-center">{{ 'home.sections.section2.content' | translate  }}</p>
+                    <button type="submit" id="submit" name="submit" class="form-btn semibold"><a href="#/generate-wifi">GENERATE</a></button>
                 </div>
             </div>
       </div>
@@ -47,13 +47,13 @@
         <div class="container">
             <div class="row">
                  <div class="col-lg-12 col-md-12  col-xs-12 ">
-                    <h2 class="section-heading">Visit our blog</h2>
-                    <h3 class="special">Find out latest news about our activity and wireless network</h3>           
+                    <h2 class="section-heading">{{ 'home.sections.section3.title' | translate  }}</h2>
+                    <h3 class="special">{{ 'home.sections.section3.content' | translate  }}</h3>
                     <div class="imagev"  ng-repeat="n in results">
                       <a href="{{n.url}}"><div style="background-image: url('{{n.img}}')" class="half">
-                      <p class="imgDescription">{{n.title}}<i class="fa fa-arrow-right" aria-hidden="true"></i></p> 
+                      <p class="imgDescription">{{n.title}}<i class="fa fa-arrow-right" aria-hidden="true"></i></p>
                     </div></a>
-    
+
                   </div>
                 </div>
             </div>

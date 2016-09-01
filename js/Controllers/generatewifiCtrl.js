@@ -1,19 +1,15 @@
+app.controller('GenerateWiFiCtrl', function ($scope) {
 
-         app.controller('GenerateWiFiCtrl', function ($scope) {
-     
-        $scope.options = {
-         
-              toolbar: [
-                    
-                      ['style', ['bold', 'italic' ]],
-                      ['alignment', ['ul', 'ol' ]],
-                   
-                  ]
+  $scope.options = {
 
-            };
-      
-   
+    toolbar: [
 
-       
-    
-      })
+      ['style', ['bold', 'italic']],
+      ['alignment', ['ul', 'ol']],
+
+    ]
+
+  };
+
+
+})

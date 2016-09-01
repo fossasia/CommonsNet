@@ -1,28 +1,34 @@
  app.controller('ContactCtrl', function ($scope, $http) {
-        $scope.title = 'Contact us';
-        $scope.subtitle = 'Many questions are answered in our FAQ and you can find out more about our CommonsNet network and community here.      If you are unable to find your answer via our FAQ or website please contact us'
-        $scope.title2 = 'Mailing Address'
-        $scope.subtitle2 = 'Please note: we are a distributed team working all over the world. We don’t have an office, but if you need to send us an  email please use above form or send it to:'
-        $scope.address = 'commonsnet.team@gmail.com '
-        $scope.title3 = 'Reporting bugs with CommonsNet website'
-        $scope.subtitle3 = 'You can write to us using the form above'       
-        $scope.title4 = 'In this section'
-        $scope.title5 = 'Get Involved' 
-        $scope.subtitle8 = 'Share your Wifi details'
-        $scope.title9 = 'Frequently asked questions'
-        $scope.subtitle88 = 'Commonsnet would do little without enthusiastic use by Wifi providers. If you share your Wifi with other people make them transparent'
-        $scope.subtitletitle6 = 'Social'
-        $scope.subtitletitle7 = 'Support'
-        $scope.subtitle77 = 'CommonsNet stays alive because of support from the community.'
-        $scope.subtitle5 = 'There are numerous ways to connect with CommonsNet.'
-        $scope.text = 'The best way to start interacting and contributing to the community is to join us on GitHub:'
-        $scope.text1 = 'https://github.com/fossasia/CommonsNet'
+        $scope.contactus = 'contact.contact_us';
+        $scope.subtitle = 'contact.find_out_more';
+        $scope.title2 = 'contact.mailing_address';
+        $scope.subtitle2 = 'contact.not_office';
+        $scope.address = 'contact.email';
+        $scope.title3 = 'contact.report_bugs';
+        $scope.subtitle3 = 'contact.use_form';
+        $scope.title4 = 'contact.this_section';
+        $scope.title5 = 'contact.get_involved';
+        $scope.subtitle8 = 'contact.share_wifi';
+        $scope.title9 = 'contact.faq';
+        $scope.subtitle88 = 'contact.users';
+        $scope.subtitletitle6 = 'contact.social';
+        $scope.subtitletitle7 = 'contact.support';
+        $scope.subtitle77 = 'contact.stay_alive';
+        $scope.subtitle5 = 'contact.ways';
+        $scope.text = 'contact.contribute';
+        $scope.text1 = 'contact.github';
+        $scope.faq = 'contact.sidemenu.faq';
+        $scope.mail = 'contact.sidemenu.mail';
+        $scope.get = 'contact.sidemenu.get_involved';
+        $scope.report = 'contact.sidemenu.report_bugs';
+        $scope.connect = 'contact.connectCommonsNet';
+        $scope.signup = "contact.signup";
         $scope.disableButtons = true;
         $scope.submit = function() {
-          
+
            if ($scope.myForm.$valid) {
-              
-               
+
+
         }
 
 

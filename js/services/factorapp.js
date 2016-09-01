@@ -1,26 +1,26 @@
-app.factory('wizard', ['$http', function($http) { 
-  return $http.get('restrictions.txt') 
-        .success(function(data) { 
-              return data; 
+app.factory('wizard', ['$http', function($http) {
+  return $http.get('restrictions.txt')
+        .success(function(data) {
+              return data;
 
-             
+
         })
-            .error(function(err) { 
-              return err; 
-            }); 
+            .error(function(err) {
+              return err;
+            });
 }]);
 
 app.factory('file', ['$http', function($http){
 
-return $http.get('http://commonsnet.herokuapp.com/generatefile.fodt') 
-        .success(function(data) { 
-            return data; 
+return $http.get('http://127.0.0.1:8083/generatefile.fodt')
+        .success(function(data) {
+            return data;
 
-             
+
         })
-            .error(function(err) { 
-              return err; 
-            }); 
+            .error(function(err) {
+              return err;
+            });
 
-	
+
 }])

@@ -1,194 +1,215 @@
-<form >
-	<div class="row">
-	   <div class="col-lg-1 col-md-1 col-xs-1"></div>
-	   		<div class="col-lg-10 col-md-10 col-xs-10">
-     			<h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-check" aria-hidden="true"></i> Conditions <hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
-     			 <div class="col-lg-6 col-md-6 col-xs-12">
-     					<div>
-	   					  		<input id="cb5" name="cb1" type="checkbox" class='vi-center' ng-model="vm.captiveportal" ng-false-value="'no'" ng-true-value="'yes' ">
-									<label for="cb1" class="labels"  class="labels vl-center">
-										Register using Captive Portal
-									</label>
-									 
-							</div>
-	   					  	<div>
-	   					  		<input id="cb5" name="cb1" type="checkbox" class='vi-center' ng-model="vm.specialdevices"  ng-false-value="'no'" ng-true-value="'yes'" >
-									<label for="cb1" class="labels"  class="labels vl-center">
-										Some devices are not applicable
-									</label>
-									  <input type="text" name="ssid" class="form" placeholder="List them" ng-model="vm.specialdevicesfield" ng-if="vm.specialdevices == 'yes' " required/>
-							</div>
-							<div>
-								<input id="cb5" name="cb1" type="checkbox" class='vi-center' ng-model="vm.specialsettings"  ng-false-value="'no'" ng-true-value="'yes'" >
-									<label for="cb1" class="labels">
-										Special settings are required
-									</label>
-									<input type="text" name="ssid" class="form" placeholder="List them" ng-model="vm.specialsettingsfield" ng-if="vm.specialsettings == 'yes' " required/>
-							</div>
-							<div >
-								<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.acceptterms"  ng-false-value="'no'" ng-true-value="'yes'" >
-									<label for="cb1" class="labels"  class="labels vl-center">
-										Accepting terms of use
-									</label>
-							</div>
+<form>
+  <div class="row">
+    <div class="col-lg-1 col-md-1 col-xs-1"></div>
+    <div class="col-lg-10 col-md-10 col-xs-10">
+      <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"><i class="fa fa-check"
+                                                                                                  aria-hidden="true"></i>
+        {{ 'wizard.conditions.conditions' | translate }}
+        <hr style="margin:0;border-width: 1px; border-color: #00a8f2;">
+      </h5>
+      <div class="col-lg-6 col-md-6 col-xs-12">
+        <div>
+          <input id="cb1" type="checkbox" class='vi-center' ng-model="vm.captiveportal" ng-false-value="'no'"
+                 ng-true-value="'yes' ">
+          <label for="cb1" class="labels" class="labels vl-center">
+           {{ 'wizard.sections.conditions.options.register' | translate  }}
+          </label>
 
-							<div>
-								<input id="cb5" name="cb1" type="checkbox" class='vi-center' ng-model="vm.socialprofile"  ng-false-value="'no'" ng-true-value="'yes'" >
-									<label for="cb1" class="labels">
-										Liking social profile required
-									</label>
-							</div>
-							<div >
-								<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.downloading"  ng-false-value="'no'" ng-true-value="'yes'" >	
-									<label for="cb1" class="labels"  class="labels vl-center">
-										Downloading pdf file
-									</label>
-							</div>
-							<div >
-								<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.register"  ng-false-value="'no'" ng-true-value="'yes'" >
-									<label for="cb1" class="labels"  class="labels vl-center">
-										Registering to a website
-									</label>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-xs-12">
-							
-							<div >
-								<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.newsletter"  ng-false-value="'no'" ng-true-value="'yes'" >
-									<label for="cb1" class="labels"  class="labels vl-center">
-										Signing up to a newsletter
-									</label>
-							</div>
-							<div>
-								<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.mobilenumber"  ng-false-value="'no'" ng-true-value="'yes'" >	
-									<label for="cb1" class="labels"  class="labels vl-center">
-										Providing a mobile number
-									</label>
-								
-							</div>
-							<div>
-								<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.emailaddress"  ng-false-value="'no'" ng-true-value="'yes'" >	
-									<label for="cb1" class="labels"  class="labels vl-center">
-										Provading an email address
-									</label>
-								
-							</div>
-							<div>
-								<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.personaldetails"  ng-false-value="'no'" ng-true-value="'yes'" >	
-									<label for="cb1" class="labels"  class="labels vl-center">
-										Entering a personal details like age group, geneder etc. 
-									</label>
-							</div>
-							<div>
-								<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.autoupdatedisabled"  ng-false-value="'no'" ng-true-value="'yes'" >	
-									<label for="cb1" class="labels"  class="labels vl-center">
-										 Disable auto-update function is required
-									</label>
-							</div>
-							<div>
-								<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.referencenumber"  ng-false-value="'no'" ng-true-value="'yes'" >	
-									<label for="cb1" class="labels"  class="labels vl-center">
-										Having a reference number provided by the Owner
-									</label>
-								
-							</div>
+        </div>
+        <div>
+          <input id="cb2" type="checkbox" class='vi-center' ng-model="vm.specialdevices" ng-false-value="'no'"
+                 ng-true-value="'yes'">
+          <label for="cb2" class="labels" class="labels vl-center">
+            {{ 'wizard.sections.conditions.options.devices' | translate }}
+          </label>
+          <input type="text" name="ssid" class="form" placeholder="List them" ng-model="vm.specialdevicesfield"
+                 ng-if="vm.specialdevices == 'yes' " required/>
+        </div>
+        <div>
+          <input id="cb3" type="checkbox" class='vi-center' ng-model="vm.specialsettings" ng-false-value="'no'"
+                 ng-true-value="'yes'">
+          <label for="cb3" class="labels">
+            {{ 'wizard.sections.conditions.options.settings' | translate }}
+          </label>
+          <input type="text" name="ssid" class="form" placeholder="List them" ng-model="vm.specialsettingsfield"
+                 ng-if="vm.specialsettings == 'yes' " required/>
+        </div>
+        <div>
+          <input id="cb4" type="checkbox" class='vi-center' ng-model="vm.acceptterms" ng-false-value="'no'"
+                 ng-true-value="'yes'">
+          <label for="cb4" class="labels" class="labels vl-center">
+            {{ 'wizard.sections.conditions.options.terms' | translate }}
+          </label>
+        </div>
 
-				</div>
-		</div>
-	
-	</div>
+        <div>
+          <input id="cb5" type="checkbox" class='vi-center' ng-model="vm.socialprofile" ng-false-value="'no'"
+                 ng-true-value="'yes'">
+          <label for="cb5" class="labels">
+            {{ 'wizard.sections.conditions.options.like' | translate }}
+          </label>
+        </div>
+        <div>
+          <input id="cb6" type="checkbox" class='vi-center' ng-model="vm.downloading" ng-false-value="'no'"
+                 ng-true-value="'yes'">
+          <label for="cb6" class="labels" class="labels vl-center">
+            {{ 'wizard.sections.conditions.options.download' | translate }}
+          </label>
+        </div>
+        <div>
+          <input id="cb7" type="checkbox" class='vi-center' ng-model="vm.register" ng-false-value="'no'"
+                 ng-true-value="'yes'">
+          <label for="cb7" class="labels" class="labels vl-center">
+            {{ 'wizard.sections.conditions.options.website' | translate }}
+          </label>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-xs-12">
 
-	<div class="row">
-   		<div class="col-lg-1 col-md-1 col-xs-1"></div>
-   		     <div class="col-lg-10 col-md-10 col-xs-10">
-   		     <div class="row">
-   		     <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-ban" aria-hidden="true"></i> Limits <hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
+        <div>
+          <input id="cb8" type="checkbox" class='vi-center' ng-model="vm.newsletter" ng-false-value="'no'"
+                 ng-true-value="'yes'">
+          <label for="cb8" class="labels" class="labels vl-center">
+            {{ 'wizard.sections.conditions.options.newsletter' | translate }}
+          </label>
+        </div>
+        <div>
+          <input id="cb9" type="checkbox" class='vi-center' ng-model="vm.mobilenumber" ng-false-value="'no'"
+                 ng-true-value="'yes'">
+          <label for="cb9" class="labels" class="labels vl-center">
+            {{ 'wizard.sections.conditions.options.mobile' | translate }}
+          </label>
 
-   		     <label for="cb1" class="labels vl-center  ">
-                Does ISP restrict something or block any websites in a network?
-                </label>
-      
-                <label for="male">
-						YES
-				</label>
-				<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.isprestrictionyes"  ng-false-value="'no'" ng-true-value="'yes'" >
-				 <input type="text" name="restrictions"   class="form" placeholder="List them" ng-model="vm.isprestrictionsfield" ng-if="vm.isprestrictionyes == 'yes' "  required/>
-                	<br>
-            
-             <label for="cb1" class="labels vl-center  ">
-               Do you limit number of connected devices?
-             </label>
-             <label for="male">
-						YES
-				</label>
-				<input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.limitdevicesyes"  ng-false-value="'no'" ng-true-value="'yes'" >
-			 <input type="text" name="limitdevices"   class="form" placeholder="How many?" ng-model="vm.limitdevicesfield" ng-if="vm.limitdevicesyes == 'yes' "  required/>
-			 
-      
-                
-                	<br>
-                	 <label for="cb1" class="labels vl-center ">
-                                  Do you provide a bandwidth control?
-                                </label>
-                               
-                                      <input id="yes" name="cb1" type="checkbox" class='vi-center' ng-model="vm.dualbandyes"
-                                               ng-false-value="'no'" ng-true-value="'yes'" >
-                                    <label for="cb1" class="labels"  class="labels vl-center">
-                                      YES
-                                    </label>
-			
-			 </div>
-			 
-<!-- 			 <div class="row">
-                   
-           
-	     		<h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-gavel" aria-hidden="true"></i> Legal restrictions<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
-	     	
+        </div>
+        <div>
+          <input id="cb10" type="checkbox" class='vi-center' ng-model="vm.emailaddress" ng-false-value="'no'"
+                 ng-true-value="'yes'">
+          <label for="cb10" class="labels" class="labels vl-center">
+            {{ 'wizard.sections.conditions.options.email' | translate }}
+          </label>
 
-	     
+        </div>
+        <div>
+          <input id="cb10" type="checkbox" class='vi-center' ng-model="vm.personaldetails" ng-false-value="'no'"
+                 ng-true-value="'yes'">
+          <label for="cb10" class="labels" class="labels vl-center">
+            {{ 'wizard.sections.conditions.options.personaldetails' | translate }}
 
-	     		<label for="cb1" class="labels vl-center  ">
-                Does your country have any legal restrictions related to using Internet/Wifi?
-                </label>
-      
-                <label for="male">
-						YES
-				</label>
+          </label>
+        </div>
+        <div>
+          <input id="cb11" type="checkbox" class='vi-center' ng-model="vm.autoupdatedisabled" ng-false-value="'no'"
+                 ng-true-value="'yes'">
+          <label for="cb11" class="labels" class="labels vl-center">
+            {{ 'wizard.sections.conditions.options.disable' | translate }}
 
-                <input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.country"  ng-false-value="'no'" ng-true-value="'yes'" >
-                <br>
+          </label>
+        </div>
+        <div>
+          <input id="cb12" type="checkbox" class='vi-center' ng-model="vm.referencenumber" ng-false-value="'no'"
+                 ng-true-value="'yes'">
+          <label for="cb12" class="labels" class="labels vl-center">
+            {{ 'wizard.sections.conditions.options.reference' | translate }}
+          </label>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-lg-1 col-md-1 col-xs-1"></div>
+    <div class="col-lg-10 col-md-10 col-xs-10">
+      <div class="row">
+        <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"><i class="fa fa-ban" aria-hidden="true"></i>
+          {{ 'wizard.sections.conditions.limits' | translate }}
+          <hr style="margin:0;border-width: 1px; border-color: #00a8f2;">
+        </h5>
+        <label class="labels vl-center  ">
+        {{ 'wizard.sections.conditions.restrictions.isp' | translate }}
+        </label>
+        <input id="cb13"  type="checkbox" class='vi-center' ng-model="vm.isprestrictionyes"
+               ng-false-value="'no'" ng-true-value="'yes'">
+        <label for="cb13">
+          {{ 'wizard.sections.conditions.restrictions.ispyes' | translate }}
+        </label>
+        <input type="text" name="restrictions" class="form" placeholder="List them" ng-model="vm.isprestrictionsfield"
+               ng-if="vm.isprestrictionyes == 'yes' " required/>
+        <br>
+        <label class="labels vl-center  ">
+          {{ 'wizard.sections.conditions.restrictions.limitdevices' | translate }}
+        </label>
+        <input id="cb14"  type="checkbox" class='vi-center' ng-model="vm.limitdevicesyes" ng-false-value="'no'"
+               ng-true-value="'yes'">
+        <label for="cb14">
+          {{ 'wizard.sections.conditions.restrictions.limitdevicesyes' | translate }}
+        </label>
+        <input type="text" name="limitdevices" class="form" placeholder="How many?" ng-model="vm.limitdevicesfield"
+               ng-if="vm.limitdevicesyes == 'yes' " required/>
+        <br>
+        <label class="labels vl-center ">
+          {{ 'wizard.sections.conditions.restrictions.bandwidthcontrol' | translate }}
+        </label>
+        <input id="yes"  type="checkbox" class='vi-center' ng-model="vm.dualbandyes"
+               ng-false-value="'no'" ng-true-value="'yes'">
+        <label for="yes" class="labels" class="labels vl-center">
+          {{ 'wizard.sections.conditions.restrictions.bandwidthcontrolyes' | translate }}
+        </label>
+
+      </div>
+
+      <!-- 			 <div class="row">
 
 
-                	  
-			
-                <label for="male">Choose your country</label>    
-			    	<select type="text" class="form" ng-options="country as country.name for country in countries" ng-model="vm.countries" ng-change="update()" >
-			    		<option value="" >-- Choose country --</option>
-			   	
-			    	</select>
-			   
+                       <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-gavel" aria-hidden="true"></i> Legal restrictions<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
 
-			    
 
-         
-			     	
 
-						
-					<br>
-				     
-			    
 
-			<label for="male">Type them
-				</label>
+                       <label for="cb1" class="labels vl-center  ">
+                      Does your country have any legal restrictions related to using Internet/Wifi?
+                      </label>
 
-			<summernote ng-model="vm.legalrestrictions" config="options"> 
-			</summernote>
-			
-		
+                      <label for="male">
+                              YES
+                      </label>
 
-</div> -->
-		<div class="col-lg-1 col-md-1 col-xs-1"></div>
-	</div>
-     
-		<div class="col-lg-1 col-md-1 col-xs-1"> </div>
+                      <input id="cb5" name="cb1" type="checkbox"  class='vi-center' ng-model="vm.country"  ng-false-value="'no'" ng-true-value="'yes'" >
+                      <br>
+
+
+
+
+                      <label for="male">Choose your country</label>
+                          <select type="text" class="form" ng-options="country as country.name for country in countries" ng-model="vm.countries" ng-change="update()" >
+                              <option value="" >-- Choose country --</option>
+
+                          </select>
+
+
+
+
+
+
+
+
+                          <br>
+
+
+
+                  <label for="male">Type them
+                      </label>
+
+                  <summernote ng-model="vm.legalrestrictions" config="options">
+                  </summernote>
+
+
+
+      </div> -->
+      <div class="col-lg-1 col-md-1 col-xs-1"></div>
+    </div>
+
+    <div class="col-lg-1 col-md-1 col-xs-1"></div>
 </form>
