@@ -21,8 +21,6 @@
         $scope.mail = 'contact.sidemenu.mail';
         $scope.get = 'contact.sidemenu.get_involved';
         $scope.report = 'contact.sidemenu.report_bugs';
-        $scope.connect = 'contact.connectCommonsNet';
-        $scope.signup = "contact.signup";
         $scope.disableButtons = true;
         $scope.submit = function() {
 
