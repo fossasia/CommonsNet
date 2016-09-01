@@ -38,6 +38,20 @@ body, h1, h2, h3, h4, h5, h6 {
    font-weight: 300;
 }
 
+h1 {
+  font-size: 60px;
+}
+
+h3  {
+  font-size: 40px;
+}
+
+blockquote {
+  font-size: 40px;
+  text-align: center;
+  border-left: none;
+}
+
 .navbar-fixed-top .nav {
     padding: 15px 0;
 }
@@ -427,15 +441,6 @@ h2  {
    
 }
 
-h3  {
-   
-    font-size: 40px;  
-  
-    text-align: center;
-
-}
-
-
 .section-heading:after {
     content:' ';
     display:block;
@@ -586,14 +591,6 @@ h6  {
   margin-top: 40px;
 
        
-}
-h1  {
-  
-    font-size: 60px;
-    text-align: right;
-   
-
-    color: white;
 }
 
 .homebutton {
@@ -832,7 +829,7 @@ footer{
 
 }
 
-.fa-quote-left {
+.fa-quote-left, .fa-quote-right {
   color: #00a8f2;
 }
 .spa {
