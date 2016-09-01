@@ -82,6 +82,11 @@
           "bandwidthcontrol": "Do you provide a bandwidth control?",
           "bandwidthcontrolyes": "yes"
         }
+      },
+      "confirmation": {
+        "title": "Congratulations!",
+        "content": "Download your pdf file or copy code to add to your website.",
+        "button": "Download"
       }
     }
   },
@@ -111,7 +116,7 @@
     "parts": {
       "fill": {
         "title": "FILL",
-        "description": "Collect all details about Wifi you provided and put them into a prepared an easy-to-follow form."
+        "description": "Collect all details about Wifi you provided and put them into an easy-to-follow form."
       },
       "create": {
         "title": "CREATE",
@@ -136,6 +141,35 @@
         "content": "Find out latest news about our activity and wireless network"
       }
     }
+  },
+  "contact": {
+    "contact_us": "Contact us",
+    "find_out_more": "Many questions are answered in our FAQ and you can find out more about our CommonsNet network and community here. If you are unable to find your answer via our FAQ or website please contact us",
+    "mailing_address": "Mailing address",
+    "not_office": "Please note: we are a distributed team working all over the world. We don’t have an office, but if you need to send us an  email please use above form or send it to:",
+    "email": "commonsnet.team@gmail.com",
+    "report_bugs": "Reporting bugs with CommonsNet website",
+    "use_form": "You can write to us using the form above",
+    "this_section": "In this section",
+    "share_wifi": "Share your Wifi details",
+    "faq": "Frequently asked questions",
+    "users": "Commonsnet would do little without enthusiastic use by Wifi providers. If you share your Wifi with other people make them transparent",
+    "social": "Social",
+    "get_involved": "Get involved",
+    "support": "Support",
+    "stay_alive": "CommonsNet stays alive because of support from the community",
+    "ways": "There are numerous ways to connect with CommonsNet",
+    "contribute": "The best way to start interacting and contributing to the community is to join us on GitHub:",
+    "github": "https://github.com/fossasia/CommonsNet",
+    "sidemenu": {
+      "faq": "FAQ",
+      "mail": "Mailing List",
+      "get_involved": "Get Involved",
+      "report_bugs": "Report Bugs"
+
+    },
+    "connectCommonsNet": "Connect with CommonsNet",
+    "signup": "Sing Up"
   }
 }
 
