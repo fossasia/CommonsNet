@@ -46,19 +46,97 @@
       "paidyescheckbox": "YES",
       "speed": "Speed",
       "serviceyes": "Do you provide a Wifi service?",
-      "servicecheckbox": "yes"
+      "servicecheckbox": "yes",
+      "wifistandards": "Wifi Standards",
+      "authentication": "Authentication (Security)"
     },
     "sections": {
       "settings": {
-        "title": "Basic Wifi Details"
+        "location": "Location (Address)",
+        "basicdetails": "Basic Wifi Details",
+        "service": "Service"
+      },
+      "conditions": {
+        "conditions": "Conditions",
+        "options": {
+          "register": "Register using captive portal",
+          "devices": "Some devices are not applicable",
+          "settings": "Special settings are required",
+          "terms": "Accepting terms of use",
+          "like": "Liking social profile",
+          "download": "Downloading a pdf file",
+          "website": "Registering to website",
+          "newsletter": "Signing up to a newsletter",
+          "mobile": "Providing a mobile number",
+          "email": "Providing an email address",
+          "personaldetails": " Entering a personal details like age group, geneder etc.",
+          "disable": "Disabling auto-update function is required",
+          "reference": "Having a reference number provided by the Owner"
+        },
+        "limits": "Limits",
+        "restrictions": {
+          "isp": "Does ISP restrict something or block any websites in a network?",
+          "ispyes": "yes",
+          "limitdevices": "Do you limit the number of devices?",
+          "limitdevicesyes": "yes",
+          "bandwidthcontrol": "Do you provide a bandwidth control?",
+          "bandwidthcontrolyes": "yes"
+        }
+      }
+    }
+  },
+  "home": {
+    "icons": {
+      "inform" : {
+        "icon": "info",
+        "title": "INFORM",
+        "description": "Collect your wifi details, put them in a form and provide a clear WiFi connection."
+      },
+      "share": {
+        "icon": "share-alt",
+        "title": "SHARE",
+        "description": "Share your WiFi details in a transparent and easy-to understand way."
+      },
+      "find": {
+        "icon": "home",
+        "title": "FIND",
+        "description": "Let your users to find WiFi generated file supported by CommonsNet at your place."
+      },
+      "connect": {
+        "icon": "wifi",
+        "title": "CONNECT",
+        "description": "Then let them connect to trustworthy and transparent wifi and enjoy Internet resources."
       }
     },
-    "options": {
-
+    "parts": {
+      "fill": {
+        "title": "FILL",
+        "description": "Collect all details about Wifi you provided and put them into a prepared an easy-to-follow form."
+      },
+      "create": {
+        "title": "CREATE",
+        "description": "As you finish filling, click save button to generate file or code and share with your customers."
+      },
+      "enjoy": {
+        "title": "ENJOY",
+        "description": "Enjoy providing your customers with a transparent and trustworthy wireless connection."
+      }
+    },
+    "sections": {
+      "section1": {
+        "title": "How it works",
+        "content": "Learn how you can use our great tool for your needs."
+      },
+      "section2": {
+        "title": "Generate",
+        "content": "Generate your file or a code now to start providing users with a transparent Wifi details"
+      },
+      "section3": {
+        "title": "Visit our blog",
+        "content": "Find out latest news about our activity and wireless network"
+      }
     }
-
   }
-
 }
 
 
