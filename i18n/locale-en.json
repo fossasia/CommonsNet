@@ -168,7 +168,11 @@
       "report_bugs": "Report Bugs"
 
     },
-    "connectCommonsNet": "Connect with CommonsNet",
+    "connect_with_us": {
+      "title": "Connect with CommonsNet",
+      "emailAddress": "Your email address",
+      "connect": "Sign up"
+    },
     "signup": "Sing Up"
   }
 }
