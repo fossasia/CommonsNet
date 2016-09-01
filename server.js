@@ -1,6 +1,4 @@
-
 var express = require('express');
-require('es6-promise').polyfill();
 var app = express();
 const execFile = require('child_process').execFile;
 
@@ -28,9 +26,9 @@ app.get('/path_to_pdf', function(request, response) {
 	  if (error) {
 	    throw error;
 	  }
-	  response.json({ message: stdout }); 
+	  response.json({ message: stdout });
   });
-  
+
 });
 
 //lets require/import the mongodb native drivers.
@@ -63,9 +61,9 @@ var insertUsers = function(db) {
   var collection = db.collection('users');
   // Insert some documents
   collection.insert({
-   email: 'aga.ta@gmail.com', 
+   email: 'aga.ta@gmail.com',
    password: 'test1',
-  
+
 })
 }
 

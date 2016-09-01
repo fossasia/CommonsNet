@@ -35,5 +35,31 @@
         "content": "We don’t want legal restrictions to be a boundary. We want people to be aware of things they are not allowed to do while connecting to Internet using a wireless connection in a specific place to protect them from the negative consequences."
       }
     }
+  },
+  "wizard": {
+    "labels": {
+      "isp": "Internet Service Providers",
+      "ssid": "Network name",
+      "login": "Login",
+      "password": "WIFI Password",
+      "paidyes": "Is your Wifi paid?",
+      "paidyescheckbox": "YES",
+      "speed": "Speed",
+      "serviceyes": "Do you provide a Wifi service?",
+      "servicecheckbox": "yes"
+    },
+    "sections": {
+      "settings": {
+        "title": "Basic Wifi Details"
+      }
+    },
+    "options": {
+
+    }
+
   }
+
 }
+
+
+
