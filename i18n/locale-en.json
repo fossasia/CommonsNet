@@ -1,0 +1,65 @@
+{
+  "about_us": {
+    "title": "We are a team of Wifi enthusiasts",
+    "title_short": "About us",
+    "description1": "Across the world there are different legal settings and requirements for sharing of Internet connections. CommonsNet is a webiste which reflects these details and make them transparent to users.",
+    "description2": "Our system enables to collect all Wifi details in a easy-to-follow wizrd form, and then based on that details generate a human readable pdf file and a machine readeable link.",
+    "mission_quote": "We want people to be provided with clear data about wireless connection they use",
+    "activity": {
+      "title": "What we do",
+      "title_short": "Our activity",
+      "content": "We are a network of people who believe that network transparency is possible to build and we want to have an important impact on doing that. That is why we have prepared a great tool to help everyone make his or her Wifi details open and clear to everyone."
+    },
+    "offer": {
+      "title": "What we can do for you",
+      "title_short": "What we can do",
+      "content": "We provide you with a great tool to make a wifi network transparent, become an important member of community and work with us for our common goal."
+    },
+    "process": {
+      "title": "How it looks",
+      "title_short": "How it looks",
+      "basic_details": {
+        "title": "Basic details",
+        "content": "We want people to know what are the basic settings of wireless connection like SSID, password, authentication, standard, provided service etc."
+      },
+      "payment_and_limits": {
+        "title": "Payment & time limit",
+        "content": "We believe people should get clear information if the wifi they want to use is paid or limited. This section helps you to provide users with clear information about your fee and other limits like data usage and time."
+      },
+      "conditions": {
+        "title": "Conditions",
+        "content": "We want also to make people aware of conditions to use wireless connection and let them know what do they need to do in order to connect to offered wifi."
+      },
+      "legal_restrictions": {
+        "title": "Legal restrictions",
+        "content": "We don’t want legal restrictions to be a boundary. We want people to be aware of things they are not allowed to do while connecting to Internet using a wireless connection in a specific place to protect them from the negative consequences."
+      }
+    }
+  },
+  "wizard": {
+    "labels": {
+      "isp": "Internet Service Providers",
+      "ssid": "Network name",
+      "login": "Login",
+      "password": "WIFI Password",
+      "paidyes": "Is your Wifi paid?",
+      "paidyescheckbox": "YES",
+      "speed": "Speed",
+      "serviceyes": "Do you provide a Wifi service?",
+      "servicecheckbox": "yes"
+    },
+    "sections": {
+      "settings": {
+        "title": "Basic Wifi Details"
+      }
+    },
+    "options": {
+
+    }
+
+  }
+
+}
+
+
+

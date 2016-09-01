@@ -8,6 +8,9 @@ sudo apt-get install -y postgresql postgresql-contrib
 sudo npm install -g bower
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 bower install
+sudo apt-get install -y mongodb-server
+sudo mkdir -p /data/db/
+mongo commonsnet
 
 APP_DB_USER=commonsnet_user
 APP_DB_PASS=start
