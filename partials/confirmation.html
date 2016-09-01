@@ -2,22 +2,22 @@
   <div class="col-lg-1 col-md-1 col-xs-1"></div>
       <div class="col-lg-10 col-md-10 col-xs-10">
       <div class="row">
-        <h3 class="text-center">Congratulations!</h3>
-                
-        <p class="text-center">Download your pdf file or copy code to add to your website.</p>
+        <h3 class="text-center">{{ 'wizard.sections.confirmation.title' | translate }}</h3>
+
+        <p class="text-center">{{ 'wizard.sections.confirmation.content' | translate }}</p>
       </div>
-       
-      <div class="row">        
+
+      <div class="row">
         <div class="col-lg-6 col-md-6 col-xs-12 confirmation">
-            
+
             <button ng-disabled="vm.currentStep != vm.steps.length" class="form-btn btn-lg downbutt"  type="button" ng-click="vm.save()">
-                <a download="generate-wifi.odt" id="downloadlink">Download</a>
+                <a download="generate-wifi.odt" id="downloadlink">{{ 'wizard.sections.confirmation.button' | translate }}</a>
             </button>
         </div>
         <div class="col-lg-6 col-md-6 col-xs-12 confirmation">
               <textarea name="message" id="message" class="form textarea" ng-model="vm.code">
-                
-              </textarea>           
+
+              </textarea>
         </div>
     </div>
   </div>
