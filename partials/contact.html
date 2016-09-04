@@ -2,9 +2,6 @@
   <!-- Heading Row -->
 
 
-  <div id="messages" class="alert alert-success" ng-show="message">
-    {{ message }}
-  </div>
   <div class="col-lg-12 col-md-12 col-xs-12">
     <div class="row">
 
@@ -18,35 +15,7 @@
         <div class="row">
 
           <div class="col-lg-8 col-md-9 col-xs-9">
-
-
-            <form name="myForm" id="contact-us" ng-submit="submitForm()">
-              <!-- Left Inputs -->
-
-              <!-- Name -->
-              <span ng-show="myForm.nameInput.$dirty && myForm.nameInput.$invalid">The name is required!</span>
-              <input type="text" name="nameInput" id="name" ng-model="nameInput" class="form" placeholder="Name"
-                     ng-change="submit()" required/>
-              <!-- Email -->
-              <span ng-show="myForm.nameMail.$dirty && myForm.nameMail.$invalid"></span>
-              <span ng-show="myForm.nameMail.$dirty && myForm.nameMail.$invalid">Email is required!</span>
-
-              <span ng-show="myForm.nameMail.$error.pattern">Not a valid email form!</span>
-              <input type="email" name="nameMail" id="mail" ng-model="nameMail" class="form" placeholder="Email"
-                     ng-pattern="/\S+@\S+\.\S+/" ng-change="submit()" required/>
-              <!-- Subject -->
-              <span ng-show="myForm.subjectInput.$dirty && myForm.subjectInput.$invalid">The subject is required!</span>
-              <input type="text" name="subjectInput" id="subject" ng-model="subjectInput" class="form"
-                     placeholder="Subject" ng-change="submit()" required/>
-              <!-- Message -->
-              <span ng-show="myForm.messageInput.$dirty && myForm.messageInput.$invalid">The message is required!</span>
-              <textarea type="text" name="messageInput" id="message" class="form textarea" ng-model="messageInput"
-                        placeholder="Message" ng-change="submit()" required> </textarea>
-              <!-- Send Button -->
-              <button type="submit" class="form-btn">Send Message</button>
-            </form>
-
-            <!-- End Left Inputs -->
+            <contact-form></contact-form>
           </div>
         </div>
 

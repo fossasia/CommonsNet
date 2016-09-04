@@ -250,8 +250,6 @@ a:focus, a:hover {
     padding: 8px;
     background:white;
     border:1px solid rgba(0, 0, 0, 0.075);
-    margin-bottom:25px;
- /*   border-bottom-color: #00a8f2;*/
     color:#727272 !important;
     font-size:13px;
     -webkit-transition: all 0.4s;
