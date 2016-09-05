@@ -33,9 +33,11 @@ body {
   padding-left: 0px;
   padding-right: 0px;
 }
-body, h1, h2, h3, h4, h5, h6 {
-   font-family: 'Titillium Web', sans-serif;
-   font-weight: 300;
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Titillium Web', sans-serif;
+ font-weight: 700;
+ color: #000000;
 }
 
 h1 {
@@ -44,6 +46,10 @@ h1 {
 
 h3  {
   font-size: 40px;
+}
+
+a {
+  color: #00a8f2;
 }
 
 blockquote {
@@ -957,13 +963,6 @@ li {
 list-style-type: none;
 
 font-size: 16px;
-
-}
-
-a {
-
-color: white;
-
 
 }
 
