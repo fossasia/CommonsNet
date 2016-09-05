@@ -114,9 +114,32 @@ mongoose.connect(url, function (err) {
             done(err, user);
         });
     });
+
+    passport.use('registerUser', new localStrategy({
+        pass ReqToCallback
+    :
+    true
+},
+    function (req, username, password, done) {
+        var newUser = new User({
+                email: req.body.email,
+                password: password
+            });
+
+      new User.save(function (err) {
+            if (err) {
+                return done(err);
+            }
+            return dobe(null, newUser);
+        });
+    }
+
 });
 
-
+app.route('/')
+    .get(function (req, res) {
+    res.render('index');
+});
 
 
 
