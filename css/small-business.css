@@ -1215,7 +1215,7 @@ color: red }
 
   }
 
-.sidebar-menu {
+.sidebar-menu a {
   color: #00a8f2;
   font-size: 20px;
 }
