@@ -1,111 +1,103 @@
-<div class="container contactcontainer">
-  <!-- Heading Row -->
-
-
-  <div class="col-lg-12 col-md-12 col-xs-12">
-    <div class="row">
-
-      <!-- Form -->
-
-
-      <div class="col-lg-9 col-md-9 col-xs-9">
-        <h1 class="hcontact black"><b> {{ contactus |translate }} </b></h1>
-        <p> {{ subtitle | translate }} </p>
-
-        <div class="row">
-
-          <div class="col-lg-8 col-md-9 col-xs-9">
-            <contact-form></contact-form>
-          </div>
-        </div>
-
-
-        <div id="mailing" class="row">
-          <h3 class="hcontact"><b> {{ title2 | translate }} </b></h3>
-          <p> {{ subtitle2 | translate }} </p>
-          <ul>
-            <li><h4> {{ address | translate }} </h4></li>
-          </ul>
-
-        </div>
-        <div id="reportbugs" class="row">
-          <h3 class="hcontact"><b> {{ title3 | translate }} </b></h3>
-          <p> {{ subtitle3 | translate }} <a class="sidebar-menu" href="http://github.com/fossasia/CommonsNet"> or you
-            can create an
-            issue on GitHub.</a></p>
-        </div>
-
-        <div id="getinvolved" class="row">
-          <h3 class="hcontact"><b> {{ title5 | translate }} </b></h3>
-          <p> {{ subtitle5 | translate }} </p>
-          <h4 class="hcontact"><b> {{ subtitle8 | translate }} </b></h4>
-          <p> {{ subtitle88 | translate }} <a class="sidebar-menu"
-                                              href="http://commonsnet.herokuapp.com/#/generate-wifi"> using our
-            great tool. </a></p>
-          <h4 class="hcontact"><b> {{ subtitletitle6 | translate }} </b></h4>
-          <li><a class="sidebar-menu" href="https://twitter.com/Commons_Net"> Follow us on Twitter</li>
-          <li><a class="sidebar-menu" href="https://www.facebook.com/CommonsNetApp"> Find us on Facebook </a></li>
-
-          <h4 class="hcontact"><b> {{ subtitletitle7 | translate }} </b></h4>
-          <li><b> {{ subtitle77 | translate }} </b> <a class="sidebar-menu"
-                                                       href="https://github.com/fossasia/CommonsNet"> Join us
-            on GitHub </a>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-9 col-md-9 col-xs-9">
+      <h1>
+        {{ 'contact.contact_us' | translate }}
+      </h1>
+      <p>
+        {{ 'contact.find_out_more' | translate }}
+      </p>
+      <contact-form></contact-form>
+      <h3>
+        {{ 'contact.mailing_address' | translate }}
+      </h3>
+      <p>
+        {{ 'contact.not_office' | translate }}
+        <span>
+          {{ 'contact.email' | translate }}
+        </span>
+      </p>
+      <h3>
+        {{ 'contact.report_bugs' | translate }}
+      </h3>
+      <p>
+        {{ 'contact.use_form' | translate }}
+        <a class="sidebar-menu" href="http://github.com/fossasia/CommonsNet">
+          or you can create an issue on GitHub.
+        </a>
+      </p>
+      <h3>
+        {{ 'contact.get_involved' | translate }}
+      </h3>
+      <p>
+        {{ 'contact.ways' | translate }}
+      </p>
+      <h4>
+        {{ 'contact.share_wifi' | translate }}
+      </h4>
+      <p>
+        {{ 'contact.users' | translate }}
+        <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/generate-wifi">
+          using our great tool.
+        </a>
+      </p>
+      <h4>
+        {{ 'contact.social' | translate }}
+      </h4>
+      <li>
+        <a class="sidebar-menu" href="https://twitter.com/Commons_Net">
+          Follow us on Twitter
+        </a>
+      </li>
+      <li>
+        <a class="sidebar-menu" href="https://www.facebook.com/CommonsNetApp">
+          Find us on Facebook
+        </a>
+      </li>
+      <h4>
+        {{ 'contact.support' | translate }}
+      </h4>
+      <li>
+        {{ 'contact.stay_alive' | translate }}
+        <a class="sidebar-menu" href="https://github.com/fossasia/CommonsNet">
+          Join us on GitHub
+        </a>
+      </li>
+      <h3 id="faq">
+        {{ 'contact.faq' | translate }}
+      </h3>
+    </div>
+    <div class="col-lg-2 col-md-2 col-xs-2">
+      <section>
+        <h4>
+          {{ 'contact.this_section' | translate }}
+        </h4>
+        <ul class="child-sidebar-menu">
+          <li>
+            <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/contact#faq">
+              {{ 'contact.sidemenu.faq' | translate }}
+            </a>
           </li>
-
-
-        </div>
-        <div id="faq" class="row">
-          <h3 class="hcontact">{{ title9 | translate }}</h3>
-
-        </div>
-      </div>
-
-
-      <div class="col-lg-2 col-md-2 col-xs-2 space">
-        <div id="input" class="row">
-          <section>
-            <h4 class="hcontact">{{ title4 | translate }}</h4>
-            <ul class="child-sidebar-menu">
-              <li>
-                <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/contact#">{{ faq | translate }}</a>
-              </li>
-              <li>
-                <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/contact#getinvolved">{{ get | translate }}</a>
-              </li>
-              <li>
-                <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/contact#mailing">{{ mail | translate }}</a>
-              </li>
-              <li>
-                <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/contact#reportbugs">{{ report | translate }}</a>
-              </li>
-
-            </ul>
-          </section>
-        </div>
-        <div class="row">
-          <section>
-            <connect-with-us></connect-with-us>
-          </section>
-        </div>
-
-      </div>
-
-
-      <!-- Your Mail Message -->
-
-
-      <!-- End Contact Form Area -->
-
-
-    </div><!-- End Inner -->
-
+          <li>
+            <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/contact#getinvolved">
+              {{ 'contact.sidemenu.get_involved' | translate }}
+            </a>
+          </li>
+          <li>
+            <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/contact#mailing">
+              {{ 'contact.sidemenu.mail' | translate }}
+            </a>
+          </li>
+          <li>
+            <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/contact#reportbugs">
+              {{ 'contact.sidemenu.report_bugs' | translate }}
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <connect-with-us></connect-with-us>
+      </section>
+    </div>
   </div>
-
-
-
-
-
-
-
-
-
+</div>
