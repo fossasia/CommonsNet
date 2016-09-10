@@ -1,0 +1,73 @@
+<form name="form" ng-submit="send()">
+  <div class="form-group">
+    <input
+      class="form"
+      id="name"
+      name="name"
+      type="text"
+      ng-model="model.name"
+      placeholder="Name"
+      required>
+    <div ng-show="form.name.$dirty && form.name.$invalid">
+      <span ng-show="form.name.$error.required">
+        The name is required!
+      </span>
+    </div>
+  </div>
+  <div class="form-group">
+    <input
+      class="form"
+      id="emailAddress"
+      name="emailAddress"
+      type="email"
+      ng-model="model.emailAddress"
+      placeholder="Email"
+      ng-pattern="/\S+@\S+\.\S+/"
+      required>
+    <div ng-show="form.emailAddress.$dirty && form.emailAddress.$invalid">
+      <span ng-show="form.emailAddress.$error.required">
+        Email is required!
+      </span>
+      <span ng-show="form.emailAddress.$error.pattern">
+        Not a valid email!
+      </span>
+    </div>
+  </div>
+  <div class="form-group">
+    <input
+      class="form"
+      id="subject"
+      name="subject"
+      type="text"
+      ng-model="model.subject"
+      placeholder="Subject"
+      required>
+    <div ng-show="form.subject.$dirty && form.subject.$invalid">
+      <span ng-show="form.subject.$error.required">
+        The subject is required!
+      </span>
+    </div>
+  </div>
+  <div class="form-group">
+    <textarea
+      class="form textarea"
+      id="message"
+      name="message"
+      type="text"
+      ng-model="model.message"
+      placeholder="Message"
+      required>
+    </textarea>
+    <div ng-show="form.message.$dirty && form.message.$invalid">
+      <span ng-show="form.message.$error.required">
+        The message is required!
+      </span>
+    </div>
+  </div>
+  <div class="alert alert-success" ng-show="message">
+    {{ message }}
+  </div>
+  <button class="form-btn" type="submit">
+    Send Message
+  </button>
+</form>

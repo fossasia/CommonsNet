@@ -18,6 +18,7 @@ body {
   font-weight: 300;
     overflow-x: hidden; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
+
 .addfield {
   float:right;
 }
@@ -33,9 +34,11 @@ body {
   padding-left: 0px;
   padding-right: 0px;
 }
-body, h1, h2, h3, h4, h5, h6 {
-   font-family: 'Titillium Web', sans-serif;
-   font-weight: 300;
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Titillium Web', sans-serif;
+ font-weight: 700;
+ color: #000000;
 }
 
 h1 {
@@ -53,6 +56,10 @@ h3  {
 .login {
     margin-top: 150px;
     margin-bottom: 150px;
+}
+
+a {
+  color: #00a8f2;
 }
 
 blockquote {
@@ -259,8 +266,6 @@ a:focus, a:hover {
     padding: 8px;
     background:white;
     border:1px solid rgba(0, 0, 0, 0.075);
-    margin-bottom:25px;
- /*   border-bottom-color: #00a8f2;*/
     color:#727272 !important;
     font-size:13px;
     -webkit-transition: all 0.4s;
@@ -688,6 +693,9 @@ h6  {
   text-align: left;
 }
 
+#white {
+    color: white;
+}
 
 
 .generatebuttondiv {
@@ -971,13 +979,6 @@ font-size: 16px;
 
 }
 
-a {
-
-color: white;
-
-
-}
-
 .address {
 
 color: #D2D6DF;
@@ -1227,7 +1228,7 @@ color: red }
 
   }
 
-.sidebar-menu {
+.sidebar-menu a {
   color: #00a8f2;
   font-size: 20px;
 }
@@ -1316,6 +1317,9 @@ padding: 80px;
 }
 .col-md-7 {
   margin-right: 50px;
+}
+a {
+    color: white;
 }
     /*!
   }
