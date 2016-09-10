@@ -179,7 +179,11 @@
       "eight": "Why do I have to enter my location?",
       "nine": "Why does a file have your header?"
     },
-    "connectCommonsNet": "Connect with CommonsNet",
+    "connect_with_us": {
+      "title": "Connect with CommonsNet",
+      "emailAddress": "Your email address",
+      "connect": "Sign up"
+    },
     "signup": "Sing Up"
   }
 }
