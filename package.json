@@ -14,7 +14,20 @@
   "dependencies": {
     "ejs": "2.4.1",
     "express": "4.13.3",
-    "mongodb": "~2.2.9"
+    "mongodb": "~2.2.9",
+    "body-parser": "~1.15.2",
+    "passport": "~0.3.2",
+    "passport-local": "~1.0.0",
+    "express-session": "~1.14.1",
+    "mongoose": "~4.6.0",
+    "jade": "~1.11.0",
+    "bcryptjs": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-validator": "*",
+    "passport-http": "*"
   },
   "repository": {
     "type": "git",

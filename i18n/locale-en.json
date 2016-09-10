@@ -93,7 +93,7 @@
   },
   "home": {
     "icons": {
-      "inform" : {
+      "inform": {
         "icon": "info",
         "title": "INFORM",
         "description": "Collect your wifi details, put them in a form and provide a clear WiFi connection."
@@ -181,6 +181,24 @@
     "this_section": "In this section",
     "contribute": "The best way to start interacting and contributing to the community is to join us on GitHub:",
     "github": "https://github.com/fossasia/CommonsNet",
+    "sidemenu": {
+      "faq": "FAQ",
+      "mail": "Mailing List",
+      "get_involved": "Get Involved",
+      "report_bugs": "Report Bugs"
+    },
+    "faqtitle": "Frequently Asked Questions",
+    "faq": {
+      "one": "What is CommonsNet?",
+      "two": "How can I get involved?",
+      "three": "How can I check my wifi details?",
+      "four": "How can I use your website?",
+      "five": "What does generating a file mean?",
+      "six": "How can I generate a file?",
+      "seven": "What does generating a code mean?",
+      "eight": "Why do I have to enter my location?",
+      "nine": "Why does a file have your header?"
+    },
     "connect_with_us": {
       "title": "Connect with CommonsNet",
       "emailAddress": "Your email address",
