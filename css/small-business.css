@@ -45,6 +45,15 @@ h1 {
 h3  {
   font-size: 40px;
 }
+.register {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.login {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
 
 blockquote {
   font-size: 40px;

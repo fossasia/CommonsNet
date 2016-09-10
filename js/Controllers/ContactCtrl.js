@@ -1,5 +1,5 @@
  app.controller('ContactCtrl', function ($scope, $http) {
-   
+
         $scope.disableButtons = true;
         $scope.submit = function() {
 

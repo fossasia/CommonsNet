@@ -1,18 +1,27 @@
-var express = require('express'),
-    passport = require('passport'),
-    mongoose = require('mongoose'),
-    app = express(),
-    Shema = mongoose.Shema(),
-    bodyParser = require('body-parser'),
-    localStrategy = require('passport-local').Strategy,
-    session = require('express-session'),
-    mongodb = require('mongodb');
-
-
+var express = require('express');
+var app = express();
 const execFile = require('child_process').execFile;
 
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+var exphbs = require('express-handlebars');
+var expressValidator = require('express-validator');
+var flash = require('connect-flash');
+var session = require('express-session');
+var passport = require('passport');
+
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/commonsnet');
+var db = mongoose.connection;
+
+var routes = require('./routes/app');
+var users = require('./routes/users');
 
 app.set('port', (process.env.PORT || 5000));
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
 
 app.use(express.static(__dirname + '/'));
 
@@ -20,35 +29,36 @@ app.use(express.static(__dirname + '/'));
 // app.set('views', __dirname + '/views');
 // app.set('view engine', 'ejs');
 
-app.get('/', function (request, response) {
-    response.render('pages/index');
+app.get('/', function(request, response) {
+  response.render('pages/index');
 });
 
 
-app.listen(app.get('port'), function () {
-    console.log('Node app is running on port', app.get('port'));
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
 
-app.get('/path_to_pdf', function (request, response) {
-    const child = execFile('unoconv', ['-f', 'pdf', 'generate-wifi.odt'], function (error, stdout, stderr) {
-        if (error) {
-            throw error;
-        }
-        response.json({message: stdout});
-    });
+app.get('/path_to_pdf', function(request, response) {
+  const child = execFile('unoconv', ['-f', 'pdf', 'generate-wifi.odt'], function(error, stdout, stderr) {
+    if (error) {
+      throw error;
+    }
+    response.json({ message: stdout });
+  });
 
 });
 
-//lets require/import the mongodb native drivers.
-
-
-//We need to work with "MongoClient" interface in order to connect to a mongodb server.
+// //lets require/import the mongodb native drivers.
+// var mongodb = require('mongodb');
+//
+// //We need to work with "MongoClient" interface in order to connect to a mongodb server.
 // var MongoClient = mongodb.MongoClient;
 
 // Connection URL. This is where your mongodb server is running.
-var url = 'mongodb://localhost:27017/commonsnet';
+// var url = 'mongodb://localhost:27017/commonsnet';
 
-// Use connect method to connect to the Server
+// // Use connect method to connect to the Server
 // MongoClient.connect(url, function (err, db) {
 //   if (err) {
 //     console.log('Unable to connect to the mongoDB server. Error:', err);
@@ -56,11 +66,11 @@ var url = 'mongodb://localhost:27017/commonsnet';
 //     //HURRAY!! We are connected. :)
 //     console.log('Connection established to', url);
 //     insertUsers(db)
-
-// do some work here with the database.
-
-//Close connection
-//     db.close();
+//
+//     // do some work here with the database.
+//
+//     //Close connection
+//     // db.close();
 //   }
 // });
 
@@ -69,77 +79,54 @@ var url = 'mongodb://localhost:27017/commonsnet';
 //   var collection = db.collection('users');
 //   // Insert some documents
 //   collection.insert({
-//    email: 'aga.ta@gmail.com',
-//    password: 'test1',
+//     email: 'aga.ta@gmail.com',
+//     password: 'test1',
 //
-// })
-// }
+//   })
+// };
 
+app.use(session({
+  secret: 'secret',
+  saveUninitialized: true,
+  resave: true
+}));
 
-mongoose.connect(url, function (err) {
-    if (err) {
-        console.log(err);
+app.use(passport.initialize());
+app.use(passport.session());
+
+app.use(expressValidator({
+  errorFormatter: function(param, msg, value) {
+    var namespace = param.split('.')
+      , root = namespace.shift()
+      , formParam = root;
+
+    while(namespace.length) {
+      formParam += '[' + namespace.shift() + ']';
     }
+    return {
+      param : formParam,
+      msg : msg,
+      value : value
+    };
+  }
+}));
 
+app.use(flash());
 
-    var userSchema = new Schema({
-        email: String,
-        password: String
-    });
-
-    var User = mongoose.model('User', userSchema);
-
-
-    app.set('view engine', 'jade');
-    app.set('views', './');
-
-
-    app.use(bodyParser.urlencoded());
-    app.use(session({
-        secret: 'da illest developer',
-        resave: true,
-        saveUninitialized: true
-    }));
-
-
-    app.use(passport.initialize());
-    app.use(passport.session());
-
-    passport.serializeUser(function (user, done) {
-        return done(null, user._id);
-    });
-
-    passport.deserializeUser(function (id, done) {
-        User.findbyId(id, function (err, done) {
-            done(err, user);
-        });
-    });
-
-    passport.use('registerUser', new localStrategy({
-        pass ReqToCallback
-    :
-    true
-},
-    function (req, username, password, done) {
-        var newUser = new User({
-                email: req.body.email,
-                password: password
-            });
-
-      new User.save(function (err) {
-            if (err) {
-                return done(err);
-            }
-            return dobe(null, newUser);
-        });
-    }
+app.use(function (req, res, next) {
+  res.locals.success_msg = req.flash('success_msg');
+  res.locals.error_msg = req.flash('error_msg');
+  res.locals.error = req.flash('error');
+  res.locals.user = req.user || null;
+  next();
 
 });
 
-app.route('/')
-    .get(function (req, res) {
-    res.render('index');
-});
+app.use('/', routes);
+app.use('/users', users);
+
+
+
 
 
 
