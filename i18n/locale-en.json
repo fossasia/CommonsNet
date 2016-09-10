@@ -1,4 +1,5 @@
 {
+  "table_of_contents": "In this section",
   "about_us": {
     "title": "We are a team of Wifi enthusiasts",
     "title_short": "About us",
@@ -145,29 +146,41 @@
   "contact": {
     "contact_us": "Contact us",
     "find_out_more": "Many questions are answered in our FAQ and you can find out more about our CommonsNet network and community here. If you are unable to find your answer via our FAQ or website please contact us",
-    "mailing_address": "Mailing address",
-    "not_office": "Please note: we are a distributed team working all over the world. We don’t have an office, but if you need to send us an  email please use above form or send it to:",
-    "email": "commonsnet.team@gmail.com",
-    "report_bugs": "Reporting bugs with CommonsNet website",
-    "use_form": "You can write to us using the form above",
+    "mailing": {
+      "title": "Mailing address",
+      "title_short": "Mailing list"
+    },
+    "not_office": "Please note: we are a distributed team working all over the world. We don’t have an office, but if you need to send us an  email please use above form or send it to: <span class=\"email\">commonsnet.team@gmail.com</span>",
+    "issues": {
+      "title": "Reporting bugs with CommonsNet website",
+      "title_short": "Report bugs",
+      "content": "You can write to us using the form above <a href=\"http://github.com/fossasia/CommonsNet\">or you can create an issue on GitHub</a>."
+    },
+    "get_involved": {
+      "title": "Get involved",
+      "title_short": "@:contact.get_involved.title",
+      "content": "There are numerous ways to connect with CommonsNet",
+      "share_wifi": {
+        "title": "Share your Wifi details",
+        "content": "Commonsnet would do little without enthusiastic use by Wifi providers. If you share your Wifi with other people make them transparent <a href=\"http://commonsnet.herokuapp.com/#/generate-wifi\">using our great tool</a>."
+      },
+      "social": {
+        "title": "Social",
+        "twitter": "<a href=\"https://twitter.com/Commons_Net\">Follow us on Twitter</a>",
+        "facebook": "<a href=\"https://www.facebook.com/CommonsNetApp\">Find us on Facebook</a>"
+      },
+      "support": {
+        "title": "Support",
+        "content": "CommonsNet stays alive because of support from the community <a href=\"https://github.com/fossasia/CommonsNet\">Join us on GitHub</a>."
+      }
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "title_short": "FAQ"
+    },
     "this_section": "In this section",
-    "share_wifi": "Share your Wifi details",
-    "faq": "Frequently asked questions",
-    "users": "Commonsnet would do little without enthusiastic use by Wifi providers. If you share your Wifi with other people make them transparent",
-    "social": "Social",
-    "get_involved": "Get involved",
-    "support": "Support",
-    "stay_alive": "CommonsNet stays alive because of support from the community",
-    "ways": "There are numerous ways to connect with CommonsNet",
     "contribute": "The best way to start interacting and contributing to the community is to join us on GitHub:",
     "github": "https://github.com/fossasia/CommonsNet",
-    "sidemenu": {
-      "faq": "FAQ",
-      "mail": "Mailing List",
-      "get_involved": "Get Involved",
-      "report_bugs": "Report Bugs"
-
-    },
     "connect_with_us": {
       "title": "Connect with CommonsNet",
       "emailAddress": "Your email address",
