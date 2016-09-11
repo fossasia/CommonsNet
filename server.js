@@ -11,14 +11,13 @@ var session = require('express-session');
 var passport = require('passport');
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/commonsnet');
+mongoose.connect(process.env.PROD_MONGODB);
 var db = mongoose.connection;
 
 var routes = require('./routes/app');
 var users = require('./routes/users');
 
 app.set('port', (process.env.PORT || 5000));
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
