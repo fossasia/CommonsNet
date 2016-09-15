@@ -715,11 +715,11 @@ text-align: center;
 
 .generate {
  
-   height: 100%;
+   height: 80%;
    float: center;
    display: inline-block;
    margin-top: 50px;
-   padding: 80px;
+   padding: 20px;
    background-color: white;
 
 
@@ -1040,9 +1040,13 @@ font-size: 18px;
     height: 20px;
     /* border: 2px solid #00a8f2; */
     /* margin-bottom: 8px; */
-    
 
-    
+}
+
+.cb {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
 }
 .col-lg-6  {
     /*display: inline-block;*/
@@ -1320,6 +1324,11 @@ padding: 80px;
 }
 a {
     color: white;
+}
+
+.container {
+    padding-right: 150px;
+    padding-left: 150px;
 }
     /*!
   }

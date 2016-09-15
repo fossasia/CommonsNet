@@ -8,12 +8,18 @@ app.controller('HomeCtrl', ['$scope', 'blog', function($scope, blog) {
                     var title = (data[item][subItem].title);
                     var img = (data[item][subItem].featured_image);
                       var url = (data[item][subItem].URL);
+                    var date = (data[item][subItem].date);
                  // console.log(title, img);
                    if(typeof title !== "undefined") {
-                      results.push({'title': title, 'img': img, 'url': url});
+                       results.push({'title': title, 'img': img, 'url': url, 'date': date});
                     }
                  }
               }
+
+          var sorted = results.sort(function(a, b){return new Date(b.date) - new Date(a.date) });
+                console.log(sorted);
+          results = sorted.slice(0, 8);
+                console.log(results);
 
           $scope.results = results
           $scope.icons = [

@@ -70,9 +70,9 @@
           "newsletter": "Signing up to a newsletter",
           "mobile": "Providing a mobile number",
           "email": "Providing an email address",
-          "personaldetails": " Entering a personal details like age group, geneder etc.",
-          "disable": "Disabling auto-update function is required",
-          "reference": "Having a reference number provided by the Owner"
+          "personaldetails": " Entering a personal details",
+          "disable": "Disabling auto-update function",
+          "reference": "Having a reference number"
         },
         "limits": "Limits",
         "restrictions": {
