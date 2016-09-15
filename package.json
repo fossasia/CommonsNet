@@ -27,7 +27,8 @@
     "express-handlebars": "*",
     "express-messages": "*",
     "express-validator": "*",
-    "passport-http": "*"
+    "passport-http": "*",
+    "assert": "~1.4.1"
   },
   "repository": {
     "type": "git",

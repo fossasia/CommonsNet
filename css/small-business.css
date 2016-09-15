@@ -1329,9 +1329,23 @@ a {
     padding-right: 150px;
     padding-left: 150px;
 }
-    /*!
-  }
- * Start Bootstrap - Small Business HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+
+.dashboard {
+    padding-top: 150px;
+    padding-bottom: 200px;
+    height: 100%;
+}
+
+.dash {
+    color: #777;
+}
+.buttons {
+    margin-top: 30px;
+}
+
+/*!
+}
+* Start Bootstrap - Small Business HTML Template (http://startbootstrap.com)
+* Code licensed under the Apache License v2.0.
+* For details, see http://www.apache.org/licenses/LICENSE-2.0.
+*/

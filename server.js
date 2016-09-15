@@ -9,6 +9,7 @@ var expressValidator = require('express-validator');
 var flash = require('connect-flash');
 var session = require('express-session');
 var passport = require('passport');
+var assert = require('assert');
 
 var mongoose = require('mongoose');
 mongoose.connect(process.env.PROD_MONGODB);
@@ -55,7 +56,7 @@ app.get('/path_to_pdf', function(request, response) {
 // var MongoClient = mongodb.MongoClient;
 
 // Connection URL. This is where your mongodb server is running.
-// var url = 'mongodb://localhost:27017/commonsnet';
+
 
 // // Use connect method to connect to the Server
 // MongoClient.connect(url, function (err, db) {

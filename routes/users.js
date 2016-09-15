@@ -1,10 +1,11 @@
 var express = require('express');
+var mongoose = require('mongoose');
 var passport = require('passport');
 var router = express.Router();
 var localStrategy = require('passport-local').Strategy;
 
 var User = require("../models/user");
-
+var Location = require("../models/location")
 
 router.post('/register', function (req,res){
     var username = req.body.username;
@@ -44,6 +45,16 @@ router.post('/register', function (req,res){
 
 });
 
+router.post('/insert', function (req, res) {
+    var location = req.body.location;
+    var newLocation = new Location({
+        name: location
+    })
+    Location.createLocation(newLocation)
+});
+
+
+
 passport.use(new localStrategy(
     function(username, password, done) {
      User.getUserByUsername(username, function(err, user) {
@@ -73,9 +84,9 @@ passport.deserializeUser(function(id, done){
 });
 
 router.post('/login',
-    passport.authenticate('local', {successRedirect: '/', failureRedirect: '/users/login', failureFlash: true }),
+    passport.authenticate('local', {successRedirect: '/', failureRedirect: 'users/login', failureFlash: true }),
     function(req, res) {
-        res.redirect('/');
+        res.redirect("/#/users/login");
 
     });
 router.get('/logout', function (req, res) {
