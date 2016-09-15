@@ -11,18 +11,18 @@
         <!-- wizard-container start ng-controller - call to Wizard Controller defined in Angular -->
         <div id="wizard-container" ng-controller="WizardController as vm">
           <!-- wizard step start -->
-          <div id="wizard-step-container">
+          <!--<div id="wizard-step-container">-->
 
-            <ul class="progress-indicator wizard">
-              <li class="completed" ng-repeat="step in vm.steps" ng-class=" {'active':step.step <= vm.currentStep} ">
-                <span class="bubble"> </span>
-                <!-- ng click call to function vm.gotoStep -->
-                <a class="awizard" ng-click="vm.gotoStep(step.step)" href="">{{step.name}}</a>
-              </li>
-            </ul>
+            <!--<ul class="progress-indicator wizard">-->
+              <!--<li class="completed" ng-repeat="step in vm.steps" ng-class=" {'active':step.step <= vm.currentStep} ">-->
+                <!--<span class="bubble"> </span>-->
+                <!--&lt;!&ndash; ng click call to function vm.gotoStep &ndash;&gt;-->
+                <!--<a class="awizard" ng-click="vm.gotoStep(step.step)" href="">{{step.name}}</a>-->
+              <!--</li>-->
+            <!--</ul>-->
             <!-- Button Back -->
 
-          </div>
+          <!--</div>-->
           <!-- wizard step end -->
 
           <div id="wizard-content-container">

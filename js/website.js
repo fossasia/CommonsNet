@@ -15,8 +15,6 @@ var app = angular.module('website', ['ngRoute', 'summernote', 'pascalprecht.tran
                 templateUrl : 'partials/generate-wifi.html',
                 controller  : 'GenerateWiFiCtrl'
              })
-
-
             .when('/contact', {
                 templateUrl : 'partials/contact.html',
                 controller  : 'ContactCtrl'
@@ -28,12 +26,16 @@ var app = angular.module('website', ['ngRoute', 'summernote', 'pascalprecht.tran
            .when('/file', {
               templateUrl : 'partials/file_structure.html',
               controller: 'FileCtrl'
-
            })
-
-
-
-            .otherwise ({redirectTo: '/'});
+          .when('/users/login', {
+              templateUrl : 'partials/login.html',
+              controller: 'LoginCtrl'
+          })
+          .when('/users/register', {
+            templateUrl : 'partials/register.html'
+            // controller: 'RegisterCtrl'
+          })
+          .otherwise ({redirectTo: '/'});
 
 
     })

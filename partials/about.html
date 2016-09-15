@@ -2,112 +2,63 @@
   <div class="row">
     <div class="col-lg-9 col-md-9 col-xs-9">
       <article>
-        <h1 id="about-us">
-          {{ 'about_us.title' | translate }}
-        </h1>
-        <p>
-          {{ 'about_us.description1' | translate }}
-        </p>
-        <p>
-          {{ 'about_us.description2' | translate }}
-        </p>
-
-        <h3 id="our-activity">
-          {{ 'about_us.activity.title' | translate }}
-        </h3>
-        <p>
-          {{ 'about_us.activity.content' | translate }}
-        </p>
-
-        <h3 id="what-we-can-do">
-          {{ 'about_us.offer.title' | translate }}
-        </h3>
-        <p>
-          {{ 'about_us.offer.content' | translate }}
-        </p>
-
+        <h1 id="about-us" translate="about_us.title"></h1>
+        <p translate="about_us.description1"></p>
+        <p translate="about_us.description2"></p>
+        <section id="our-activity">
+          <h3 translate="about_us.activity.title"></h3>
+          <p translate="about_us.activity.content"></p>
+        </section>
+        <section id="what-we-can-do">
+          <h3 translate="about_us.offer.title"></h3>
+          <p translate="about_us.offer.content"></p>
+        </section>
         <blockquote>
           <i class="fa fa-1x fa-quote-left" aria-hidden="true"></i>
-          {{ 'about_us.mission_quote' | translate }}
+          <span translate="about_us.mission_quote"></span>
           <i class="fa fa-1x fa-quote-right" aria-hidden="true"></i>
         </blockquote>
-
-        <h3 id="how-it-looks">
-          {{ 'about_us.process.title' | translate }}
-        </h3>
-
-        <h4>
-          {{ 'about_us.process.basic_details.title' | translate }}
-        </h4>
-        <p>
-          {{ 'about_us.process.basic_details.content' | translate }}
-        </p>
-
-        <h4>
-          {{ 'about_us.process.payment_and_limits.title' | translate }}
-        </h4>
-        <p>
-          {{ 'about_us.process.payment_and_limits.content' | translate }}
-        </p>
-
-        <h4>
-          {{ 'about_us.process.conditions.title' | translate }}
-        </h4>
-        <p>
-          {{ 'about_us.process.conditions.content' | translate }}
-        </p>
-
-        <h4>
-          {{ 'about_us.process.legal_restrictions.title' | translate }}
-        </h4>
-        <p>
-          {{ 'about_us.process.legal_restrictions.content' | translate }}
-        </p>
+        <section id="how-it-looks">
+          <h3 translate="about_us.process.title"></h3>
+          <section>
+            <h4 translate="about_us.process.basic_details.title"></h4>
+            <p translate="about_us.process.basic_details.content"></p>
+          </section>
+          <section>
+            <h4 translate="about_us.process.payment_and_limits.title"></h4>
+            <p translate="about_us.process.payment_and_limits.content"></p>
+          </section>
+          <section>
+            <h4 translate="about_us.process.conditions.title"></h4>
+            <p translate="about_us.process.conditions.content"></p>
+          </section>
+          <section>
+            <h4 translate="about_us.process.legal_restrictions.title"></h4>
+            <p translate="about_us.process.legal_restrictions.content"></p>
+          </section>
+        </section>
       </article>
     </div>
     <div class="col-lg-2 col-md-2 col-xs-2">
-      <section>
-        <h4>In this section</h4>
-        <ul class="child-sidebar-menu">
+      <section class="sidebar-menu">
+        <h4 translate="table_of_contents"></h4>
+        <ul>
           <li>
-            <a class="sidebar-menu" href="#about-us">
-              {{ 'about_us.title_short' | translate }}
-            </a>
+            <a href="#about-us" translate="about_us.title_short"></a>
           </li>
           <li>
-            <a class="sidebar-menu" href="#our-activity">
-              {{ 'about_us.activity.title_short' | translate }}
-            </a>
+            <a href="#our-activity" translate="about_us.activity.title_short"></a>
           </li>
           <li>
-            <a class="sidebar-menu" href="#what-we-can-do">
-              {{ 'about_us.offer.title_short' | translate }}
-            </a>
+            <a href="#what-we-can-do" translate="about_us.offer.title_short"></a>
           </li>
           <li>
-            <a class="sidebar-menu" href="#how-it-looks">
-              {{ 'about_us.process.title_short' | translate }}
-            </a>
+            <a href="#how-it-looks" translate="about_us.process.title_short"></a>
           </li>
         </ul>
       </section>
-
-      <!-- TODO: move 'Connect with CommonsNet' to a directive -->
       <section>
-        <h4>
-          <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          Connect with CommonsNet
-        </h4>
-        <form>
-          <input
-            class="form"
-            type="email"
-            placeholder="Your email address"
-            required>
-          <button class="form-btn bt" type="submit">
-            Sign up
-          </button>
-        </form>
+        <connect-with-us></connect-with-us>
       </section>
     </div>
   </div>

@@ -1,152 +1,64 @@
-<div class="container contactcontainer">
-  <!-- Heading Row -->
 
-
-  <div id="messages" class="alert alert-success" ng-show="message">
-    {{ message }}
-  </div>
-  <div class="col-lg-12 col-md-12 col-xs-12">
-    <div class="row">
-
-      <!-- Form -->
-
-
-      <div class="col-lg-9 col-md-9 col-xs-9">
-        <h1 class="hcontact black"><b> {{ 'contact.contact_us' | translate }} </b></h1>
-        <p> {{ 'contact.find_out_more' | translate  }} </p>
-
-        <div class="row">
-
-          <div class="col-lg-8 col-md-9 col-xs-9">
-
-
-            <form name="myForm" id="contact-us" ng-submit="submitForm()">
-              <!-- Left Inputs -->
-
-              <!-- Name -->
-              <span ng-show="myForm.nameInput.$dirty && myForm.nameInput.$invalid">The name is required!</span>
-              <input type="text" name="nameInput" id="name" ng-model="nameInput" class="form" placeholder="Name"
-                     ng-change="submit()" required/>
-              <!-- Email -->
-              <span ng-show="myForm.nameMail.$dirty && myForm.nameMail.$invalid"></span>
-              <span ng-show="myForm.nameMail.$dirty && myForm.nameMail.$invalid">Email is required!</span>
-
-              <span ng-show="myForm.nameMail.$error.pattern">Not a valid email form!</span>
-              <input type="email" name="nameMail" id="mail" ng-model="nameMail" class="form" placeholder="Email"
-                     ng-pattern="/\S+@\S+\.\S+/" ng-change="submit()" required/>
-              <!-- Subject -->
-              <span ng-show="myForm.subjectInput.$dirty && myForm.subjectInput.$invalid">The subject is required!</span>
-              <input type="text" name="subjectInput" id="subject" ng-model="subjectInput" class="form"
-                     placeholder="Subject" ng-change="submit()" required/>
-              <!-- Message -->
-              <span ng-show="myForm.messageInput.$dirty && myForm.messageInput.$invalid">The message is required!</span>
-              <textarea type="text" name="messageInput" id="message" class="form textarea" ng-model="messageInput"
-                        placeholder="Message" ng-change="submit()" required> </textarea>
-              <!-- Send Button -->
-              <button type="submit" class="form-btn">Send Message</button>
-            </form>
-
-            <!-- End Left Inputs -->
-          </div>
-        </div>
-
-
-        <div id="mailing" class="row">
-          <h3 class="hcontact"><b> {{ 'contact.mailing_address' | translate }} </b></h3>
-          <p> {{ 'contact.not_office' | translate }} </p>
-          <ul>
-            <li><h4> {{ 'contact.email' | translate }} </h4></li>
-          </ul>
-
-        </div>
-        <div id="reportbugs" class="row">
-          <h3 class="hcontact"><b> {{ 'contact.report_bugs' | translate }} </b></h3>
-          <p> {{ 'contact.use_form' | translate }} <a class="sidebar-menu" href="http://github.com/fossasia/CommonsNet"> or you
-            can create an
-            issue on GitHub.</a></p>
-        </div>
-
-        <div id="getinvolved" class="row">
-          <h3 class="hcontact"><b> {{ 'contact.get_involved' | translate }} </b></h3>
-          <p> {{ 'contact.ways' | translate }} </p>
-          <h4 class="hcontact"><b> {{ 'contact.share_wifi' | translate }} </b></h4>
-          <p> {{ 'contact.users' | translate }} <a class="sidebar-menu"
-                                              href="http://commonsnet.herokuapp.com/#/generate-wifi"> using our
-            great tool. </a></p>
-          <h4 class="hcontact"><b> {{ 'contact.social' | translate }} </b></h4>
-          <li><a class="sidebar-menu" href="https://twitter.com/Commons_Net"> Follow us on Twitter</li>
-          <li><a class="sidebar-menu" href="https://www.facebook.com/CommonsNetApp"> Find us on Facebook </a></li>
-
-          <h4 class="hcontact"><b> {{ 'contact.support' | translate }} </b></h4>
-          <li><b> {{ 'contact.stay_alive' | translate }} </b> <a class="sidebar-menu"
-                                                       href="https://github.com/fossasia/CommonsNet"> Join us
-            on GitHub </a>
-          </li>
-
-
-        </div>
-        <div id="faq" class="row">
-          <h3 class="hcontact">{{ 'contact.sidemenu.faq' | translate }}</h3>
-
-        </div>
-      </div>
-
-
-      <div class="col-lg-2 col-md-2 col-xs-2 space">
-        <div id="input" class="row">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-9 col-md-9 col-xs-9">
+      <article>
+        <h1 translate="contact.contact_us"></h1>
+        <p translate="contact.find_out_more"></p>
+        <contact-form></contact-form>
+        <section id="mailing">
+          <h3 translate="contact.mailing.title"></h3>
+          <p translate="contact.not_office"></p>
+        </section>
+        <section id="reportbugs">
+          <h3 translate="contact.issues.title"></h3>
+          <p translate="contact.issues.content"></p>
+        </section>
+        <section id="getinvolved">
+          <h3 translate="contact.get_involved.title"></h3>
+          <p translate="contact.get_involved.content"></p>
           <section>
-            <h4 class="hcontact">{{ 'contact.this_section' | translate }}</h4>
-            <ul class="child-sidebar-menu">
-              <li>
-                <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/contact#">{{ 'contact.sidemenu.faq' | translate }}</a>
-              </li>
-              <li>
-                <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/contact#getinvolved">{{ 'contact.sidemenu.get_involved' | translate }}</a>
-              </li>
-              <li>
-                <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/contact#mailing">{{ 'contact.sidemenu.mail' | translate }}</a>
-              </li>
-              <li>
-                <a class="sidebar-menu" href="http://commonsnet.herokuapp.com/#/contact#reportbugs">{{ 'contact.sidemenu.report_bugs' | translate }}</a>
-              </li>
-
+            <h4 translate="contact.get_involved.share_wifi.title"></h4>
+            <p translate="contact.get_involved.share_wifi.content"></p>
+          </section>
+          <section>
+            <h4 translate="contact.get_involved.social.title"></h4>
+            <ul>
+              <li translate="contact.get_involved.social.twitter"></li>
+              <li translate="contact.get_involved.social.facebook"></li>
             </ul>
           </section>
-        </div>
-        <div class="row">
           <section>
-            <span>
-              <h4 class="hcontact"><i class="fa fa-envelope-o" aria-hidden="true"></i> {{ 'contact.connectCommonsNet' | translate }}</h4>
-            </span>
-            <div>
-              <form>
-                <span>
-                  <input class="form" placeholder="Your email address" type="email" required="">
-                    <button class="form-btn bt" type="submit">{{ 'contact.signup' | translate }}</button>
-                </span>
-              </form>
-            </div>
+            <h4 translate="contact.get_involved.support.title"></h4>
+            <li translate="contact.get_involved.support.content"></li>
           </section>
-        </div>
-
-      </div>
-
-
-      <!-- Your Mail Message -->
-
-
-      <!-- End Contact Form Area -->
-
-
-    </div><!-- End Inner -->
-
+        </section>
+        <section id="faq">
+          <h3 translate="contact.faq.title"></h3>
+        </section>
+      </article>
+    </div>
+    <div class="col-lg-2 col-md-2 col-xs-2">
+      <section class="sidebar-menu">
+        <h4 translate="table_of_contents"></h4>
+        <ul>
+          <li>
+            <a href="#faq" translate="contact.faq.title_short"></a>
+          </li>
+          <li>
+            <a href="#getinvolved" translate="contact.get_involved.title_short"></a>
+          </li>
+          <li>
+            <a href="#mailing" translate="contact.mailing.title_short"></a>
+          </li>
+          <li>
+            <a href="#reportbugs" translate="contact.issues.title_short"></a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <connect-with-us></connect-with-us>
+      </section>
+    </div>
   </div>
-
-
-
-
-
-
-
-
-
+</div>

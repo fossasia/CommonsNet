@@ -21,6 +21,7 @@ body {
 a {
     color: white;
 }
+
 .addfield {
   float:right;
 }
@@ -716,17 +717,12 @@ text-align: center;
 }
 
 .generate {
-
-   height: 100%;
+   height: 80%;
    float: center;
    display: inline-block;
    margin-top: 50px;
-   padding: 80px;
+   padding: 20px;
    background-color: white;
-
-
-
-
 
 }
 
@@ -1043,7 +1039,12 @@ font-size: 18px;
     /* border: 2px solid #00a8f2; */
     /* margin-bottom: 8px; */
 
+}
 
+.cb {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
 
 }
 .col-lg-6  {
@@ -1319,6 +1320,14 @@ padding: 80px;
 }
 .col-md-7 {
   margin-right: 50px;
+}
+a {
+    color: white;
+}
+
+.container {
+    padding-right: 150px;
+    padding-left: 150px;
 }
     /*!
   }
