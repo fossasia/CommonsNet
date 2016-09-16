@@ -11,12 +11,15 @@
       <div class="col-lg-6 col-md-6 col-xs-6">
         <label for="location" class="required ">{{ 'wizard.sections.settings.location' | translate }}</label>
         <input type="text" name="location" id="location" class="form" ng-model="vm.location"/>
+        <button type="submit"> Insert </button>
       </div>
 
 
     </div>
     <div class="col-lg-1 col-md-1 col-xs-1"></div>
   </div>
+  </form>
+<form action="/details/save" method="post">
   <div class="row">
     <div class="col-lg-1 col-md-1 col-xs-1"></div>
     <div class="col-lg-10 col-md-10 col-xs-10">
@@ -30,7 +33,7 @@
         <label for="ssid"> {{ 'wizard.labels.ssid' | translate }} </label>
         <input type="text" name="ssid" id="ssid" class="form" ng-model="vm.ssid" required/>
         <label for="login">{{ 'wizard.labels.login' | translate }}</label>
-        <input type="text" name="ssid" id="login" class="form" ng-model="vm.loginname" required/>
+        <input type="text" name="login" id="login" class="form" ng-model="vm.loginname" required/>
         <label for="password">{{ 'wizard.labels.password' | translate }}</label>
         <input type="text" name="password" id="password" class="form" ng-model="vm.password"/>
         <label for="paidyes" class="labels vl-center  ">
@@ -135,7 +138,7 @@
     <div class="col-lg-1 col-md-1 col-xs-1"></div>
   </div>
 
-  <button type="submit"> Insert </button>
+  <button type="submit"> SAVE </button>
 </form>
 <!-- Finish form -->
 

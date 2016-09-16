@@ -17,7 +17,9 @@ var db = mongoose.connection;
 
 var routes = require('./routes/app');
 var users = require('./routes/users');
-var location = require("./routes/location");
+var location = require('./routes/location');
+var details = require('./routes/details');
+
 
 app.set('port', (process.env.PORT || 5000));
 app.use(bodyParser.json());
@@ -91,6 +93,7 @@ app.use(function (req, res, next) {
 app.use('/', routes);
 app.use('/users', users);
 app.use('/location', location);
+app.use('/details', details);
 
 
 
