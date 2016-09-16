@@ -5,7 +5,7 @@ var router = express.Router();
 var localStrategy = require('passport-local').Strategy;
 
 var User = require("../models/user");
-var Location = require("../models/location")
+
 
 router.post('/register', function (req,res){
     var username = req.body.username;
@@ -45,13 +45,7 @@ router.post('/register', function (req,res){
 
 });
 
-router.post('/insert', function (req, res) {
-    var location = req.body.location;
-    var newLocation = new Location({
-        name: location
-    })
-    Location.createLocation(newLocation)
-});
+
 
 
 
@@ -96,5 +90,7 @@ router.get('/logout', function (req, res) {
 
     res.redirect('/#/users/login')
 });
+
+
 
 module.exports = router;
