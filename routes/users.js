@@ -1,4 +1,5 @@
 var express = require('express');
+var mongoose = require('mongoose');
 var passport = require('passport');
 var router = express.Router();
 var localStrategy = require('passport-local').Strategy;
@@ -44,6 +45,10 @@ router.post('/register', function (req,res){
 
 });
 
+
+
+
+
 passport.use(new localStrategy(
     function(username, password, done) {
      User.getUserByUsername(username, function(err, user) {
@@ -73,9 +78,9 @@ passport.deserializeUser(function(id, done){
 });
 
 router.post('/login',
-    passport.authenticate('local', {successRedirect: '/', failureRedirect: '/users/login', failureFlash: true }),
+    passport.authenticate('local', {successRedirect: '/', failureRedirect: 'users/login', failureFlash: true }),
     function(req, res) {
-        res.redirect('/');
+        res.redirect("/#/users/login");
 
     });
 router.get('/logout', function (req, res) {
@@ -85,5 +90,7 @@ router.get('/logout', function (req, res) {
 
     res.redirect('/#/users/login')
 });
+
+
 
 module.exports = router;

@@ -1,4 +1,3 @@
-<form>
   <div class="row">
     <div class="col-lg-1 col-md-1 col-xs-1"></div>
     <div class="col-lg-10 col-md-10 col-xs-10">
@@ -9,7 +8,7 @@
       </h5>
       <div class="col-lg-6 col-md-6 col-xs-12">
         <div>
-          <input id="cb1" type="checkbox" class='vi-center' ng-model="vm.captiveportal" ng-false-value="'no'"
+          <input id="cb1" type="checkbox" class='vi-center cb' ng-model="vm.captiveportal" ng-false-value="'no'"
                  ng-true-value="'yes' ">
           <label for="cb1" class="labels" class="labels vl-center">
            {{ 'wizard.sections.conditions.options.register' | translate  }}
@@ -17,7 +16,7 @@
 
         </div>
         <div>
-          <input id="cb2" type="checkbox" class='vi-center' ng-model="vm.specialdevices" ng-false-value="'no'"
+          <input id="cb2" type="checkbox" class='vi-center cb' ng-model="vm.specialdevices" ng-false-value="'no'"
                  ng-true-value="'yes'">
           <label for="cb2" class="labels" class="labels vl-center">
             {{ 'wizard.sections.conditions.options.devices' | translate }}
@@ -26,16 +25,16 @@
                  ng-if="vm.specialdevices == 'yes' " required/>
         </div>
         <div>
-          <input id="cb3" type="checkbox" class='vi-center' ng-model="vm.specialsettings" ng-false-value="'no'"
+          <input id="cb3" type="checkbox" class='vi-center cb' ng-model="vm.specialsettings" ng-false-value="'no'"
                  ng-true-value="'yes'">
           <label for="cb3" class="labels">
             {{ 'wizard.sections.conditions.options.settings' | translate }}
           </label>
-          <input type="text" name="ssid" class="form" placeholder="List them" ng-model="vm.specialsettingsfield"
+          <input  id="cb3" type="text" name="ssid" class="form" placeholder="List them" ng-model="vm.specialsettingsfield"
                  ng-if="vm.specialsettings == 'yes' " required/>
         </div>
         <div>
-          <input id="cb4" type="checkbox" class='vi-center' ng-model="vm.acceptterms" ng-false-value="'no'"
+          <input id="cb4" type="checkbox" class='vi-center cb' ng-model="vm.acceptterms" ng-false-value="'no'"
                  ng-true-value="'yes'">
           <label for="cb4" class="labels" class="labels vl-center">
             {{ 'wizard.sections.conditions.options.terms' | translate }}
@@ -43,21 +42,21 @@
         </div>
 
         <div>
-          <input id="cb5" type="checkbox" class='vi-center' ng-model="vm.socialprofile" ng-false-value="'no'"
+          <input id="cb5" type="checkbox" class='vi-center cb' ng-model="vm.socialprofile" ng-false-value="'no'"
                  ng-true-value="'yes'">
           <label for="cb5" class="labels">
             {{ 'wizard.sections.conditions.options.like' | translate }}
           </label>
         </div>
         <div>
-          <input id="cb6" type="checkbox" class='vi-center' ng-model="vm.downloading" ng-false-value="'no'"
+          <input id="cb6" type="checkbox" class='vi-center cb' ng-model="vm.downloading" ng-false-value="'no'"
                  ng-true-value="'yes'">
           <label for="cb6" class="labels" class="labels vl-center">
             {{ 'wizard.sections.conditions.options.download' | translate }}
           </label>
         </div>
         <div>
-          <input id="cb7" type="checkbox" class='vi-center' ng-model="vm.register" ng-false-value="'no'"
+          <input id="cb7" type="checkbox" class='vi-center cb' ng-model="vm.register" ng-false-value="'no'"
                  ng-true-value="'yes'">
           <label for="cb7" class="labels" class="labels vl-center">
             {{ 'wizard.sections.conditions.options.website' | translate }}
@@ -67,14 +66,14 @@
       <div class="col-lg-6 col-md-6 col-xs-12">
 
         <div>
-          <input id="cb8" type="checkbox" class='vi-center' ng-model="vm.newsletter" ng-false-value="'no'"
+          <input id="cb8" type="checkbox" class='vi-center cb' ng-model="vm.newsletter" ng-false-value="'no'"
                  ng-true-value="'yes'">
           <label for="cb8" class="labels" class="labels vl-center">
             {{ 'wizard.sections.conditions.options.newsletter' | translate }}
           </label>
         </div>
         <div>
-          <input id="cb9" type="checkbox" class='vi-center' ng-model="vm.mobilenumber" ng-false-value="'no'"
+          <input id="cb9" type="checkbox" class='vi-center cb' ng-model="vm.mobilenumber" ng-false-value="'no'"
                  ng-true-value="'yes'">
           <label for="cb9" class="labels" class="labels vl-center">
             {{ 'wizard.sections.conditions.options.mobile' | translate }}
@@ -82,7 +81,7 @@
 
         </div>
         <div>
-          <input id="cb10" type="checkbox" class='vi-center' ng-model="vm.emailaddress" ng-false-value="'no'"
+          <input id="cb10" type="checkbox" class='vi-center cb' ng-model="vm.emailaddress" ng-false-value="'no'"
                  ng-true-value="'yes'">
           <label for="cb10" class="labels" class="labels vl-center">
             {{ 'wizard.sections.conditions.options.email' | translate }}
@@ -90,25 +89,25 @@
 
         </div>
         <div>
-          <input id="cb10" type="checkbox" class='vi-center' ng-model="vm.personaldetails" ng-false-value="'no'"
+          <input id="cb11" type="checkbox" class='vi-center cb' ng-model="vm.personaldetails" ng-false-value="'no'"
                  ng-true-value="'yes'">
-          <label for="cb10" class="labels" class="labels vl-center">
+          <label for="cb11" class="labels" class="labels vl-center">
             {{ 'wizard.sections.conditions.options.personaldetails' | translate }}
 
           </label>
         </div>
         <div>
-          <input id="cb11" type="checkbox" class='vi-center' ng-model="vm.autoupdatedisabled" ng-false-value="'no'"
+          <input id="cb12" type="checkbox" class='vi-center cb' ng-model="vm.autoupdatedisabled" ng-false-value="'no'"
                  ng-true-value="'yes'">
-          <label for="cb11" class="labels" class="labels vl-center">
+          <label for="cb12" class="labels" class="labels vl-center">
             {{ 'wizard.sections.conditions.options.disable' | translate }}
 
           </label>
         </div>
         <div>
-          <input id="cb12" type="checkbox" class='vi-center' ng-model="vm.referencenumber" ng-false-value="'no'"
+          <input id="cb13" type="checkbox" class='vi-center cb' ng-model="vm.referencenumber" ng-false-value="'no'"
                  ng-true-value="'yes'">
-          <label for="cb12" class="labels" class="labels vl-center">
+          <label for="cb13" class="labels" class="labels vl-center">
             {{ 'wizard.sections.conditions.options.reference' | translate }}
           </label>
 
@@ -122,7 +121,7 @@
   <div class="row">
     <div class="col-lg-1 col-md-1 col-xs-1"></div>
     <div class="col-lg-10 col-md-10 col-xs-10">
-      <div class="row">
+
         <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"><i class="fa fa-ban" aria-hidden="true"></i>
           {{ 'wizard.sections.conditions.limits' | translate }}
           <hr style="margin:0;border-width: 1px; border-color: #00a8f2;">
@@ -130,35 +129,34 @@
         <label class="labels vl-center  ">
         {{ 'wizard.sections.conditions.restrictions.isp' | translate }}
         </label>
-        <input id="cb13"  type="checkbox" class='vi-center' ng-model="vm.isprestrictionyes"
+        <input id="cb14"  type="checkbox" class='vi-center cb' ng-model="vm.isprestrictionyes"
                ng-false-value="'no'" ng-true-value="'yes'">
-        <label for="cb13">
+        <label for="cb14">
           {{ 'wizard.sections.conditions.restrictions.ispyes' | translate }}
         </label>
-        <input type="text" name="restrictions" class="form" placeholder="List them" ng-model="vm.isprestrictionsfield"
+        <input  id="cb15" type="text" name="restrictions" class="form" placeholder="List them" ng-model="vm.isprestrictionsfield"
                ng-if="vm.isprestrictionyes == 'yes' " required/>
         <br>
         <label class="labels vl-center  ">
           {{ 'wizard.sections.conditions.restrictions.limitdevices' | translate }}
         </label>
-        <input id="cb14"  type="checkbox" class='vi-center' ng-model="vm.limitdevicesyes" ng-false-value="'no'"
+        <input id="cb16"  type="checkbox" class='vi-center cb' ng-model="vm.limitdevicesyes" ng-false-value="'no'"
                ng-true-value="'yes'">
-        <label for="cb14">
+        <label for="cb16">
           {{ 'wizard.sections.conditions.restrictions.limitdevicesyes' | translate }}
         </label>
-        <input type="text" name="limitdevices" class="form" placeholder="How many?" ng-model="vm.limitdevicesfield"
+        <input  id="cb17" type="text" name="limitdevices" class="form" placeholder="How many?" ng-model="vm.limitdevicesfield"
                ng-if="vm.limitdevicesyes == 'yes' " required/>
         <br>
         <label class="labels vl-center ">
           {{ 'wizard.sections.conditions.restrictions.bandwidthcontrol' | translate }}
         </label>
-        <input id="yes"  type="checkbox" class='vi-center' ng-model="vm.dualbandyes"
+        <input  id="yes" type="checkbox" class='vi-center cb' ng-model="vm.dualbandyes"
                ng-false-value="'no'" ng-true-value="'yes'">
         <label for="yes" class="labels" class="labels vl-center">
           {{ 'wizard.sections.conditions.restrictions.bandwidthcontrolyes' | translate }}
         </label>
 
-      </div>
 
       <!-- 			 <div class="row">
 
@@ -208,8 +206,12 @@
 
 
       </div> -->
-      <div class="col-lg-1 col-md-1 col-xs-1"></div>
+
+
     </div>
 
     <div class="col-lg-1 col-md-1 col-xs-1"></div>
-</form>
+
+
+    </div>
+  </form>

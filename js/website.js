@@ -35,6 +35,10 @@ var app = angular.module('website', ['ngRoute', 'summernote', 'pascalprecht.tran
             templateUrl : 'partials/register.html'
             // controller: 'RegisterCtrl'
           })
+            .when('/admin', {
+                templateUrl : 'partials/admin_panel.html'
+                // controller: 'RegisterCtrl'
+            })
           .otherwise ({redirectTo: '/'});
 
 
