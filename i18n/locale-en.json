@@ -174,10 +174,6 @@
         "content": "CommonsNet stays alive because of support from the community <a href=\"https://github.com/fossasia/CommonsNet\">Join us on GitHub</a>."
       }
     },
-    "faq": {
-      "title": "Frequently asked questions",
-      "title_short": "FAQ"
-    },
     "this_section": "In this section",
     "contribute": "The best way to start interacting and contributing to the community is to join us on GitHub:",
     "github": "https://github.com/fossasia/CommonsNet",
@@ -187,7 +183,6 @@
       "get_involved": "Get Involved",
       "report_bugs": "Report Bugs"
     },
-    "faqtitle": "Frequently Asked Questions",
     "faq": {
       "one": "What is CommonsNet?",
       "two": "How can I get involved?",
@@ -197,8 +192,11 @@
       "six": "How can I generate a file?",
       "seven": "What does generating a code mean?",
       "eight": "Why do I have to enter my location?",
-      "nine": "Why does a file have your header?"
+      "nine": "Why does a file have your header?",
+      "title": "FAQ",
+      "title_short": "FAQ"
     },
+    "users": "Our users",
     "connect_with_us": {
       "title": "Connect with CommonsNet",
       "emailAddress": "Your email address",
