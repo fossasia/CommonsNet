@@ -1,0 +1,177 @@
+<div class="container file">
+  <div class="col-lg-12 col-md-12 col-xs-12">
+    <div class="col-lg-8 col-md-8 col-xs-12">
+      <div class="row">
+        <h3 class="lefta blue"> {{ ssid }} Wifi Details</h3>
+      </div>
+      <div class="row">
+        <h4 class="blue"> Preamble </h4>
+
+        <p>Across the world there are different settings and requirements for sharing of Internet connections and
+          specifically Open Wifi connections. This information is an attempt to show those details and make them
+          transparent to our Wifi users.</p>
+
+
+      </div>
+      <div class="row">
+        <h4 class="blue">1. Basic Wifi details: </h4>
+        <ul>
+          <li ng-if="isp && isp != 'undefined' ">
+            The Internet Service Provider is: <b> {{ isp }} </b>
+          </li>
+          <li ng-if="ssid && ssid != 'undefined' ">
+            The network name is: <b> {{ ssid }} </b>
+          </li>
+          <li ng-if="loginname && loginname != 'undefined' ">
+            The login name is: {{ loginname }}
+          </li>
+          <li ng-if="password && password != 'undefined' ">
+            The password to network is: <b> {{ password }} </b>
+          </li>
+          <li ng-if="password == 'undefined' ">
+            There is no password to the network
+          </li>
+          <li ng-if="paid && paid != 'undefined">
+            The network is paid <b> {{ paid }} </b>
+          </li>
+          <li ng-if="speed && speed == 'undefined' ">
+            The speed of the network is <b> {{ speed }} </b>
+          </li>
+          <li ng-if="security == 'undefined' ">
+            The network is not secured
+          </li>
+          <li ng-if="security && security != 'undefined' && security != 'OPEN'">
+            The network is secured under <b> {{ security }} </b>
+          </li>
+          <li ng-if="security == 'OPEN' ">
+            The Owner informs that network is open
+          </li>
+          <li ng-if="standard && standard != 'undefined'">
+            The network uses <b> {{ standard }} </b> standard
+          </li>
+        </ul>
+
+
+      </div>
+      <div class="row">
+        <h4 class="blue">4. Terms of Use: </h4>
+        <div
+          ng-if="specialdevices == 'undefined' && specialsettings == 'undefined' &&  acceptterms == 'undefined' && liking == 'undefined'  &&  downloading == 'undefined' && captiveportal == 'undefined' && register == 'undefined' && newsletter == 'undefined'  && mobilenumber == 'undefined' && emailaddress == 'undefined' && personaldetails == 'undefined' && autodisable == 'undefined' &&  rnumber == 'undefined' ">
+          <p> There are not any requirements to use Wifi </p>
+        </div>
+        <div
+          ng-if="specialldevices == 'yes' || specialsettings == 'yes' || acceptterms == 'yes' || liking == 'yes' || downloading == 'yes' || captiveportal == 'yes' || newsletter == 'yes' || register == 'yes' || mobilenumber == 'yes' || emailaddress == 'yes' || personaldetails == 'yes' || autodisable == 'yes' || rnumber == 'yes' ">
+          <p> Requirments to use Wifi: </p>
+
+        </div>
+        <div>
+          <ul>
+            <li ng-if="specialdevices == 'yes'">
+              specialdevices are {{ specialdevices }} required
+            </li>
+            <li ng-if="specialsettings == 'yes'">
+              specialsettings are required
+            </li>
+            <li ng-if="acceptterms == 'yes' ">
+              accepting terms of use
+            </li>
+            <li ng-if="liking == 'yes' ">
+              liking a social profile
+            </li>
+            <li ng-if="downloading == 'yes'">
+              downloading a file
+            </li>
+            <li ng-if="captiveportal == 'yes' ">
+              signing up using a captive portal
+            </li>
+            <li ng-if="newsletter  == 'yes' ">
+              signing up to a newsletter
+            </li>
+            <li ng-if="register == 'yes' ">
+              registering to Wifi's owner webiste
+            </li>
+            <li ng-if="mobilenumber == 'yes' ">
+              giving a mobile number
+            </li>
+            <li ng-if="emailaddress == 'yes' ">
+              giving an email address
+            </li>
+
+            <li ng-if="personaldetails == 'yes' ">
+              giving personal details llike age, gender.
+            </li>
+            <li ng-if="autodisable == 'yes' ">
+              disabling auto update function on their devices.
+            </li>
+            <li ng-if="rnumber == 'yes' ">
+              having a reference number
+            </li>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <h4 class="blue">2. Limits: </h4>
+        <ul>
+          <li ng-if="db && db != 'undefined' ">
+            Bandwidth control is used in the network
+          </li>
+          <li ng-if="isplimits && isplimits != 'undefined' ">
+            The ISP restricts websites like <b> {{ isplimits }} </b>
+          </li>
+          <li ng-if="nodf && nodf != 'undefined' ">
+            Each user can connect only <b> {{ nodf }} </b> devices to the network
+          </li>
+        </ul>
+        <!-- 	<div ng-if="limits && limits != 'undefined' ">
+                  <p>The Owner declares that there are some limits different limited options to use Wifi</p>
+                  <ul>
+                      <li ng-repeat="x in limits"> Paid: {{ x.payment }} Time Limit: {{ x.timelimit }}  Data Usage Limit: {{ x.datalimit }} </li>
+                  </ul>
+              </div> -->
+        <!-- <div ng-if="limits == 'undefined' ">
+                <p> The Owner declares that Wifi connection is completely free of any charge. </p>
+            </div> -->
+
+
+      </div>
+
+
+      <div class="row">
+        <h4 class="blue">3. Service: </h4>
+        <ul>
+          <li ng-if="service == 'undefined' ">
+            The Owner does not guarantee Wifi service
+          </li>
+          <li ng-if="service && service != 'undefined' ">
+            The Owner guarantees Wifi service. In case of trouble contact {{ service }}
+          </li>
+          <ul>
+
+      </div>
+
+      <!--
+            <div class="row">
+            	<h4>5. Restrictions </h4>
+                <div ng-if="ownrestr == 'yes' && ownrestfield != 'undefined' ">
+                    <p> The Owner informs that he forbids some activities in his network </p>
+                </div>
+                <div ng-if="ownrestr && ownrestfield != 'undefined' ">
+                    <p> The Owner informs these activities are: {{ ownrestfield }} </p>
+                </div>
+            	<div ng-if="restrictions == 'yes'">
+            		<p>The 0wner informs that under the law some activities are forbidden </p>
+            	</div>
+            	<div ng-if="restrictions == 'undefined' ">
+            		<p>The 0wner informs that there are not known to him any legal restriction to use Wifi connection, using Internet resources or taking actions in the network </p>
+            	</div>
+            	<div ng-if="country != 'undefined' && law != 'undefined' ">
+            		<p>The 0wner informs that under the law of {{ country }} users are not allowed to {{ law }}</p>
+            	</div>
+            </div> -->
+
+    </div>
+  </div>
+</div>
+
