@@ -13,7 +13,22 @@
   },
   "dependencies": {
     "ejs": "2.4.1",
-    "express": "4.13.3"
+    "express": "4.13.3",
+    "mongodb": "~2.2.9",
+    "body-parser": "~1.15.2",
+    "passport": "~0.3.2",
+    "passport-local": "~1.0.0",
+    "express-session": "~1.14.1",
+    "mongoose": "~4.6.0",
+    "jade": "~1.11.0",
+    "bcryptjs": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-validator": "*",
+    "passport-http": "*",
+    "assert": "~1.4.1"
   },
   "repository": {
     "type": "git",
@@ -31,6 +46,7 @@
     "mocha": "^2.5.3",
     "mocha-lcov-reporter": "~1.2.0",
     "codecov": "^1.0.1",
-    "pg": "~6.0.3"
+    "pg": "~6.0.3",
+    "angular-translate": "~2.11.1"
   }
 }

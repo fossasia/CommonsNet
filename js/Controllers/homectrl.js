@@ -1,55 +1,64 @@
-app.controller('HomeCtrl', ['$scope', 'blog', function($scope, blog) { 
+app.controller('HomeCtrl', ['$scope', 'blog', function($scope, blog) {
       $scope.title = 'Transparency is a key to a common success';
-      blog.success(function(data) { 
-            $scope.dictionary = data; 
+      blog.success(function(data) {
+            $scope.dictionary = data;
             var results = [];
+            var posts = [];
               for (item in data) {
                 for (subItem in data[item]) {
                     var title = (data[item][subItem].title);
                     var img = (data[item][subItem].featured_image);
                       var url = (data[item][subItem].URL);
+                        var date = (data[item][subItem].date);
+
                  // console.log(title, img);
                    if(typeof title !== "undefined") {
-                      results.push({'title': title, 'img': img, 'url': url});     
+                       results.push({'title': title, 'img': img, 'url': url, 'date': date});
                     }
                  }
               }
-     
+
+          var sorted = results.sort(function(a, b){return new Date(b.date) - new Date(a.date) });
+                console.log(sorted);
+          results = sorted.slice(0, 8);
+                console.log(results);
+
+
           $scope.results = results
           $scope.icons = [
           {
-            icon: 'info',
-            title: 'INFORM',
-            description: 'Collect your wifi details, put them in a form and provide a clear WiFi.'
+            icon: 'home.icons.inform.icon',
+            title: 'home.icons.inform.title',
+            description: 'home.icons.inform.description'
           },
           {
-            icon: 'share-alt',
-            title: 'SHARE',
-            description: 'Share your WiFi details in a transparent and easy-to understand way. '
+            icon: 'home.icons.share.icon',
+            title: 'home.icons.share.title',
+            description: 'home.icons.share.description '
           },
           {
-            icon: 'home',
-            title: 'FIND',
-            description: 'Let your users to find WiFi generated file supported by CommonsNet at your place.'
-          }, 
+            icon: 'home.icons.find.icon',
+            title: 'home.icons.find.title',
+            description: 'home.icons.find.description'
+          },
           {
-            icon: 'wifi',
-            title: 'CONNECT',
-            description: 'Thanks to providing wifi details in a generated file let your users connect to trustworthy wifi and enjoy Internet resources.'
+            icon: 'home.icons.connect.icon',
+            title: 'home.icons.connect.title',
+            description: 'home.icons.connect.description'
           }
           ]
            $scope.parts = [
            {
-            title: 'FILL',
-            description: 'Collect all details about Wifi you provided and put them into a prepared an easy-to-follow form.'
+            title: 'home.parts.fill.title',
+            description: 'home.parts.fill.description'
            },
             {
-            title: 'CREATE',
-            description: 'As you finish filling, click save button to generate file or code and share with your customers.'
+            title: 'home.parts.create.title',
+            description: 'home.parts.create.description'
            },
             {
-            title: 'ENJOY',
-            description: 'Enjoy providing your customers with a transparent and trustworthy wireless connection.'
+            title: 'home.parts.enjoy.title',
+            description: 'home.parts.enjoy.description'
            },
            ]
         });
