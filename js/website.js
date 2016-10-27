@@ -35,7 +35,7 @@ var app = angular.module('website', ['ngRoute', 'summernote', 'pascalprecht.tran
             templateUrl : 'partials/register.html'
             // controller: 'RegisterCtrl'
           })
-            .when('/admin', {
+            .when('/users/admin', {
                 templateUrl : 'partials/admin_panel.html'
                 // controller: 'RegisterCtrl'
             })
@@ -52,7 +52,7 @@ var app = angular.module('website', ['ngRoute', 'summernote', 'pascalprecht.tran
       $translateProvider.preferredLanguage('en');
     });
 
- function init_map(){
+ function init_map() {
      var myOptions = {
          zoom:14,
          center:new google.maps.LatLng(52.55121,13.404289999999946),

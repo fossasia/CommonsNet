@@ -11,7 +11,8 @@ var UserSchema = mongoose.Schema({
   },
   password: {
     type: String
-  }
+  },
+  details : [{ type: mongoose.Schema.Types.ObjectId, ref: 'File' }]
 });
 
 var User = module.exports = mongoose.model('User', UserSchema);
