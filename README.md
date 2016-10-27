@@ -1,4 +1,6 @@
 # CommonsNet
+
+[![Join the chat at https://gitter.im/fossasia/CommonsNet](https://badges.gitter.im/fossasia/CommonsNet.svg)](https://gitter.im/fossasia/CommonsNet?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/fossasia/CommonsNet.svg)](https://travis-ci.org/fossasia/CommonsNet)
 [![Issue Count](https://codeclimate.com/github/fossasia/CommonsNet/badges/gpa.svg)](https://codeclimate.com/github/fossasia/CommonsNet)
 [![Issue Count](https://codeclimate.com/github/fossasia/CommonsNet/badges/issue_count.svg)](https://codeclimate.com/github/fossasia/CommonsNet)
