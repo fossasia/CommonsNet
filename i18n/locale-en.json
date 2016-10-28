@@ -1,0 +1,210 @@
+{
+  "table_of_contents": "In this section",
+  "about_us": {
+    "title": "We are a team of Wifi enthusiasts",
+    "title_short": "About us",
+    "description1": "Across the world there are different legal settings and requirements for sharing of Internet connections. CommonsNet is a webiste which reflects these details and make them transparent to users.",
+    "description2": "Our system enables to collect all Wifi details in a easy-to-follow wizrd form, and then based on that details generate a human readable pdf file and a machine readeable link.",
+    "mission_quote": "We want people to be provided with clear data about wireless connection they use",
+    "activity": {
+      "title": "What we do",
+      "title_short": "Our activity",
+      "content": "We are a network of people who believe that network transparency is possible to build and we want to have an important impact on doing that. That is why we have prepared a great tool to help everyone make his or her Wifi details open and clear to everyone."
+    },
+    "offer": {
+      "title": "What we can do for you",
+      "title_short": "What we can do",
+      "content": "We provide you with a great tool to make a wifi network transparent, become an important member of community and work with us for our common goal."
+    },
+    "process": {
+      "title": "How it looks",
+      "title_short": "How it looks",
+      "basic_details": {
+        "title": "Basic details",
+        "content": "We want people to know what are the basic settings of wireless connection like SSID, password, authentication, standard, provided service etc."
+      },
+      "payment_and_limits": {
+        "title": "Payment & time limit",
+        "content": "We believe people should get clear information if the wifi they want to use is paid or limited. This section helps you to provide users with clear information about your fee and other limits like data usage and time."
+      },
+      "conditions": {
+        "title": "Conditions",
+        "content": "We want also to make people aware of conditions to use wireless connection and let them know what do they need to do in order to connect to offered wifi."
+      },
+      "legal_restrictions": {
+        "title": "Legal restrictions",
+        "content": "We don’t want legal restrictions to be a boundary. We want people to be aware of things they are not allowed to do while connecting to Internet using a wireless connection in a specific place to protect them from the negative consequences."
+      }
+    }
+  },
+  "wizard": {
+    "labels": {
+      "isp": "Internet Service Providers",
+      "ssid": "Network name",
+      "login": "Login",
+      "password": "WIFI Password",
+      "paidyes": "Is your Wifi paid?",
+      "paidyescheckbox": "YES",
+      "speed": "Speed",
+      "serviceyes": "Do you provide a Wifi service?",
+      "servicecheckbox": "yes",
+      "wifistandards": "Wifi Standards",
+      "authentication": "Authentication (Security)"
+    },
+    "sections": {
+      "settings": {
+        "location": "Location (Address)",
+        "basicdetails": "Basic Wifi Details",
+        "service": "Service"
+      },
+      "conditions": {
+        "conditions": "Conditions",
+        "options": {
+          "register": "Register using captive portal",
+          "devices": "Some devices are not applicable",
+          "settings": "Special settings are required",
+          "terms": "Accepting terms of use",
+          "like": "Liking social profile",
+          "download": "Downloading a pdf file",
+          "website": "Registering to website",
+          "newsletter": "Signing up to a newsletter",
+          "mobile": "Providing a mobile number",
+          "email": "Providing an email address",
+          "personaldetails": " Entering a personal details",
+          "disable": "Disabling auto-update function",
+          "reference": "Having a reference number"
+        },
+        "limits": "Limits",
+        "restrictions": {
+          "isp": "Does ISP restrict something or block any websites in a network?",
+          "ispyes": "yes",
+          "limitdevices": "Do you limit the number of devices?",
+          "limitdevicesyes": "yes",
+          "bandwidthcontrol": "Do you provide a bandwidth control?",
+          "bandwidthcontrolyes": "yes"
+        }
+      },
+      "confirmation": {
+        "title": "Congratulations!",
+        "content": "Download your pdf file or copy code to add to your website.",
+        "button": "Download"
+      }
+    }
+  },
+  "home": {
+    "icons": {
+      "inform": {
+        "icon": "info",
+        "title": "INFORM",
+        "description": "Collect your wifi details, put them in a form and provide a clear WiFi connection."
+      },
+      "share": {
+        "icon": "share-alt",
+        "title": "SHARE",
+        "description": "Share your WiFi details in a transparent and easy-to understand way."
+      },
+      "find": {
+        "icon": "home",
+        "title": "FIND",
+        "description": "Let your users to find WiFi generated file supported by CommonsNet at your place."
+      },
+      "connect": {
+        "icon": "wifi",
+        "title": "CONNECT",
+        "description": "Then let them connect to trustworthy and transparent wifi and enjoy Internet resources."
+      }
+    },
+    "parts": {
+      "fill": {
+        "title": "FILL",
+        "description": "Collect all details about Wifi you provided and put them into an easy-to-follow form."
+      },
+      "create": {
+        "title": "CREATE",
+        "description": "As you finish filling, click save button to generate file or code and share with your customers."
+      },
+      "enjoy": {
+        "title": "ENJOY",
+        "description": "Enjoy providing your customers with a transparent and trustworthy wireless connection."
+      }
+    },
+    "sections": {
+      "section1": {
+        "title": "How it works",
+        "content": "Learn how you can use our great tool for your needs."
+      },
+      "section2": {
+        "title": "Generate",
+        "content": "Generate your file or a code now to start providing users with a transparent Wifi details"
+      },
+      "section3": {
+        "title": "Visit our blog",
+        "content": "Find out latest news about our activity and wireless network"
+      }
+    }
+  },
+  "contact": {
+    "contact_us": "Contact us",
+    "find_out_more": "Many questions are answered in our FAQ and you can find out more about our CommonsNet network and community here. If you are unable to find your answer via our FAQ or website please contact us",
+    "mailing": {
+      "title": "Mailing address",
+      "title_short": "Mailing list"
+    },
+    "not_office": "Please note: we are a distributed team working all over the world. We don’t have an office, but if you need to send us an  email please use above form or send it to: <span class=\"email\">commonsnet.team@gmail.com</span>",
+    "issues": {
+      "title": "Reporting bugs with CommonsNet website",
+      "title_short": "Report bugs",
+      "content": "You can write to us using the form above <a href=\"http://github.com/fossasia/CommonsNet\">or you can create an issue on GitHub</a>."
+    },
+    "get_involved": {
+      "title": "Get involved",
+      "title_short": "@:contact.get_involved.title",
+      "content": "There are numerous ways to connect with CommonsNet",
+      "share_wifi": {
+        "title": "Share your Wifi details",
+        "content": "Commonsnet would do little without enthusiastic use by Wifi providers. If you share your Wifi with other people make them transparent <a href=\"http://commonsnet.herokuapp.com/#/generate-wifi\">using our great tool</a>."
+      },
+      "social": {
+        "title": "Social",
+        "twitter": "<a href=\"https://twitter.com/Commons_Net\">Follow us on Twitter</a>",
+        "facebook": "<a href=\"https://www.facebook.com/CommonsNetApp\">Find us on Facebook</a>"
+      },
+      "support": {
+        "title": "Support",
+        "content": "CommonsNet stays alive because of support from the community <a href=\"https://github.com/fossasia/CommonsNet\">Join us on GitHub</a>."
+      }
+    },
+    "this_section": "In this section",
+    "contribute": "The best way to start interacting and contributing to the community is to join us on GitHub:",
+    "github": "https://github.com/fossasia/CommonsNet",
+    "sidemenu": {
+      "faq": "FAQ",
+      "mail": "Mailing List",
+      "get_involved": "Get Involved",
+      "report_bugs": "Report Bugs"
+    },
+    "faq": {
+      "one": "What is CommonsNet?",
+      "two": "How can I get involved?",
+      "three": "How can I check my wifi details?",
+      "four": "How can I use your website?",
+      "five": "What does generating a file mean?",
+      "six": "How can I generate a file?",
+      "seven": "What does generating a code mean?",
+      "eight": "Why do I have to enter my location?",
+      "nine": "Why does a file have your header?",
+      "title": "FAQ",
+      "title_short": "FAQ"
+    },
+    "users": "Our users",
+    "connect_with_us": {
+      "title": "Connect with CommonsNet",
+      "emailAddress": "Your email address",
+      "connect": "Sign up"
+    },
+    "signup": "Sing Up"
+  }
+}
+
+
+

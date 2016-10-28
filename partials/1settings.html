@@ -1,82 +1,145 @@
+<form action="/details/save" method="post">
 
-<!-- form wireless settings  -->
-<form>
-  <div class="row">
-      <div class="col-lg-1 col-md-1 col-xs-1"></div>
-          <div class="col-lg-10 col-md-10 col-xs-10">
-              <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-wifi" aria-hidden="true"></i></i> WiFi Details<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
-                   <!-- col-lg-1 start and end -->
-                    <!-- col-lg-5 col-md-5 col-xs-10 start  left inputs-->
-                  <div class="col-lg-6 col-md-6 col-xs-12">
-                         <label for="male" class="required ">SSID </label>
-  								          <input type="text" name="ssid" id="ssid"  class="form "  ng-model="vm.ssid"  required/>
-                          <label for="male">WIFI Password</label>
-                            <input type="text" name="password" id="password"  class="form" ng-model="vm.password" />
-                          <label for="male" class="required ">Authentication</label>
-                             <select type="text" name="security"  class="form "  id="security" ng-model="vm.securitytypes" required>
-                          		  <option value="open">Open</option>
-                          		  <option value="Web-Open-Key">WEP Open Key</option> 
-                          		  <option value="Web-Shared-Key">WEP Shared Key</option>
-                          		  <option value="Wpa-Personal-TKIP">WPA Personal+TKIP</option>
-                          		  <option value="Wpa-Personal-AES">WPA Personal+AES</option>
-                          		  <option value="Wpa-Enterprise">WPA Enterprise</option>
-                          		  <option value="Wpa2-Personal">WPA2 Personal+AES</option>
-                          	</select>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-xs-6">
-                          <label for="male">Speed</label>
-        	                   <input type="text" name="capacity" id="capacity"  class="form" id="capacity" ng-model="vm.capacity"  required/>
-                          <label for="male">WiFi Standards</label>
-                                <select type="text" name="standard"  class="form "  id="wifi-standards" ng-model="vm.wifistandards" required>
-                                    <option value="802.11a">802.11a</option>
-                                    <option value="802.11b">802.11b</option>
-                                    <option value="802.11g">802.11g</option>
-                                    <option value="802.11n">802.11n</option>
-                                    <option value="802.11ac">802.11ac</option>
-                                    <option value="802.11ad">802.11ad</option>
-                                    <option value="802.11ah">802.11ah</option>
-                                </select>
+<div class="row">
+    <div class="col-lg-1 col-md-1 col-xs-1"></div>
+    <div class="col-lg-10 col-md-10 col-xs-10">
+      <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        Location
+        <hr style="margin:0;border-width: 1px; border-color: #00a8f2;">
+      </h5>
 
-                    </div>
-               </div>
-          <div class="col-lg-1 col-md-1 col-xs-1"></div>
+      <div class="col-lg-6 col-md-6 col-xs-6">
+        <label for="location" class="required ">{{ 'wizard.sections.settings.location' | translate }}</label>
+        <input type="text" name="location" id="location" class="form" ng-model="vm.location"/>
+       <!--  <button type="submit"> Insert </button> -->
+      </div>
+
+
+    </div>
+    <div class="col-lg-1 col-md-1 col-xs-1"></div>
   </div>
+
+
   <div class="row">
     <div class="col-lg-1 col-md-1 col-xs-1"></div>
-      <div class="col-lg-10 col-md-10 col-xs-10">
-        <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-usd" aria-hidden="true"></i> Payment<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
-            <div class="col-lg-6 col-md-6 col-xs-12" >
-              <label for="cb1" class="labels vl-center ">
-                Is WIFI paid?
-              </label>
-                    <input id="yes" name="cb1" type="checkbox" class='vi-center' ng-model="vm.paymentfieldyes"
-                             ng-false-value="'no'" ng-true-value="'yes'" >
-                  <label for="cb1" class="labels"  class="labels vl-center">
-                    YES
-                  </label>
-                    <input type="text" name="ssid" class="form" placeholder="How much per hour" ng-model="vm.paymentfield" ng-if="vm.paymentfieldyes == 'yes' " required/>
-              </div>
-          </div>
+    <div class="col-lg-10 col-md-10 col-xs-10">
+      <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"><i class="fa fa-wifi" aria-hidden="true"></i></i>
+        {{ 'wizard.sections.settings.basicdetails' | translate }}
+        <hr style="margin:0;border-width: 1px; border-color: #00a8f2;">
+      </h5>
+      <div class="col-lg-6 col-md-6 col-xs-12">
+        <label for="isp" class="required "> {{ 'wizard.labels.isp' | translate }} </label>
+        <input type="text" name="isp" id="isp" class="form" ng-model="vm.isp"/>
+        <label for="ssid"> {{ 'wizard.labels.ssid' | translate }} </label>
+        <input type="text" name="ssid" id="ssid" class="form" ng-model="vm.ssid" required/>
+        <label for="login">{{ 'wizard.labels.login' | translate }}</label>
+        <input type="text" name="login" id="login" class="form" ng-model="vm.loginname" required/>
+        <label for="password">{{ 'wizard.labels.password' | translate }}</label>
+        <input type="text" name="password" id="password" class="form" ng-model="vm.password"/>
+        <label for="paidyes" class="labels vl-center  ">
+          {{ 'wizard.labels.paidyes' | translate }}
+        </label>
+        <input id="paidyes" name="cb1" type="checkbox" class='vi-center cb' ng-model="vm.paidyes" ng-false-value="'no'"
+               ng-true-value="'yes'">
+        <label for="paidyescheckbox" class="labels" class="labels vl-center">
+          {{ 'wizard.labels.paidyescheckbox' | translate }}
+        </label>
+        <input type="text" id="paidyescheckbox" name="paymentfield" class="form" placeholder="How much?"
+               ng-model="vm.paidfield" ng-if="vm.paidyes == 'yes' " required/>
+
+
+      </div>
+      <div class="col-lg-6 col-md-6 col-xs-12">
+        <label for="datarate">{{ 'wizard.labels.speed' | translate }} </label>
+        <input type="text" name="datarate" id="datarate" class="form" ng-model="vm.datarate"/>
+
+        <label for="wifi-standards">{{ 'wizard.labels.wifistandards' | translate }}
+          <a class="btn btn-info btn-xs standard-help" data-toggle="standard-modal" data-target="#standar_modal">?</a>
+        </label>
+        <select type="text" name="standard" class="form" id="wifi-standards" ng-model="vm.wifistandards"
+                ng-options="standard.value as standard.standard for standard in standards" required>
+          <option value=""> </option>
+        </select>
+        <label for="security">{{ 'wizard.labels.authentication' | translate }} </label>
+        <select type="text" name="security" class="form" id="security" ng-model="vm.securitytypes"
+                ng-options="security.type as security.type for security in securities" required>
+          <option value=""> </option>
+        </select>
+
+
+      </div>
+
       <div class="col-lg-1 col-md-1 col-xs-1"></div>
+    </div>
+    <!--   <div class="row">
+        <div class="col-lg-1 col-md-1 col-xs-1"></div>
+          <div class="col-lg-10 col-md-10 col-xs-10">
+            <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-usd" aria-hidden="true"></i> Payment and limits<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
+      <div class="col-lg-4 col-md-4 col-xs-4">
+         <label for="cb1" class="labels vl-center">PAYMENT</label>
+         </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+         <label for="cb1" class="labels vl-center">TIME LIMIT </label>
+         </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <label for="cb1" class="labels vl-center">DATA USAGE</label>
+          </div>
+     <div ng-repeat="choice in choices">
+
+          <div class="col-lg-4 col-md-4 col-xs-4">
+
+              <input class="form" type="text"  ng-model="choice.payment" placeholder="How much per hour?"/>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+
+            <input class= "form" type="text" ng-model="choice.timelimit" placeholder="Define time limit">
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+
+            <input class="form" type="text" ng-model="choice.datalimit" placeholder="What is the limit?">
+          </div>
+            <button class="btn btn-default rig"  ng-show="$last" ng-click="removeChoice()">-</button>
+
+
+      </div>
+       <button class="btn btn-default rig"  ng-click="addNewChoice()">+</button>
+
+          </div>
+             <div class="col-lg-1 col-md-1 col-xs-1"></div>
+          </div> -->
+
   </div>
+
+
   <div class="row">
-      <div class="col-lg-1 col-md-1 col-xs-1"></div>
-        <div class="col-lg-10 col-md-10 col-xs-10">
-          <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"> <i class="fa fa-clock-o" aria-hidden="true"></i> Time Limit<hr style="margin:0;border-width: 1px; border-color: #00a8f2;"> </h5>
-              <div class="col-lg-6 col-md-6 col-xs-12" >       
-                <label for="cb1" class="labels vl-center  ">
-                Time limit?
-                </label>
-                    <input id="timeyes" name="cb1" type="checkbox" class='vi-center' ng-model="vm.timelimityes" ng-false-value="'no'" ng-true-value="'yes'" >
-                <label for="cb1" class="labels"  class="labels vl-center" >
-                    YES
-                </label>
-                    <input type="text" name="ssid"   class="form" placeholder="Type it" ng-model="vm.timelimitfield" ng-if="vm.timelimityes == 'yes' "  required/>
-              </div>
-          </div>
-      <div class="col-lg-1 col-md-1 col-xs-1"></div>
+    <div class="col-lg-1 col-md-1 col-xs-1"></div>
+    <div class="col-lg-10 col-md-10 col-xs-10">
+      <h5 style="font-weight:300; text-transform: uppercase; margin-top: 35px; color:#00a8f2;"><i class="fa fa-wrench" aria-hidden="true"></i></i>
+       {{ 'wizard.sections.settings.service' | translate }}
+        <hr style="margin:0;border-width: 1px; border-color: #00a8f2;">
+      </h5>
+      <div class="col-lg-6 col-md-6 col-xs-12">
+        <label for="serviceyes" class="labels vl-center  ">
+          {{ 'wizard.labels.serviceyes' | translate }}
+        </label>
+        <input id="serviceyes" name="cb1" type="checkbox" class='vi-center cb' ng-model="vm.serviceyes"
+               ng-false-value="'no'" ng-true-value="'yes'">
+
+        <label for="servicecheckbox" class="labels" class="labels vl-center">
+          {{ 'wizard.labels.servicecheckbox' | translate }}
+        </label>
+        <input type="text" name="servicecheckbox" id="servicecheckbox" class="form"
+               placeholder="Contact details/Phone Number" ng-model="vm.servicefield" ng-if="vm.serviceyes == 'yes' "
+               required/>
+        <!-- </label>
+            <input type="text" name="service"   class="form" placeholder="Type it" ng-model="vm.timelimitfield" ng-if="vm.timelimityes == 'yes' "  required/> -->
+      </div>
+    </div>
+    <div class="col-lg-1 col-md-1 col-xs-1"></div>
   </div>
-</form>
-                    <!-- Finish form -->
+
+  <!--<button type="submit"> SAVE </button>-->
+<!-- Finish form -->
 
 

@@ -1,207 +1,61 @@
-
-    <div class="intro-header agata">
-
+ <div class="intro-header agata">
         <div class="container-main ">
-
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-xs-12">
-               <!--      <div class="intro-message"> -->
-                   <!--      <h1>CommonsNet</h1> -->
                    <div class="col-lg-6 col-md-6 col-xs-6 transparent">
-                        <h1>Transparency is a key to a common success</h1>
-                     
-                          <button type="submit" id="submit" name="submit" class="form-btn semibold"><a href="#/about-us">LEARN MORE<a></button> 
-                        
-                          </div>
-                       
-                        
-                    </div>
+                        <h1 id="white" >{{title}}</h1>
+                          <button type="submit" id="submit" name="submit" class="form-btn semibold"><a href="#/about-us">LEARN MORE</a></button>
+                  </div>
                 </div>
             </div>
-
         </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.intro-message -->
-
-    <!-- Page Content -->
-
-  <a  name="services"></a>
-  <!-- content-section-b start -->
-
-    <div class="content-section-b">
-
+</div>
+<div class="content-section-b">
         <div class="container">
-
             <div class="row">
-              
-                   
-                    <div class="col-lg-3 col-md-6 col-xs-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa fa-4x fa fa-info text-primary" sr-icons data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
-                        <h3>Inform</h3>
-                        <p class="text-muted">Collect your wifi details, put them in a form and provide a clear WiFi.</p>
-                    </div>
-              
-                  
-                </div>
-                  <!-- end of div class="col-lg-3 col-md-6 col-xs-6 text-center"> -->
-                <div class="col-lg-3 col-md-6 col-xs-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa fa-share-alt text-primary sr-icons" data-sr-id="3" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
-                        <h3>Share</h3>
-                        <p class="text-muted">Share your WiFi details in a transparent and easy-to understand way. 
-</p>
-                    </div>
-                </div>
-                <!-- end of   <div class="col-lg-3 col-md-6 col-xs-6 text-center"> --> 
-                    
-                  <div class="col-lg-3 col-md-6 col-xs-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa fa-home text-primary sr-icons" data-sr-id="3" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
-                        <h3>Find</h3>
-                        <p class="text-muted">Let your users to find WiFi generated file supported by CommonsNet at your place.
-
-</p>
-                    </div>
-                </div>
-                   <!-- end of   <div class="col-lg-3 col-md-6 col-xs-6 text-center">--> 
-                  <div class="col-lg-3 col-md-6 col-xs-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa fa-wifi text-primary sr-icons" data-sr-id="3" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
-                        <h3>Connect</h3>
-                        <p class="text-muted">Thanks to providing wifi details in a generated file let your users connect to trustworthy wifi and enjoy Internet resources.</p>
-                    </div>
-                </div>
-                   <!-- end of   <div class="col-lg-3 col-md-6 col-xs-6 text-center"> --> 
+                    <div class="col-lg-3 col-md-6 col-xs-6 text-center ag" ng-repeat="icon in icons">
+                        <app-home info="icon"></app-home>
+                  </div>
             </div>
-
         </div>
-       <!--  /.container -->
-    </div>
-    <!-- content-section-b  -->
-    
-    <!-- content-section-a start -->
-        <div class="content-section-a">
-
-        <div class="container">
+</div>
+<div class="content-section-c">
+      <div class="container">
             <div class="row">
-              
-                 <div class="col-lg-12 col-md-12  col-xs-12 ">
-                 
-                    <h2 class="section-heading ">HOW IT WORKS</h2>
-                    <h3 class="special">Learn how you can use our great tool for your needs</h3>
-                 
-     
-                
-                               
-                 
-                   <div class="col-lg-4 col-md-4 col-xs-6">
-                      <div class="instruction">
-                   <h3 class="text-center">1. Fill form</h3>
-                  
-
-                      <p class="text-center">Collect all details about your Wifi connection and put them into a prepared an easy-to-follow form.
-</p>
-                     <!--  <div class="thumbnail"> 
-                          <img src="img/computer.jpg" style="width:100%;"> 
-                     </div> -->
-                    </div>
-                    </div>
-                     <div class="col-lg-4 col-md-4 col-xs-6">
-                       <div class="instruction">
-                      <h3 class="text-center">2. Generate</h3>
-                       
-                            <p class="text-center">As you finish filling, click save button to generate file or code and share with your customers 
-</p>
-                       <!--  <div class="thumbnail">
-                          <img src="img/img1.jpg" style="width:100%;">
-                      </div> -->
-                       </div>
+                 <div class="col-lg-12 col-md-12  col-xs-12">
+                    <h2 class="section-heading">{{ 'home.sections.section1.title' | translate  }}</h2>
+                    <p class="text-center ">{{ 'home.sections.section1.content' | translate  }}</p>
+                      <div class="col-lg-4 col-md-4 col-xs-4 instruction" ng-repeat="part in parts">
+                        <app-home info="part"></app-home>
                       </div>
-                      <div class="col-lg-4 col-md-4 col-xs-6">
-                          <div class="instruction">
-                     <h3 class="text-center">3. Enjoy</h3>
-                      
-                        <p class="text-center">Enjoy providing your customers with a transparent and trustworthy wireless connection.
-                       <!--  <div class="thumbnail">
-                          <img src="img/img5.jpg" style="width:100%;"/>
-                        </div> -->
-                          </div>
-                      </div>
-
-                   
-                            </div>
-                            </div>
-                             </div>
-                                <!-- /.container -->
-                               </div>
-                               <!-- /.content-section-a -->
-                       
-                    </div>
-                      </div>
-                      
-                    </div>
-                   
-                      </div>
-
-                       </div>
-<div class="content-section-c">                    
-  <div class="container">
-            <div class="row">
-              
-                 <div class="col-lg-12 col-md-12  col-xs-12 sec-c">
-<div class="col-lg-1 col-md-1  col-xs-1 ">  </div>
-                  <div class="col-lg-10 col-md-10  col-xs-10  ">
-                    
-                   
-                        <h2 class="white">Generate file and a code now to provide wireless users with a transparent information about WiFi connection they use.
-                          </h2>
-                   
-       
-            <button type="button" id="submit" name="submit" class="form-btn semibold bluebuttons"><a href="#/generate-wifi">GENERATE</a>
-            </button>  
-             </div>
-           
-      
-                  
-                    <div class="col-lg-1 col-md-1  col-xs-1 ">  </div>
-                        </div>
-
-                      </div>
-                        </div>
-
+                </div>
+            </div>
       </div>
+</div>
+<div class="content-section-h">
+      <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12  col-xs-12 ">
+                    <h2 class="section-heading"> {{ 'home.sections.section2.title' | translate  }} </h2>
+                    <p class="text-center">{{ 'home.sections.section2.content' | translate  }}</p>
+                    <button type="submit" id="submit" name="submit" class="form-btn semibold"><a href="#/generate-wifi">GENERATE</a></button>
+                </div>
+            </div>
+      </div>
+</div>
 <div class="content-section-d">
-
         <div class="container">
             <div class="row">
-              
                  <div class="col-lg-12 col-md-12  col-xs-12 ">
-                    
-                    <h2 class="section-heading">VISIT OUR BLOG</h2>
-                    <h3 class="special">Find out latest news about our activity and wireless network</h3>
-                      
-                    <!--   <div class="col-lg-3 col-md-4 col-xs-6 images"> -->
-                       
-            <div class="imagev"  ng-repeat="n in results">
-            <a href="{{n.url}}"><div style="background-image: url('{{n.img}}')" class="half">
+                    <h2 class="section-heading">{{ 'home.sections.section3.title' | translate  }}</h2>
+                    <p class="text-center">{{ 'home.sections.section3.content' | translate  }}</p>
+                    <div class="imagev"  ng-repeat="n in results">
+                      <a href="{{n.url}}"><div style="background-image: url('{{n.img}}')" class="half">
+                      <p class="imgDescription">{{n.title}}<i class="fa fa-arrow-right" aria-hidden="true"></i></p>
+                    </div></a>
 
- 
- <p class="imgDescription">{{n.title}}<i class="fa fa-arrow-right" aria-hidden="true"></i></p> 
-          
-</div></a>
-    
-      
-      <!-- <h6> Read<i class="fa fa-arrow-right" aria-hidden="true"></i></a> </h6>
- -->
-
-                            
-                         
-
-</div>
-</div>
-</div>
-</div>
+                  </div>
+                </div>
+            </div>
+        </div>
 </div>
