@@ -1,6 +1,6 @@
 
 // angular routes definded
-var app = angular.module('website', ['ngRoute', 'summernote', 'pascalprecht.translate']);
+var app = angular.module('website', ['ngRoute', 'summernote', 'pascalprecht.translate', 'uiGmapgoogle-maps']);
     app.config(function ($routeProvider) {
         $routeProvider
             .when('/', {
@@ -38,6 +38,10 @@ var app = angular.module('website', ['ngRoute', 'summernote', 'pascalprecht.tran
             .when('/admin', {
                 templateUrl : 'partials/admin_panel.html'
                 // controller: 'RegisterCtrl'
+            })
+            .when('/map', {
+              templateUrl : 'partials/map.html',
+              controller : 'ContactCtrl'
             })
           .otherwise ({redirectTo: '/'});
 

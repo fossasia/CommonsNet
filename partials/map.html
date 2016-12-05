@@ -1,0 +1,17 @@
+  <div class="container" ng-controller="ContactCtrl">
+  <div class="row">
+  <h3> A map of our users </h3> 
+      <div id="map_canvas">
+         <ui-gmap-google-map 
+		    center='map.center' 
+		    zoom='map.zoom' aria-label="Google map">
+		    <ui-gmap-marker ng-repeat="marker in markers"
+      			coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id">
+     			<ui-gmap-window>
+        			<div>{{marker.window.title}}</div>
+      			</ui-gmap-window>
+    		</ui-gmap-marker>
+    	</ui-gmap-google-map>
+       </div>
+  </div>
+</div>
