@@ -5,7 +5,7 @@ var router = express.Router();
 var localStrategy = require('passport-local').Strategy;
 
 var File = require("../models/details");
-
+var User = require("../models/user");
 router.post('/save', function (req, res) {
     var location = req.body.location;
     var isp = req.body.isp;
@@ -40,6 +40,7 @@ router.post('/save', function (req, res) {
     });
 
     File.createFile(newFile)
+    req.user.details.push(newFile)
 });
 
 // var location = [];

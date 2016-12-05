@@ -35,7 +35,7 @@ var app = angular.module('website', ['ngRoute', 'summernote', 'pascalprecht.tran
             templateUrl : 'partials/register.html'
             // controller: 'RegisterCtrl'
           })
-            .when('/admin', {
+            .when('/users/admin', {
                 templateUrl : 'partials/admin_panel.html'
                 // controller: 'RegisterCtrl'
             })
@@ -50,7 +50,25 @@ var app = angular.module('website', ['ngRoute', 'summernote', 'pascalprecht.tran
       });
 
       $translateProvider.preferredLanguage('en');
-    })
+    });
+
+ function init_map() {
+     var myOptions = {
+         zoom:14,
+         center:new google.maps.LatLng(52.55121,13.404289999999946),
+         mapTypeId: google.maps.MapTypeId.ROADMAP
+     };
+        map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+        marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(52.55121, 13.404289999999946)});
+        infowindow = new google.maps.InfoWindow({
+            content:"<b>CommonsNet</b><br/>Malmoer Strasse 5<br/> Berlin"
+     });
+     google.maps.event.addListener(marker, "click", function(){
+         infowindow.open(map,marker);
+     });
+        infowindow.open(map,marker);
+ }
+    google.maps.event.addDomListener(window, 'load', init_map);
 
 
 
