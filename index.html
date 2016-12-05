@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script></script>
+
       <script src="js/jquery.2.0.0.js"></script>
-   
       <script src="js/summernote.min.js"></script>
       <script src='js/vfs_fonts.js'></script>
       <script src="http://html2canvas.hertzen.com/build/html2canvas.js"></script>
@@ -26,10 +25,12 @@
         <script src="js/bootstrap.min.js"></script>
         
         <script data-require="angular.js@1.4.8" data-semver="1.4.8" src="https://code.angularjs.org/1.4.8/angular.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.11.1/angular-translate.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.11.1/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
         <script src="js/website.js"></script>
         <script src="js/services/factoryapp.js"></script>
+        <script src="js/services/mapfactory.js"></script>
         <script src="js/directives/appinfo.js"></script>
         <script src="js/directives/apphome.js"></script>
         <script src="js/directives/connect-with-us.js"></script>
@@ -42,10 +43,12 @@
         <script src="js/Controllers/ContactCtrl.js"></script>
         <script src="js/services/factorapp.js"></script>
         
-
        
         <script src="js/angular-route.min.js"></script>
         <script src="js/angular-summernote.min.js"></script>
+
+        <script src="http://rawgit.com/angular-ui/angular-google-maps/2.0.X/dist/angular-google-maps.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVvja1m_s5dKl-6IibliwKdVH1YaPKAOo"></script>
 
    
        
@@ -84,20 +87,29 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                  <li>
-                        <a href="#/users/register">Register</a>
-                  </li>
                     <li>
-                        <a href="#/about-us">About us</a>
+                        <a href="/#/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About us
+                        </a>
+                           <ul class="dropdown-menu">
+                              <li>
+                                <a href="#/about-us">We are</a>
+                              </li>
+                              <li>  
+                                <a href="#/contact">Contact us</a> 
+                              </li>
+                              <li> 
+                                <a href="#/map">Users' map</a>
+                              </li>
+                              <li>
+                               <a href="https://commonsnetblog.wordpress.com/">Blog</a>
+                              </li>
+                           </ul>
                     </li>
                     <li>
                         <a href="#/generate-wifi">Generate WIFI</a>
                     </li>
                     <li>
-                        <a href="#/contact">Contact</a>
-                    </li>
-                     <li>
-                        <a href="https://commonsnetblog.wordpress.com/">Blog</a>
+                        <a href="#/users/register">Register</a>
                     </li>
                     <li>
                         <a href="#/users/login">Login</a>

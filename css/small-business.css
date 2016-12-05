@@ -6,21 +6,31 @@
 html {
   
     height: 100%; 
+  
 
     }
-
+.angular-google-map-container {
+    margin: 50px;
+    height: 400px;
+  }
 body {
     padding-top: 70px;
     background-color: white; 
     color: #404040  ; 
-
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 300;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
     overflow-x: hidden; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
 a {
     color: white;
 }
+
+/*.row {
+  margin-top: 30px;
+}*/
 
 .addfield {
   float:right;
@@ -1326,8 +1336,13 @@ a {
 }
 
 .container {
-    padding-right: 150px;
-    padding-left: 150px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+}
+.row {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .dashboard {
