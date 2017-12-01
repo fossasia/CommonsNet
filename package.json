@@ -12,7 +12,7 @@
     "coverage": "istanbul cover _mocha --report lcovonly -- -R spec && rm -rf ./coverage"
   },
   "dependencies": {
-    "ejs": "2.4.1",
+    "ejs": "2.5.5",
     "express": "4.13.3",
     "mongodb": "~2.2.9",
     "body-parser": "~1.15.2",
