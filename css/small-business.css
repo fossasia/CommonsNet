@@ -750,9 +750,10 @@ text-align: center;
 
     background-image: url("../img/office1.png") !important;
     height: 500px;
-        background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-color:#31708f;
 
 }
 /*.picture1 {
