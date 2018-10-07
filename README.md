@@ -11,7 +11,7 @@
 
 Across the world there are different legal settings and requirements for sharing of Internet connections and specifically Open Wifi connections. 
 
-CommonsNet website reflects these details. We provide with a great tool to collect all wifi details and enable people to share them with others. Our simple and easy-to-follow form let gather WiFi information in a orderly and transparent manner, and then immediately generate a human readable file to download or machine readable file of the level of sharing that is offered by someone to copy and paste on website and make transparent details public.
+CommonsNet website reflects these details. We provide with a great tool to collect all wifi details and enable people to share them with others. Our simple and easy-to-follow form let gather WiFi information in an orderly and transparent manner, and then immediately generate a human readable file to download or machine readable file of the level of sharing that is offered by someone to copy and paste on website and make transparent details public.
 
 
 ## Getting started
